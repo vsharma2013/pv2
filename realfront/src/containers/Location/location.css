@@ -1,0 +1,5952 @@
+
+.alert-dismissible_projSearch{
+  
+  top: 0%;
+  }
+  @media screen and (min-width: 1200px ){
+    .WebSearchBanner{
+      margin-top: 19%;
+      margin-bottom: 5%;
+      margin-left: 20vw;
+    }
+    /* .sweet-loading{
+      margin-left: 100vw;
+      margin-top: 20vw;
+    } */
+    .cancel-button{
+      width: 1vw;
+      position: absolute;
+      margin-left: 53vw;
+      margin-top: 1.9vw;
+      cursor: pointer;
+    }
+    .Mostsideheadings{
+      margin-left: 8vw;
+      position: absolute;
+      top: 15vw;
+    }
+    .Mostsidetitle {
+      display: flex;
+    }
+    .MostSidemainHeading{
+      font-weight: bolder;
+      text-align: center;
+      margin-top: 2%;
+    }
+    .Mostgreybox1{
+      background-color: #404041;
+      width: 20px;
+      margin-top: 3px;
+      height: 25px;
+    }
+    .Topnavrowtitletexttop{
+      font-weight: bolder;
+      width: 11vw;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      color: #EF403C;
+    }
+    .Newnavrowtitletextnew{
+      font-weight: bolder;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      width: 19vw;
+      color: #EF403C;
+    }
+    .Mostnavrowtitletextmosttrend{
+      font-weight: bolder;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      width: 15vw;
+      color: #EF403C;
+    }
+  
+    .Topgreybox2top{
+      background-color: #404041;
+      width: 71%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    .Newgreybox2new{
+      background-color: #404041;
+      width: 60%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    .Mostgreybox2mosttrend{
+      background-color: #404041;
+      width: 66%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    
+  
+    .paraplacestatus_search{
+      font-size: 0.65vw;
+      font-family: 'Catamaran';
+      font-weight: bolder;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 0.5%;
+      margin-top: -15vw;
+      background-color: #404041;
+      letter-spacing: .03vw;
+    }
+    .grid-container31_search {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 0% 2%;
+      padding: 0%;
+      padding-left: 3.3vw;
+      width: 50vw;
+    }
+    
+    .grid-container31_search > div {
+      background-color: transparent;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    .logout_btn1_search1{
+      /* position: absolute; */
+      left: 92vw;
+      top: 2vw;
+      position: fixed;
+    }
+    .logout_search_name{
+    color: black;
+    font-family: Lato;
+    font-size: .9vw;
+    cursor: pointer;
+    
+    }
+    .logout_search_name:hover{
+      color: black;
+      font-family: Lato;
+      font-size: .9vw;
+      cursor: pointer;
+      text-decoration-line: none;
+      
+      }
+    .logout_btn2_search2{
+    
+      /* position: absolute; */
+      left: 93vw;
+      top: 3.2vw;
+      font-family: Lato;
+      font-size: .9vw;
+      cursor: pointer;
+      position: fixed;
+    
+    }
+    .web_main_start{
+      left:40%;
+    }
+    .boxD_loc{
+      border-style: none;
+      border: none;
+      background-color: #404041;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+      height: 20vw;
+      /* height: 2px; */
+      width: 20vw;
+      z-index: 1;
+      grid-row: 1;
+      cursor: pointer;
+      margin-left: 27%;
+    }
+    .boxD_loc:hover{
+      background-color: #EF403C;
+      border-style: none;
+      border: none;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+      height: 20vw;
+      /* height: 2px; */
+      width: 20vw;
+      z-index: 1;
+      grid-row: 1;
+      cursor: pointer;
+       margin-left: 27%;
+    
+    }
+    
+    .imageframeD_loc{
+      border-style: none;
+      height: 80%;
+      /* border-top-left-radius: 14px;
+      border-top-right-radius: 14px; */
+    }
+    .imageboxD_loc{
+      object-fit: fill;
+      width: 20vw;
+      /* height: auto; */
+      border-style: none;
+      height: 16vw;
+    }
+    .paraplaceD_loc{
+      font-size: 0.6vw;
+      font-family: 'Catamaran';
+      font-weight: 500;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 0.5%;
+      margin-top: -1.8vw;
+      background-color: rgba(63, 63, 64, 0.72);
+    }
+    
+    .contentframeD_loc{
+      text-align: initial;
+      /* border-style: outset; */
+      height: 23%;
+      text-align: left;
+      margin-right: 3%;
+      /* width: 373px; */
+  
+    }
+    .paraheadingD_loc{
+      margin-top: 0.5vw;
+      margin-left: 5%;
+      font-size: 1vw;
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+      font-family: 'Catamaran';
+      margin-bottom: 0rem;
+    }
+    .parastarD_loc{
+      margin-top: -2%;
+      /* margin-left: 15%; */
+      /* font-size: 16px; */
+      /* font-weight: 600; */
+      margin-bottom: 0rem;
+      position: static;
+      position: initial;
+      margin-left: 8%;
+    }
+    .parasubD_loc{
+      font-size: 0.9vw;
+      margin-top: -6%;
+      font-weight: 500;
+      margin-right: 5%;
+      color: white;
+      font-family: 'Catamaran';
+      text-align: end;
+    }
+  
+  
+  
+    .onkey_mob{
+      display: none;
+    }
+    .list_isopen_projects{
+      margin-top: 18%;
+    }
+    .centerClass_web{
+      margin-top: 17%;
+      margin-left: 6vw;
+      width: 93vw;
+    }
+    .map_webview_locationsearch{
+      width: 66.5vw;
+      margin-top: 2%;
+      height: -webkit-fill-available;
+      margin-left: 4%;
+      margin-bottom: 2%;
+    }
+  .start_div{
+  
+    position: absolute;
+    height: 10vw;
+  }
+  .heading5{
+      text-align: center;
+      color: chocolate;
+  }
+  /* .navbarrow1{
+      background-color: rgb(82, 86, 89);
+      padding-bottom: 1px;
+    } */
+    .searched_location{
+      
+      /* background: #ffffff;
+      border: 2px solid  #EF403C;
+      border-radius: 2px;
+      top: 12%;
+      position: absolute;
+      width: 21vw;
+      left: 5%; */
+      background: #ffffff;
+      border: 2px solid #EF403C;
+      border-radius: 2px;
+      top: 11.5%;
+      position: absolute;
+      width: 21vw;
+      left: 8.7%;
+      height: 3.3vw;
+    }
+    
+    .searched_location input{
+      /* border: none;
+       width: 100%;   */
+       
+      border: none;
+      width: 100%;
+      /* min-width: 50px; */
+      height: 3vw;
+  
+     
+    }
+    .searched_location input:focus{
+      outline: none;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;list-style: none;
+      width: 100%;
+    }
+    .filter_li{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 2px;
+      /* padding: 5px; */
+      padding: 2px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      /* height: fit-content; */
+      font-size: .9vw;
+      margin-left: 4px;
+      margin-top: 4px;
+      white-space: pre;
+    }
+    .filter_btn{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 1.2vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 2px;
+      transform: rotate(45deg);
+    }
+    
+    ul .input-location{
+      background: none;
+      flex-grow: 1;
+    }
+    .list_map{
+      margin-top: 16%;
+      margin-left: 5%;
+    }
+  
+  
+  
+    /* start */
+    .logotop{
+  
+      /* font-size: 2vw;  */
+      top: 3%;
+      left: 5%;
+      /* font-weight: bolder; */
+      /* font-family: Catamaran; */
+      /* position: absolute; */
+      width: 10vw;
+      position: fixed;
+      z-index: 9999;
+  
+    }
+  
+    .mumbaitop{
+    
+          /* font-size: 1.6vw; */
+          top: 5%;
+          left: 81.8%;
+          font-size: 1.1vw;
+          font-family: Catamaran;
+          /* position: absolute; */
+          position: fixed;
+          z-index: 9999;
+  
+    }
+    .mumbai_arrow{
+    
+      
+      left: 86.5%;
+      top: 5%;
+      height: 1vw;
+      position: absolute;
+  
+    }
+    .usericon_loc{
+      
+          /* font-size: 1.6vw; */
+          top: 3%;
+          height: 3vw;
+          left: 89%;
+          /* position: absolute; */
+          position: fixed;
+  
+    }
+    .menubar_loc{
+    
+      height: 4.8vw;
+      width: 99.9vw;
+      background-color: rgb(82, 86, 89);
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      position: fixed;
+      z-index: 9999;
+    }
+    /* searvhbar */
+    /* .search_start{
+  
+      width: 135%;
+      margin-left: 1%;
+      position: absolute;
+      
+    } */
+  
+   
+    /* .divrating:hover{
+      background-color: red;
+      color: white;
+  
+    } */
+  /* .btnrating{
+    position: absolute;
+    width: 6vw;
+    height: 54%;
+    top: 48%;
+    left: 10%;
+    background-color: white;
+    border: none;
+  }
+  .btnrating :hover{
+  
+     background-color: red;
+     color: white;
+  } */
+  
+  .btnrating {
+              /* float: right; */
+             
+              background-color: white;
+              border: none;
+              color: black;
+              font-size: .9vw;
+              cursor: pointer;
+              /* border-radius: 0px; */
+              /* margin-top: 18px; */
+              font-weight: bold;
+              font-family: Catamaran;
+              position: absolute;
+              margin-top: 1.1vw;
+              left: 186%;
+              width: 6.2vw;
+              height: 2.7vw;
+              border: none;
+              padding-left: 6%;
+              text-align: left;
+              cursor: pointer;
+  }
+  
+  .btnrating:hover {
+    /* float: right; */
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    left: 186%;
+    font-weight: bold;
+    padding-left: 6%;
+           text-align: left;
+  }
+  /* .btnrating:active{
+  
+    background-color: rgb(238, 65, 61);
+  } */
+  .rating_5{
+    position: absolute;
+    margin-left: 1%;
+  }
+  
+  .buttonarrow{
+  
+    position: absolute;
+      height: 1vw;
+      top: 31%;
+      margin-left: 8%;
+  }
+  
+  
+  /* .btn11 {
+    float: right;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  
+  .btn11:hover {
+    float: right;
+    background-color: rgb(238, 65, 61);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-family: Catamaran;
+  } */
+  
+  .btnprop{
+  
+    background-color: white;
+      border: none;
+      color: black;
+      /* padding: 52px; */
+      font-size: .9vw;
+      cursor: pointer;
+      /* border-radius: 0px; */
+      /* margin-top: 18px; */
+      font-weight: bold;
+      font-family: Catamaran;
+      position: absolute;
+      margin-top: 6.5%;
+      margin-left: 225%;
+      width: 9vw;
+      height: 2.7vw;
+      border: none;
+      padding-left: 6%;
+      text-align: left;
+      cursor: pointer;
+  
+  }
+  
+  .btnprop:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 225%;
+   
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 6%;
+    text-align: left;
+  
+  }
+  
+  .btnbudget{
+  
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 285%;
+    width: 6.5vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 6%;
+           text-align: left;
+           cursor: pointer;
+  }
+  
+  .btnbudget:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 285%;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 6%;
+           text-align: left;
+  
+  }
+  .btnamen{
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 331%;
+    width: 7vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 6%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .btnamen:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 331%;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 6%;
+           text-align: left;
+  
+  }
+  .btnposs{
+  
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 379%;
+    width: 10vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 6%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .btnposs:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 379%;
+    width: 10vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 6%;
+           text-align: left;
+  
+  }
+  .btnsortby{
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 445%;
+    width: 6vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 6%;
+           text-align: left;
+           cursor: pointer;
+  }
+  /* .btnsortby:active{
+  background-color: red;
+  } */
+  
+  .btnsortby:hover{
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 445%;
+    width: 6vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 6%;
+           text-align: left;
+  
+  }
+  
+  .btnshare{
+  
+    background-color: white;
+      border: none;
+      color: black;
+      font-size: .9vw;
+      cursor: pointer;
+      /* border-radius: 0px; */
+      /* margin-top: 18px; */
+      font-weight: bold;
+      font-family: Catamaran;
+      position: absolute;
+      margin-top: 6.5%;
+      margin-left: 487%;
+      width: 8.5vw;
+      height: 2.7vw;
+      border: none;
+      padding-left: 18%;
+      text-align: left;
+      cursor: pointer;
+  }
+  .buttonadd{
+    position: absolute;
+    height: 2vw;
+    top: 13%;
+    left: 5%;
+  }
+  .btnshare:hover{
+  
+    background-color: rgb(238, 65, 61);
+    border: none;
+    color: white;
+    /* padding: 14px; */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 6.5%;
+    margin-left: 487%;
+    width: 8.5vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 18%;
+    text-align: left;
+  }
+  .input_checkbox:checked + label:after{
+    content: "\2713";
+    width: 13px;
+    height: 15px;
+    border-radius: 100%;
+    /* border: 0px solid #333; */
+    background-color: black;
+    z-index: 999;
+    position: absolute;
+    margin-right: 10px;
+    color: white;
+    /* top: -56%; */
+    left: 94%;
+    font-size: 85%;
+    line-height: 136%;
+    top: -45%;
+  }
+  .container_rat{
+  position: absolute;
+  top: 63%;
+  border: 2px  solid #EF403C;
+  left: 185%;
+  margin-top: 28%;
+  height: 10vw;
+  width: 8vw;
+  background-color: white;
+  border-radius: 4%;
+  z-index: 5;
+  }
+  
+  
+  .col11 {
+    display: inline-flex;
+    font-size: .7vw;
+    font-weight: 500;
+    font-family: Catamaran;
+    border: 0.1vw solid white;
+    border-radius: 5px;
+    background:white;
+    padding-left: 8px;
+    padding-right: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+   
+  }
+  .rating_check input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  .rating_check input:checked + label{
+    border: 0.1vw solid #EF403C;
+    border-radius: 5px;
+    background: pink;
+    /* padding-top: vw; */
+    padding-left: 8px;
+    padding-right: 5px;
+    /* background-color: #fbe9e9;
+    border-color: #e6a7a9; */
+    font-size: .7vw;
+  } 
+  
+  .five{
+    left: 12%;
+    font-family: Catamaran;
+    position: absolute;
+    
+    top: 10%;
+  }
+  .four_above{
+    font-family: Catamaran;
+    position: absolute;
+    
+    top: 24%;
+    left: 12%;
+  }
+  .three{
+    left: 12%;
+      top: 38.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+    
+  }
+  .two{
+    
+    left: 12%;
+    top: 52.2%;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+    font-family: Catamaran;
+    position: absolute;
+   
+  
+  }
+  .one{
+    left: 12%;
+    top: 66.2%;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  
+  .done_rating{
+  
+    position: absolute;
+      top: 82.2%;
+      color: #EF403C;
+      font-size: .8vw;
+      font-weight: bolder;
+      left: 65%;
+      font-family: Catamaran;
+      cursor: pointer;
+  }
+  /* 
+  property */
+  
+  .container_prop{
+   
+    position: absolute;
+    top: 63%;
+    border: 2px solid #EF403C;
+    left: 229%;
+    margin-top: 28%;
+    height: 12vw;
+    width: 19vw;
+    background-color: white;
+    border-radius: 3%;
+    z-index: 5;
+    font-family: Catamaran;
+    }
+  
+    .prop_check input{
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+      
+    }
+    .prop_check input:checked + label{
+      border: .01vw solid #EF403C;
+      /* background-color: #EF403C; */
+      border-radius: 5px;
+      background: pink;
+      padding-top: .01vw;
+    
+    } 
+    
+    .res{
+      position: absolute;
+      top: 9%;
+      left: 5%;
+      font-size: .9vw;
+      font-family: Catamaran;
+      font-weight: 600;
+    }
+    .studio{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 5%;
+      font-family: Catamaran;
+    }
+    .bhk1{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 44%;
+      font-family: Catamaran;
+    }
+    .bhk2{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 73%;
+    }
+    .bhk3{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 5%;
+    }
+    .bhk4{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 44%;
+    }
+    .more_bhk{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 73%;
+    }
+    .com{
+  
+      position: absolute;
+      top: 57%;
+      left: 5%;
+      font-size: .9vw;
+      font-family: Catamaran;
+      font-weight: 600;
+      
+    }
+    .showroom{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 5%;
+  
+    }
+    .shop{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 44%;
+  
+    }
+    .office{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 73%;
+  
+    }
+    .done_property{
+  
+      position: absolute;
+      top: 85.2%;
+      color: #EF403C;
+      /* font-size: .8vw; */
+      font-weight: bolder;
+      left: 83%;
+      font-family: Catamaran;
+      cursor: pointer;
+    }
+    /* .tab1{
+  
+      display: inline-block; */
+      /*  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;  */
+      /* background-color: white;
+  
+    }
+    .tab1:hover{
+  
+      background-color: #EF403C;
+    }
+    .tab2{
+  
+      background-color: #EF403C;
+    } */
+  
+    /* budget */
+    .container_budget{
+   
+      position: absolute;
+      top: 63%;
+      border: 2px solid #EF403C;
+      left: 289%;
+      margin-top: 28%;
+      height: 12vw;
+      width: 18vw;
+      background-color: white;
+      border-radius: 3%;
+      overflow-x: hidden;
+      z-index: 5;
+      font-family: Catamaran;
+      /* overflow-y: auto; */
+    
+      }
+      .budget_text1{
+  
+        position: absolute;
+        border-radius: 259px;
+        /* border: 2px red solid; */
+        top: 7%;
+        width: 7.5vw;
+        height: 2vw;
+        left: 6%;
+        outline: none;
+        /* border: 1px solid #ddd; */
+        background-color: #fff;
+        cursor: pointer;
+        font-size: .8vw;
+        font-weight: 600;
+        font-family: Catamaran;
+  
+       
+      }
+      .budget_text2{
+  
+        position: absolute;
+      border-radius: 259px;
+      /* border: 2px red black; */
+      top: 7%;
+      width: 7.5vw;
+      height: 2vw;
+      left: 51%;
+      outline: none;
+      /* border: 1px solid #ddd; */
+        background-color: #fff;
+        cursor: pointer;
+        font-size: .8vw;
+        font-weight: 600;
+        font-family: Catamaran;
+      }
+     
+      .min_budget{
+  
+        line-height: 23px;
+        list-style: none;
+        display: block;
+        cursor: pointer;
+        top: 31%;
+        position: absolute;
+        left: 7%;
+        font-family: Catamaran;
+        font-size: .7vw;
+        /* overflow-y: scroll; */
+        /* overflow-y: auto; */
+      }
+      .max_budget{
+  
+        line-height: 23px;
+        list-style: none;
+        display: block;
+        cursor: pointer;
+        top: 31%;
+        position: absolute;
+        left: 53%;
+        font-family: Catamaran;
+        font-size: .7vw;
+        /* overflow-y: scroll; */
+  
+      }
+      .done_budget {
+        top: 19.8vw;
+        color: #EF403C;
+        /* font-size: .8vw; */
+        font-weight: bolder;
+        left: 63.5vw;
+        font-family: Catamaran;
+        cursor: pointer;
+        position: fixed;
+    }
+  
+      .container_amen{
+   
+        position: absolute;
+        top: 63%;
+        border: 2px solid #EF403C;
+        left: 335%;
+        margin-top: 28%;
+        height: 9vw;
+        width: 15vw;
+        background-color: white;
+        border-radius: 3%;
+        z-index: 5;
+        font-family: Catamaran;
+        }
+  
+        .amen_check input{
+          display: none;
+          font-family: Catamaran;
+          position: absolute;
+          
+        }
+        .amen_check input:checked + label{
+          border: .01vw solid #EF403C;
+          /* background-color: #EF403C; */
+          border-radius: 5px;
+          background: pink;
+          padding-top: .01vw;
+        
+        } 
+        .swimming{
+          position: absolute;
+          top: 10%;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          font-family: Catamaran;
+  
+        }
+        .kids{
+          position: absolute;
+          top: 10%;
+          /* font-size: 0.8vw; */
+          left: 53%;
+          font-family: Catamaran;
+  
+        }
+        .gym{
+  
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 29%;
+        }
+        .indoor{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          left: 53%;
+          top: 29%;
+  
+        }
+        .outdoor{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 47%;
+        }
+        .garden{
+          
+      position: absolute;
+      font-family: Catamaran;
+      left: 53%;
+      /* font-size: 0.8vw; */
+      top: 47%;
+  
+  
+        }
+        .more{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 65%;
+        }
+        .done_amen{
+  
+          position: absolute;
+          top: 77.2%;
+  
+          color: #EF403C;
+          /* font-size: .8vw; */
+          font-weight: bolder;
+          left: 75%;
+          cursor: pointer;
+        }
+  
+        .container_poss{
+   
+          position: absolute;
+          top: 63%;
+          border: 2px solid #EF403C;
+          left: 384%;
+          margin-top: 28%;
+          height: 7vw;
+          width: 14vw;
+          background-color: white;
+          border-radius: 3%;
+          z-index: 5;
+          font-family: Catamaran;
+      }
+          
+    
+          .poss_check input{
+            display: none;
+            font-family: Catamaran;
+            position: absolute;
+            
+          }
+          .poss_check input:checked + label{
+            border: .01vw solid #EF403C;
+            /* background-color: #EF403C; */
+            border-radius: 5px;
+            background: pink;
+            padding-top: .01vw;
+          
+          } 
+          .ready{
+            position: absolute;
+            top: 14%;
+            left: 8%;
+            font-family: Catamaran;
+            /* font-size: .8vw; */
+          }
+          .months6{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 14%;
+            left: 56%;
+            /* font-size: .8vw; */
+          }
+          .months12{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 37%;
+            left: 8%;
+            /* font-size: .8vw; */
+          }
+          .years1{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 37%;
+            left: 56%;
+            /* font-size: .8vw; */
+        
+          }
+          .years2{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 59%;
+            left: 9%;
+            /* font-size: .8vw; */
+          }
+          .garden2{
+            position: absolute;
+            font-family: Catamaran;
+            top: 59%;
+            left: 56%;
+            /* font-size: .8vw; */
+          }
+  
+          .done_poss{
+            position: absolute;
+            top: 79.2%;
+            color: #EF403C;
+            font-size: .8vw;
+            font-weight: bolder;
+            left: 78%;
+            cursor: pointer;
+          }
+  
+          .container_sort{
+   
+            position: absolute;
+            top: 63%;
+            border: 2px solid #EF403C;
+            left: 450%;
+            margin-top: 28%;
+            height: 7vw;
+            width: 9vw;
+            background-color: white;
+            border-radius: 3%;
+            z-index: 5;
+            font-family: Catamaran;
+        }
+            
+      
+            .sort_check input{
+              display: none;
+              font-family: Catamaran;
+              position: absolute;
+              
+            }
+            .sort_check input:checked + label{
+              border: .01vw solid #EF403C;
+              /* background-color: #EF403C; */
+              border-radius: 5px;
+              background: pink;
+              padding-top: .01vw;
+            
+            } 
+            .trend{
+              position: absolute;
+              /* font-size: .8vw; */
+              top: 14%;
+              left: 13%;
+  
+            }
+            .rated{
+              position: absolute;
+              /* font-size: .8vw; */
+              left: 13%;
+              top: 35%;
+  
+            }
+            .new_proj{
+  
+              position: absolute;
+              /* font-size: .8vw; */
+              left: 13%;
+              top: 57%;
+            }
+            .done_sort{
+  
+              position: absolute;
+              top: 77.2%;
+      
+              color: #EF403C;
+              font-size: .8vw;
+              font-weight: bolder;
+              left: 66%;
+              cursor: pointer;
+            }
+  
+  
+      .containermob{
+        display: none;
+      }
+      .location_search_web {
+        
+        width: 10vw;
+        background-color: white;
+        /* overflow: auto; */
+        top: 12.5vw;
+        position: absolute;
+        left: 8.7%;
+      }
+      
+      .location_search_web a {
+        float: left;
+        padding: 12px;
+        /* color: white; */
+        text-decoration: none;
+        font-size: .9vw;
+         width: 4.3vw;  
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+      }
+      
+      .location_search_web a.active {
+        background-color: #EF403C;
+        color: white;
+      }
+      .list_box{
+  
+        background-color: #404041;
+        width: 1vw;
+        /* margin-top: 3px; */
+        height: 2.6vw;
+        position: absolute;
+        left: 51%;
+      }
+      .web_hr1{
+        position: absolute;
+      border: 5px solid #EF403C;
+      top: 12.4vw;
+      left: 22.5%;
+      width: 18.3vw;
+    
+    }
+    
+   
+    .webfound{
+      font-weight: bold;
+      /* margin-top: 1.5%; */
+      /* margin-left: 37%; */
+      position: absolute;
+      top: 12.5vw;
+      left: 42.6%;
+      font-size: 1.5vw;
+      color: grey;
+      font-family: Catamaran;
+    }
+  
+     .web1234{
+      font-weight: bold;
+      color: #EF403C;
+      top: 12.4vw;
+      position: absolute;
+      font-size: 1.5vw;
+      left: 47.8%;
+      font-family: sans-serif;
+    }
+  
+    .web_hr2{
+      position: absolute;
+      border: 5px solid #EF403C;
+      top: 12.4vw;
+      left: 51.5%;
+      width: 18.3vw;
+    }  
+  
+      /* .list_loc{
+        /* width: 10%;
+        background-color: white;
+        overflow: auto;
+        top: 25%;
+        position: absolute;
+        left: 6%;
+        width: 6%; }*/
+      
+      .map_loc{
+        position: absolute;
+        left: 68%;
+  
+      }
+      .no_projects{
+        position: relative;
+        margin-top: 79%;
+        z-index: 1;
+        left: 27%;
+    }
+    .footer_web{
+      margin-top: 20vw;
+    }
+  
+    }
+  @media (min-width: 1024px) and (max-width: 1199px){
+
+    .WebSearchBanner{
+      margin-top: 22%;
+      margin-bottom: 5%;
+      margin-left: 9vw;
+    }
+    /* .sweet-loading{
+      margin-left: 50vw;
+      margin-top: 20vw;
+    } */
+    .cancel-button{
+      width: 1vw;
+      position: absolute;
+      margin-left: 52vw;
+      margin-top: 1.9vw;
+      cursor: pointer;
+    }
+    .Mostsideheadings{
+      margin-left: 6vw;
+      position: absolute;
+      top: 17.5vw;
+  
+    }
+    .Mostsidetitle {
+      display: flex;
+    }
+    .MostSidemainHeading{
+      font-weight: bolder;
+      text-align: center;
+      margin-top: 2%;
+    }
+    .Mostgreybox1{
+      background-color: #404041;
+      width: 20px;
+      margin-top: 3px;
+      height: 25px;
+    }
+    .Topnavrowtitletexttop{
+      font-weight: bolder;
+      width: 11vw;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      color: #EF403C;
+    }
+    .Newnavrowtitletextnew{
+      font-weight: bolder;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      width: 19vw;
+      color: #EF403C;
+    }
+    .Mostnavrowtitletextmosttrend{
+      font-weight: bolder;
+      font-family: Catamaran-Bold;
+      font-size: 1.7vw;
+      width: 15vw;
+      color: #EF403C;
+    }
+  
+    .Topgreybox2top{
+      background-color: #404041;
+      width: 77%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    .Newgreybox2new{
+      background-color: #404041;
+      width: 60%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    .Mostgreybox2mosttrend{
+      background-color: #404041;
+      width: 70%;
+      margin-top: 15px;
+      height: 12px;
+    }
+    
+  
+  
+    .paraplacestatus_search{
+      font-size: 0.65vw;
+      font-family: 'Catamaran';
+      font-weight: bolder;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 0.5%;
+      margin-top: -17vw;
+      background-color: #404041;
+      letter-spacing: .03vw;
+    }
+    .grid-container31_search {
+      /* display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 0% 3%;
+      padding: 0%;
+      padding-left: 3.3vw;
+      width: 50vw; */
+      display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0 3%;
+    padding: 0 0 0 3.3vw;
+    width: 50vw;
+    }
+    
+    .grid-container31_search > div {
+      background-color: transparent;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    .logout_btn1_search1{
+      /* position: absolute; */
+      left: 92vw;
+      top: 2.7vw;
+      position: fixed;
+    }
+    .logout_search_name{
+      color: black;
+      font-family: Lato;
+      font-size: 1vw;
+      cursor: pointer;
+    
+    }
+    .logout_search_name:hover{
+      color: black;
+      font-family: Lato;
+      font-size: 1vw;
+      cursor: pointer;
+      text-decoration-line: none;
+      
+      }
+    .logout_btn2_search2{
+    
+      /* position: absolute; */
+      left: 93vw;
+      top: 4.2vw;
+      font-family: Lato;
+      font-size: 1vw;
+      cursor: pointer;
+      position: fixed;
+    
+    }
+    .footer_web{
+      margin-top: 20vw;
+    }
+    .boxD_loc{
+      border-style: none;
+      border: none;
+      background-color: #404041;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+      height: 23vw;
+      /* height: 2px; */
+      width: 25vw;
+      z-index: 1;
+      grid-row: 1;
+      cursor: pointer;
+      margin-left: 15%;
+    }
+    .boxD_loc:hover{
+      background-color: #EF403C;
+      border-style: none;
+      border: none;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+      height: 23vw;
+      /* height: 2px; */
+      width: 25vw;
+      z-index: 1;
+      grid-row: 1;
+      cursor: pointer;
+      margin-left: 15%;
+    
+    }
+    
+    .imageframeD_loc{
+      border-style: none;
+      height: 80%;
+      /* border-top-left-radius: 14px;
+      border-top-right-radius: 14px; */
+    }
+    .imageboxD_loc{
+      object-fit: fill;
+      width: 25vw;
+      /* height: auto; */
+      border-style: none;
+      height: 18vw;
+  
+    }
+    .paraplaceD_loc{
+      font-size: 0.6vw;
+      font-family: 'Catamaran';
+      font-weight: 500;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 0.5%;
+      margin-top: -1.8vw;
+      background-color: rgba(63, 63, 64, 0.72);
+    }
+    
+    .contentframeD_loc{
+      text-align: initial;
+      /* border-style: outset; */
+      height: 23%;
+      text-align: left;
+      margin-right: 3%;
+      /* width: 373px; */
+  
+    }
+    .paraheadingD_loc{
+      margin-top: 0.5vw;
+      margin-left: 5%;
+      font-size: 1.2vw;
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+      font-family: 'Catamaran';
+      margin-bottom: 0rem;
+    }
+    .parastarD_loc{
+      margin-top: -2%;
+      /* margin-left: 15%; */
+      /* font-size: 16px; */
+      /* font-weight: 600; */
+      margin-bottom: 0rem;
+      position: static;
+      position: initial;
+      margin-left: 8%;
+    }
+    .parasubD_loc{
+      font-size: 0.9vw;
+      margin-top: -9%;
+      font-weight: 500;
+      margin-right: 5%;
+      color: white;
+      font-family: 'Catamaran';
+      text-align: end;
+    }
+    .onkey_mob{
+      display: none;
+    }
+    .list_isopen_projects{
+      margin-top: 20%;
+    }
+    .centerClass_web{
+      margin-top: 18%;
+      margin-left: 4vw;
+      width: 95vw;
+    }
+    .map_webview_locationsearch{
+      width: 66.5vw;
+      margin-top: 2%;
+      height: -webkit-fill-available;
+      margin-left: 4%;
+      margin-bottom: 2%;
+    }
+  .start_div{
+  
+    position: absolute;
+    height: 10vw;
+  }
+  .heading5{
+      text-align: center;
+      color: chocolate;
+  }
+  /* .navbarrow1{
+      background-color: rgb(82, 86, 89);
+      padding-bottom: 1px;
+    } */
+    .searched_location{
+     
+      /* background: #ffffff;
+      border: 2px solid  #EF403C;
+      border-radius: 2px;
+      top: 12%;
+      position: absolute;
+      width: 21vw;
+      left: 5%; */
+      background: #ffffff;
+      border: 2px solid #EF403C;
+      border-radius: 2px;
+      top: 10.4%;
+      position: absolute;
+      width: 21vw;
+      left: 7%;
+      height: 4.2vw;
+    }
+    
+    .searched_location input{
+      /* border: none;
+       width: 100%;   */
+       border: none;
+       width: 100%;
+       /* min-width: 50px; */
+       height: 3.8vw;
+    
+    }
+    .searched_location input:focus{
+      outline: none;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;list-style: none;
+      width: 100%;
+    }
+    .filter_li{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 10px;
+      /* padding: 5px; */
+      padding: 3px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      font-size: .9vw;
+      margin-top: 5.5px;
+      margin-left: 5.5px;
+      white-space: pre;
+    }
+    .filter_btn{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 1.2vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 2px;
+      transform: rotate(45deg);
+    }
+    
+    ul .input-location{
+      background: none;
+      flex-grow: 1;
+    }
+    .list_map{
+      margin-top: 16%;
+      margin-left: 5%;
+    }
+  
+  
+  
+    /* start */
+    .logotop{
+  
+    
+      /* font-size: 2vw;  */
+      top: 4%;
+      left: 5%;
+      /* font-weight: bolder; */
+      /* font-family: Catamaran; */
+      /* position: absolute; */
+      width: 13vw;
+      position: fixed;
+      z-index: 9999;
+  
+    }
+  
+    .mumbaitop{
+    
+      /* font-size: 1.6vw; */
+      top: 5%;
+      left: 78.5%;
+      font-size: 1.4vw;
+      font-family: Catamaran;
+      /* position: absolute; */
+      position: fixed;
+      z-index: 9999;
+  
+    }
+    .mumbai_arrow{
+    
+      
+      left: 84.5%;
+      top: 5%;
+      height: 1.5vw;
+      position: absolute;
+  
+    }
+    .usericon_loc{
+      
+      /* font-size: 1.6vw; */
+         /* font-size: 1.6vw; */
+         top: 3%;
+         height: 3.8vw;
+         left: 88%;
+         /* position: absolute; */
+         position: fixed;
+  
+    }
+    .menubar_loc{
+    
+      height: 4.8vw;
+      /* max-width: 100%; */
+      background-color: rgb(82, 86, 89);
+      position: absolute;
+      top: 10%;
+      left: 0%;
+      width: 101vw;
+      position: fixed;
+      z-index: 9999;
+    }
+    /* searvhbar */
+    /* .search_start{
+  
+      width: 135%;
+      margin-left: 1%;
+      position: absolute;
+      
+    } */
+  
+   
+    /* .divrating:hover{
+      background-color: red;
+      color: white;
+  
+    } */
+  /* .btnrating{
+    position: absolute;
+    width: 6vw;
+    height: 54%;
+    top: 48%;
+    left: 10%;
+    background-color: white;
+    border: none;
+  }
+  .btnrating :hover{
+  
+     background-color: red;
+     color: white;
+  } */
+  
+  .btnrating {
+              /* float: right; */
+             
+              background-color: white;
+              border: none;
+              color: black;
+              font-size: .9vw;
+              cursor: pointer;
+              /* border-radius: 0px; */
+              /* margin-top: 18px; */
+              font-weight: bold;
+              font-family: Catamaran;
+              position: absolute;
+              margin-top: 1.1vw;
+              left: 29.4%;
+              width: 6.2vw;
+              height: 2.7vw;
+              border: none;
+              padding-left: 1%;
+              text-align: left;
+              cursor: pointer;
+  }
+  
+  .btnrating:hover {
+    /* float: right; */
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    left: 29.4%;
+    font-weight: bold;
+    padding-left: 1%;
+           text-align: left;
+  }
+  /* .btnrating:active{
+  
+    background-color: rgb(238, 65, 61);
+  } */
+  .rating_5{
+    position: absolute;
+    margin-left: 1%;
+  }
+  
+  .buttonarrow{
+  
+    position: absolute;
+      height: 1vw;
+      top: 31%;
+      margin-left: 8%;
+  }
+  
+  
+  /* .btn11 {
+    float: right;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  
+  .btn11:hover {
+    float: right;
+    background-color: rgb(238, 65, 61);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    margin-top: 18px;
+    font-weight: bold;
+    font-family: Catamaran;
+  } */
+  
+  .btnprop{
+  
+    background-color: white;
+      border: none;
+      color: black;
+      /* padding: 52px; */
+      font-size: .9vw;
+      cursor: pointer;
+      /* border-radius: 0px; */
+      /* margin-top: 18px; */
+      font-weight: bold;
+      font-family: Catamaran;
+      position: absolute;
+      margin-top: 1.1vw;
+      margin-left: 35.6%;
+      width: 9vw;
+      height: 2.7vw;
+      border: none;
+      padding-left: 1%;
+      text-align: left;
+      cursor: pointer;
+  
+  }
+  
+  .btnprop:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 35.6%;
+   
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 1%;
+    text-align: left;
+  
+  }
+  
+  .btnbudget{
+  
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 45.7%;
+    width: 6.5vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 1%;
+           text-align: left;
+           cursor: pointer;
+  }
+  
+  .btnbudget:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 45.7%;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 1%;
+           text-align: left;
+  
+  }
+  .btnamen{
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 53.4%;
+    width: 7vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 1%;
+    text-align: left;
+    cursor: pointer;
+  }
+  .btnamen:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 53.4%;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 1%;
+           text-align: left;
+  
+  }
+  .btnposs{
+  
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 61.6%;
+    width: 10vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 1%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .btnposs:hover{
+  
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 61.6%;
+    width: 10vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 1%;
+           text-align: left;
+  
+  }
+  .btnsortby{
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 72.8%;
+    width: 6vw;
+    height: 2.7vw;
+    border: none;
+    padding-left: 1%;
+           text-align: left;
+           cursor: pointer;
+  }
+  /* .btnsortby:active{
+  background-color: red;
+  } */
+  
+  .btnsortby:hover{
+    /* background-color: rgb(238, 65, 61); */
+    border: none;
+    /* color: white; */
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 72.8%;
+    width: 6vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 1%;
+           text-align: left;
+  
+  }
+  
+  .btnshare{
+  
+    
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: .9vw;
+    cursor: pointer;
+    /* border-radius: 0px; */
+    /* margin-top: 18px; */
+    font-weight: bold;
+    font-family: Catamaran;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 80%;
+    
+    width: 9.5vw;
+    border: none;
+    padding-left: 3%;
+    text-align: left;
+    cursor: pointer;
+    height: 2.7vw;
+  }
+  .buttonadd{
+    position: absolute;
+    height: 2vw;
+    top: 13%;
+    left: 5%;
+  }
+  .btnshare:hover{
+  
+    background-color: rgb(238, 65, 61);
+    border: none;
+    color: white;
+    /* padding: 14px; */
+    font-size: .9vw;
+    cursor: pointer;
+    border-radius: 0px;
+    position: absolute;
+    margin-top: 1.1vw;
+    margin-left: 80%;
+    width: 8.5vw;
+    font-weight: bold;
+    font-family: Catamaran;
+    padding-left: 3%;
+    text-align: left;
+    height: 2.7vw;
+  }
+  .input_checkbox:checked + label:after{
+    content: "\2713";
+    width: 13px;
+    height: 15px;
+    border-radius: 100%;
+    /* border: 0px solid #333; */
+    background-color: black;
+    z-index: 999;
+    position: absolute;
+    margin-right: 10px;
+    color: white;
+    /* top: -56%; */
+    left: 94%;
+    font-size: 85%;
+    line-height: 136%;
+    top: -45%;
+  }
+  .container_rat{
+  position: absolute;
+  top: 63%;
+  border: 2px  solid #EF403C;
+  left: 29.2%;
+  margin-top: 4.7%;
+  height: 10vw;
+  width: 8vw;
+  background-color: white;
+  border-radius: 4%;
+  z-index: 5;
+  }
+  
+  
+  .col11 {
+    display: inline-flex;
+    font-size: .7vw;
+    font-weight: 500;
+    font-family: Catamaran;
+    border: 0.1vw solid white;
+    border-radius: 5px;
+    background:white;
+    padding-left: 8px;
+    padding-right: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+   
+  }
+  .rating_check input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  .rating_check input:checked + label{
+    border: 0.1vw solid #EF403C;
+    border-radius: 5px;
+    background: pink;
+    /* padding-top: vw; */
+    padding-left: 8px;
+    padding-right: 5px;
+    /* background-color: #fbe9e9;
+    border-color: #e6a7a9; */
+    font-size: .7vw;
+  } 
+  
+  .five{
+    left: 12%;
+    font-family: Catamaran;
+    position: absolute;
+    
+    top: 10%;
+  }
+  .four_above{
+    font-family: Catamaran;
+    position: absolute;
+    
+    top: 24%;
+    left: 12%;
+  }
+  .three{
+    left: 12%;
+      top: 38.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+    
+  }
+  .two{
+    
+    left: 12%;
+    top: 52.2%;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+    font-family: Catamaran;
+    position: absolute;
+   
+  
+  }
+  .one{
+    left: 12%;
+    top: 66.2%;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  
+  .done_rating{
+  
+    position: absolute;
+      top: 82.2%;
+      color: #EF403C;
+      font-size: .8vw;
+      font-weight: bolder;
+      left: 65%;
+      font-family: Catamaran;
+      cursor: pointer;
+  }
+  /* 
+  property */
+  
+  .container_prop{
+   
+    position: absolute;
+    top: 63%;
+    border: 2px solid #EF403C;
+    left: 36.7%;
+    margin-top: 4.7%;
+    height: 12vw;
+    width: 19vw;
+    background-color: white;
+    border-radius: 3%;
+    z-index: 5;
+    font-family: Catamaran;
+    }
+  
+    .prop_check input{
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+      
+    }
+    .prop_check input:checked + label{
+      border: .01vw solid #EF403C;
+      /* background-color: #EF403C; */
+      border-radius: 5px;
+      background: pink;
+      padding-top: .01vw;
+    
+    } 
+    
+    .res{
+      position: absolute;
+      top: 9%;
+      left: 5%;
+      font-size: .9vw;
+      font-family: Catamaran;
+      font-weight: 600;
+    }
+    .studio{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 5%;
+      font-family: Catamaran;
+    }
+    .bhk1{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 44%;
+      font-family: Catamaran;
+    }
+    .bhk2{
+  
+      position: absolute;
+      top: 24%;
+      /* font-size: .7vw; */
+      left: 73%;
+    }
+    .bhk3{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 5%;
+    }
+    .bhk4{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 44%;
+    }
+    .more_bhk{
+  
+      position: absolute;
+      top: 42%;
+      /* font-size: .7vw; */
+      left: 73%;
+    }
+    .com{
+  
+      position: absolute;
+      top: 57%;
+      left: 5%;
+      font-size: .9vw;
+      font-family: Catamaran;
+      font-weight: 600;
+      
+    }
+    .showroom{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 5%;
+  
+    }
+    .shop{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 44%;
+  
+    }
+    .office{
+      position: absolute;
+      top: 72%;
+      /* font-size: .7vw; */
+      left: 73%;
+  
+    }
+    .done_property{
+  
+      position: absolute;
+      top: 85.2%;
+      color: #EF403C;
+      font-size: .8vw; 
+      font-weight: bolder;
+      left: 83%;
+      font-family: Catamaran;
+      cursor: pointer;
+    }
+    /* .tab1{
+  
+      display: inline-block; */
+      /*  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;  */
+      /* background-color: white;
+  
+    }
+    .tab1:hover{
+  
+      background-color: #EF403C;
+    }
+    .tab2{
+  
+      background-color: #EF403C;
+    } */
+  
+    /* budget */
+    .container_budget{
+   
+      position: absolute;
+      /* top: 63%; */
+      border: 2px solid #EF403C;
+      left: 47%;
+      margin-top: 4.6%;
+      height: 12vw;
+      width: 18vw;
+      background-color: white;
+      border-radius: 3%;
+      overflow-x: hidden;
+      z-index: 5;
+      font-family: Catamaran;
+      /* overflow-y: auto; */
+    
+      }
+      .budget_text1{
+  
+        position: absolute;
+        border-radius: 259px;
+        /* border: 2px red solid; */
+        top: 7%;
+        width: 7.5vw;
+        height: 2vw;
+        left: 6%;
+        outline: none;
+        /* border: 1px solid #ddd; */
+        background-color: #fff;
+        cursor: pointer;
+        font-size: .8vw;
+        font-weight: 600;
+        font-family: Catamaran;
+  
+       
+      }
+      .budget_text2{
+  
+        position: absolute;
+      border-radius: 259px;
+      /* border: 2px red black; */
+      top: 7%;
+      width: 7.5vw;
+      height: 2vw;
+      left: 51%;
+      outline: none;
+      /* border: 1px solid #ddd; */
+        background-color: #fff;
+        cursor: pointer;
+        font-size: .8vw;
+        font-weight: 600;
+        font-family: Catamaran;
+      }
+     
+      .min_budget{
+  
+        line-height: 23px;
+        list-style: none;
+        display: block;
+        cursor: pointer;
+        top: 31%;
+        position: absolute;
+        left: 7%;
+        font-family: Catamaran;
+        font-size: .7vw;
+        /* overflow-y: scroll; */
+        /* overflow-y: auto; */
+      }
+      .max_budget{
+  
+        line-height: 23px;
+        list-style: none;
+        display: block;
+        cursor: pointer;
+        top: 31%;
+        position: absolute;
+        left: 53%;
+        font-family: Catamaran;
+        font-size: .7vw;
+        /* overflow-y: scroll; */
+  
+      }
+      .done_budget {
+        /* position: absolute; */
+        top: 27.8%;
+        color: #EF403C;
+        font-size: 1.2vw;
+        font-weight: bolder;
+        left: 61.2%;
+        font-family: Catamaran;
+        cursor: pointer;
+        position: fixed;
+    }
+  
+      .container_amen{
+   
+        position: absolute;
+        /* top: 63%; */
+        border: 2px solid #EF403C;
+        left: 54.6%;
+        margin-top: 4.5%;
+        height: 9vw;
+        width: 15vw;
+        background-color: white;
+        border-radius: 3%;
+        z-index: 5;
+        font-family: Catamaran;
+        }
+  
+        .amen_check input{
+          display: none;
+          font-family: Catamaran;
+          position: absolute;
+          
+        }
+        .amen_check input:checked + label{
+          border: .01vw solid #EF403C;
+          /* background-color: #EF403C; */
+          border-radius: 5px;
+          background: pink;
+          padding-top: .01vw;
+        
+        } 
+        .swimming{
+          position: absolute;
+          top: 10%;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          font-family: Catamaran;
+  
+        }
+        .kids{
+          position: absolute;
+          top: 10%;
+          /* font-size: 0.8vw; */
+          left: 53%;
+          font-family: Catamaran;
+  
+        }
+        .gym{
+  
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 29%;
+        }
+        .indoor{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          left: 53%;
+          top: 29%;
+  
+        }
+        .outdoor{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 47%;
+        }
+        .garden{
+          
+      position: absolute;
+      font-family: Catamaran;
+      left: 53%;
+      /* font-size: 0.8vw; */
+      top: 47%;
+  
+  
+        }
+        .more{
+          position: absolute;
+          font-family: Catamaran;
+          left: 7%;
+          /* font-size: 0.8vw; */
+          top: 65%;
+        }
+        .done_amen{
+  
+          position: absolute;
+          top: 77.2%;
+  
+          color: #EF403C;
+          font-size: .8vw; 
+          font-weight: bolder;
+          left: 75%;
+          cursor: pointer;
+        }
+  
+        .container_poss{
+   
+          position: absolute;
+          top: 63%;
+          border: 2px solid #EF403C;
+          left: 62.9%;
+          margin-top: 4.5%;
+          height: 7vw;
+          width: 14vw;
+          background-color: white;
+          border-radius: 3%;
+          z-index: 5;
+          font-family: Catamaran;
+      }
+          
+    
+          .poss_check input{
+            display: none;
+            font-family: Catamaran;
+            position: absolute;
+            
+          }
+          .poss_check input:checked + label{
+            border: .01vw solid #EF403C;
+            /* background-color: #EF403C; */
+            border-radius: 5px;
+            background: pink;
+            padding-top: .01vw;
+          
+          } 
+          .ready{
+            position: absolute;
+            top: 14%;
+            left: 8%;
+            font-family: Catamaran;
+            /* font-size: .8vw; */
+          }
+          .months6{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 14%;
+            left: 56%;
+            /* font-size: .8vw; */
+          }
+          .months12{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 37%;
+            left: 8%;
+            /* font-size: .8vw; */
+          }
+          .years1{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 37%;
+            left: 56%;
+            /* font-size: .8vw; */
+        
+          }
+          .years2{
+  
+            position: absolute;
+            font-family: Catamaran;
+            top: 59%;
+            left: 9%;
+            /* font-size: .8vw; */
+          }
+          .garden2{
+            position: absolute;
+            font-family: Catamaran;
+            top: 59%;
+            left: 56%;
+            /* font-size: .8vw; */
+          }
+  
+          .done_poss{
+            position: absolute;
+            top: 79.2%;
+            color: #EF403C;
+            font-size: .8vw;
+            font-weight: bolder;
+            left: 78%;
+            cursor: pointer;
+          }
+  
+          .container_sort{
+   
+            position: absolute;
+            top: 63%;
+            border: 2px solid #EF403C;
+            left: 74%;
+            margin-top: 4.5%;
+            height: 7vw;
+            width: 9vw;
+            background-color: white;
+            border-radius: 3%;
+            z-index: 5;
+            font-family: Catamaran;
+        }
+            
+      
+            .sort_check input{
+              display: none;
+              font-family: Catamaran;
+              position: absolute;
+              
+            }
+            .sort_check input:checked + label{
+              border: .01vw solid #EF403C;
+              /* background-color: #EF403C; */
+              border-radius: 5px;
+              background: pink;
+              padding-top: .01vw;
+            
+            } 
+            .trend{
+              position: absolute;
+              /* font-size: .8vw; */
+              top: 14%;
+              left: 13%;
+  
+            }
+            .rated{
+              position: absolute;
+              /* font-size: .8vw; */
+              left: 13%;
+              top: 35%;
+  
+            }
+            .new_proj{
+  
+              position: absolute;
+              /* font-size: .8vw; */
+              left: 13%;
+              top: 57%;
+            }
+            .done_sort{
+  
+              position: absolute;
+              top: 77.2%;
+      
+              color: #EF403C;
+              font-size: .8vw;
+              font-weight: bolder;
+              left: 66%;
+              cursor: pointer;
+            }
+  
+  
+      .containermob{
+        display: none;
+      }
+      .location_search_web {
+        
+        width: 10vw;
+        background-color: white;
+        /* overflow: auto; */
+        top: 14.5vw;
+        position: absolute;
+        left: 7%;
+      }
+      
+      .location_search_web a {
+        float: left;
+        padding: 12px;
+        /* color: white; */
+        text-decoration: none;
+        font-size: .9vw;
+         width: 4.3vw;  
+        text-align: center;
+        color: black;
+        font-weight: bolder;
+      }
+      
+      .location_search_web a.active {
+        background-color: #EF403C;
+        color: white;
+      }
+      .list_box{
+  
+        background-color: #404041;
+        width: 1vw;
+        /* margin-top: 3px; */
+        height: 3.5vw;
+        position: absolute;
+        left: 51%;
+      }
+      .web_hr1{
+        position: absolute;
+        border: 6px solid #EF403C;
+        top: 14.5vw;
+        left: 20.5%;
+        width: 25.3vw; 
+    }
+    
+   
+    .webfound{
+      font-weight: bold;
+      /* margin-top: 1.5%; */
+      /* margin-left: 37%; */
+      position: absolute;
+      top: 15.5vw;
+      left: 48.3%;
+      font-size: 1.5vw;
+      color: grey;
+      font-family: Catamaran;
+    }
+  
+     .web1234{
+      font-weight: bold;
+      color: #EF403C;
+      top: 15.3vw;
+      position: absolute;
+      font-size: 1.6vw;
+      left: 53.7%;
+      font-family: sans-serif;
+    }
+  
+    .web_hr2{
+      position: absolute;
+      border: 6px solid #EF403C;
+      top: 14.5vw;
+      left: 58.4%;
+      width: 25.3vw;
+  
+    }  
+  
+      /* .list_loc{
+        /* width: 10%;
+        background-color: white;
+        overflow: auto;
+        top: 25%;
+        position: absolute;
+        left: 6%;
+        width: 6%; }*/
+      
+      .map_loc{
+        position: absolute;
+        left: 68%;
+  
+      }
+      .no_projects{
+        position: relative;
+        margin-top: 20vw;
+        z-index: 1;
+        left: 18%;
+      }
+  
+  }
+  
+  @media screen and (max-width: 573px) {
+    .static_mob_detailsfil{
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      border: 20vw solid white;
+    }
+    .cancel-button{
+      display: none;
+    }
+    .paraplacestatus_search{
+      font-size: 12px;
+      font-family: 'Catamaran';
+      font-weight: bolder;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 2%;
+      top: 21px;
+      background-color: #404041;
+    }
+    .grid-container31_mob_search {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 2%;
+      /* padding: 0%;
+      padding-left: 3%; */
+      width: 50vw;
+      margin-left: -3vw;
+    }
+    
+    .grid-container31_mob_search > div {
+      background-color: transparent;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+  
+    
+    .logout_btn1_search1{
+      position: fixed;
+      left: 77vw;
+      top: 18.7vw;
+      /* position: fixed; */
+    }
+    .logout_search_name{
+      color: black;
+      font-family: Lato;
+      font-size: 3vw;
+      cursor: pointer;
+    
+    }
+    .logout_search_name:hover{
+      color: black;
+      font-family: Lato;
+      font-size: 3vw;
+      cursor: pointer;
+      text-decoration-line: none;
+      
+      }
+    
+    .logout_btn2_search2{
+    
+      position: fixed;
+      left: 86vw;
+      top: 23.2vw;
+      font-family: Lato;
+      font-size: 3vw;
+      cursor: pointer;
+      /* position: fixed; */
+    
+    }
+    .centerClass_mob{
+      margin-top: 2vw;
+      width: 95vw;
+      margin-left: 2vw;
+      padding-bottom: 240px;
+    }
+    .grid-container313_mob {
+      margin-top: 55vw;
+  }
+  .loc_proj{
+    position: relative;
+  }
+  .responsive_grids1_mob {
+    position: relative;
+    top: 27%;
+    left: 14%;
+    display: inline-flex;
+  }
+    .boxD_loc{
+      border-style: none;
+      border: none;
+      background-color: #404041;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    height: 317px;
+    /* height: 2px; */
+    z-index: 1;
+    cursor: pointer;
+    /* margin-left: 4%; */
+    width: 300px;
+    }
+    .boxD_loc:hover{
+      border-style: none;
+      border: none;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    height: 317px;
+    /* height: 2px; */
+    z-index: 1;
+    cursor: pointer;
+    /* margin-left: 4%; */
+    
+    }
+    .imageframeD_loc{
+      border-style: none;
+      height: 80%;
+      margin-top: 4vw;
+      /* border-top-left-radius: 14px;
+      border-top-right-radius: 14px; */
+    }
+    .imageboxD_loc{
+      object-fit: fill;
+      width: 300px;
+      /* height: auto; */
+      border-style: none;
+      height: 249px;
+    }
+    .paraplaceD_loc{
+      font-size: 12px;
+      font-family: 'Catamaran';
+      font-weight: 500;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 3%;
+      margin-top: -40px;
+      background-color: rgba(63, 63, 64, 0.72);
+    }
+  
+    .contentframeD_loc{
+      text-align: initial;
+      /* border-style: outset; */
+      height: 23%;
+      text-align: left;
+      margin-right: 3%;
+      /* width: 373px; */
+  
+    }
+    .paraheadingD_loc{
+      margin-top: 0;
+      margin-left: 5%;
+      font-size: 13px;
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+      font-family: 'Catamaran';
+      margin-bottom: 0rem;
+    }
+    .parastarD_loc{
+      top: 88%;
+      /* margin-left: 15%; */
+      /* font-size: 16px; */
+      /* font-weight: 600; */
+      /* margin-bottom: 0rem; */
+      /* position: static; */
+      position: absolute;
+      left: 4%;
+    }
+    .parasubD_loc{
+      font-size: 14px;
+      top: 90%;
+      font-weight: 500;
+      position: absolute;
+      right: 5%;
+      color: white;
+      font-family: 'Catamaran';
+      text-align: end;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+    /* .responsive_grids1_mob{
+      position: absolute;
+      top: 27%;
+      left: 10%;
+  
+      } */
+   
+  
+    .list_isopen_projects_mob{
+      /* margin-top: 30%; */
+      padding-bottom: 319px;
+    }
+    /* .centerClass {
+      text-align: center;
+      position: absolute;
+      top: 50vw;
+      height: 8vw;
+      width: 91vw;
+      left: 2%;
+  } */
+    .searched_location{
+      /* background: #ffffff;
+      border: 1px solid #d6d6d6;
+      border-radius: 2px;
+      top: 10%;
+      position: absolute; */
+      background: #ffffff;
+      border: 2px solid #EF403C;
+      border-radius: 2px;
+      top: 10vw;
+      position: fixed;
+      width: 55vw;
+      left: 16.5%;
+      height: 12vw;
+      /* height: 15vw; */
+  
+     
+    }
+    
+    
+    .searched_location input{
+      border: none;
+       width: 100%;
+       /* width: -webkit-fill-available;
+         
+      min-width: 50px; */
+      height: 10vw;
+    }
+    .searched_location input:focus{
+      outline: none;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;list-style: none;
+      width: 100%;
+    }
+    .filter_li{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 2px;
+      padding: 2px;
+      height: 8.5vw;
+      padding-top: 0px;
+      font-size: 3.3vw;
+      margin-left: 5px;
+      margin-top: 5px;
+      /* width: 131vw; */
+      white-space: pre;
+    }
+  
+    .filter_btn{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 5.2vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 1px;
+      transform: rotate(45deg);
+    }
+    ul .input-location_mob{
+      background: none;
+      flex-grow: 1;
+    }
+  
+  
+  
+  
+  
+  
+    .filter_li_mobile{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 5px;
+      padding: 5px;
+      height: fit-content;
+    }
+    .filter_btn_mobile{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 1.2vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 8px;
+      transform: rotate(45deg);
+    }
+    ul .input-location_mobile{
+      background: none;
+      flex-grow: 1;
+    }
+  
+    .searched_location_mobile{
+      /* background: #ffffff;
+      border: 1px solid #d6d6d6;
+      border-radius: 2px;
+      top: 10%;
+      position: absolute; */
+      background: #ffffff;
+      border: 2px solid  #EF403C;
+      border-radius: 2px;
+      top: 16%;
+      position: absolute;
+      width: 52vw;
+      left: 5%;
+    }
+    
+    .searched_location_mobile input{
+      border: none;
+       width: 100%;  
+      /* min-width: 50px; */
+    }
+    .searched_location_mobile input:focus{
+      outline: none;
+    }
+    .webview_locationsearch{
+      display: none;
+    }
+    .mobile-footer-menuLS{
+        display: flex;
+        width: 100%;
+        background-color: #efebe8;
+        font-size: 0.8rem;
+        /* margin-top: 34vw; */
+        bottom:0;
+        position:fixed;
+        overflow-y:scroll;
+        overflow-x:hidden;
+      }
+      
+      
+      .custommobilefooterpaddingLS{
+        padding: 10px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      .centeralignLS{
+        text-align: center !important;
+      }
+      .rightalignLS{
+        text-align: right !important;
+      }
+      .veticallyalignLS{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -13%;
+      }
+  
+  
+  .mobsearchbarstylelocation_search {
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    width: 58%;
+    /* height: 22%; */
+    /* border: 0.6vw solid #EF403C;*/
+  }
+    .containermob{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        display: block;
+    }
+    .moblogo{
+     /* font-weight: bolder; */
+      margin-top: 10%;
+      margin-left: 1%;
+      /* font-size: 4.5vw; */
+      /* font-family: Catamaran; */
+      width: 14vw;
+      position: fixed;
+      left: 0%;
+      top: 0%;
+  
+    }
+  
+    .mobicon{
+      font-weight: bold;
+      /* margin-top: -6%; */
+      margin-left: 5%;
+      position: absolute;
+      top: 15.5vw;
+      font-size: 4vw;
+      font-family: Catamaran;
+    }
+  
+    .moblocationstyle{
+        /* position: absolute;
+        margin-top: -12%;
+        left: 74%; */
+        position: fixed;
+        /* margin-top: -12%; */
+        left: 73%;
+        top: 13.2vw;
+        font-family: Catamaran;
+        font-size: 4.1vw;
+      }
+  
+    .mobusericon-mobile{
+        /* position: absolute;
+        margin-top: -13.5%;
+        left: 88%;
+        width: 8%; */
+        position: fixed;
+        /* margin-top: -13.5%; */
+        left: 88%;
+        width: 8vw;
+        top: 12vw;
+    }
+  
+    .navbar_location_search {
+        /* width: 100%;
+        background-color: #555;
+        overflow: auto; */
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+        margin-top: 28vw;
+        position: fixed;
+        z-index: 9999;
+      }
+      
+      .navbar_location_search a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 50%; 
+        text-align: center;
+      }
+      
+      .navbar_location_search a.active {
+        background-color: #EF403C;
+      }
+      
+      
+  
+      .mobhr1{
+        position: absolute;
+        border: solid #EF403C;
+        /* margin-top: 2.9%; */
+        left: 4.5%;
+      width: 5vw;
+        top: 43vw;
+    
+    }
+    
+  
+    .mobfound{
+      font-weight: bolder;
+      /* margin-top: 1.5%; */
+      /* margin-left: 37%; */
+      position: absolute;
+      top: 44.2vw;
+      color: grey;
+      font-size: 5vw;
+      left: 12.5vw;
+      font-family: Catamaran;
+    }
+  
+    .mobnumber{
+      font-weight: bold;
+      /* margin-top: -10%; */
+      /* margin-left: 52%; */
+      color: #EF403C;
+      font-size: 6vw;
+      position: absolute;
+      top: 43.2vw;
+      left: 30.4vw;
+      font-family: Catamaran;
+    }
+  
+    .mobmatching{
+      font-weight: bolder;
+      /* margin-top: 1.5%; */
+      /* margin-left: 37%; */
+      position: absolute;
+      top: 44.2vw;
+      color: grey;
+      font-size: 5vw;
+      left: 41.5vw;
+      font-family: Catamaran;
+    }
+  
+    .mobhr2{
+      position: absolute;
+      border: solid #EF403C;
+      /* margin-top: -8.1%; */
+      left: 86.3%;
+      width: 5vw;
+      top: 43vw;
+    }
+    .mob_main_component{
+      position: absolute;
+      height: 126vw;
+      width: 149vw;
+      background-color: white;
+      z-index: 1;
+      margin-top: 336%;
+    }
+    .mob_filter_head{
+      position: absolute;
+    font-weight: bold;
+    font-size: 4vw;
+    top: 4%;
+    left: 38%;
+    }
+    .mob_clear{
+    
+      position: absolute;
+      font-weight: bold;
+      color: #EF403C;
+      top: 4%;
+      right: 8%;
+      font-size: 4vw;
+  
+    }
+    .mob_hrFilter{
+      position: absolute;
+      top: 8.5%;
+      left: 0;
+      width: 100%;
+      border: .01vw solid #000000;
+    }  
+    /* .mob_buttons_part{
+        position: absolute;
+    } */
+  .filter_text_mob{
+    position: absolute;
+    left: 66%;
+    top: 37%;
+  }
+  
+    .mob_rating_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+     
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 12%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    
+  
+    .mob_prop_btn{
+      position: absolute;
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 25.5%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+   
+  
+    .mob_budget_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 39%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    .mob_amen_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 52.5%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    .mob_poss_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 66%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    } 
+    .mob_hrFilter_2{
+      position: absolute;
+    top: 76.2%;
+    left: 0;
+    width: 100%;
+    border: .01vw solid #000000;
+    font-family: Catamaran;
+    }
+    .mobVertical_line{
+  
+      position: absolute;
+      height: 85vw;
+      margin-top: 10%;
+      border: .1vw solid black;
+      left: 61.5%;
+      font-family: Catamaran;
+    }
+    .mob_filter_cancel{
+      position: absolute;
+      font-weight: bold;
+      font-size: 4vw;
+      top: 84.5%;
+      left: 37%;
+      font-family: Catamaran;
+    }
+    .mob_filter_done{
+      position: absolute;
+      font-weight: bold;
+      color: #EF403C;
+      top: 84.5%;
+      right: 8%;
+      font-size: 4vw;
+      font-family: Catamaran;
+    }
+    .mob_all {
+      display: inline-flex;
+      font-size: 3.7vw;
+      /* font-weight: 500; */
+      font-family: Catamaran;
+      border: 0.1vw solid white;
+      /* border-radius: 5px; */
+      background:white;
+      padding-left: 8px;
+      padding-right: 5px;
+      border: none;
+      cursor: pointer;
+      /* font-weight: bold; */
+     
+    }
+    .input_checkbox_mob:checked + label:after{
+      content: "\2713";
+      width: 13px;
+      height: 15px;
+      border-radius: 100%;
+      /* border: 0px solid #333; */
+      background-color: black;
+      z-index: 999;
+      position: absolute;
+      margin-right: 10px;
+      color: white;
+      /* top: -56%; */
+      left: 94%;
+      font-size: 85%;
+      line-height: 136%;
+      top: -45%;
+    }
+    .mob_container_prop{
+  
+      position: absolute;
+      margin-top: -21%;
+      left: 61.5%;
+      margin-top: 28%;
+      height: 85vw;
+      width: 58vw;
+      /* background-color: black; */
+      /* border-radius: 3%; */
+      z-index: 5;
+      font-family: Catamaran;
+      margin-top: 10%;
+      }
+      
+  .mob_prop_check input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  .mob_prop_check input:checked + label{
+    border: .01vw solid #EF403C;
+    /* background-color: #EF403C; */
+    /* border-radius: 5px; */
+    background: pink;
+    padding-top: .01vw;
+  
+  } 
+  
+  .res{
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    font-size: 3.7vw;
+    font-family: Catamaran;
+    font-weight: 600;
+  }
+  .studio{
+  
+    position: absolute;
+    top: 21%;
+    font-size: 3.7vw;
+    left: 6%;
+    font-family: Catamaran;
+  }
+  .bhk1{
+  
+    position: absolute;
+    top: 21%;
+    /* font-size: .7vw; */
+    left: 56%;
+    font-family: Catamaran;
+  }
+  .bhk2{
+  
+    position: absolute;
+    top: 33%;
+    /* font-size: .7vw; */
+    left: 6%;
+  }
+  .bhk3{
+  
+    position: absolute;
+    top: 33%;
+    /* font-size: .7vw; */
+    left: 56%;
+  }
+  .bhk4{
+  
+    position: absolute;
+    top: 46%;
+    /* font-size: .7vw; */
+    left: 6%;
+  }
+  .more_bhk{
+    position: absolute;
+    top: 46%;
+    /* font-size: .7vw; */
+    left: 55%;
+  }
+  .com{
+  
+    position: absolute;
+    top: 61%;
+    left: 8%;
+    font-size: 3.8vw;
+    font-family: Catamaran;
+    font-weight: 600;
+    
+  }
+  .showroom{
+   
+    position: absolute;
+    top: 75%;
+    /* font-size: .7vw; */
+    left: 5%;
+  
+  
+  }
+  .shop{
+    position: absolute;
+    top: 75%;
+    /* font-size: .7vw; */
+    left: 56%;
+  
+  }
+  .office{
+    position: absolute;
+    top: 88%;
+    /* font-size: .7vw; */
+    left: 5%;
+  
+  }
+  .mob_container_rat{
+  
+    position: absolute;
+    margin-top: -21%;
+    left: 61.5%;
+    margin-top: 28%;
+    height: 85vw;
+    width: 58vw;
+    /* background-color: black; */
+    /* border-radius: 3%; */
+    z-index: 5;
+    font-family: Catamaran;
+    margin-top: 10%;
+    }
+  
+    .mob_rating_check input{
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+      
+    }
+    .mob_rating_check input:checked + label{
+      border: .01vw solid #EF403C;
+      /* background-color: #EF403C; */
+      /* border-radius: 5px; */
+      background: pink;
+      padding-top: .01vw;
+    
+    }
+    .five{
+      left: 12%;
+      font-family: Catamaran;
+      position: absolute;
+      
+      top: 10%;
+    }
+    .four_above{
+      font-family: Catamaran;
+      position: absolute;
+      
+      top: 24%;
+      left: 12%;
+    }
+    .three{
+      left: 12%;
+        top: 38.2%;
+        /* box-shadow: 0 2px 5px -2px #EF403C; */
+        font-family: Catamaran;
+        position: absolute;
+      
+    }
+    .two{
+      
+      left: 12%;
+      top: 52.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+     
+    
+    }
+    .one{
+      left: 12%;
+      top: 66.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+      
+    } 
+    .mob_container_amen{
+  
+      position: absolute;
+      margin-top: -21%;
+      left: 61.5%;
+      margin-top: 28%;
+      height: 85vw;
+      width: 58vw;
+      /* background-color: black; */
+      /* border-radius: 3%; */
+      z-index: 5;
+      font-family: Catamaran;
+      margin-top: 10%;
+      }
+      .mob_amen_check input{
+        display: none;
+        font-family: Catamaran;
+        position: absolute;
+        
+      }
+      .mob_amen_check input:checked + label{
+        border: .01vw solid #EF403C;
+        /* background-color: #EF403C; */
+        /* border-radius: 5px; */
+        background: pink;
+        padding-top: .01vw;
+      
+      }
+      .swimming{
+        position: absolute;
+        top: 13%;
+        left: 6%;
+        /* font-size: 0.8vw; */
+        font-family: Catamaran;
+  
+      }
+      .kids{
+        position: absolute;
+        top: 29%;
+        /* font-size: 0.8vw; */
+        left: 6%;
+        font-family: Catamaran;
+  
+      }
+      .gym{
+  
+        position: absolute;
+        font-family: Catamaran;
+        left: 64%;
+        /* font-size: 0.8vw; */
+        top: 13%;
+      }
+      .indoor{
+        position: absolute;
+        font-family: Catamaran;
+        /* left: 7%; */
+        /* font-size: 0.8vw; */
+        left: 53%;
+        top: 29%;
+  
+      }
+      .outdoor{
+        position: absolute;
+        font-family: Catamaran;
+        left: 6%;
+        /* font-size: 0.8vw; */
+        top: 44%;
+    
+      }
+      .garden{
+        
+        position: absolute;
+        font-family: Catamaran;
+        left: 60%;
+        /* font-size: 0.8vw; */
+        top: 44%;
+  
+  
+      }
+      .more{
+        position: absolute;
+        font-family: Catamaran;
+        left: 7%;
+        /* font-size: 0.8vw; */
+        top: 59%;
+    
+      }
+      .mob_container_poss{
+  
+        position: absolute;
+        margin-top: -21%;
+        left: 61.5%;
+        margin-top: 28%;
+        height: 85vw;
+        width: 58vw;
+        /* background-color: black; */
+        /* border-radius: 3%; */
+        z-index: 5;
+        font-family: Catamaran;
+        margin-top: 10%;
+        }
+  
+        .mob_poss_check input{
+          display: none;
+          font-family: Catamaran;
+          position: absolute;
+          
+        }
+        .mob_poss_check input:checked + label{
+          border: .01vw solid #EF403C;
+          /* background-color: #EF403C; */
+          /* border-radius: 5px; */
+          background: pink;
+          padding-top: .01vw;
+        
+        }
+         .ready{
+          position: absolute;
+          top: 14%;
+          left: 8%;
+          font-family: Catamaran;
+          /* font-size: .8vw; */
+        }
+        .months6{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 14%;
+          left: 56%;
+          /* font-size: .8vw; */
+        }
+        .months12{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 37%;
+          left: 8%;
+          /* font-size: .8vw; */
+        }
+        .years1{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 37%;
+          left: 56%;
+          /* font-size: .8vw; */
+      
+        }
+        .years2{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 59%;
+          left: 9%;
+          /* font-size: .8vw; */
+        }
+        .garden2{
+          position: absolute;
+          font-family: Catamaran;
+          top: 59%;
+          left: 56%;
+          /* font-size: .8vw; */
+        }
+        .mob_container_budget{
+  
+          position: absolute;
+          margin-top: -21%;
+          left: 61.5%;
+          margin-top: 28%;
+          height: 85vw;
+          width: 58vw;
+          /* background-color: black; */
+          /* border-radius: 3%; */
+          z-index: 5;
+          font-family: Catamaran;
+          margin-top: 10%;
+          overflow-x: scroll;
+          }
+          .budget_text1{
+            position: absolute;
+            border-radius: 9%;
+            /* border: 2px red solid; */
+            top: 7%;
+            width: 20.5vw;
+            height: 2vw;
+            left: 6%;
+            /* outline: none; */
+            /* border: 1px solid #ddd; */
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 3.7vw;
+            /* font-weight: 600; */
+            font-family: Catamaran;
+      
+           
+          }
+          .budget_text2{
+      
+            position: absolute;
+            border-radius: 9%;
+            /* border: 2px red solid; */
+            top: 7%;
+            width: 20.5vw;
+            height: 2vw;
+            left: 51%;
+            /* outline: none; */
+            /* border: 1px solid #ddd; */
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 3.7vw;
+            /* font-weight: 600; */
+            font-family: Catamaran;
+          }
+         
+          .min_budget{
+      
+            /* line-height: 23px;  */
+            list-style: none;
+            display: block;
+            cursor: pointer;
+            top: 23%;
+            position: absolute;
+            left: -30%;
+            font-family: Catamaran;
+            font-size: 3.7vw;
+            /* overflow-y: scroll; */
+            /* overflow-y: unset; */
+        
+          }
+          .max_budget{
+      
+            /* line-height: 23px; */
+            list-style: none;
+            display: block;
+            cursor: pointer;
+            top: 23%;
+            position: absolute;
+            left: 13%;
+            font-family: Catamaran;
+            font-size: 3.7vw;
+            /* overflow-y: scroll; */
+      
+          }
+    
+  }
+  
+  @media screen and (min-width: 574px) and (max-width: 1023px){
+    .cancel-button{
+      display: none;
+    }
+    .paraplacestatus_search{
+      font-size: 12px;
+      font-family: 'Catamaran';
+      font-weight: bolder;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 2%;
+      margin-top: -47vw;
+      background-color: #404041;
+    }
+    .grid-container31_search {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 2%;
+      /* padding: 0%;
+      padding-left: 3%; */
+      width: 50vw;
+      margin-left: -3vw;
+    }
+    
+    .grid-container31_search > div {
+      background-color: transparent;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    .logout_btn1_search1{
+      
+      position: fixed;
+      left: 84vw;
+      top: 16.7vw;
+      /* position: fixed; */
+  
+    }
+    .logout_search_name{
+      color: black;
+      font-family: Lato;
+      font-size: 2vw;
+      cursor: pointer;
+    
+    }
+    .logout_search_name:hover{
+      color: black;
+      font-family: Lato;
+      font-size: 2vw;
+      cursor: pointer;
+      text-decoration-line: none;
+    }
+    .logout_btn2_search2{
+    
+      position: fixed;
+      left: 89vw;
+      top: 19.2vw;
+      font-family: Lato;
+      font-size: 2vw;
+      cursor: pointer;
+      /* position: fixed; */
+    
+    }
+  
+    .centerClass_mob{
+      margin-top: 2vw;
+      width: 84vw;
+      margin-left: 7vw;
+      
+    }
+    .grid-container313_mob{
+      margin-top: 27vw;
+  }
+  .loc_proj{
+    position: relative;
+  }
+  .responsive_grids1_mob {
+    position: relative;
+    top: 27%;
+    left: 17vw;
+    display: inline-flex;
+  }
+    .boxD_loc{
+      border-style: none;
+      border: none;
+      background-color: #404041;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    height: 69vw;
+    /* height: 2px; */
+    z-index: 1;
+    cursor: pointer;
+    width: 62vw;
+    /* margin-left: 4%; */
+    
+    }
+    .boxD_loc:hover{
+      border-style: none;
+      border: none;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    /* height: 373px; */
+    /* height: 2px; */
+    z-index: 1;
+    cursor: pointer;
+    /* margin-left: 4%; */
+    width: 62vw;
+    height: 69vw;
+    
+    }
+    .imageframeD_loc{
+      border-style: none;
+      height: 80%;
+      margin-top: 10vw;
+      /* border-top-left-radius: 14px;
+      border-top-right-radius: 14px; */
+    }
+    .imageboxD_loc{
+      object-fit: fill;
+      width: 62vw;
+      /* height: auto; */
+      border-style: none;
+      height: 53vw;
+    }
+    .paraplaceD_loc{
+      font-size: 12px;
+      font-family: 'Catamaran';
+      font-weight: 500;
+      color: white;
+      position: absolute;
+      /* text-align: end; */
+      padding: 3%;
+      margin-top: -40px;
+      background-color: rgba(63, 63, 64, 0.72);
+    }
+  
+    .contentframeD_loc{
+      text-align: initial;
+      /* border-style: outset; */
+      height: 23%;
+      text-align: left;
+      margin-right: 3%;
+      /* width: 373px; */
+  
+    }
+    .paraheadingD_loc{
+      margin-top: 0;
+      margin-left: 5%;
+      font-size: 3vw;
+      font-weight: 800;
+      color: white;
+      text-transform: capitalize;
+      font-family: 'Catamaran';
+      margin-bottom: 0rem;
+    }
+    .parastarD_loc{
+      top: 88%;
+      /* margin-left: 15%; */
+      /* font-size: 16px; */
+      /* font-weight: 600; */
+      /* margin-bottom: 0rem; */
+      /* position: static; */
+      position: absolute;
+      left: 4%;
+    }
+    .parasubD_loc{
+      font-size: 15px;
+      top: 90%;
+      font-weight: 500;
+      position: absolute;
+      right: 5%;
+      color: white;
+      font-family: 'Catamaran';
+      text-align: end;
+    }
+  
+  
+  
+  
+  
+    /* .responsive_grids1_mob{
+    position: absolute;
+    top: 31%;
+    left: 10%;
+    } */
+    .list_isopen_projects_mob{
+      /* margin-top: 30%; */
+      padding-bottom: 319px;
+    }
+    /* .centerClass {
+      text-align: center;
+      position: absolute;
+      margin-top: 46vw;
+      height: 8vw;
+      width: 91vw;
+      left: 2%;
+  } */
+    .searched_location{
+      /* background: #ffffff;
+      border: 1px solid #d6d6d6;
+      border-radius: 2px;
+      top: 10%;
+      position: absolute; */
+      background: #ffffff;
+      border: 2px solid #EF403C;
+      border-radius: 2px;
+      top: 12vw;
+      position: fixed;
+      width: 55vw;
+      left: 16.5%;
+      height: 8vw;
+      /* height: 15vw; */
+  
+     
+    }
+    
+    
+    .searched_location input{
+      border: none;
+      width: 100%;
+      /* width: -webkit-fill-available;
+      min-width: 50px; */
+      height: 7vw;
+  
+    }
+    .searched_location input:focus{
+      outline: none;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;list-style: none;
+      width: 100%;
+    }
+    .filter_li{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 2px;
+      padding: 1px;
+      /* height: -webkit-fit-content;
+      height: -moz-fit-content; */
+      height: 6.5vw;
+      padding-top: 0px;
+      white-space: pre;
+    }
+  
+    .filter_btn{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 3.8vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 1px;
+      transform: rotate(45deg);
+    }
+    ul .input-location_mob{
+      background: none;
+      flex-grow: 1;
+    }
+  
+  
+  
+  
+  
+  
+    .filter_li_mobile{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 5px;
+      padding: 5px;
+      height: fit-content;
+    }
+    .filter_btn_mobile{
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: black;
+      cursor: pointer;
+      /* height: -webkit-fill-available; */
+      /* width: auto; */
+      font-size: 1.2vw;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      margin-left: 8px;
+      transform: rotate(45deg);
+    }
+    ul .input-location_mobile{
+      background: none;
+      flex-grow: 1;
+    }
+  
+    .searched_location_mobile{
+      /* background: #ffffff;
+      border: 1px solid #d6d6d6;
+      border-radius: 2px;
+      top: 10%;
+      position: absolute; */
+      background: #ffffff;
+      border: 2px solid  #EF403C;
+      border-radius: 2px;
+      top: 16%;
+      position: absolute;
+      width: 52vw;
+      left: 5%;
+    }
+    
+    .searched_location_mobile input{
+      border: none;
+       width: 100%;  
+      /* min-width: 50px; */
+    }
+    .searched_location_mobile input:focus{
+      outline: none;
+    }
+    .webview_locationsearch{
+      display: none;
+    }
+    .mobile-footer-menuLS{
+      display: flex;
+      width: 100%;
+      background-color: #efebe8;
+      font-size: 0.8rem;
+      margin-top: 62.2vw;
+      bottom:0;
+      position:fixed;
+      overflow-y:scroll;
+      overflow-x:hidden;
+      }
+      
+      
+      .custommobilefooterpaddingLS{
+        padding: 10px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+      }
+      .centeralignLS{
+        text-align: center !important;
+      }
+      .rightalignLS{
+        text-align: right !important;
+      }
+      .veticallyalignLS{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: -13%;
+      }
+  
+  
+  .mobsearchbarstylelocation_search {
+    position: absolute;
+    top: 0%;
+    left: 18%;
+    width: 58%;
+    /* height: 22%; */
+    /* border: 0.6vw solid #EF403C;*/
+  }
+    .containermob{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        display: block;
+    }
+    .moblogo{
+        /* font-weight: bolder;
+        margin-top: 10%;
+        margin-left: 3%;
+        font-size: 4.5vw;
+        font-family: Catamaran; */
+        /* font-weight: bolder; */
+      /* margin-top: 10%; */
+      /* margin-left: 3%; */
+      /* font-size: 3.5vw; */
+      /* font-family: Catamaran; */
+      position: fixed;
+      top: 11vw;
+      left: 2vw;
+      width: 12vw;
+  
+    }
+  
+    .mobicon{
+      font-weight: bold;
+      /* margin-top: -6%; */
+      margin-left: 6%;
+      position: absolute;
+      top: 15.5vw;
+      font-size: 3.3vw;
+      font-family: Catamaran;
+    }
+  
+    .moblocationstyle{
+        /* position: absolute;
+        margin-top: -12%;
+        left: 74%; */
+        position: fixed;
+        /* margin-top: -12%; */
+        left: 74%;
+        top: 11.2vw;
+        font-family: Catamaran;
+        font-size: 3.4vw;
+      }
+  
+    .mobusericon-mobile{
+        /* position: absolute;
+        margin-top: -13.5%;
+        left: 88%;
+        width: 8%; */
+        position: fixed;
+        /* margin-top: -13.5%; */
+        left: 88%;
+        width: 6.7vw;
+        top: 10.3vw;
+    }
+  
+    .navbar_location_search {
+        /* width: 100%;
+        background-color: #555;
+        overflow: auto; */
+        width: 100%;
+        background-color: #555;
+        overflow: auto;
+        margin-top: 22%;
+        position: fixed;
+        z-index: 9999;
+      }
+      
+      .navbar_location_search a {
+        float: left;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        width: 50%; 
+        text-align: center;
+      }
+      
+      .navbar_location_search a.active {
+        background-color: #EF403C;
+      }
+      
+      
+  
+      .mobhr1{
+        /* position: absolute;
+        border: 1.2vw solid #EF403C;
+        margin-top: 2.9%;
+        left: 8.5%;
+        width: 23%; */
+        position: absolute;
+        border: 6px solid #EF403C;
+        /* margin-top: -8.1%; */
+        left: 69%;
+        width: 23vw;
+        top: 30.5vw;
+    }
+    
+  
+    .mobfound{
+      font-weight: bolder;
+      /* margin-top: 1.5%; */
+      /* margin-left: 37%; */
+      position: absolute;
+      top: 30vw;
+      color: grey;
+      font-size: 5vw;
+      left: 37.5vw;
+      font-family: Catamaran;
+        
+         /* font-weight: bold;
+        
+         margin-left: 37%;
+         position: absolute;
+         top: 40.4vw; */
+    }
+  
+    .mobnumber{
+      font-weight: bold;
+      /* margin-top: -10%; */
+      /* margin-left: 52%; */
+      color: #EF403C;
+      font-size: 6vw;
+      position: absolute;
+      top: 29vw;
+      left: 57vw;
+      font-family: Catamaran;
+    }
+  
+    .mobhr2{
+        /* position: absolute;
+        border: 1.2vw solid #EF403C;
+        margin-top: -8.1%;
+        left: 65%;
+        width: 23%; */
+         position: absolute;
+      border: 6px solid #EF403C;
+      /* margin-top: -8.1%; */
+      left: 8%;
+      width: 23vw;
+      top: 30.5vw;
+    }
+    .mob_main_component{
+      position: absolute;
+      height: 126vw;
+      width: 149vw;
+      background-color: white;
+      z-index: 1;
+      margin-top: 336%;
+    }
+    .mob_filter_head{
+      position: absolute;
+    font-weight: bold;
+    font-size: 4vw;
+    top: 4%;
+    left: 38%;
+    }
+    .mob_clear{
+    
+      position: absolute;
+      font-weight: bold;
+      color: #EF403C;
+      top: 4%;
+      right: 8%;
+      font-size: 4vw;
+  
+    }
+    .mob_hrFilter{
+      position: absolute;
+      top: 8.5%;
+      left: 0;
+      width: 100%;
+      border: .01vw solid #000000;
+    }  
+    /* .mob_buttons_part{
+        position: absolute;
+    } */
+  .filter_text_mob{
+    position: absolute;
+    left: 66%;
+    top: 37%;
+  }
+  
+    .mob_rating_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+     
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 12%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    
+  
+    .mob_prop_btn{
+      position: absolute;
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 25.5%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+   
+  
+    .mob_budget_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 39%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    .mob_amen_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 52.5%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    }
+  
+    .mob_poss_btn{
+      position: absolute;
+      /* font-weight: 400; */
+      /* color: white; */
+      /* padding: 24px 1px 24px 1px; */
+      background-color: white;
+      cursor: pointer;
+      left: 49vw;
+      padding: 5.5vw 0vw 5.5vw 0vw;
+      top: 66%;
+      width: 43vw;
+      font-size: 3.3vw;
+      font-weight: bold;
+      /* border: .1vw solid black; */
+      border: none;
+      font-family: Catamaran;
+    } 
+    .mob_hrFilter_2{
+      position: absolute;
+    top: 76.2%;
+    left: 0;
+    width: 100%;
+    border: .01vw solid #000000;
+    font-family: Catamaran;
+    }
+    .mobVertical_line{
+  
+      position: absolute;
+      height: 85vw;
+      margin-top: 10%;
+      border: .1vw solid black;
+      left: 61.5%;
+      font-family: Catamaran;
+    }
+    .mob_filter_cancel{
+      position: absolute;
+      font-weight: bold;
+      font-size: 4vw;
+      top: 84.5%;
+      left: 37%;
+      font-family: Catamaran;
+    }
+    .mob_filter_done{
+      position: absolute;
+      font-weight: bold;
+      color: #EF403C;
+      top: 84.5%;
+      right: 8%;
+      font-size: 4vw;
+      font-family: Catamaran;
+    }
+    .mob_all {
+      display: inline-flex;
+      font-size: 3.7vw;
+      /* font-weight: 500; */
+      font-family: Catamaran;
+      border: 0.1vw solid white;
+      /* border-radius: 5px; */
+      background:white;
+      padding-left: 8px;
+      padding-right: 5px;
+      border: none;
+      cursor: pointer;
+      /* font-weight: bold; */
+     
+    }
+    .input_checkbox_mob:checked + label:after{
+      content: "\2713";
+      width: 13px;
+      height: 15px;
+      border-radius: 100%;
+      /* border: 0px solid #333; */
+      background-color: black;
+      z-index: 999;
+      position: absolute;
+      margin-right: 10px;
+      color: white;
+      /* top: -56%; */
+      left: 94%;
+      font-size: 85%;
+      line-height: 136%;
+      top: -45%;
+    }
+    .mob_container_prop{
+  
+      position: absolute;
+      margin-top: -21%;
+      left: 61.5%;
+      margin-top: 28%;
+      height: 85vw;
+      width: 58vw;
+      /* background-color: black; */
+      /* border-radius: 3%; */
+      z-index: 5;
+      font-family: Catamaran;
+      margin-top: 10%;
+      }
+      
+  .mob_prop_check input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute;
+    
+  }
+  .mob_prop_check input:checked + label{
+    border: .01vw solid #EF403C;
+    /* background-color: #EF403C; */
+    /* border-radius: 5px; */
+    background: pink;
+    padding-top: .01vw;
+  
+  } 
+  
+  .res{
+    position: absolute;
+    top: 7%;
+    left: 8%;
+    font-size: 3.7vw;
+    font-family: Catamaran;
+    font-weight: 600;
+  }
+  .studio{
+  
+    position: absolute;
+    top: 21%;
+    font-size: 3.7vw;
+    left: 6%;
+    font-family: Catamaran;
+  }
+  .bhk1{
+  
+    position: absolute;
+    top: 21%;
+    /* font-size: .7vw; */
+    left: 56%;
+    font-family: Catamaran;
+  }
+  .bhk2{
+  
+    position: absolute;
+    top: 33%;
+    /* font-size: .7vw; */
+    left: 6%;
+  }
+  .bhk3{
+  
+    position: absolute;
+    top: 33%;
+    /* font-size: .7vw; */
+    left: 56%;
+  }
+  .bhk4{
+  
+    position: absolute;
+    top: 46%;
+    /* font-size: .7vw; */
+    left: 6%;
+  }
+  .more_bhk{
+    position: absolute;
+    top: 46%;
+    /* font-size: .7vw; */
+    left: 55%;
+  }
+  .com{
+  
+    position: absolute;
+    top: 61%;
+    left: 8%;
+    font-size: 3.8vw;
+    font-family: Catamaran;
+    font-weight: 600;
+    
+  }
+  .showroom{
+   
+    position: absolute;
+    top: 75%;
+    /* font-size: .7vw; */
+    left: 5%;
+  
+  
+  }
+  .shop{
+    position: absolute;
+    top: 75%;
+    /* font-size: .7vw; */
+    left: 56%;
+  
+  }
+  .office{
+    position: absolute;
+    top: 88%;
+    /* font-size: .7vw; */
+    left: 5%;
+  
+  }
+  .mob_container_rat{
+  
+    position: absolute;
+    margin-top: -21%;
+    left: 61.5%;
+    margin-top: 28%;
+    height: 85vw;
+    width: 58vw;
+    /* background-color: black; */
+    /* border-radius: 3%; */
+    z-index: 5;
+    font-family: Catamaran;
+    margin-top: 10%;
+    }
+  
+    .mob_rating_check input{
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+      
+    }
+    .mob_rating_check input:checked + label{
+      border: .01vw solid #EF403C;
+      /* background-color: #EF403C; */
+      /* border-radius: 5px; */
+      background: pink;
+      padding-top: .01vw;
+    
+    }
+    .five{
+      left: 12%;
+      font-family: Catamaran;
+      position: absolute;
+      
+      top: 10%;
+    }
+    .four_above{
+      font-family: Catamaran;
+      position: absolute;
+      
+      top: 24%;
+      left: 12%;
+    }
+    .three{
+      left: 12%;
+        top: 38.2%;
+        /* box-shadow: 0 2px 5px -2px #EF403C; */
+        font-family: Catamaran;
+        position: absolute;
+      
+    }
+    .two{
+      
+      left: 12%;
+      top: 52.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+     
+    
+    }
+    .one{
+      left: 12%;
+      top: 66.2%;
+      /* box-shadow: 0 2px 5px -2px #EF403C; */
+      font-family: Catamaran;
+      position: absolute;
+      
+    } 
+    .mob_container_amen{
+  
+      position: absolute;
+      margin-top: -21%;
+      left: 61.5%;
+      margin-top: 28%;
+      height: 85vw;
+      width: 58vw;
+      /* background-color: black; */
+      /* border-radius: 3%; */
+      z-index: 5;
+      font-family: Catamaran;
+      margin-top: 10%;
+      }
+      .mob_amen_check input{
+        display: none;
+        font-family: Catamaran;
+        position: absolute;
+        
+      }
+      .mob_amen_check input:checked + label{
+        border: .01vw solid #EF403C;
+        /* background-color: #EF403C; */
+        /* border-radius: 5px; */
+        background: pink;
+        padding-top: .01vw;
+      
+      }
+      .swimming{
+        position: absolute;
+        top: 13%;
+        left: 6%;
+        /* font-size: 0.8vw; */
+        font-family: Catamaran;
+  
+      }
+      .kids{
+        position: absolute;
+        top: 29%;
+        /* font-size: 0.8vw; */
+        left: 6%;
+        font-family: Catamaran;
+  
+      }
+      .gym{
+  
+        position: absolute;
+        font-family: Catamaran;
+        left: 64%;
+        /* font-size: 0.8vw; */
+        top: 13%;
+      }
+      .indoor{
+        position: absolute;
+        font-family: Catamaran;
+        /* left: 7%; */
+        /* font-size: 0.8vw; */
+        left: 53%;
+        top: 29%;
+  
+      }
+      .outdoor{
+        position: absolute;
+        font-family: Catamaran;
+        left: 6%;
+        /* font-size: 0.8vw; */
+        top: 44%;
+    
+      }
+      .garden{
+        
+        position: absolute;
+        font-family: Catamaran;
+        left: 60%;
+        /* font-size: 0.8vw; */
+        top: 44%;
+  
+  
+      }
+      .more{
+        position: absolute;
+        font-family: Catamaran;
+        left: 7%;
+        /* font-size: 0.8vw; */
+        top: 59%;
+    
+      }
+      .mob_container_poss{
+  
+        position: absolute;
+        margin-top: -21%;
+        left: 61.5%;
+        margin-top: 28%;
+        height: 85vw;
+        width: 58vw;
+        /* background-color: black; */
+        /* border-radius: 3%; */
+        z-index: 5;
+        font-family: Catamaran;
+        margin-top: 10%;
+        }
+  
+        .mob_poss_check input{
+          display: none;
+          font-family: Catamaran;
+          position: absolute;
+          
+        }
+        .mob_poss_check input:checked + label{
+          border: .01vw solid #EF403C;
+          /* background-color: #EF403C; */
+          /* border-radius: 5px; */
+          background: pink;
+          padding-top: .01vw;
+        
+        }
+         .ready{
+          position: absolute;
+          top: 14%;
+          left: 8%;
+          font-family: Catamaran;
+          /* font-size: .8vw; */
+        }
+        .months6{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 14%;
+          left: 56%;
+          /* font-size: .8vw; */
+        }
+        .months12{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 37%;
+          left: 8%;
+          /* font-size: .8vw; */
+        }
+        .years1{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 37%;
+          left: 56%;
+          /* font-size: .8vw; */
+      
+        }
+        .years2{
+  
+          position: absolute;
+          font-family: Catamaran;
+          top: 59%;
+          left: 9%;
+          /* font-size: .8vw; */
+        }
+        .garden2{
+          position: absolute;
+          font-family: Catamaran;
+          top: 59%;
+          left: 56%;
+          /* font-size: .8vw; */
+        }
+        .mob_container_budget{
+  
+          position: absolute;
+          margin-top: -21%;
+          left: 61.5%;
+          margin-top: 28%;
+          height: 85vw;
+          width: 58vw;
+          /* background-color: black; */
+          /* border-radius: 3%; */
+          z-index: 5;
+          font-family: Catamaran;
+          margin-top: 10%;
+          overflow-x: scroll;
+          }
+          .budget_text1{
+            position: absolute;
+            border-radius: 9%;
+            /* border: 2px red solid; */
+            top: 7%;
+            width: 20.5vw;
+            height: 2vw;
+            left: 6%;
+            /* outline: none; */
+            /* border: 1px solid #ddd; */
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 3.7vw;
+            /* font-weight: 600; */
+            font-family: Catamaran;
+      
+           
+          }
+          .budget_text2{
+      
+            position: absolute;
+            border-radius: 9%;
+            /* border: 2px red solid; */
+            top: 7%;
+            width: 20.5vw;
+            height: 2vw;
+            left: 51%;
+            /* outline: none; */
+            /* border: 1px solid #ddd; */
+            background-color: #fff;
+            cursor: pointer;
+            font-size: 3.7vw;
+            /* font-weight: 600; */
+            font-family: Catamaran;
+          }
+         
+          .min_budget{
+      
+            /* line-height: 23px;  */
+            list-style: none;
+            display: block;
+            cursor: pointer;
+            top: 23%;
+            position: absolute;
+            left: -30%;
+            font-family: Catamaran;
+            font-size: 3.7vw;
+            /* overflow-y: scroll; */
+            /* overflow-y: unset; */
+        
+          }
+          .max_budget{
+      
+            /* line-height: 23px; */
+            list-style: none;
+            display: block;
+            cursor: pointer;
+            top: 23%;
+            position: absolute;
+            left: 13%;
+            font-family: Catamaran;
+            font-size: 3.7vw;
+            /* overflow-y: scroll; */
+      
+          }
+    
+  }
+   @media screen and  (min-width: 280px) and (max-width: 390px){
+    .cancel-button{
+        display: none;
+    }
+    .sweet-loading{
+      margin-left: 30vw;
+      margin-top: 20vw;
+    }
+   
+  .filter_li{
+      align-items: center;
+      background: darkgray;
+      border-radius: 9px;
+      color: black;
+      list-style: none;
+      font-family: Catamaran;
+      margin: 2px;
+      padding: 2px;
+      height: 8.5vw;
+      padding-top: 0px;
+      font-size: 3.3vw;
+      margin-left: 5px;
+      margin-top: 5px;
+      /* width: 131px; */
+      white-space: pre;
+    }
+    .boxD_loc {
+      border-style: none;
+      border: none;
+      background-color: #404041;
+      /* border-radius: 14px; */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+      height: 273px;
+      /* height: 2px; */
+      z-index: 1;
+      cursor: pointer;
+      /* margin-left: 4%; */
+      width: 258px;
+  }
+  
+  .imageboxD_loc {
+    -o-object-fit: fill;
+    object-fit: fill;
+    width: 258px;
+    /* height: auto; */
+    border-style: none;
+    height: 215px;
+  }
+  
+   }
+  @media screen and (min-width: 280px) and (max-width: 370px){
+    .cancel-button{
+      display:none;
+    }
+    .sweet-loading{
+      margin-left: 30vw;
+      margin-top: 20vw;
+    }
+    .loc_proj{
+      position: relative;
+    }
+    .mobile-footer-menuLS {
+      display: flex;
+      width: 100%;
+      background-color: #efebe8;
+      font-size: 0.8rem;
+      /* margin-top: 34vw; */
+      bottom:0;
+      position:fixed;
+      overflow-y:scroll;
+      overflow-x:hidden;
+  }
+  
+  .responsive_grids1_mob {
+    position: relative;
+    top: 27%;
+    left: 14vw;
+    display: inline-flex;
+  }
+  
+  }
+  /* @media screen and (min-width: 280px) and (max-width: 321px){
+    .responsive_grids1_mob {
+      position: relative;
+      top: 27%;
+      left: 10%;
+      display: inline-flex;
+    }
+  } */
+  @media screen and (min-width: 574px) and (max-width: 720px){
+    .cancel-button{
+      display:none;
+    }
+  
+    .mobile-footer-menuLS {
+      display: flex;
+      width: 100%;
+      background-color: #efebe8;
+      font-size: 0.8rem;
+      margin-top: 59vw;
+      bottom:0;
+      position:fixed;
+      overflow-y:scroll;
+      overflow-x:hidden;
+  }
+  }
+  /* @media screen and (min-width: 506px) and (max-width: 600px){
+  
+    .responsive_grids1_mob{
+      position: absolute;
+      top: 31%;
+      left: 10%;
+      }
+  } */
+  @media screen and (min-width: 1201px) and (max-width: 1500px){
+    /* .sweet-loading{
+      margin-left: 40vw;
+      margin-top: 2vw;
+    } */
+  .location_search_web {
+        
+    width: 10vw;
+    background-color: white;
+    /* overflow: auto; */
+    top: 12.5vw;
+    position: absolute;
+    left: 8.7%;
+  }
+  
+  .location_search_web a {
+    float: left;
+    padding: 12px;
+    /* color: white; */
+    text-decoration: none;
+    font-size: .9vw;
+     width: 4.3vw;  
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .location_search_web a.active {
+    background-color: #EF403C;
+    color: white;
+  }
+  .list_box{
+  
+    background-color: #404041;
+    width: 1vw;
+    /* margin-top: 3px; */
+    height: 3vw;
+    position: absolute;
+    left: 51%;
+  }
+  .web_hr1{
+    position: absolute;
+    border: 5px solid #EF403C;
+    top: 13.5vw;
+    left: 22.5%;
+    width: 18.3vw;
+  
+  }
+  
+  
+  .webfound{
+  font-weight: bold;
+  /* margin-top: 1.5%; */
+  /* margin-left: 37%; */
+  position: absolute;
+  top: 13.6vw;
+  left: 42.9%;
+  font-size: 1.5vw;
+  color: grey;
+  font-family: Catamaran;
+  }
+  
+  .web1234{
+    font-weight: bold;
+    color: #EF403C;
+    top: 13.55vw;
+    position: absolute;
+    font-size: 1.5vw;
+    left: 48.2%;
+    font-family: sans-serif;
+  }
+  
+  .web_hr2{
+    position: absolute;
+    border: 5px solid #EF403C;
+    top: 13.5vw;
+    left: 51.4%;
+    width: 18.3vw;
+  
+  }  
+  
+  /* .list_loc{
+    /* width: 10%;
+    background-color: white;
+    overflow: auto;
+    top: 25%;
+    position: absolute;
+    left: 6%;
+    width: 6%; }*/
+  
+  .map_loc{
+    position: absolute;
+    left: 68%;
+  
+  }
+  }
+  @media screen and (min-width: 462px) and (max-width: 500px){
+    .cancel-button{
+      display:none;
+    }
+    .sweet-loading{
+      margin-left: 30vw;
+      margin-top: 20vw;
+    }
+   
+  .responsive_grids1_mob {
+    position: relative;
+    top: 27%;
+    left: 17%;
+    display: inline-flex;
+  }
+  
+  }
+  @media screen and (min-width: 391px) and (max-width: 461px){
+    .cancel-button{
+      display:none;
+    }
+    .sweet-loading{
+      margin-left: 30vw;
+      margin-top: 20vw;
+    }
+   
+    .responsive_grids1_mob {
+      position: relative;
+      top: 27%;
+      left: 13.5%;
+      display: inline-flex;
+    }
+    
+    }
+    @media screen and (min-width: 1533px){
+      .sweet-loading{
+        margin-left: 30vw;
+        margin-top: 20vw;
+      }
+    .no_projects {
+      position: relative;
+      margin-top: 0%;
+      z-index: 1;
+      left: 27%;
+  }
+    }
+  
+    @media screen and (min-width: 1329px) and (max-width: 1532px){
+      /* .sweet-loading{
+        margin-left: 30vw;
+        margin-top: 20vw;
+      } */
+      .no_projects {
+      position: relative;
+      margin-top: 7vw;
+      z-index: 1;
+      left: 27%;
+    }
+  }
+  @media screen and (min-width: 1201px) and (max-width: 1329px){
+    .no_projects {
+    position: relative;
+    margin-top: 14vw;
+    z-index: 1;
+    left: 27%;
+    }
+  }
+  /* @media screen and (min-width: 322px) and (max-width: 399px){
+  
+    .responsive_grids1_mob {
+      position: relative;
+      top: 27%;
+      left: 4vw;
+      display: inline-flex;
+  }
+  } */
+  
+  @media screen and (min-width: 1360px) and (max-width: 1500px){
+  .done_budget {
+    top: 21vw;
+    color: #EF403C;
+    /* font-size: .8vw; */
+    font-weight: bolder;
+    left: 63vw;
+    font-family: Catamaran;
+    cursor: pointer;
+    position: fixed;
+  }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1360px){
+    .done_budget {
+      top: 21vw;
+      color: #EF403C;
+      /* font-size: .8vw; */
+      font-weight: bolder;
+      left: 62.4vw;
+      font-family: Catamaran;
+      cursor: pointer;
+      position: fixed;
+  }
+    }
+  
+    @media screen and (max-width: 573px) {
+      .cancel-button{
+        display:none;
+      }
+      .topsideheadings{
+        margin-left: 13%;
+        width: 79vw;
+      }
+      .topsidetitle {
+        display: flex;
+      }
+      .topSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 67%;
+      }
+      .topgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .topnavrowtitletextblog{
+        font-weight: bolder;
+      font-family: Catamaran-Bold;
+      font-size: 4.7vw;
+      width: 30vw;
+      color: #EF403C;
+      margin-top: 10px;
+      }
+      .topgreybox2blog{
+        background-color: #404041;
+        width: 49%;
+        margin-top: 15px;
+        height: 12px;
+      }
+    }
+    @media screen and (min-width: 574px) {
+      .topsideheadings{
+        margin-left: 16%;
+        width: 84vw;
+    }
+      
+      .topsidetitle {
+        display: flex;
+      }
+      .topSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 48%;
+      }
+      .topgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .topnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 3.7vw;
+        width: 23vw;
+        color: #EF403C;
+        margin-top: 2%;
+      }
+      .topgreybox2blog{
+        background-color: #404041;
+      width: 44%;
+      margin-top: 15px;
+      height: 12px;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 1023px) {
+      .topsideheadings{
+        margin-left: 17%;
+        width: 68vw;
+      }
+      .topsidetitle {
+        display: flex;
+      }
+      .topSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 61%;
+      }
+      .topgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .topnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 3.7vw;
+        width: 27vw;
+        color: #EF403C;
+        margin-top: 1%;
+      }
+      .topgreybox2blog{
+        background-color: #404041;
+      width: 48%;
+      margin-top: 15px;
+      height: 12px;
+      }
+    }
+  /*1111111111111111111111111111111111111111111111111111111111111111111111111*/
+    @media screen and (max-width: 573px) {
+      .newsideheadings{
+        margin-left: 13%;
+        width: 75vw;
+      }
+      .newsidetitle {
+        display: flex;
+      }
+      .newSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 72%;
+      }
+      .newgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .newnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 4.7vw;
+        width: 54vw;
+        color: #EF403C;
+        margin-top: 2%;
+      }
+      .newgreybox2blog{
+        background-color: #404041;
+        width: 13%;
+        margin-top: 15px;
+        height: 12px;
+    
+      }
+    }
+    @media screen and (min-width: 574px) {
+      .newsideheadings{
+        margin-left: 17%;
+        width: 66vw;
+      }
+      .newsidetitle {
+        display: flex;
+      }
+      .newSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 61%;
+      }
+      .newgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .newnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 3.7vw;
+        width: 65vw;
+        color: #EF403C;
+        margin-top: 2%;
+      }
+      .newgreybox2blog{
+        background-color: #404041;
+        width: 59%;
+        margin-top: 15px;
+        height: 12px;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 1023px) {
+      .newsideheadings{
+        margin-left: 16%;
+        width: 63vw;
+    
+      }
+      .newsidetitle {
+        display: flex;
+      }
+      .newSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 64%;
+      }
+      .newgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .newnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 3.7vw;
+        width: 83vw;
+        color: #EF403C;
+        margin-top: 2%;
+      }
+      .newgreybox2blog{
+        background-color: #404041;
+        width: 69%;
+        margin-top: 15px;
+        height: 12px;
+      }
+    }
+  
+    /*1111111111111111111111111111111111111111111111111111111111111111111111111*/
+    @media screen and (max-width: 573px) {
+      .sweet-loading{
+        margin-left: 20vw;
+        margin-top: 20vw;
+      }
+      .mostsideheadings{
+        /* margin-left: 10%; */
+        margin-left: 14%;
+        width: 80vw;
+      }
+      .mostsidetitle {
+        display: flex;
+      }
+      .mostSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 65%;
+      }
+      .mostgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .mostnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 4.7vw;
+        width: 41vw;
+        color: #EF403C;
+        margin-top: 1%;
+      }
+      .mostgreybox2blog{
+        background-color: #404041;
+        width: 37%;
+      margin-top: 15px;
+      height: 12px;
+      }
+    }
+    @media screen and (min-width: 574px) {
+      .sweet-loading{
+        margin-left: 20vw;
+        margin-top: 20vw;
+      }
+      .mostsideheadings{
+        margin-left: 14%;
+      }
+      .mostsidetitle {
+        display: flex;
+      }
+      .mostSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 39%;
+      }
+      .mostgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .mostnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 2.7vw;
+        width: 24vw;
+        color: #EF403C;
+        margin-top: 2%;
+      }
+      .mostgreybox2blog{
+        background-color: #404041;
+        width: 37%;
+        margin-top: 15px;
+        height: 12px;
+      }
+    }
+    @media screen and (min-width: 576px) and (max-width: 1023px) {
+      .mobmatching{
+        display: none;
+      }
+      .sweet-loading{
+        margin-left: 20vw;
+        margin-top: 20vw;
+      }
+      .mostsideheadings{
+        /* margin-left: 14%; */
+        margin-left: 17%;
+        width: 62vw;
+      }
+      .mostsidetitle {
+        display: flex;
+      }
+      .mostSidemainHeading{
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 70%;
+      }
+      .mostgreybox1{
+        background-color: #404041;
+        width: 20px;
+        margin-top: 3px;
+        height: 25px;
+      }
+      .mostnavrowtitletextblog{
+        font-weight: bolder;
+        font-family: Catamaran-Bold;
+        font-size: 3.8vw;
+        width: 50vw;
+        color: #EF403C;
+        margin-top: 0%;
+      }
+      .mostgreybox2blog{
+        background-color: #404041;
+        width: 69%;
+        margin-top: 15px;
+        height: 12px;
+      }
+    }
+  
+    .static_detailsloc{
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      height: 7vw;
+      z-index: 99;
+      width: 100%;
+      background-color: white;
+      border: 34px solid white;
+    }
+    @media screen and (max-width: 375px){
+    .static_mob_detailsfil{
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      border: 20vw solid white;
+    }
+  }
+  
+  @media screen and (min-width: 376px) and (max-width: 573){
+    .static_mob_detailsfil{
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      border: 87px solid white;
+    }
+  }
+  
+  @media screen and (min-width: 574px) and (max-width: 1023px){
+    .static_mob_detailsfil{
+      position: fixed;
+      z-index: 9999;
+      width: 100%;
+      border: 15vw solid white;
+    }
+  }
+  

@@ -1,0 +1,152 @@
+@media screen and (min-width: 601px ){
+.maindivbox{
+    top: 5vw;
+    position: absolute;
+    left: 76vw;
+    z-index: 10;
+    width: 16vw;
+}
+.location_drop{
+    background-color: white;
+    height: 20vw;
+    padding: 14%;
+    text-align: left;
+}
+.pick_location{
+    font-size: 1.1vw;
+    font-family: Lato;
+    /* padding-top: 2%; */
+    color: #404041;
+    padding-bottom: 5%;
+    font-weight: 700;
+    /* padding-left: 4%; */
+}
+.drop_locationoption{
+    font-size: 0.9vw;
+    font-family: Catamaran;
+    color: grey;
+    padding:5%;
+    padding-left: 0px;
+}
+.drop_locationoption:hover{
+    font-size: 0.9vw;
+    font-family: Catamaran;
+    color: white;
+    background-color: #EF403C;
+    padding:5%;
+}
+.loc_drop input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute; 
+}
+.loc_drop input:checked + label{
+  border: .01vw solid #EF403C;
+  background-color: #EF403C;
+  color: white;
+  box-shadow: none;
+  text-align: inherit;
+}
+.loc_drop {
+ 
+    display: grid;
+    text-align: inherit;
+    /* padding: 1%; */
+    font-family: Catamaran;
+}
+.city_drop input{
+    display: none;
+    font-family: Catamaran;
+    position: absolute; 
+}
+.city_drop input:checked + label{
+  border: .01vw solid #EF403C;
+  background-color: #EF403C;
+  color: white;
+  box-shadow: none;
+  text-align: inherit;
+}
+.city_drop {
+ 
+    display: inline-block;
+    text-align: inherit;
+    /* padding: 1%; */
+    font-family: Catamaran;
+}
+}
+@media screen and (max-width: 505px) {
+    .maindivbox{
+        top: 21vw;
+        position: absolute;
+        left: 55vw;
+        z-index: 10;
+        width: 35vw;
+    }
+    .location_drop{
+        background-color: white;
+        height: 60vw;
+        padding: 14%;
+        text-align: left;
+    }
+    .pick_location{
+        font-size: 3.1vw;
+        font-family: Lato;
+        /* padding-top: 2%; */
+        color: #404041;
+        padding-bottom: 10%;
+        font-weight: 700;
+        /* padding-left: 4%;*/
+    }
+    .drop_locationoption{
+        font-size: 2.9vw;
+        font-family: Catamaran;
+        color: grey;
+        padding: 5%;
+        padding-left: 0px;
+    }
+    .drop_locationoption:hover{
+        font-size: 2.9vw;
+        font-family: Catamaran;
+        color: white;
+        background-color: #EF403C;
+        padding:5%;
+    }
+    .loc_drop input{
+        display: none;
+        font-family: Catamaran;
+        position: absolute; 
+    }
+    .loc_drop input:checked + label{
+      border: .01vw solid #EF403C;
+      background-color: #EF403C;
+      color: white;
+      box-shadow: none;
+      text-align: inherit;
+    }
+    .loc_drop {
+     
+        display: grid;
+        text-align: inherit;
+        /* padding: 1%; */
+        font-family: Catamaran;
+    }
+    .city_drop input{
+        display: none;
+        font-family: Catamaran;
+        position: absolute; 
+    }
+    .city_drop input:checked + label{
+      border: .01vw solid #EF403C;
+      background-color: #EF403C;
+      color: white;
+      box-shadow: none;
+      text-align: inherit;
+    }
+    .city_drop {
+     
+        display: inline-block;
+        text-align: inherit;
+        /* padding: 1%; */
+        font-family: Catamaran;
+    }
+}

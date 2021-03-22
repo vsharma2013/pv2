@@ -1,0 +1,273 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+
+<style> 
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+div#form_div {
+    padding-top: 50px;
+}
+
+a.btn.btn-primary {
+    margin-top: 33px;
+    width: 25%;
+}
+</style>
+
+<script>
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+</script>
+
+<script>
+  //-------------------
+    function mumbaiForm()
+    {
+      $("#form_div").html("");
+      var prefix = getUrlParameter('prefix');
+     //----------- 
+     console.log("Open Form For Mumbai...");
+        var list_of_year = "";
+        let startYear = 1984;
+        let endYear = new Date().getFullYear();
+        for (i = endYear; i > startYear; i--)
+        { 
+            if(list_of_year == ""){list_of_year = "<option>"+i+"</option>"}
+            else{ list_of_year = list_of_year+","+"<option>"+i+"</option>"} 
+        }
+        //console.log("list",list_of_year);
+        var form = "<form action='https://www.propviewz.com/be/management/create_project_transaction' method='post'>  \
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label>Select Year:</label>\
+            <select name='yearpicker' name='year' class='form-control' id='yearpicker'>"+
+            list_of_year
+            +" </select>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label for='District'>District:</label>\
+            <label>Select District:</label>\
+            <select name='District' class='form-control'>\
+            <option>Mumbai Jila</option>\
+            <option>Mumbai Upnagar Jila</option>\
+             </select>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label for='Village'>Village:</label>\
+            <input type='text' class='form-control' placeholder='Enter Village' name='Village' maxlength='100' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label>Project Name In Marathi:</label>\
+            <input type='text' class='form-control' placeholder='Enter Project Name In Marathi' name='Marathi_Name' maxlength='200' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label >Property No.:</label>\
+            <input type='text' class='form-control' placeholder='Enter Property No.' name='Property_No' maxlength='100' required>\
+            </div>\
+        </div>\
+        <input type='hidden' name='Tahsil' value=''>\
+        <input type='hidden' name='rest_of_maharastra' value='no'>\
+        <input type='hidden' name='prefix' value="+prefix+">\
+        <center><button type='submit' class='btn btn-success'>Next</button></center>\
+        </form>";
+
+        $('#form_div').append( form ); 
+        
+     //----         
+    }
+  //---------------------  
+
+  function restOfMaharashtraForm()
+    {
+      $("#form_div").html("");
+      var prefix = getUrlParameter('prefix');
+     //----------- 
+     console.log("Open Form For Rest Of MaharashtraForm...");
+        var list_of_year = "";
+        let startYear = 1984;
+        let endYear = new Date().getFullYear();
+        for (i = endYear; i > startYear; i--)
+        { 
+            if(list_of_year == ""){list_of_year = "<option>"+i+"</option>"}
+            else{ list_of_year = list_of_year+","+"<option>"+i+"</option>"} 
+        }
+        //console.log("list",list_of_year);
+        var form = "<form action='https://www.propviewz.com/be/management/create_project_transaction' method='post'>  \
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label>Select Year:</label>\
+            <select name='yearpicker' name='year' class='form-control' id='yearpicker'>"+
+            list_of_year
+            +" </select>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label for='District'>District:</label>\
+            <input type='text' class='form-control' maxlength='100' placeholder='Enter District' name='District' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label for='Tahsil'>Tahsil:</label>\
+            <input type='text' class='form-control' maxlength='100' placeholder='Enter Tahsil' name='Tahsil' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label for='Village'>Village:</label>\
+            <input type='text' class='form-control' placeholder='Enter Village' name='Village' maxlength='100' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label>Project Name In Marathi:</label>\
+            <input type='text' class='form-control' placeholder='Enter Project Name In Marathi' name='Marathi_Name' maxlength='200' required>\
+            </div>\
+        </div>\
+        <div class='col-md-6'>\
+            <div class='form-group'>\
+            <label >Property No.:</label>\
+            <input type='text' class='form-control' placeholder='Enter Property No.' name='Property_No' maxlength='100' required>\
+            </div>\
+        </div>\
+        <input type='hidden' name='rest_of_maharastra' value='yes'>\
+        <input type='hidden' name='prefix' value="+prefix+">\
+        <center><button type='submit' class='btn btn-success'>Next</button></center>\
+        </form>";
+
+        $('#form_div').append( form ); 
+        
+     //----         
+    }
+
+function restOfIndiaForm()
+    {
+      $("#form_div").html("");
+      var prefix = getUrlParameter('prefix');
+     //----------- 
+     console.log("Open Form For Rest Of India...");
+        var form = "<form action='https://www.propviewz.com/be/management/create_project_transaction' method='post'>  \
+        <input type='hidden' name='year'>\
+        <input type='hidden' name='District'>\
+        <input type='hidden' name='Tahsil'>\
+        <input type='hidden' name='Village'>\
+        <input type='hidden' name='Marathi_Name'>\
+        <input type='hidden' name='Property_No'>\
+        <input type='hidden' name='rest_of_maharastra' value='no'>\
+        <input type='hidden' name='prefix' value="+prefix+">\
+        <center><button type='submit' class='btn btn-success'>Next</button></center>\
+        </form>";
+
+        $('#form_div').append( form ); 
+        
+     //----         
+    }
+ </script> 
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+         <!--**************-->
+            <div class="page-header">
+            <center>
+            <h2 style="font-family: 'Berkshire Swash';font-size: 22px;">Select Property Transaction ....</h2>
+
+
+            <a href="#" class="btn btn-primary" onclick='mumbaiForm()'>Mumbai</a>
+            <a href="#" class="btn btn-primary" onclick='restOfMaharashtraForm()'>Rest Of Maharashtra</a>
+            <a href="#" class="btn btn-primary" onclick='restOfIndiaForm()'>Rest Of India</a>
+
+
+            </center>   
+
+            <div id="form_div">
+
+            </div>
+            </div> 
+         <!--****************-->      
+    </div>
+    </div>
+</div>
+   
+</body>
+</html> 

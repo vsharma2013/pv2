@@ -1,0 +1,2388 @@
+#dragbox1, #dragbox12 {
+    overflow: auto;
+  }
+  #dragbox1 ul, #dragbox12 ul {
+    margin-top: auto;
+    padding: 15px 0;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+  }
+  #dragbox1 ul li, #dragbox12 ul li {
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  #dragbox1 ul li .remove-btn, #dragbox12 ul li .remove-btn{
+    cursor: pointer;
+  }
+  #dragbox1 ul li:hover img, #dragbox12 ul li:hover img {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
+  #dragbox1 ul li:hover .remove-btn, #dragbox12 ul li:hover .remove-btn {
+    display: flex;
+  }
+  #dragbox1 ul li .remove-btn, #dragbox12 ul li .remove-btn {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: #0000009e;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #dragbox1 ul li .remove-btn span, #dragbox12 ul li .remove-btn span{
+    word-break: break-all;
+    margin: 2px 0;
+  }
+  .img_name {
+    position: relative;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    border: 3px solid red;
+    z-index: 9;
+    text-align: center;
+    border: 3px solid red;
+  }
+  
+  @media screen and (min-width: 601px) {
+    /* .searchdiv{
+        
+         width: 98.3%;
+         height: 3vw;
+         margin-top: 0%;
+         left: 1%;
+         position: absolute;
+      } */
+    .take_post {
+      display: none;
+    }
+    /* .closebtn1 {
+     position: absolute;
+     cursor: pointer;
+     top: -1.4vw;
+     left: 25.4vw;
+     width: 2.3vw;
+     z-index: 10;
+  }    */
+    .mobdiv2 {
+      display: none;
+    }
+    .containerreview {
+      max-width: 100%;
+      background-color: white;
+      max-height: 153%;
+    }
+    .div2 {
+      position: absolute;
+      width: 29%;
+      border: 2px solid grey;
+      height: 50vw;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 0%;
+      max-height: 100vh;
+    }
+    .po {
+      margin-top: 0%;
+      font-weight: bold;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+      text-align: center;
+      position: absolute;
+      left: 45%;
+    }
+    .api {
+      margin-top: 2.5%;
+      /* font-size: 92%; */
+      color: gray;
+      position: absolute;
+      left: 48.5%;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      text-align: center;
+    }
+    .pic {
+      margin-top: 5.6%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      text-align: center;
+      position: absolute;
+      left: 42.5%;
+    }
+    .hr1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 4.6%;
+      left: 9.5%;
+      width: 7vw;
+    }
+  
+    .hr2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 4.6%;
+      left: 62.5%;
+      width: 7vw;
+    }
+  
+    .pText1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 13%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+      left: 9.4%;
+    }
+  
+    .pField1 {
+      border: 2px solid #ef403c;
+      width: 81%;
+      height: 4.5vh;
+      margin-top: 17%;
+      position: absolute;
+      left: 9%;
+      font-size: 1vw;
+    }
+    .psearch {
+      position: absolute;
+      top: 50%;
+    }
+  
+    .hr_2 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 85.8%;
+      left: 10%;
+      width: 7.5vw;
+    }
+  
+    .social-media {
+      display: flex;
+      justify-content: center;
+    }
+    .social-media img:first-child {
+      width: 28px;
+      height: 28px;
+    }
+    .social-media img {
+      width: 30px;
+      height: 30px;
+      margin-top: 4px;
+      margin: 4px 3px 0;
+    }
+    .signor {
+      margin-top: 20px;
+      position: relative;
+      left: 0;
+      color: black;
+      font-size: 1vw;
+      font-family: Catamaran;
+      font-weight: bold;
+      text-align: center;
+    }
+    .signor:before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 35%;
+      background: #000;
+      left: 0;
+      top: 8px;
+    }
+    .signor:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 35%;
+      background: #000;
+      left: auto;
+      top: 8px;
+      right: 0;
+    }
+    hr {
+      display: none;
+    }
+    /* .hr_3{
+  
+     position: absolute;
+     border: 1px solid black;
+     margin-top: 103.4%;
+     left: 61%;
+     width: 7.7vw;
+  }
+  .hr_4{
+  
+     position: absolute;
+     border: 1px solid black;
+     margin-top: 103.4%;
+     left: 10%;
+     width: 7.5vw;
+  } */
+  
+    .emText {
+      position: static;
+      margin-top: 0;
+      left: 10%;
+      font-size: 0.9vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      width: 100%;
+    }
+    .emailField {
+      position: static;
+      margin-top: 0;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 100%;
+      height: 3vw;
+      font-size: 0.9vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .emIdName1 {
+      position: absolute;
+      margin-top: 127.3%;
+      left: 10%;
+      font-size: 0.9vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emailFieldName1 {
+      position: absolute;
+      margin-top: 132%;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 80%;
+      height: 3vw;
+      font-size: 0.9vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .contnamesubmit1 {
+      position: absolute;
+      margin-top: 148.5%;
+      font-family: Catamaran;
+      width: 80%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+  
+    .cont1 {
+      position: static;
+      margin-top: 15px;
+      font-family: Catamaran;
+      width: 100%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+    .alr {
+      position: static;
+      margin-top: 15px;
+      font-size: 0.7vw;
+      font-family: Catamaran;
+      display: inline-block;
+    }
+    .login1 {
+      position: static;
+      margin-top: 15px;
+      left: 49%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 0.9vw;
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .sub1 {
+      position: absolute;
+      margin-top: 150%;
+      width: 39%;
+      left: 31%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Catamaran;
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+    }
+  
+    /* file drag n drop and select */
+    #file_post {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .dragn {
+      position: static;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      font-size: 16px;
+    }
+    .orr {
+      position: static;
+      font-family: "Catamaran";
+      margin-top: 0;
+      color: grey;
+      display: block;
+    }
+    div#dragbox1, div#dragbox12 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .choose-file {
+      position: relative;
+      padding-bottom: 34px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .take_post {
+      display: none;
+    }
+    .closebtn1 {
+      position: absolute;
+      cursor: pointer;
+      top: -2.2vw;
+      left: 92.9%;
+      width: 2.3vw;
+      z-index: 10;
+    }
+    .mobdiv2 {
+      display: none;
+    }
+    .containerreview {
+      max-width: 100%;
+      background-color: white;
+      max-height: 153%;
+    }
+    .div2 {
+      position: absolute;
+      width: 35%;
+      border: 2px solid grey;
+      height: 66vw;
+      background-color: white;
+      border-radius: 1vw;
+      left: 33%;
+      margin-top: 0%;
+      max-height: 100vh;
+    }
+  
+    .po {
+      margin-top: -2%;
+      font-weight: bold;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      text-align: center;
+      position: absolute;
+      left: 45%;
+    }
+    .api {
+      margin-top: 0.5%;
+      /* font-size: 92%; */
+      color: gray;
+      position: absolute;
+      left: 48.5%;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      text-align: center;
+    }
+    .pic {
+      margin-top: 3.6%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      text-align: center;
+      position: absolute;
+      left: 42.5%;
+    }
+    .hr1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 2.6%;
+      left: 10%;
+      width: 9vw;
+    }
+  
+    .hr2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 2.6%;
+      left: 62.5%;
+      width: 9vw;
+    }
+  
+    .pText1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 12%;
+      font-size: 1.2vw;
+      font-family: Catamaran;
+      left: 9.4%;
+    }
+  
+    .pField1 {
+      border: 2px solid #ef403c;
+      width: 27.6vw;
+      height: 1px;
+      position: inherit;
+      margin-top: 23%;
+      margin-left: 12%;
+      font-size: 1.5vw;
+    }
+    .psearch {
+      position: absolute;
+      top: 50%;
+    }
+  
+    .share1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 19%;
+      font-size: 1.2vw;
+      font-family: Catamaran;
+      left: 9.4%;
+    }
+  
+    .facebook {
+      position: absolute;
+      margin-top: 82%;
+      cursor: pointer;
+      width: 2.7vw;
+      left: 36%;
+    }
+    .goog {
+      position: absolute;
+      width: 2.8vw;
+      margin-top: 81.5%;
+      left: 42%;
+      cursor: pointer;
+    }
+    .linkedin1 {
+      position: absolute;
+      margin-top: 81.2%;
+      left: 56%;
+      cursor: pointer;
+      width: 3.2vw;
+    }
+    .signor {
+      margin-top: 92.4%;
+      position: absolute;
+      left: 47%;
+      color: black;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      font-weight: bold;
+    }
+    .hr_3 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 95%;
+      left: 63%;
+      width: 9vw;
+    }
+    .hr_4 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 95%;
+      left: 10%;
+      width: 9vw;
+    }
+  
+    .emText {
+      position: absolute;
+      margin-top: 101.3%;
+      left: 10%;
+      font-size: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .emailField {
+      position: absolute;
+      margin-top: 107%;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 80%;
+      height: 3.8vw;
+      font-size: 1.1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont1 {
+      position: absolute;
+      margin-top: 120.5%;
+      font-family: Catamaran;
+      width: 80%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1.6vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+  
+    .emIdName1 {
+      position: absolute;
+      margin-top: 120.3%;
+      left: 10%;
+      font-size: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emailFieldName1 {
+      position: absolute;
+      margin-top: 125%;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 80%;
+      height: 3.8vw;
+      font-size: 1.1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .contnamesubmit1 {
+      position: absolute;
+      margin-top: 143.5%;
+      font-family: Catamaran;
+      width: 80%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1.6vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+  
+    .alr {
+      position: absolute;
+      margin-top: 135%;
+      left: 11%;
+      font-size: 1vw;
+      font-family: Catamaran;
+    }
+    .login1 {
+      position: absolute;
+      margin-top: 135%;
+      left: 52%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.2vw;
+    }
+    .sub1 {
+      position: absolute;
+      margin-top: 142%;
+      width: 39%;
+      left: 31%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      margin-bottom: 3vw;
+    }
+  
+    /* file drag n drop and select */
+    #file_post {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .dragn {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 29%;
+      font-size: 16px;
+    }
+    .orr {
+      position: absolute;
+      font-family: "Catamaran";
+      margin-top: 18%;
+      color: grey;
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
+    .take_post {
+      display: none;
+    }
+    .closebtn1 {
+      position: absolute;
+      cursor: pointer;
+      top: -3.2vw;
+      left: 92.9%;
+      width: 3vw;
+      z-index: 10;
+    }
+    .mobdiv2 {
+      display: none;
+    }
+    .containerreview {
+      max-width: 100%;
+      background-color: white;
+      max-height: 153%;
+    }
+    .div2 {
+      position: absolute;
+      width: 43%;
+      border: 2px solid grey;
+      height: 79vw;
+      background-color: white;
+      border-radius: 1vw;
+      left: 30%;
+      margin-top: 0%;
+      max-height: 100vh;
+    }
+  
+    .po {
+      margin-top: -5%;
+      font-weight: bold;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      text-align: center;
+      position: absolute;
+      left: 45%;
+    }
+    .api {
+      margin-top: -2.5%;
+      /* font-size: 92%; */
+      color: gray;
+      position: absolute;
+      left: 48.5%;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      text-align: center;
+    }
+    .pic {
+      margin-top: 0.6%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      text-align: center;
+      position: absolute;
+      left: 42.5%;
+    }
+    .hr1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: -1.6%;
+      left: 9%;
+      width: 11vw;
+    }
+  
+    .hr2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: -1.6%;
+      left: 62.5%;
+      width: 11vw;
+    }
+  
+    .pText1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 6%;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      left: 9.4%;
+    }
+  
+    .pField1 {
+      border: 2px solid #ef403c;
+      width: 34.4vw;
+      height: 0;
+      margin-top: 15%;
+      position: inherit;
+      margin-left: 11%;
+      /* left: 9%; */
+      background-color: white;
+      font-size: 2vw;
+    }
+    .psearch {
+      position: absolute;
+      top: 50%;
+    }
+  
+    .share1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 11%;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      left: 9.4%;
+    }
+  
+    .facebook {
+      position: absolute;
+      margin-top: 74%;
+      cursor: pointer;
+      width: 2.7vw;
+      left: 36%;
+    }
+    .goog {
+      position: absolute;
+      width: 2.8vw;
+      margin-top: 73.5%;
+      left: 46%;
+      cursor: pointer;
+    }
+    .linkedin1 {
+      position: absolute;
+      margin-top: 73.2%;
+      left: 56%;
+      cursor: pointer;
+      width: 3.2vw;
+    }
+    .signor {
+      margin-top: 83.4%;
+      position: absolute;
+      left: 47%;
+      color: black;
+      font-size: 1.7vw;
+      font-family: Catamaran;
+      font-weight: bold;
+    }
+    .hr_3 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 86%;
+      left: 64%;
+      width: 11vw;
+    }
+    .hr_4 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 86%;
+      left: 10%;
+      width: 11vw;
+    }
+  
+    .emText {
+      position: absolute;
+      margin-top: 93.3%;
+      left: 10%;
+      font-size: 1.6vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .emailField {
+      position: absolute;
+      margin-top: 100%;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 80%;
+      height: 4.3vw;
+      font-size: 1.1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont1 {
+      position: absolute;
+      margin-top: 113.5%;
+      font-family: Catamaran;
+      width: 80%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1.7vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+    .emIdName1 {
+      position: absolute;
+      margin-top: 111.3%;
+      left: 10%;
+      font-size: 1.6vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emailFieldName1 {
+      position: absolute;
+      margin-top: 117%;
+      left: 10.2%;
+      border: #ef403c solid;
+      width: 80%;
+      height: 4.3vw;
+      font-size: 1.1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .contnamesubmit1 {
+      position: absolute;
+      margin-top: 135.5%;
+      font-family: Catamaran;
+      width: 80%;
+      left: 10.3%;
+      padding: 1.5%;
+      font-size: 1.7vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+  
+    .alr {
+      position: absolute;
+      margin-top: 128%;
+      left: 11%;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+    }
+    .login1 {
+      position: absolute;
+      margin-top: 128%;
+      left: 60%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.6vw;
+    }
+    .sub1 {
+      position: absolute;
+      margin-top: 138%;
+      width: 39%;
+      left: 31%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Catamaran;
+      font-size: 1.7vw;
+      margin-bottom: 3vw;
+    }
+  
+    /* file drag n drop and select */
+    #file_post {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .dragn {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 29%;
+      font-size: 16px;
+    }
+    .orr {
+      position: absolute;
+      font-family: "Catamaran";
+      margin-top: 18%;
+      color: grey;
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .closebtn1 {
+      position: absolute;
+      z-index: 9;
+      width: 8vw;
+      left: 93%;
+      margin-top: -2%;
+    }
+  
+    .div2 {
+      position: absolute;
+      width: 91%;
+      border: 2px solid grey;
+      height: 156vw;
+      background-color: white;
+      border-radius: 1vw;
+      left: 4%;
+      margin-top: 4%;
+      max-height: 100vh;
+    }
+    .mobdiv2 {
+      border-radius: 21px;
+      border: gray 3px solid;
+      width: 100vw;
+      background-color: white;
+      position: absolute;
+      /* margin-left: 35%; */
+  
+      height: 106%;
+  
+      z-index: 8;
+      top: 0vw;
+    }
+    .po {
+      margin-top: 2%;
+      font-weight: bold;
+      font-size: 4vw;
+      font-family: Catamaran;
+      text-align: center;
+      position: absolute;
+      left: 42%;
+    }
+    .api {
+      margin-top: 2%;
+      position: absolute;
+      left: 54%;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 4vw;
+      text-align: center;
+    }
+    .pic {
+      margin-top: 6%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 4vw;
+      text-align: center;
+      position: absolute;
+      left: 41%;
+    }
+    .hr1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6%;
+      left: 61%;
+      width: 25.5vw;
+    }
+    .hr2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6%;
+      left: 7%;
+      width: 25.5vw;
+    }
+    .pText1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 13%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+      left: 7%;
+    }
+    .pField1 {
+      border: 2px solid #ef403c;
+      width: 75vw;
+      height: 4.5vh;
+      margin-top: 23%;
+      /* position: absolute; */
+      margin-left: 9%;
+      font-size: 3vw;
+    }
+  
+    .share1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 4%;
+      font-size: 3.6vw;
+      font-family: Catamaran;
+      left: 7%;
+    }
+  
+    .facebook {
+      position: absolute;
+      margin-top: 48.1%;
+      cursor: pointer;
+      width: 7.4vw;
+      left: 35%;
+    }
+    .goog {
+      position: absolute;
+      width: 8.5vw;
+      margin-top: 47.1%;
+      left: 46%;
+      cursor: pointer;
+    }
+    .linkedin1 {
+      margin-top: 47.2%;
+      left: 57.4%;
+      cursor: pointer;
+      width: 9.2vw;
+      position: absolute;
+    }
+    .signor {
+      position: absolute;
+      margin-top: 61%;
+      left: 47.5%;
+      font-size: 4vw;
+      font-weight: bold;
+    }
+    .hr_3 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 63%;
+      left: 63.6%;
+      width: 25vw;
+    }
+  
+    .hr_4 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 63%;
+      left: 8%;
+      width: 26vw;
+    }
+  
+    .emText {
+      position: absolute;
+      margin-top: 71%;
+      left: 7%;
+      font-size: 3.7vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .emailField {
+      position: absolute;
+      margin-top: 78%;
+      left: 7%;
+      border: 2px #ef403c solid;
+      width: 74vw;
+      height: 11.5vw;
+      font-size: 3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont1 {
+      position: absolute;
+      margin-top: 97%;
+      font-family: Catamaran;
+      width: 74vw;
+      left: 7%;
+      padding: 2%;
+      font-size: 3.9vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .emIdName1 {
+      position: absolute;
+      margin-top: 93.3%;
+      left: 7%;
+      font-size: 3.7vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emailFieldName1 {
+      position: absolute;
+      margin-top: 100%;
+      left: 7%;
+      border: #ef403c solid;
+      width: 74vw;
+      height: 11.5vw;
+      font-size: 3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .contnamesubmit1 {
+      position: absolute;
+      margin-top: 121.5%;
+      font-family: Catamaran;
+      width: 74vw;
+      left: 7%;
+      padding: 2%;
+      font-size: 3.9vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .alr {
+      position: absolute;
+      margin-top: 114%;
+      left: 8%;
+      font-size: 3.1vw;
+      font-family: Catamaran;
+    }
+    .login1 {
+      position: absolute;
+      margin-top: 113.7%;
+      left: 59%;
+      color: #ef403c;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 3.7vw;
+    }
+    .sub1 {
+      position: absolute;
+      margin-top: 125%;
+      width: 42vw;
+      left: 28%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Catamaran;
+      font-size: 4vw;
+      margin-bottom: 3vw;
+    }
+  
+    /* file drag n drop and select */
+    #file_post {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .take_post {
+      background: #ef403c;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.8vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 3%;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      text-align: center;
+      margin-top: 16%;
+      left: 13.5%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11.2vw;
+      font-family: Catamaran;
+    }
+  
+    .dragn {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      top: 27%;
+      left: 6%;
+      font-size: 11px;
+      width: 100%;
+    }
+    .orr {
+      position: absolute;
+      font-family: "Catamaran";
+      margin-top: 10%;
+      color: grey;
+    }
+  }
+  @media (max-width: 2150px) and (min-width: 2001px) {
+    .modal-content {
+      border: none;
+      position: inherit;
+      padding-left: 0vw;
+    }
+  }
+  @media (min-width: 2100px) {
+    .take_post {
+      display: none;
+    }
+    .closebtn1 {
+      position: absolute;
+      cursor: pointer;
+      top: -1vw;
+      left: 21.5vw;
+      width: 2.3vw;
+      z-index: 10;
+    }
+    .mobdiv2 {
+      display: none;
+    }
+    .containerreview {
+      max-width: 100%;
+      background-color: white;
+      max-height: 153%;
+    }
+    .div2 {
+      position: absolute;
+      width: 29%;
+      border: 2px solid grey;
+      height: 50vw;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 0%;
+      max-height: 100vh;
+    }
+    .po {
+      margin-top: 0%;
+      font-weight: bold;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+      text-align: center;
+      position: absolute;
+      left: 42%;
+    }
+    .api {
+      margin-top: 3.5%;
+      /* font-size: 92%; */
+      color: gray;
+      position: absolute;
+      left: 46.5%;
+      font-weight: bolder;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      text-align: center;
+    }
+    .pic {
+      margin-top: 7.6%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      text-align: center;
+      position: absolute;
+      left: 38.5%;
+    }
+    .hr1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6.6%;
+      left: -4%;
+      width: 7vw;
+    }
+  
+    .hr2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6.6%;
+      left: 64%;
+      width: 7vw;
+    }
+  
+    .pText1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 16%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+      left: -3%;
+    }
+  
+    .pField1 {
+      border: 2px solid #ef403c;
+      width: 20.4vw;
+      height: 4vh;
+      margin-top: 22%;
+      position: absolute;
+      left: -3%;
+      font-size: 1vw;
+    }
+    .psearch {
+      position: absolute;
+      top: 50%;
+    }
+  
+    .share1 {
+      position: absolute;
+      font-weight: bold;
+      margin-top: 31%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+      left: -2.6%;
+    }
+  
+    .facebook {
+      position: absolute;
+      margin-top: 119.2%;
+      cursor: pointer;
+      width: 2vw;
+      left: 31%;
+    }
+    .goog {
+      position: absolute;
+      width: 2.2vw;
+      margin-top: 118.5%;
+      left: 46%;
+      cursor: pointer;
+    }
+    .linkedin1 {
+      position: absolute;
+      margin-top: 118.5%;
+      left: 61%;
+      cursor: pointer;
+      width: 2.4vw;
+    }
+    .signor {
+      margin-top: 132.4%;
+      position: absolute;
+      left: 48%;
+      color: black;
+      font-size: 1vw;
+      font-family: Catamaran;
+      font-weight: bold;
+    }
+    .hr_3 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 135.4%;
+      left: 67%;
+      width: 6.7vw;
+    }
+    .hr_4 {
+      position: absolute;
+      border: 1px solid black;
+      margin-top: 135.4%;
+      left: -1%;
+      width: 6.5vw;
+    }
+  
+    .emText {
+      position: absolute;
+      margin-top: 143.3%;
+      left: -3%;
+      font-size: 0.9vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .emailField {
+      position: absolute;
+      margin-top: 151%;
+      left: -2.8%;
+      border: #ef403c solid;
+      width: 104%;
+      height: 3vw;
+      font-size: 0.9vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont1 {
+      position: absolute;
+      margin-top: 170.5%;
+      font-family: Catamaran;
+      width: 104%;
+      left: -2.7%;
+      padding: 1.5%;
+      font-size: 1.3vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.3vw;
+    }
+  
+    /* .emIdName1{
+  
+      position: absolute;
+      margin-top: 144.3%;
+      left: -3%;
+      font-size: 0.9vw;
+      font-weight: bold;
+      font-family: Catamaran;
+   }
+  
+  .emailFieldName1{
+      position: absolute;
+      margin-top: 152%;
+      left: -2.8%;
+      border: #EF403C solid;
+      width: 104%;
+      height: 3vw;
+      font-size: 0.9vw;
+      padding: 2%;
+      font-family: Catamaran;
+   }
+  
+   .contnamesubmit1{
+  
+      position: absolute;
+      margin-top: 171.5%;
+      font-family: Catamaran;
+      width: 104%;
+      left: -2.7%;
+      padding: 1.5%;
+      font-size: 1.3vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: .3vw;
+   } */
+  
+    .alr {
+      position: absolute;
+      margin-top: 189%;
+      left: -2%;
+      font-size: 0.9vw;
+      font-family: Catamaran;
+    }
+    .login1 {
+      position: absolute;
+      margin-top: 188.5%;
+      left: 60%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1vw;
+    }
+  
+    .sub1 {
+      position: absolute;
+      margin-top: 202%;
+      width: 44%;
+      left: 28%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      font-family: Catamaran;
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+    }
+  
+    /* file drag n drop and select */
+    #file_post {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .dragn {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 29%;
+      font-size: 20px;
+    }
+    .orr {
+      position: absolute;
+      font-family: "Catamaran";
+      margin-top: 15%;
+      color: grey;
+    }
+  }
+  /*     
+     @media screen and (min-width: 769px) and (max-width: 2000px){
+         .file_post {
+             background: #EF403C;
+             border: none;
+             border-radius: .3vw;
+             color: #fff;
+             cursor: pointer;
+             display: inline-block;
+             font-size: 1vw;
+             font-weight: 500;
+             margin-bottom: 0rem;
+             outline: none;
+             padding: 2% 2% 7% 2%;
+             position: absolute;
+             transition: all 0.3s;
+             vertical-align: middle;
+             text-align: center;
+             top: 21.65vw;
+             left: 14.9%;
+             width: 70.2%;
+             font-weight: bold;
+             height: 5%;
+             font-family: Catamaran;
+         }
+        
+  
+     }
+  */
+  
+  /* @media screen and (min-width: 769px) and (max-width: 1029px){
+  
+         .hr_1{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24vw;
+             left: 61%;
+             width: 5.5vw;
+         
+         }
+         
+         .hr_2{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24vw;
+             left: 17%;
+             width: 5.5vw;
+         }
+  
+         .hr_3{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 28.5vw;
+             left: 61%;
+             width: 5.5vw;
+         }
+         .hr_4{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 28.5vw;
+             left: 18%;
+             width: 5.5vw;
+         }
+  
+         .closebtn1 {
+             position: absolute;
+             cursor: pointer;
+             top: -2.8vw;
+             left: 88.9%;
+             width: 2.3vw;
+             z-index: 10;
+         }
+  
+     } */
+  /* @media screen and (min-width: 1029px) and (max-width: 1248px){
+  
+         .hr_1{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.2vw;
+             left: 61%;
+             width: 5.5vw;
+         
+         }
+         
+         .hr_2{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.2vw;
+             left: 17%;
+             width: 5.5vw;
+         }
+  
+         .hr_3{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 28.7vw;
+             left: 61%;
+             width: 5.5vw;
+         }
+         .hr_4{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 28.7vw;
+             left: 18%;
+             width: 5.5vw;
+         }
+  
+         .closebtn1 {
+             position: absolute;
+             cursor: pointer;
+             top: -2vw;
+             left: 89.9%;
+             width: 2.3vw;
+             z-index: 10;
+         }
+  
+     }
+  
+     @media screen and (min-width: 1249px) and (max-width: 1500px){
+  
+         .hr_1{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.5vw;
+             left: 61%;
+             width: 5.5vw;
+         
+         }
+         
+         .hr_2{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.5vw;
+             left: 17%;
+             width: 5.5vw;
+         }
+  
+         .hr_3{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 29vw;
+             left: 61%;
+             width: 5.5vw;
+         }
+         .hr_4{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 29vw;
+             left: 18%;
+             width: 5.5vw;
+         }
+  
+         .closebtn1 {
+             position: absolute;
+             cursor: pointer;
+             top: -1.6vw;
+             left: 89.9%;
+             width: 2.3vw;
+             z-index: 10;
+         }
+  
+     } */
+  /* 
+     @media screen and (min-width: 1501px) and (max-width: 2000px){
+  
+         .hr_1{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.8vw;
+             left: 61%;
+             width: 5.5vw;
+         
+         }
+         
+         .hr_2{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 24.8vw;
+             left: 17%;
+             width: 5.5vw;
+         }
+  
+         .hr_3{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 29.3vw;
+             left: 61%;
+             width: 5.5vw;
+         }
+         .hr_4{
+         
+             position: absolute;
+             border: 1px solid black;
+             top: 29.3vw;
+             left: 18%;
+             width: 5.5vw;
+         }
+  
+         .closebtn1 {
+             position: absolute;
+             cursor: pointer;
+             top: -1.2vw;
+             left: 89.9%;
+             width: 2.3vw;
+             z-index: 10;
+         }
+  
+     } */
+  
+  /* @media screen and (min-width: 769px) and (max-width: 900px){
+     .closebtn1 {
+         position: absolute;
+         cursor: pointer;
+         top: -2.8vw;
+         left: 89.9%;
+         width: 2.3vw;
+         z-index: 10;
+     }
+  } */
+  
+  /************* */
+  .cover {
+    position: static;
+    background: transparent;
+    flex-direction: column;
+  }
+  .popup-header {
+    width: 100%;
+    text-align: right;
+    margin-top: -20px;
+  }
+  .popup-title {
+    position: relative;
+  }
+  .popup-title:before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    background: #ef403c;
+    width: 30%;
+    left: 42px;
+    top: 36%;
+  }
+  .popup-title:after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    background: #ef403c;
+    width: 30%;
+    left: auto;
+    top: 36%;
+    right: 42px;
+  }
+  .popup-title h3 {
+    font-weight: bold;
+    font-size: 1.1vw;
+    font-family: Catamaran;
+    text-align: center;
+  }
+  .popup-title h3 span {
+    display: block;
+  }
+  .cover form {
+    padding: 0 40px 40px;
+  }
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  
+  .project_searchinput {
+    padding-left: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1vw;
+    width: 100%;
+    position: static;
+    border: solid;
+    border-color: #ef403c;
+    font-family: Catamaran;
+    height: 2.8vw;
+    padding-right: 40px;
+  }
+  .searchdiv label {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .searchdiv > div {
+    border: 3px solid red;
+  }
+  
+  .drop-zone-show1 {
+    position: static;
+    display: flex;
+    background: white;
+    border: solid #ef403c;
+    width: 100%;
+    height: 11vw;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 0;
+    left: -2.5%;
+    right: 0;
+    /* bottom: 0; */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 0.05vw;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 0.4vw;
+    color: grey;
+  }
+  
+  .file_post {
+    background: #ef403c;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: 500;
+    outline: none;
+    padding: 2%;
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    height: 2.6vw;
+    z-index: 11;
+    bottom: -10px;
+  }
+  .sign1 {
+    margin-top: 40px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 16px !important;
+    font-family: Catamaran;
+    color: black;
+    position: relative;
+  }
+  .sign1:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: 0;
+    top: 8px;
+  }
+  
+  .sign1:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: auto;
+    top: 8px;
+    right: 0;
+  }
+  .drop-zone-show1 {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    height: auto !important;
+    border-radius: 0;
+    padding-top: 0;
+    min-height: 10vw;
+  }
+  .drop-zone-show1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .drop-zone-show1 ul img {
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  #dragbox1 ul,#dragbox12 ul {
+    margin-top: auto;
+    padding: 58px 0;
+    padding-bottom: 13px;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+  }
+  
+  .signor {
+    font-size: 16px;
+  }
+  .aa,
+  .bb,
+  .cc,
+  .dd {
+    height: auto;
+  }
+  .col {
+    height: auto;
+  }
+  .mobile-file {
+      order: 2;
+  }
+  
+  @media(max-width: 1300px)
+  {
+    .signor {
+      margin-top: 50px;
+      position: relative;
+      left: 0;
+      color: black;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      font-weight: bold;
+  }
+  .emText {
+      position: static;
+      margin-top: 0;
+  }
+  .emailField {
+      position: static;
+      margin-top: 0;
+      width: 100%;
+      
+  }
+  .cont1 {
+      position: static;
+      margin-top: 15px;
+      width: 100%;
+      
+  }
+  .alr {
+      position: static;
+      margin-top: 10px;
+  }
+  .login1 {
+      position: static;
+      margin-top: 0;
+  }
+  .dragn {
+      position: static !important;
+  }
+  }
+  @media (max-width: 1024px) {
+    form .sign1 {
+      font-size: 16px !important;
+    }
+    .signor {
+      font-size: 16px !important;
+    }
+    .alr {
+      font-size: 14px !important;
+    }
+    .login1 {
+      font-size: 14px !important;
+    }
+    .emText {
+      font-size: 16px;
+    }
+    .project_search_icon {
+      width: 7% !important;
+    }
+  
+    .searchdiv > div {
+      border: 3px solid red;
+      height: 40px;
+    }
+    .searchdiv > div > div {
+      height: 34px;
+    }
+    .project_searchinput {
+      font-size: 16px !important;
+      border: none;
+      height: 100%;
+    }
+    .searchdiv label {
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
+      font-size: 16px !important;
+    }
+    .form-group label {
+      font-size: 16px !important;
+    }
+    .emailField {
+      height: auto;
+      font-size: 16px !important;
+    }
+    .searchdiv > div {
+      height: auto;
+    }
+    .searchdiv > div > div {
+      height: auto;
+    }
+    .div1 {
+      width: 53%;
+    }
+  
+    .upload-file {
+      display: flex;
+      flex-direction: column;
+    }
+    .file1 {
+      position: static;
+      width: 100%;
+      bottom: 0;
+      top: auto;
+      order: 2;
+      left: 0;
+      font-size: 15px;
+      height: auto;
+    }
+    .col {
+      height: auto;
+    }
+    .dr1 {
+      position: static !important;
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
+    .emField {
+      position: static;
+      width: 100%;
+      font-size: 15px;
+      height: auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .take_post {
+      display: block;
+      background: #ef403c;
+      text-align: center;
+      color: #fff;
+      height: 52px;
+      line-height: 60px;
+    }
+  
+    .div2 {
+      height: 90vh;
+      max-height: 100vh;
+      top: 5vh;
+    }
+    label.file_post {
+      line-height: 41px;
+    }
+    .show-mobile {
+      display: flex;
+      justify-content: center;
+    }
+    .show-photo {
+      width: 40%;
+      margin-right: 20px;
+    }
+    .form-group label {
+      font-size: 16px !important;
+      border-radius: 8px !important;
+    }
+    .choose-file {
+      border-radius: 8px;
+    }
+    .form-group label.file_post {
+      border-radius: 0 !important;
+    }
+    .show-mobile {
+      margin-top: 15px;
+    }
+    .cont1 {
+      font-size: 16px;
+    }
+    .signor:after {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 35%;
+      background: #000;
+      left: auto;
+      top: 8px;
+      right: 0;
+    }
+    .signor:before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      width: 35%;
+      background: #000;
+      left: 0;
+      top: 8px;
+    }
+    .alr {
+      font-size: 14px !important;
+      display: inline-block;
+    }
+  
+    .login1 {
+      margin-left: 10px;
+      display: inline-block;
+    }
+    .searchdiv > div > div {
+      height: auto;
+      display: flex;
+      align-items: center;
+      padding: 6px 0;
+    }
+    .unbiased {
+      margin-top: 0;
+      color: #fff;
+    }
+    .on {
+      margin-left: 0;
+      margin-top: 0;
+      color: #fff;
+    }
+    .btnread,
+    .btnread2 {
+      font-size: 17px;
+    }
+    .smallimg {
+      width: 30px;
+      padding-right: 3%;
+    }
+    .search-wrapper-review div {
+      display: flex;
+      align-items: center;
+    }
+    .project_searchinput {
+      width: 92% !important;
+      font-size: 18px !important;
+    }
+  
+  
+    div#dragbox12 {
+      margin-top: 30px;
+      position: relative !important;
+      padding-bottom: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      border: 3px solid #ef403c !important;
+  }
+  
+  
+  }
+  
+  @media (max-width: 600px) {
+    .show-mobile {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form-group label {
+      position: static;
+    }
+    .take_post {
+      height: 52px;
+      line-height: 47px;
+    }
+    .searchdiv > div {
+      height: auto !important;
+    }
+    .searchdiv > div > div {
+      height: auto;
+    }
+    .facebook {
+      position: static;
+      margin-top: 0;
+    }
+    .goog {
+      position: static;
+      margin-top: 0;
+    }
+    .linkedin1 {
+      margin-top: 0;
+      position: static;
+    }
+    .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .signor {
+      position: relative !important;
+      left: 0 !important;
+      right: 0;
+      margin: 20px auto !important;
+      text-align: center;
+    }
+    .tread {
+      font-size: 3vw;
+      color: #fff;
+    }
+    .popup-title:before {
+      width: 100px !important;
+    }
+    .popup-title:after {
+      width: 100px !important;
+    }
+    label.file_post {
+      line-height: 42px;
+    }
+    .project_search_icon {
+      width: 10% !important;
+    }
+    .project_searchinput {
+      width: 88% !important;
+    }
+    .on {
+      font-size: 20px;
+    }
+    .tread {
+      font-size: 13px;
+      color: #fff;
+    }
+    .tread:before {
+      width: 70px;
+      left: 0;
+      top: 2px;
+    }
+    .tread:after {
+      width: 70px;
+      right: 0;
+      top: 2px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .div2 {
+      width: 90% !important;
+    }
+    .show-photo {
+      width: 48%;
+      margin-right: 20px;
+    }
+    .popup-title h3 {
+      font-size: 18px !important;
+    }
+    .take_post {
+      width: 100%;
+    }
+    .choose-file {
+      width: 48%;
+    }
+    .btnread,
+    .btnread2 {
+      font-size: 12px;
+    }
+    .smallimg {
+      width: 25px;
+      padding-right: 3%;
+    }
+  
+    .tread:after {
+      height: 11px;
+    }
+    .tread:before {
+      height: 11px;
+    }
+    .popup-title:after,
+    .popup-title:before {
+      width: 80px !important;
+    }
+    .popup-title h3 {
+      font-size: 16px !important;
+    }
+    .tread {
+      font-size: 13px;
+      color: #fff;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .tread {
+      font-size: 10px;
+      color: #fff;
+    }
+  }
+  
+  .sub1 {
+    position: relative !important;
+    margin-top: 45% !important;
+  }
+  
+  
+  /* add title to image  */
+  
+  .selected-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .addimg-title {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addimg-title input {
+    border: 2px solid red;
+    font-size: 18px;
+    height: 45px;
+  }
+  #dragbox1 ul,#dragbox12 ul {
+    padding: 25px 0 !important;
+  }
+  
+  
+  #dragbox12 {
+    display: none !important;
+  }
+  
+  
+  
+  
+  @media(max-width: 767px)
+  {
+    .modal-open .modal {
+      padding: 20px 0px;
+  }
+  div#dragbox12 {
+    margin-top: 30px;
+    position: static !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    border: 3px solid #ef403c !important;
+    width: 100%;
+    left: 0;
+    margin-top: 30px !important;
+    margin-bottom: 25px;
+  }
+  .addimg-title {
+    width: 50%;
+    margin-right: 19px;
+  }
+  
+   #dragbox12 ul li {
+    width: 200px;
+  }
+  }
+  
+  @media(max-width: 400px)
+  {
+    .addimg-title {
+      width: 50%;
+      margin-right: 7px;
+  }
+  
+  
+  }
+  
+  @media(max-width: 600px){
+    #dragbox1 ul li .remove-btn, #dragbox12 ul li .remove-btn{
+      display: flex;
+      font-size: 10px;
+    }
+  }
+  
+  @media(max-width: 420px) {
+    .drop-zone-show1 ul img {
+      width: 100% !important;
+  }
+  }
+  .hello input {
+    border: .1vw solid #ef403c;
+  }

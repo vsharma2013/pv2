@@ -1,0 +1,143 @@
+.footer{
+  background-image: url(../assets/images/footer.jpg)
+}
+.foot1{
+  border-style: none;
+  position: absolute;
+  width: 100%;
+  float: none;
+  float: initial;
+  /* height: 117%; */
+  /* height: 104%; */
+  display: block;
+  -o-object-fit: none;
+  object-fit: cover;
+}
+
+
+.footercol1{
+  padding-top: 5%;
+  padding-left:20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: left !important;
+}
+
+.footer-copyright{
+  margin-left: 4.6%;
+}
+
+.footgrid{
+  margin-top: 0%;
+}
+
+.propertyname{
+  margin-top: 3%;
+}
+
+@media screen and (min-width: 506px) {
+.footerbigtext{
+  font-weight: bolder;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.footerbigtextcontact{
+  font-weight: bolder;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  font-size: 1.5vw;
+  cursor: pointer;
+  color: white;
+}
+
+.footerbigtextcontact:hover{
+  text-decoration: underline;
+}
+
+.footersmalltextcopy{
+  margin-bottom: 2%;
+  text-align: center;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.footersmalltext{
+  margin-bottom: 2%;
+  font-size: 1.2vw;
+  color: white;
+}
+.footersmalltext:hover{
+  text-decoration-color: white;
+  text-decoration: underline white;
+}
+}
+@media screen and (max-width: 579px) {
+.footerbigtext{
+  font-weight: bolder;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: center;
+  color: white;
+}
+
+.footerbigtextcontact{
+  font-weight: bolder;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.footerbigtextcontact:hover{
+  text-decoration: underline;
+}
+
+.footersmalltextcopy{
+  margin-bottom: 2%;
+  text-align: center;
+  color: white;
+}
+
+.footersmalltext{
+  margin-bottom: 2%;
+  text-align: center;
+  color: white;
+}
+
+.footersmalltext:hover{
+  text-decoration-color: white;
+  text-decoration: underline white;
+}
+}
+
+.footericons{
+  margin-top: 8%;
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerimagestyle{
+  width: 10%;
+    height: 15%;
+}
+.dont-show-on-web{
+  display: none;
+}
+
+.dont-show-on-mobile1{
+  display: block;
+}
+
+@media screen and (max-width:579px){
+  .dont-show-on-mobile1{
+    display: none;
+  }
+  .dont-show-on-web{
+    display: block;
+  }
+}

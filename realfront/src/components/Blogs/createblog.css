@@ -1,0 +1,84 @@
+/* .mymodal {
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.myoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+} */
+
+.blog-modal{
+  width: 90vw  ;
+    max-width: 90vw;
+    background: white;
+  }
+
+  .blogclosebtn{
+    position: absolute;
+    z-index: 9;
+    width: 3vw;
+    left: 97%;
+    top: 4%;
+    cursor: pointer;
+  }
+
+  .blog_image{
+    /* position: relative; 
+    width: 30%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 1%;
+    /* margin-bottom: 2%; */
+  }
+
+  .disp_blog{
+    background-color: white;
+  }
+
+  .draft_headin{
+    font-family: Catamaran-Semibold;
+    font-size: xx-large;
+    text-align: center;
+    /* margin-top: 0%; */
+    padding-top: 2%;
+  }
+
+  .img-container-block {
+    text-align: center;
+  }
+
+  .img-container-inline {
+    text-align: center;
+    display: block;
+  }
+
+  .draft_desc{
+    font-family: Catamaran-Medium;
+    font-size: large;
+    /* text-align: center; */
+    justify-content: center;
+    padding: 3%;
+  }
+
+  .border_line {
+    border: 1px solid #EF403C;
+    width: 95%;
+  }
+  .created{
+    font-family: Catamaran-Medium;
+    font-size: large;
+    text-align: left;
+    padding-left: 3%;
+    padding-bottom: 1%;
+  }

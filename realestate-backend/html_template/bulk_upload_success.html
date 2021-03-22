@@ -1,0 +1,88 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+</style>
+
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+                <div class="page-header" style="padding-top: 80px;">
+                <center>
+                <h2 style="font-family: 'Berkshire Swash';font-size: 22px; color: forestgreen;">Your Bulk Upload Process Is SuccessFully Running In Background....</h2>
+                <br><br>
+                <lable style="font-family: 'Berkshire Swash';font-size: 18px; color: #forestgreen;">Note : Kindly Wait For Atleast 30 min. Before Checking The FrontEnd.</lable>
+                <br><br><br>
+                <a href="https://www.propviewz.com/be/management/create_project" >
+                <button style="margin-top: 10px;" class="btn btn-info">Back</button>
+                </a>
+                </center>   
+                </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

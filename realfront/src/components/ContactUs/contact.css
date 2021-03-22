@@ -1,0 +1,82 @@
+
+.contitle{
+    font-family: 'Catamaran-Bold';
+    font-size: x-large;
+}
+
+.contact_closebtn{
+    /* position: absolute; */
+    z-index: 9;
+    width: 2.6vw;
+    /* left: 97%;
+    top: 4%; */
+    cursor: pointer;
+  }
+
+  .con_text{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid  rgb(238, 65, 61);
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* margin-top: 6px; */
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Catamaran;
+  }
+  
+  .con_input {
+    background-color: #404041;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    font-family: Catamaran-Semibold;
+  }
+  
+  .con_input:hover {
+    background-color: rgb(238, 65, 61);
+    font-weight: bold;
+  }
+  
+  .container_con{
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+  }
+
+  @media screen and (min-width: 767px) {
+    .contact_closebtn{
+        /* position: absolute; */
+        z-index: 9;
+        width: 3.8vw;
+        /* left: 97%;
+        top: 4%; */
+        cursor: pointer;
+      }
+  }
+
+  @media screen and (max-width: 425px) {
+    .contact_closebtn{
+        /* position: absolute; */
+        z-index: 9;
+        width: 7.6vw;
+        /* left: 97%;
+        top: 4%; */
+        cursor: pointer;
+      }
+  }
+
+  @media screen and (min-width: 1321px) {
+    .contact_closebtn{
+        /* position: absolute; */
+        z-index: 9;
+        width: 2.6vw;
+        /* left: 97%;
+        top: 4%; */
+        cursor: pointer;
+      }
+  }

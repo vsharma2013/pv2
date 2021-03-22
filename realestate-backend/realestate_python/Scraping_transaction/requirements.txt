@@ -1,0 +1,8 @@
+selenium
+Pillow
+xlrd
+openpyxl
+pandas
+requests
+psycopg2
+configparser

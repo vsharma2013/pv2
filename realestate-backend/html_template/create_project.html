@@ -1,0 +1,509 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+div#map_div {
+    padding-bottom: 18px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.p_date {
+  text-transform: uppercase;
+}
+</style>
+
+<body>
+
+<script>
+$(document).ready(function(){
+  $("#add_phase_btn").click(function(){
+    var numItems = $('.project_phase').length
+    var numItems = numItems+1;
+    var new_div_for_phase = '<div class="project_phase" id="project_phase">  \
+    <div class="col-md-12"> \
+      <div class="xol-md-12"><label>Phase '+numItems+':</label></div>  \
+      <input type="hidden" name="pro_phase[]" value="Phase'+numItems+'">\
+      <div class="col-md-3">  \
+      <label class="checkbox-inline"> \
+      <input type="checkbox" name="pro_config[]" value="Phase'+numItems+':1 BHK">1 BHK  \
+      </label>  \
+      </div>    \
+      <div class="col-md-3">\
+      <input type="number" class="form-control"  min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">\
+      </div> \
+      <div class="col-md-3">  \
+      <input type="number" class="form-control"  min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> \
+      </div>  \
+      </div>  \
+    <div class="col-md-12" style="padding-top:7px;">  \
+      <div class="col-md-3">  \
+      <label class="checkbox-inline"> \
+      <input type="checkbox" name="pro_config[]" value="Phase'+numItems+':1.5 BHK">1.5 BHK  \
+      </label>  \
+      </div>  \
+      <div class="col-md-3">\
+      <input type="number" class="form-control"  min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">\
+      </div> \
+      <div class="col-md-3">  \
+      <input type="number" class="form-control"  min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> \
+      </div>  \
+    </div>  \
+    <div class="col-md-12" style="padding-top:7px;">  \
+    <div class="col-md-3">  \
+    <label class="checkbox-inline"> \
+    <input type="checkbox" name="pro_config[]" value="Phase'+numItems+':2 BHK">2 BHK  \
+    </label>    \
+    </div>    \
+    <div class="col-md-3">\
+      <input type="number" class="form-control"  min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">\
+      </div> \
+      <div class="col-md-3">  \
+      <input type="number" class="form-control"  min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> \
+      </div>  \
+    </div>  \
+    <div class="col-md-12" style="padding-top:7px;">  \
+    <div class="col-md-3">  \
+    <label class="checkbox-inline"> \
+    <input type="checkbox" name="pro_config[]" value="Phase'+numItems+':3 BHK">3 BHK  \
+    </label>    \
+    </div>    \
+    <div class="col-md-3">\
+      <input type="number" class="form-control"  min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">\
+      </div> \
+      <div class="col-md-3">  \
+      <input type="number" class="form-control"  min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> \
+      </div>  \
+    </div>  \
+    <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;"> \
+    <div class="col-md-3">  \
+    <label class="checkbox-inline"> \
+    <input type="checkbox" name="pro_config[]" value="Phase'+numItems+':4 BHK">4 BHK  \
+    </label>  \
+    </div>  \
+    <div class="col-md-3">\
+      <input type="number" class="form-control"  min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">\
+      </div> \
+      <div class="col-md-3">  \
+      <input type="number" class="form-control"  min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> \
+      </div>  \
+    </div>  \
+    <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;">\
+      <div class="col-md-3">\
+      <label>Construction Status</label>  \
+      </div>  \
+      <div class="col-md-6">  \
+      <select class="form-control" name="construction_status[]">  \
+      <option value="Ready Possession">Ready Possession</option>  \
+      <option value="Under construction">Under construction</option>  \
+      </select> \
+      </div> \
+    </div>\
+    <div class="col-md-12"  style="padding-top:7px; padding-bottom:10px;"> \
+      <div class="col-md-3">  \
+      <label>Possession Date</label>  \
+      </div>  \
+      <div class="col-md-6">  \
+      <input type="date" class="form-control p_date" placeholder="Enter Possession Date" name="posession_date[]">  \
+      </div>  \
+    </div>';
+
+    $("#project_phase").append(new_div_for_phase);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#posession_date_for_uc").hide();
+    $("select").change(function(){
+        var selected_value = $(this).children("option:selected").val();
+        if(selected_value == 'Under construction'){
+          //$("#posession_date_for_uc").show();
+        }
+        else{
+           //$("#posession_date_for_uc").hide();
+        }
+    });
+});
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#get_disc").click(function() { 
+    var x = $("form").serializeArray(); 
+    console.log("FORM DATA:",x); 
+    var project_name = x[0].value;
+    var city = x[3].value;
+    var area = x[4].value;
+    var property_type = x[6].value;
+    //var construction_status = x[7].value;
+    var brand = x[13].value;
+    var rera_no = x[16].value;
+    var brief_desc = "The Beautiful Property "+project_name+" comming to your nearest city of "+city+" within the area of "+area+". Property is of "+property_type+" type, Also this property comes with the well known brand of "+brand+". This property is registered with the Rera Number as "+rera_no+"";
+    $("textarea#brief_desc_box").val( brief_desc );
+    })
+});
+
+</script>
+    <div class="main">
+    <div class="container-fluid">
+                <!--*******************************-->
+                <div class="container-fluid">
+                <div class="page-header" style="font-family: 'Berkshire Swash';font-size: 22px;">
+                <center>
+                <h2>Create Project Form</h2>
+                <p>Use this form to store project information to the database....</p>  
+                </center>   
+                </div>
+
+                <form action="https://www.propviewz.com/be/management/create_project" method="post" id="formx">
+
+                <div class="form-group">
+                <label>Project Name:</label>
+                <input type="text" class="form-control" placeholder="Enter Project Name" name="pro_name" required>
+                </div>
+
+                <div class="form-group">
+                <label >Country:</label>
+                <input type="text" class="form-control" placeholder="Enter Country" name="pro_country" required>
+                </div>
+
+                <div class="form-group">
+                <label >State:</label>
+                <input type="text" class="form-control" placeholder="Enter State" name="pro_state" required>
+                </div>
+
+                <div class="form-group">
+                <label >City:</label>
+                <input type="text" class="form-control" placeholder="Enter City" name="pro_city" required>
+                </div>
+
+                <div class="form-group">
+                <label>Area:</label>
+                <input type="text" class="form-control" placeholder="Enter Area of the project (Eg: Jayanagar)" name="pro_area" required>
+                </div>
+
+                <div class="form-group">
+                <label>Sub-Area:</label>
+                <input type="text" class="form-control" placeholder="Enter Sub-Area (Eg: Jayanagar 4th Block)" name="pro_sub_area" required>
+                </div>
+
+                <div class="form-group">
+                <label>Property type:</label>
+                <select class="form-control" name="property_type">
+                <option value="Residential">Residential</option>
+                <option value="Commercial">Commercial</option>
+                <option value="Mix construction">Mix construction</option>
+                </select>
+                </div>
+
+                <!--
+                <div class="form-group">
+                <label>Construction Status:</label>
+                <select class="form-control" name="construction_status">
+                <option value="Ready Possession">Ready Possession</option>
+                <option value="Under construction">Under construction</option>
+                </select>
+                </div>
+               -->
+
+                <div class="form-group" id="posession_date_for_uc" style="margin-bottom: 15px; padding: 5px; background-color: #a4ff5f82; border-radius: 6px;">
+                <label>Possession Date As Per Rera:</label>
+                <input type="text" class="form-control" placeholder="Enter Possession Date" name="posession_date_as_rera">
+                </div>
+                 
+
+                <div class="form-group">
+                <label>Address:</label>
+                <input type="text" class="form-control" placeholder="Enter Address" name="pro_add" required>
+                </div>
+
+                <div class="form-group">
+                <label>Developer Email:</label>
+                <input type="email" class="form-control" placeholder="Enter Developer Email" name="dev_email" required>
+                </div>
+
+                <div class="form-group">
+                <label>Developer Name:</label>
+                <input type="text" class="form-control" placeholder="Enter Developer Name" name="dev_name" required>
+                </div>
+
+                <div class="form-group">
+                <label>Developer Phone Number:</label>
+                <input type="number" class="form-control" placeholder="Enter Developer Phone No." name="dev_mob_no" required>
+                </div>
+
+                <div class="form-group">
+                <label>Developer Entity:</label>
+                <input type="text" class="form-control" placeholder="Enter Developer Entity" name="developer_entity" required>
+                </div>
+
+                <div class="form-group">
+                <label>Brand:</label>
+                <input type="text" class="form-control" placeholder="Enter Developer Name" name="brand" required>
+                </div>
+
+                <div class="form-group">
+                <label>Google Map link:</label>
+                <div class="col-md-12" id="map_div">
+                <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Enter Map Link" name="map_link" required>
+                </div>
+                <div class="col-md-3">
+                <a href="https://www.google.com/maps/" target="_blank">Copy & Paste From Google Map</a>
+                </div>
+                </div>
+                </div>
+
+                <div class="form-group">
+                <label>Google Review link:</label>
+                <div class="col-md-12" id="map_div">
+                <div class="col-md-9">
+                <input type="text" class="form-control" placeholder="Enter Map Link" name="review_link" required>
+                </div>
+                <div class="col-md-3">
+                <a href="https://www.google.com/maps/" target="_blank">Copy & Paste From Google Map</a>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="form-group">
+                <label>Rera Number:</label>
+                <input type="text" class="form-control" placeholder="Enter Rera number" name="rera_no" required>
+                </div>
+
+                <div class="form-group">
+                <label>Rera link:</label>
+                <input type="text" class="form-control" placeholder="Enter Rera Link" name="rera_link" >
+                </div>
+
+                <div class="form-group">
+                <label>Number of Buildings:</label>
+                <input type="number" class="form-control" placeholder="Enter Number of Buildings" name="no_of_buildings" required>
+                </div>
+
+                <div class="form-group">
+                <label>Amenities:</label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Gym">Gym
+                </label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Swimming pool">Swiming Pool
+                </label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Kids Play Area">Kids Play Area
+                </label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Garden">Garden
+                </label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Indoor Games">Indoor Games
+                </label>
+                <label class="checkbox-inline">
+                <input type="checkbox" name="Amenities" value="Outdoor Games">Outdoor Games
+                </label>
+                </div>
+
+
+                <div class="form-group">
+                <label>Project Configuration:</label>
+                </div>
+
+                <!--
+                <form method="post" id="form1">
+                -->
+                <div class="project_phase" id="project_phase">  
+
+                <div class="col-md-12">
+                <div class="xol-md-12"><label>Phase 1:</label></div>
+                <input type="hidden" name="pro_phase[]" value="Phase1">
+                <div class="col-md-3">
+                <label class="checkbox-inline">
+                <input type="checkbox" name="pro_config[]" value="Phase1:1 BHK">1 BHK
+                </label>  
+                </div>  
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                </div> 
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end">
+                </div>
+                </div>
+                <div class="col-md-12" style="padding-top:7px;">
+                <div class="col-md-3">
+                <label class="checkbox-inline">
+                <input type="checkbox" name="pro_config[]" value="Phase1:1.5 BHK">1.5 BHK
+                </label>  
+                </div>  
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                </div> 
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end">
+                </div>
+                </div>
+                <div class="col-md-12" style="padding-top:7px;">
+                <div class="col-md-3">
+                <label class="checkbox-inline">
+                <input type="checkbox" name="pro_config[]" value="Phase1:2 BHK">2 BHK
+                </label>  
+                </div>  
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                </div> 
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end">
+                </div> 
+                </div>
+                <div class="col-md-12" style="padding-top:7px;">
+                <div class="col-md-3">
+                <label class="checkbox-inline">
+                <input type="checkbox" name="pro_config[]" value="Phase1:3 BHK">3 BHK
+                </label>  
+                </div>  
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                </div> 
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end">
+                </div>
+                </div>
+                <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;">
+                <div class="col-md-3">
+                <label class="checkbox-inline">
+                <input type="checkbox" name="pro_config[]" value="Phase1:4 BHK">4 BHK
+                </label>  
+                </div>  
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                </div> 
+                <div class="col-md-3">
+                <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end">
+                </div> 
+                </div>
+                
+                <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;">
+                  <div class="col-md-3">
+                  <label>Construction Status</label>  
+                  </div>  
+                  <div class="col-md-6">
+                  <select class="form-control" name="construction_status[]">
+                  <option value="Ready Possession">Ready Possession</option>
+                  <option value="Under construction">Under construction</option>
+                  </select>
+                  </div> 
+                </div>
+
+                <div class="col-md-12"  style="padding-top:7px; padding-bottom:10px;">
+                  <div class="col-md-3">
+                  <label>Possession Date</label>  
+                  </div>  
+                  <div class="col-md-6">
+                  <input type="date" class="form-control p_date" placeholder="Enter Possession Date" name="posession_date[]">
+                  </div> 
+                </div>
+
+                
+                <!--
+                <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;">
+                <div class="col-md-3">
+                <label>Possession Date</label>  
+                </div>  
+                <div class="col-md-6">
+                <input type="date" class="form-control" placeholder="Enter Possession Date" name="posession_date[]">
+                </div> 
+                </div>
+                -->
+                
+
+                </div>
+                <!--
+                </form>
+                -->
+
+                <center><div class="btn btn-info" id="add_phase_btn">Add Phase</div></center>
+
+                <div class="form-group">
+                <label for="comment">Brief Discription:</label>
+                <textarea class="form-control" rows="5" id="brief_desc_box" name="brief_desc"></textarea>
+                <span style="color:#337ab7; cursor: pointer;" id="get_disc"> Generate brief Discription </span>
+                </div>
+
+
+                <center><button type="submit" class="btn btn-success">Next</button></center>
+
+                </form>
+                <!--
+                <input type="button" class="btn btn-success" value="Create Project" onclick="submitForms()" />
+                -->
+                </div>
+
+                </div>
+                <!--*******************************-->
+
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

@@ -1,0 +1,97 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+<script>
+  var backend_url = 'https://www.propviewz.com/be';
+  console.log("BackendURL:",backend_url);
+  document.getElementById("denied_img").src= backend_url+"/images/access_denied.png"
+  document.getElementById("show_dashboard").setAttribute("href",backend_url+"/management/show_dashboard");
+});
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 13px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+</style>
+
+
+<body>
+
+    <div class="main">
+    <div class="container-fluid">
+                <div class="page-header" style="padding-top: 80px; color: chocolate;border-radius: 7px;padding-bottom: 55px;">
+                <center>
+                <h2 style="font-family: 'Berkshire Swash';font-size: 22px;">
+                <i>Sorry! Your Are Not Allowed To Access This Page....</i></h2>
+                <div class="col-md-12">
+                <img src="" id="denied_img">
+                </div>
+                <a href="" id="show_dashboard">
+                <button style="margin-top: 10px;" class="btn btn-danger">Go Back</button>
+                </a>
+                </center>   
+                </div>
+    </div>
+    </div>
+
+   
+</body>
+</html> 

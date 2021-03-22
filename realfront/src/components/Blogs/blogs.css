@@ -1,0 +1,1427 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+
+
+.blog_collection{
+    margin-top: 12%;
+    margin-bottom: 47%;
+    margin-left: 6%;
+}
+
+.create_blog_tab{
+    left: 5.7%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+}
+
+.draft_blog_tab{
+    left: 14.5%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+}
+
+.publish_blog_tab{
+    left: 24%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+}
+
+.create_blog_tab.active {
+    background-color: #EF403C;
+    font-weight: bolder;
+    color: white;
+    padding: 5px 16px 0px;
+    font-family: Catamaran;
+}
+
+.draft_blog_tab.active {
+    background-color: #EF403C;
+    font-weight: bolder;
+    color: white;
+    padding: 5px 16px 0px;
+    font-family: Catamaran;
+    left: 14%;
+}
+
+.publish_blog_tab.active {
+    background-color: #EF403C;
+    font-weight: bolder;
+    color: white;
+    padding: 5px 16px 0px;
+    font-family: Catamaran;
+    left: 23%;
+}
+
+.vl_1 {
+    border-left: 6px solid rgb(40, 40, 41);
+    height: 38px;
+    position: absolute;
+    left: 12.2%;
+    top: 0;
+  }
+
+  .vl_2 {
+    border-left: 6px solid rgb(40, 40, 41);
+    height: 38px;
+    position: absolute;
+    left: 21.2%;
+    top: 0;
+  }
+
+  body {
+    font-family: Catamaran;
+    font-size: 17px;
+    padding: 8px;
+    color: #404041;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  .bbb {
+    -ms-flex: 25%; 
+    flex: 25%;
+  }
+  
+  
+  .bbb {
+    padding: 0 16px;
+  }
+  
+  .create_sec {
+    background-color: #ffffff;
+    padding: 5px 20px 15px 20px;
+    width: 40%;
+    text-align: -webkit-left;
+    position: absolute;
+    left: 30%;
+    margin-top: 3%;
+  }
+  
+  .input_blog_text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #EF403C;;
+    border-radius: 3px;
+    color: #404041;
+    font-family: Catamaran;
+  }
+
+  .input_blog_upload{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    padding: 12px;
+    border: 1px solid #EF403C;;
+    border-radius: 3px;
+    color: #404041;
+    font-family: Catamaran;
+  }
+
+  .input_blog_description{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 13px 232px;
+    border: 1px solid #EF403C;;
+    border-radius: 3px;
+    color: #404041;
+    font-family: Catamaran;
+  }
+  
+  .label_name {
+    margin-bottom: 5px;
+    display: block;
+    color: #404041;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1vw;
+  }
+  .label_upload {
+    color: #606068;
+    /* font-weight: bold; */
+    font-family: Catamaran;
+    font-size: 0.8vw;
+  }
+
+  .blog_btn{
+    background-color: #404041;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1vw;
+    font-family: Catamaran;
+  }
+  
+  .blog_btn:hover {
+    background-color: rgb(238, 65, 61);
+    font-weight: bold;
+  }
+
+  .blog_pub_com{
+    text-align: left;
+  }
+
+  /* .errupload{
+  
+  } */
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    /* .row {
+      flex-direction: column-reverse;
+    } */
+    .bbb {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 2550px) and (max-width:2570px) {
+    .blog_collection {
+      margin-top: 10%;
+      margin-bottom: 33%;
+      margin-left: 6%;
+  }
+    .create_blog_tab {
+      left: 5.7%;
+      margin-top: -1%;
+      border-color: none;
+      outline: none;
+      border: none;
+      background: none;
+      font-size: 1.2vw;
+      font-weight: bold;
+      color: #404041;
+      cursor: pointer;
+      position: absolute;
+      padding: 5px;
+      font-family: Catamaran;
+  }
+
+  .draft_blog_tab {
+    left: 14.5%;
+    margin-top: -1%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+}
+
+.publish_blog_tab {
+  left: 22.7%;
+  margin-top: -1%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+
+.vl_1 {
+  border-left: 8px solid rgb(40, 40, 41);
+  height: 52px;
+  position: absolute;
+  left: 12.2%;
+  margin-top: -1%;
+}
+
+.vl_2 {
+  border-left: 8px solid rgb(40, 40, 41);
+  height: 52px;
+  position: absolute;
+  left: 21.2%;
+  margin-top: -1%;
+}
+
+  }
+
+  @media screen and (min-width: 1400px) and (max-width:1520px) {
+    .create_blog_tab {
+      left: 5.7%;
+      margin-top: 1%;
+      border-color: none;
+      outline: none;
+      border: none;
+      background: none;
+      font-size: 1.2vw;
+      font-weight: bold;
+      color: #404041;
+      cursor: pointer;
+      position: absolute;
+      padding: 5px;
+      font-family: Catamaran;
+  }
+  .draft_blog_tab {
+    left: 14.5%;
+    margin-top: 1%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+}
+
+.publish_blog_tab {
+  left: 22.7%;
+  margin-top: 1%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+
+.vl_1 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 30px;
+  position: absolute;
+  left: 12.2%;
+  margin-top: 1%;
+}
+
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 30px;
+  position: absolute;
+  left: 21.2%;
+  margin-top: 1%;
+}
+.input_blog_text {
+  width: 100%;
+  margin-bottom: -4px;
+  padding: 6px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+
+.input_blog_upload{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  padding: 6px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+
+.input_blog_description {
+  width: 100%;
+  margin-bottom: -12px;
+  padding: 12px 13px 232px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.label_name {
+  margin-bottom: 5px;
+  margin-top: 4%;
+  display: block;
+  color: #404041;
+  font-weight: bold;
+  font-family: Catamaran;
+  font-size: 1vw;
+}
+.label_upload{
+  color: #606068;
+  /* font-weight: bold; */
+  font-family: Catamaran;
+  font-size: 0.8vw;
+}
+
+.blog_btn {
+  background-color: #404041;
+  color: white;
+  padding: 12px;
+  margin: 28px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1vw;
+  font-family: Catamaran;
+}
+
+  }
+
+  @media screen and (min-width: 1020px) and (max-width:1350px) {
+  .blog_collection {
+    margin-top: 18%;
+    margin-bottom: 65%;
+    margin-left: 6%;
+}
+.create_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.2% 0.8% 0.2% 0.8%;
+  font-family: Catamaran;
+}
+.draft_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.2% 0.8% 0.2% 0.8%;
+  font-family: Catamaran;
+  left: 15.2%; 
+}
+.publish_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.2% 0.8% 0.2% 0.8%;
+  font-family: Catamaran;
+  left: 25.2%;
+}
+.create_blog_tab {
+  left: 5.7%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.draft_blog_tab {
+  left: 15.2%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab {
+  left: 24.2%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 28px;
+  position: absolute;
+  left: 23.2%;
+  top: 0;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 28px;
+  position: absolute;
+  left: 13.8%;
+  top: 0;
+}
+.create_sec {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  width: 40%;
+  text-align: -webkit-left;
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+}
+.label_name {
+  margin-bottom: 5px;
+  display: block;
+  color: #404041;
+  font-weight: bold;
+  font-family: Catamaran;
+  font-size: 1.2vw;
+}
+.label_upload{
+  color: #606068;
+  /* font-weight: bold; */
+  font-family: Catamaran;
+  font-size: 1vw;
+}
+.input_blog_text {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 5px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.input_blog_upload{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  padding: 5px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+
+  }
+
+  @media screen and (min-width: 760px) and (max-width:920px) {
+  .blog_collection {
+    margin-top: 3%;
+    margin-bottom: 82%;
+    margin-left: 6%;
+}
+.create_sec {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  width: 40%;
+  text-align: -webkit-left;
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+}
+.label_name {
+  margin-bottom: 4px;
+  display: block;
+  color: #404041;
+  font-weight: bold;
+  font-family: Catamaran;
+  font-size: 1.4vw;
+}
+.label_upload{
+  color: #606068;
+  /* font-weight: bold; */
+  font-family: Catamaran;
+  font-size: 1.2vw;
+}
+.input_blog_text {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 4px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+
+.input_blog_upload{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  padding: 4px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.blog_btn {
+  background-color: #404041;
+  color: white;
+  padding: 10px;
+  margin: 3px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-family: Catamaran;
+}
+
+.create_blog_tab {
+  left: 5.7%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.draft_blog_tab {
+  left: 15.8%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab {
+  left: 25.7%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 14.2%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 24.2%;
+  top: 0;
+}
+
+.create_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+}
+.draft_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+  left: 15.8%; 
+}
+.publish_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+  left: 25.8%;
+}
+}
+  
+@media screen and (max-width: 505px){
+.blog_collection {
+  margin-top: 46%;
+  margin-bottom: 175%;
+  margin-left: 6%;
+}
+.create_sec {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  width: 70%;
+  text-align: -webkit-left;
+  position: absolute;
+  left: 15%;
+  margin-top: 12%;
+}
+
+
+.input_blog_text {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 2px;
+  border: 1px solid #EF403C;
+  border-radius: 0;
+  color: #404041;
+  font-family: Catamaran;
+}
+.input_blog_upload{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  padding: 2px;
+  border: 1px solid #EF403C;
+  border-radius: 0px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.label_name {
+  margin-bottom: 3px;
+  display: block;
+  color: #404041;
+  font-weight: bold;
+  font-family: Catamaran;
+  font-size: 3vw;
+}
+.label_upload{
+  color: #606068;
+  /* font-weight: bold; */
+  font-family: Catamaran;
+  font-size: 2.8vw;
+}
+.input_blog_description {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 25%;
+  border: 1px solid #EF403C;
+  border-radius: 0;
+  color: #404041;
+  font-family: Catamaran;
+}
+.blog_btn {
+  background-color: #404041;
+  color: white;
+  padding: 15px;
+  margin: -2px 34px;
+  border: none;
+  width: 76%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 3vw;
+  font-family: Catamaran;
+}
+.create_blog_tab {
+  left: 11.5%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+
+.draft_blog_tab {
+  left: 40%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab {
+  left: 64.8%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 5px 16px 0px;
+  font-family: Catamaran;
+  left: 64.8%;
+
+}
+
+
+.draft_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 5px 16px 0px;
+  font-family: Catamaran;
+  left: 37.5%;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 26px;
+  position: absolute;
+  left: 33.8%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 26px;
+  position: absolute;
+  left: 59.8%;
+  top: 0;
+}
+
+}
+
+@media screen and (min-width: 370px) and (max-width:380px) {
+.blog_collection {
+  margin-top: 49%;
+  margin-bottom: 180%;
+  margin-left: 6%;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 33.8%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 59.8%;
+  top: 0;
+}
+.publish_blog_tab {
+  left: 64.8%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+}
+
+@media screen and (min-width: 310px) and (max-width:369px) {
+.blog_collection {
+  margin-top: 61%;
+  margin-bottom: 200%;
+  margin-left: 6%;
+}
+
+.vl_1 {
+  border-left: 4px solid rgb(40, 40, 41);
+  height: 21px;
+  position: absolute;
+  left: 34.8%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 4px solid rgb(40, 40, 41);
+  height: 21px;
+  position: absolute;
+  left: 60.8%;
+  top: 0;
+}
+.publish_blog_tab {
+  left: 64.8%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+}
+
+@media screen and (max-width:309px) {
+  .blog_collection {
+    margin-top: 71%;
+    margin-bottom: 250%;
+    margin-left: 6%;
+}
+.blog_btn {
+  background-color: #404041;
+  color: white;
+  padding: 15px;
+  margin: -2px 34px;
+  border: none;
+  width: 59%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 3vw;
+  font-family: Catamaran;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 18px;
+  position: absolute;
+  left: 34.8%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 18px;
+  position: absolute;
+  left: 60.8%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width:767px) {
+
+  .blog_collection {
+    margin-top: 35%;
+    margin-bottom: 100%;
+    margin-left: 6%;
+}
+.create_sec {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  width: 40%;
+  text-align: -webkit-left;
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+}
+.label_name {
+  margin-bottom: 4px;
+  display: block;
+  color: #404041;
+  font-weight: bold;
+  font-family: Catamaran;
+  font-size: 0.6vw;
+}
+.label_upload{
+  color: #606068;
+  /* font-weight: bold; */
+  font-family: Catamaran;
+  font-size: 0.4vw;
+}
+.input_blog_text {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 4px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.input_blog_upload{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  padding: 4px;
+  border: 1px solid #EF403C;
+  border-radius: 3px;
+  color: #404041;
+  font-family: Catamaran;
+}
+.blog_btn {
+  background-color: #404041;
+  color: white;
+  padding: 10% 5% 10% 5%;
+  margin: 0px 0px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.5vw;
+  font-family: Catamaran;
+}
+
+.create_blog_tab {
+  left: 5.7%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.draft_blog_tab {
+  left: 15.8%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab {
+  left: 25.7%;
+  border-color: none;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: #404041;
+  cursor: pointer;
+  position: absolute;
+  padding: 5px;
+  font-family: Catamaran;
+}
+.publish_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 5px 16px 0px;
+  font-family: Catamaran;
+  left: 25.7%;
+}
+.vl_1 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 14.2%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 24px;
+  position: absolute;
+  left: 24.2%;
+  top: 0;
+}
+
+.create_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+}
+.draft_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+  left: 15.8%; 
+}
+.publish_blog_tab.active {
+  background-color: #EF403C;
+  font-weight: bolder;
+  color: white;
+  padding: 0.4% 1% 0.4% 1%;
+  font-family: Catamaran;
+}
+}
+
+@media screen and (min-width: 921px) and (max-width:1019px) {
+  .blog_collection {
+    margin-top: 6%;
+    margin-bottom: 70%;
+    margin-left: 6%;
+}
+.vl_1 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 23px;
+  position: absolute;
+  left: 13.2%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 23px;
+  position: absolute;
+  left: 22.2%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 1350px) and (max-width:1399px) {
+  .blog_collection {
+    margin-top: 13%;
+    margin-bottom: 50%;
+    margin-left: 0%;
+}
+
+.blogsavdraft{
+  margin-top: 3%;
+}
+.vl_1 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 30px;
+  position: absolute;
+  left: 12.5%;
+  top: 0;
+}
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 30px;
+  position: absolute;
+  left: 21.5%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 477px) and (max-width:606px) {
+  .blog_collection {
+    margin-top: 46%;
+    margin-bottom: 175%;
+    margin-left: 6%;
+  }
+  .create_sec {
+    background-color: #ffffff;
+    padding: 5px 20px 15px 20px;
+    width: 70%;
+    text-align: -webkit-left;
+    position: absolute;
+    left: 15%;
+    margin-top: 12%;
+  }
+  
+  
+  .input_blog_text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 2px;
+    border: 1px solid #EF403C;
+    border-radius: 0;
+    color: #404041;
+    font-family: Catamaran;
+  }
+
+  .input_blog_upload{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    padding: 2px;
+    border: 1px solid #EF403C;
+    border-radius: 0px;
+    color: #404041;
+    font-family: Catamaran;
+  }
+  .label_name {
+    margin-bottom: 3px;
+    display: block;
+    color: #404041;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 3vw;
+    
+  }
+  .label_upload{
+    color: #606068;
+    /* font-weight: bold; */
+    font-family: Catamaran;
+    font-size: 2.8vw;
+  }
+  .input_blog_description {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25%;
+    border: 1px solid #EF403C;
+    border-radius: 0;
+    color: #404041;
+    font-family: Catamaran;
+  }
+  .blog_btn {
+    background-color: #404041;
+    color: white;
+    padding: 15px;
+    margin: -2px 50px;
+    border: none;
+    width: 76%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 3vw;
+    font-family: Catamaran;
+  }
+  .create_blog_tab {
+    left: 11.5%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+  }
+  
+  .draft_blog_tab {
+    left: 40%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+  }
+  .publish_blog_tab {
+    left: 64.8%;
+    border-color: none;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: #404041;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    font-family: Catamaran;
+  }
+  .publish_blog_tab.active {
+    background-color: #EF403C;
+    font-weight: bolder;
+    color: white;
+    padding: 5px 16px 0px;
+    font-family: Catamaran;
+    left: 64.8%;
+  }
+  
+  .draft_blog_tab.active {
+    background-color: #EF403C;
+    font-weight: bolder;
+    color: white;
+    padding: 5px 16px 0px;
+    font-family: Catamaran;
+    left: 37.5%;
+  }
+  .vl_1 {
+    border-left: 5px solid rgb(40, 40, 41);
+    height: 37px;
+    position: absolute;
+    left: 33.8%;
+    top: 0;
+  }
+  .vl_2 {
+    border-left: 5px solid rgb(40, 40, 41);
+    height: 37px;
+    position: absolute;
+    left: 59.8%;
+    top: 0;
+  }
+  
+
+}
+
+@media screen and (min-width: 1521px) and (max-width:1605px) {
+  .vl_1 {
+    border-left: 6px solid rgb(40, 40, 41);
+    height: 33px;
+    position: absolute;
+    left: 12.2%;
+    top: 0;
+}
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 33px;
+  position: absolute;
+  left: 21.2%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 1448px) and (max-width:1520px) {
+  .vl_1 {
+    border-left: 6px solid rgb(40, 40, 41);
+    height: 31px;
+    position: absolute;
+    left: 12.2%;
+    margin-top: 1%;
+}
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 31px;
+  position: absolute;
+  left: 21.2%;
+  margin-top: 1%;
+}
+}
+
+@media screen and (min-width: 1606px) and (max-width:1740px) {
+  .vl_1 {
+    border-left: 6px solid rgb(40, 40, 41);
+    height: 34px;
+    position: absolute;
+    left: 12.2%;
+    top: 0;
+}
+
+.vl_2 {
+  border-left: 6px solid rgb(40, 40, 41);
+  height: 34px;
+  position: absolute;
+  left: 21.2%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 1291px) and (max-width:1349px) {
+  .vl_1 {
+    border-left: 5px solid rgb(40, 40, 41);
+    height: 38px;
+    position: absolute;
+    left: 13.8%;
+    top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 38px;
+  position: absolute;
+  left: 23.2%;
+  top: 0;
+}
+
+}
+
+@media screen and (min-width: 1090px) and (max-width:1290px) {
+  .vl_1 {
+    border-left: 5px solid rgb(40, 40, 41);
+    height: 35px;
+    position: absolute;
+    left: 13.8%;
+    top: 0;
+}
+
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 35px;
+  position: absolute;
+  left: 23.2%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 921px) and (max-width:1000px) {
+  .vl_1 {
+    border-left: 4px solid rgb(40, 40, 41);
+    height: 23px;
+    position: absolute;
+    left: 13.5%;
+    top: 0;
+}
+.vl_2 {
+  border-left: 4px solid rgb(40, 40, 41);
+  height: 23px;
+  position: absolute;
+  left: 21.8%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 860px) and (max-width:920px) {
+  .vl_1 {
+    border-left: 5px solid rgb(40, 40, 41);
+    height: 29px;
+    position: absolute;
+    left: 14.2%;
+    top: 0;
+}
+.vl_2 {
+  border-left: 5px solid rgb(40, 40, 41);
+  height: 29px;
+  position: absolute;
+  left: 24.2%;
+  top: 0;
+}
+}
+
+@media screen and (min-width: 1020px) and (max-width:1023px) {
+
+.blog_collection {
+  margin-top: 15%;
+  margin-bottom: 65%;
+  margin-left: 6%;
+}
+}
+
+@media screen and (min-width: 670px) and (max-width:767px) {
+  .blog_collection {
+    margin-top: 35%;
+    margin-bottom: 100%;
+    margin-left: 6%;
+}
+}
+
+@media screen and (min-width: 370px) and (max-width:400px) {
+  .blog_collection {
+    margin-top: 53%;
+    margin-bottom: 185%;
+    margin-left: 6%;
+}
+}

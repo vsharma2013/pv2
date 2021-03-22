@@ -1,0 +1,687 @@
+/* 
+LocationReportReview
+*/
+* {
+	scroll-behavior: smooth;
+}
+
+.container{
+  padding: 0;
+  text-align: unset;
+  max-width: 80%;
+}
+
+.reportform{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.formrow{
+  margin-bottom: 2%;
+}
+
+.mainContainer{
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 2%;
+}
+
+.reviewrow{
+  margin-bottom: 20px;
+}
+
+.reviewbtn{
+  position: initial;
+  /* top: 636px; */
+  /* right: 520px; */
+  font-weight: bolder;
+  padding: 13px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #739df3;
+  border: none;
+  border-radius: 11px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.reviewbar{
+  text-align: right;
+}
+
+.usericon{
+  /* margin-top: 10%; */
+  margin-left: 40px;
+}
+
+/* .menubar{
+  text-align: center;
+} */
+
+.centerClass{
+  text-align: center;
+}
+.menustyle{
+  font-size: 1.5rem;
+  padding-left: 0px;
+}
+
+.menustyle2{
+  font-size: 1.5rem;
+  padding-left: 0px;
+}
+
+.menuitemstyle{
+  letter-spacing: 2px;
+  color: black;
+}
+
+
+.menuitemstyle:hover{
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.menuitemstyle2{
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: black;
+}
+
+
+.menuitemstyle2:hover{
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.MenuOuterdiv{
+  text-align: center;
+}
+
+.MenuOuterdiv2{
+  text-align: center;
+  display: none;
+}
+
+
+ul.menustyle li {
+  display: inline-block;
+}
+
+ul.menustyle li:not(:last-child):after {
+  content: "|";
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+
+ul.menustyle2 li {
+  display: inline-block;
+}
+
+ul.menustyle2 li:not(:last-child):after {
+  content: "|";
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+
+.projectDetailArea{
+  margin-top: 2%;
+}
+
+.projectphoto{
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+    width: 50px;
+    outline: #9b9797;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    background-image: none;
+    background: #9b9797;
+    opacity: 0.7;
+}
+
+.carousel-control-next-icon:after
+{
+  /* content: '>'; */
+  font-size: 55px;
+  color: black;
+  background-image: url('./assets/right.svg');
+}
+
+.carousel-control-prev-icon:after {
+  /* content: '<'; */
+  font-size: 55px;
+  color: black;
+  background-image: url('./assets/left.svg');
+}
+
+
+
+.carousel-control-prev-icon {
+
+  background-image: url('./assets/left.svg');
+}
+
+.carousel-control-next-icon {
+  /* content: '<'; */
+  font-size: 55px;
+  color: black;
+  background-image: url('./assets/right.svg');
+}
+
+
+
+.projectdetailsrow{
+  margin-top: 2%;
+}
+
+.projectline2{
+  font-weight: 400;
+}
+
+.projectline3{
+  font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+
+.starratingtext{
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.centeralign{
+  text-align: center !important;
+}
+.btn-primary {
+  padding: 10px 40px 10px 40px;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.bigstar{
+  display: block;
+}
+.smallstar{
+  display: none;
+}
+
+
+/* Three column layout */
+.side {
+  text-align: left;
+  width: 100%;
+  margin-top:15px;
+  overflow-wrap: break-word;
+  font-weight: 500;
+
+}
+
+.middle {
+  margin-top:20px;
+  float: left;
+  width: 100%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: center;
+  width: 15%;
+  margin-top:15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: grey;
+}
+
+.leftmargin{
+  margin-left: 15%;
+}
+
+/* Individual bars */
+.bar-5 {width: 50%; height: 10px; background-color:#e1e168;}
+.bar-4 {width: 40%; height: 10px; background-color:#e1e168;}
+.bar-3 {width: 20%; height: 10px; background-color:#e1e168;}
+.bar-2 {width: 10%; height: 10px; background-color:#e1e168;}
+.bar-1 {width: 5%; height: 10px; background-color: #e1e168;}
+
+
+ 
+
+
+.reviewcardfirstrow{
+  display: flex;
+}
+
+.circularratingcaption{
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.reviewcard {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  width: 100%;
+  padding: 4%;
+  border-radius: 0px;
+  background-color: transparent;
+  margin-top: 1%;
+  border: 2px solid lightgrey;
+  padding-bottom: 2%;
+}
+
+
+.projectinfocard {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  width: 100%;
+  padding: 4%;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 1%;
+  border: 2px solid lightgrey;
+}
+
+
+
+
+
+.ratingsection{
+  justify-content: unset;
+
+}
+
+
+.reviewcontainer {
+  padding: 2px 0px;
+  text-align: left;
+}
+
+.ReviewHeading{
+  /* text-align: center; */
+  margin-top: 2%;
+}
+
+.reviewimagestyle{
+  border-radius: 0%;
+    width: 70%;
+    margin-top: 15%;
+}
+
+.reviewprofileimagestyle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+
+
+.review-footer {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  color: #4d4d4d;
+  font-size: .75rem;
+  line-height: 1.25rem;
+}
+
+.review-footer .report, .review-footer .upvote {
+  position: relative;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 1200px)
+{.review-footer .upvote {
+  margin-left: auto;
+}}
+.review-footer .upvote {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.review-footer .report h4, .review-footer .upvote h4 {
+  color: #5d6571;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.review-footer .upvote h4 {
+  margin: 0;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: inherit;
+}
+
+.review-footer .upvote button {
+  padding: 0;
+  border: none;
+  background: 0 0;
+  color: #00c096;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.review-footer .upvote i {
+  margin-right: .5rem;
+}
+
+.review-footer .report, .review-footer .upvote {
+  position: relative;
+  padding-right: 15px;
+  margin-right: 0px;
+}
+
+.review-footer .report h4, .review-footer .upvote h4 {
+  color: #5d6571;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.sr-only {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.review-footer .report a {
+  color: #5d6571;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.review-footer .report i {
+  margin-right: 6px;
+  color: #c54b4b;
+  line-height: 15px;
+}
+
+.likeimage{
+  width: 15px;
+  height: 15px;
+  vertical-align: unset;
+  margin-top: 5px;
+  margin-right: 5px;
+
+}
+
+.projectinforow{
+  margin-top: 4%;
+
+}
+.ProjectInfoHeading{
+  text-align: center;
+}
+
+
+/* ALL Media Queries Below */
+
+
+.amenititesmaprow{
+  margin-top: 4%;
+}
+
+
+.amenitiescard {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  transition: 0.3s;
+  width: 100%;
+  padding: 4%;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-top: 1%;
+  border: 0px solid lightgrey;
+}
+
+.amenitiesrow1, .amenitiesrow2{
+  margin-top: 10%;
+}
+
+.mapstyle{
+  width: 100%;
+}
+
+.mapstylemap{
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+
+.developercol1{
+  margin-top: 1%;
+}
+
+.developercol2{
+  margin-top: 2%;
+}
+
+.developercol3{
+  margin-top: 3%;
+}
+
+
+
+
+.transactionrow{
+  margin-top: 4%;
+  margin-bottom: 4%;
+
+}
+
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #021643;
+  color: white;
+  text-align: center;
+}
+
+.leftalign{
+  text-align: left;
+}
+.footercol1{
+  padding-top: 5%;
+  padding-left:20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.footercol2{
+  padding-top: 5%;
+  padding-left:20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.footercol3{
+  padding-top: 5%;
+  padding-left:20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.white{
+  color: white;
+}
+
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 767px) {
+   .middle {
+    float: left;
+    margin-top:15px;
+    width: 100%;
+  }
+ /* .menubar{
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+ } */
+ 
+
+.bigstar{
+  display: none;
+}
+.smallstar{
+  display: block;
+}
+
+
+
+}
+
+
+@media (max-width: 600px) {
+ 
+.MenuOuterdiv{
+ display: none;
+}
+
+.MenuOuterdiv2{
+  text-align: center;
+ display: block;
+}
+
+}
+
+
+
+@media (max-width: 990px) 
+{
+  
+}
+
+@media (max-width: 1200px) {
+  .reviewbar {
+    text-align: center;
+}
+
+.right {
+  text-align: left;
+}
+.ratingsection{
+  justify-content: center;
+
+}
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .usericon {
+    /* margin-top: 10%; */
+    margin-left: 0px;
+}
+}
+
+@media screen and (min-width: 601px)
+{
+.logob1report {
+    position: absolute;
+    /* position: initial; */
+    top: 0%;
+    left: 42%;
+    width: 18vw;
+    /* font-weight: 800; */
+    padding: 15px 30px 15px 30px;
+    color: white;
+    /* background-color: #EF403C; */
+    /* border: none; */
+    /* font-size: 50px; */
+}
+}
+@media screen and (max-width: 1300px) and (min-width: 900px)
+{
+.logob1report {
+    position: absolute;
+    /* position: initial; */
+    top: 1%;
+    left: 36%;
+    width: 25vw;
+    /* font-weight: 800; */
+    padding: 15px 30px 15px 30px;
+    color: white;
+    /* background-color: #EF403C; */
+    /* border: none; */
+    /* font-size: 50px; */
+}
+}
+@media screen and (max-width: 900px) and (min-width: 600px)
+{
+.logob1report {
+    position: absolute;
+    /* position: initial; */
+    top: 2%;
+    left: 34%;
+    width: 29vw;
+    /* font-weight: 800; */
+    padding: 15px 30px 15px 30px;
+    color: white;
+    /* background-color: #EF403C; */
+    /* border: none; */
+    /* font-size: 50px; */
+}
+}
+
+@media screen and (max-width: 600px)
+{
+.logob1report {
+    position: absolute;
+    /* position: initial; */
+    top: 3%;
+    left: 21%;
+    width: 58vw;
+    /* font-weight: 800; */
+    padding: 15px 30px 15px 30px;
+    color: white;
+    /* background-color: #EF403C; */
+    /* border: none; */
+    /* font-size: 50px; */
+}
+}

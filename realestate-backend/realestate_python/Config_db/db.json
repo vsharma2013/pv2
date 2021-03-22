@@ -1,0 +1,9 @@
+{
+
+"database" : "propadvisor_db",
+"user" : "postgres" ,
+"password" : "9335",
+"host" : "ec2-3-24-150-2.ap-southeast-2.compute.amazonaws.com",
+"port" : "5432"
+
+}

@@ -1,0 +1,398 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+label {
+    padding: 10px;
+    background: #657b8c;
+    display: table;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.gallery img{
+    width: 304px;
+    display: block;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+}
+
+.cover_pic_area img{
+    width: 304px;
+    display: block;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+}
+
+
+.floor img{
+    width: 304px;
+    display: block;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+}
+
+input[type="file"] {
+    display: none !important;
+}
+
+</style>
+
+<script>
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+var gallery_prefix = getUrlParameter('prefix'); 
+console.log("GALLERY PREFIX:",gallery_prefix);
+
+$(function() {
+    // Multiple images preview in browser
+    var imagesPreview = function(input, placeToInsertImagePreview) {
+
+        if (input.files) {
+            var filesAmount = input.files.length;
+
+            for (i = 0; i < filesAmount; i++) {
+                var reader = new FileReader();
+
+                reader.onload = function(event) {
+                    $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                    var input_field = "<input type='text' class='form-control' name='gallery_text' placeholder='Enter Any Comment' value=''>";
+                    $(input_field).appendTo(placeToInsertImagePreview);
+                }
+
+                reader.readAsDataURL(input.files[i]);
+            }
+        }
+
+    };
+
+    $('#gallery-photo-add').on('change', function() {
+        imagesPreview(this, 'div.gallery');
+    });
+});
+</script>
+
+<script>
+    $(function() {
+        // Multiple images preview in browser
+        var imagesPreview = function(input, placeToInsertImagePreview) {
+
+            if (input.files) {
+                var filesAmount = input.files.length;
+
+                for (i = 0; i < filesAmount; i++) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(event) {
+                        $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+
+        };
+
+        $('#cover-photo-add').on('change', function() {
+            imagesPreview(this, 'div.cover_pic_area');
+        });
+    });
+</script>
+
+<script>
+    $(function() {
+        // Multiple images preview in browser
+        var imagesPreview = function(input, placeToInsertImagePreview) {
+
+            if (input.files) {
+                var filesAmount = input.files.length;
+
+                for (i = 0; i < filesAmount; i++) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(event) {
+                    $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                    var input_field = "<input type='text' class='form-control' name='floor_text' placeholder='Enter Any Comment' value=''>";
+                    $(input_field).appendTo(placeToInsertImagePreview);
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+
+        };
+
+        $('#floor-photo-add').on('change', function() {
+            imagesPreview(this, 'div.floor');
+        });
+    });
+</script>
+
+
+<script>
+$(document).ready(function(){
+var project_id = getUrlParameter('project_id');
+$.get({url: "https://www.propviewz.com/be/management/get_project_cover_photo/"+project_id+"", success: function(result){
+    console.log("--------------",result[0].media_link);
+    $('#old_cover_img').attr("src", result[0].media_link);
+    }});
+});
+
+$(document).ready(function(){
+var project_id = getUrlParameter('project_id');
+$.get({url: "https://www.propviewz.com/be/management/get_project_gallery_photo/"+project_id+"", success: function(result){
+    console.log("--------------",result);
+    for(i=0; i<result.length; i++)
+    {
+     console.log(result[i].media_link);
+     var img = "<form action='https://www.propviewz.com/be/management/delete_project_media' method='post'>\
+     <input type='hidden' name='project_id' value='"+project_id+"'>\
+     <input type='hidden' name='media_link' value='"+result[i].media_link+"'>\
+     <div class='col-md-6' style='padding-bottom:10px;'>\
+     <img src='"+result[i].media_link+"' width='100' height='100'>\
+     <input type='submit' value='Remove' class='btn btn-warning'>\
+     </div>\
+     </form>"   
+     $('#old_galery_image').append(img);
+    }
+    }});
+
+$.get({url: "https://www.propviewz.com/be/management/get_project_floor_photo/"+project_id+"", success: function(result){
+    console.log("--------------",result);
+    for(i=0; i<result.length; i++)
+    {
+     console.log(result[i].media_link);
+     var img = "<form action='https://www.propviewz.com/be/management/delete_project_media' method='post'>\
+     <input type='hidden' name='project_id' value='"+project_id+"'>\
+     <input type='hidden' name='media_link' value='"+result[i].media_link+"'>\
+     <div class='col-md-6' style='padding-bottom:10px;'>\
+     <img src='"+result[i].media_link+"' width='100' height='100'>\
+     <input type='submit' value='Remove' class='btn btn-warning'>\
+     </div>\
+     </form>"   
+     $('#old_floor_image').append(img);
+    }
+    }});
+
+    $('#coverimg_id').val(project_id);
+    $('#galleryimg_id').val(project_id);
+    $('#floorimg_id').val(project_id);
+});
+</script>
+
+
+<script>
+function ValidateSize(file) 
+{
+    var length_of_files = file.files.length;
+    console.log("Total files:",length_of_files);
+    if(length_of_files > 5 ){
+        alert('Sorry! Only five files can be uploaded at a time.');
+        $(file).val(''); //for clearing with Jquery
+    }
+    else{
+        var flag = 0;
+        for(i=0; i<length_of_files; i++)
+        {
+            var FileSize = file.files[i].size / 1024 / 1024; // in MB
+            console.log("Total FileSize:",FileSize);
+            if (FileSize > 1) 
+            {
+                flag = 1;
+            }
+        }
+        if(flag == 1){
+            alert('Invalid Input! Any of the images have size more than 1 Mb. Only Images less than 1 Mb are allowed.');
+            $(file).val(''); //for clearing with Jquery
+             $('.gallery').empty();
+        }
+    }
+    
+}
+</script>
+
+
+<script>
+function ValidateSize_floor(file) 
+{
+    var length_of_files = file.files.length;
+    console.log("Total Floor files:",length_of_files);
+    if(length_of_files > 5 ){
+        alert('Sorry! Only five files can be uploaded at a time.');
+        $(file).val(''); //for clearing with Jquery
+    }
+    else{
+        var flag = 0;
+        for(i=0; i<length_of_files; i++)
+        {
+            var FileSize = file.files[i].size / 1024 / 1024; // in MB
+            console.log("Total FileSize:",FileSize);
+            if (FileSize > 1) 
+            {
+                flag = 1;
+            }
+        }
+        if(flag == 1){
+            alert('Invalid Input! Any of the images have size more than 1 Mb. Only Images less than 1 Mb are allowed.');
+            $(file).val(''); //for clearing with Jquery
+             $('.floor').empty();
+        }
+    }
+}
+</script>
+
+<script>
+function ValidateSize2(file) {
+    var FileSize = file.files[0].size / 1024 / 1024; // in MB
+    if (FileSize > 1) {
+        alert('Cover Image size should be less than 1 MB.');
+        $(file).val(''); //for clearing with Jquery
+        $('.cover_pic_area').empty();
+    }
+}
+</script>
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+                <!--******************-->
+                    <div class="page-header">
+                    <center style="font-family: 'Berkshire Swash';font-size: 22px;">
+                    <h2>Edit Project Media.</h2>
+                    <p>Use this form to Edit project Cover images to the database....</p>
+                    </center>   
+                    </div>
+                    <div class="col-md-12">
+                    <form action="https://www.propviewz.com/be/management/Edit_cover_pic" method="post" enctype="multipart/form-data">
+                        <div class="col-md-4" style="border-right: 1px solid;">
+                        <center>
+                        <div><img src="" id="old_cover_img" width="220" style="padding-bottom: 20px;"></div>
+                        <label>Select New Project Cover Image 
+                        <input type="file" onchange="ValidateSize2(this)" name="cover_pic" id="cover-photo-add" accept="image/x-png,image/jpg,image/jpeg" required>
+                        <input type="hidden" name="project_id" id="coverimg_id" value="">
+                        </label>
+                        <div class="cover_pic_area"></div>
+                        <input type="submit" class="btn btn-success" value="Submit">
+                        </center> 
+                        </div>
+                    </form>  
+
+                    <form action="https://www.propviewz.com/be/management/Edit_add_gallery_pic" method="post" enctype="multipart/form-data">  
+                        <div class="col-md-4" style="border-left: 1px solid;">
+                        <center>
+                        <label>Upload New Project Gallery Images 
+                        <input type="file" onchange="ValidateSize(this)"  multiple name="blogimage" id="gallery-photo-add" accept="image/x-png,image/jpg,image/jpeg" required>
+                         <input type="hidden" name="project_id" id="galleryimg_id" value="">
+                        </label>
+                        <p>Upload minimum 2  and maximum 5 images for gallery with less than 1 Mb per image.</p>
+                        <input type="submit" class="btn btn-success" value="Submit">
+                        <div class="gallery" style="padding-top:20px;padding-bottom:20px;"></div>
+                        <div id="old_galery_image"><h4>Gallery Images</h4></div>
+                        </center>
+                        </div>
+                    </form>
+
+                    <form action="https://www.propviewz.com/be/management/Edit_add_floor_pic" method="post" enctype="multipart/form-data">  
+                        <div class="col-md-4" style="border-left: 1px solid;">
+                        <center>
+                        <label>Upload New Project Floor Images 
+                        <input type="file" onchange="ValidateSize_floor(this)"  multiple name="floor_image" id="floor-photo-add" accept="image/x-png,image/jpg,image/jpeg" required>
+                         <input type="hidden" name="project_id" id="floorimg_id" value="">
+                        </label>
+                        <p>Upload minimum 2 and maximum 5 images for floor with less than 1 Mb per image.</p>
+                        <input type="submit" class="btn btn-success" value="Submit">
+                        <div class="floor" style="padding-top:20px;padding-bottom:20px;"></div>
+                        <div id="old_floor_image"><h4>Floor Images</h4></div>
+                        </center>
+                        </div>
+                    </form>
+
+                    </div> 
+                <!--******************-->
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

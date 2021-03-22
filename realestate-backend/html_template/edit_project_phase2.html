@@ -1,0 +1,457 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+#pro_info {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+</style>
+
+<script>
+    function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+    }
+</script>
+<script>
+if(getUrlParameter('status'))
+{
+    alert("Information Updated Succesfully..");
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var project_id = getUrlParameter('project_id');
+    $.get({url: "https://www.propviewz.com/be/admin/project_details/"+project_id+"", success: function(result){
+        console.log("project info",result[0]) ;
+        var project_name = result[0].project_name;
+        var project_city = result[0].city;
+        var area = result[0].area; 
+        var subarea = result[0].sub_area; 
+        var property_type = result[0].property_type;
+        var construction_status = result[0].construction_status;
+        var developer_name = result[0].developer_name;
+        var developer_phone_no = result[0].developer_phone_no;
+        var Brand = result[0].brand;
+        var google_map_link = result[0].google_map_link;
+        var google_review_link = result[0].google_review_link;
+        var rera_no = result[0].rera_no;
+        var rera_link = result[0].rera_link;
+        var possession_date_as_rera = result[0].possession_date_as_rera;
+        var brief_dics = result[0].brief_dics;
+        var list = "<form action='https://www.propviewz.com/be/management/update_project_basic_info' method='POST' >\
+        <input type='hidden' name='project_id' value='"+project_id+"'>\
+        <div class='form-group'>\
+        <label >Project Name:</label>\
+        <input type='text' class='form-control' name='project_name' value='"+project_name+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Project City:</label>\
+        <input type='text' class='form-control' name='project_city' value='"+project_city+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Project Area:</label>\
+        <input type='text' class='form-control' name='project_area' value='"+area+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Sub Area:</label>\
+        <input type='text' class='form-control' name='project_subarea' value='"+subarea+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Property Type:</label>\
+        <input type='text' class='form-control' name='project_property_type' value='"+property_type+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Construction Status:</label>\
+        <input type='text' class='form-control' name='project_construction_status' value='"+construction_status+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Developer Name:</label>\
+        <input type='text' class='form-control' name='project_developer_name' value='"+developer_name+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Developer Phone No.:</label>\
+        <input type='text' class='form-control' name='developer_phone_no' value='"+developer_phone_no+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Brand:</label>\
+        <input type='text' class='form-control' name='Brand' value='"+Brand+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Rera Number:</label>\
+        <input type='text' class='form-control' name='rera_no' value='"+rera_no+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Possession Date As Per Rera:</label>\
+        <input type='text' class='form-control' name='possession_date_as_rera' value='"+possession_date_as_rera+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Rera Link:</label>\
+        <input type='text' class='form-control' name='rera_link' value='"+rera_link+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Google Map Link:</label>\
+        <input type='text' class='form-control' name='google_map_link' value='"+google_map_link+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Google Map Link:</label>\
+        <input type='text' class='form-control' name='google_review_link' value='"+google_review_link+"'>\
+        </div>\
+        <div class='form-group'>\
+        <label >Brief Description:</label>\
+        <textarea class='form-control' rows='5' name='brief_dics'>"+brief_dics+"</textarea>\
+        </div>\
+        <center><input type='submit' class='btn btn-success' value='Update & Save' ></center>\
+        </form>";
+        //console.log("List:",list)
+        $('#pro_info').append( list );
+    }}); 
+});
+$(document).ready(function(){
+    var project_id = getUrlParameter('project_id');
+    $.get({url: "https://www.propviewz.com/be/project_amenities/"+project_id+"", success: function(result){
+        for(item in result )
+        {
+            console.log("project amenities",result[item].amenities_type);
+            var amenity = result[item].amenities_type; 
+            var list = "<div class='col-md-12' style='padding: 5px;border-bottom: 1px dotted #ccc;'>\
+                            <div class='col-md-8'>\
+                            <label >"+amenity+":</label>\
+                            </div>\
+                            <div class='col-md-4'>\
+                            <a href='https://www.propviewz.com/be/management/delete_amenities?project_id="+project_id+"&amenity="+amenity+"'class='btn btn-danger'>Remove</a></center>\
+                            </div>\
+                        </div>";
+            $('#pro_amenities').prepend( list );
+        }
+    }});
+
+    $('#project_id_fr_amenities').val(project_id);
+    $('#project_id_fr_config').val(project_id);
+    $('#project_id_fr_transaction').val(project_id);
+    $('#project_id_fr_media').val(project_id);
+});
+$(document).ready(function(){
+    var project_id = getUrlParameter('project_id');
+    $.get({url: "https://www.propviewz.com/be/project_config/"+project_id+"", success: function(result){
+        console.log("project config",result);
+        for(item in result )
+        {
+            var project_phase = result[item].project_phase; 
+            var config = result[item].configuration;
+            var price_range = result[item].price_range;
+            var possesion_date = result[item].possesion_date;
+            var construction_status = result[item].construction_status;
+            var list = "<div class='col-md-12' style='padding: 5px;border-bottom: 1px dotted #ccc;'>\
+                            <form action='https://www.propviewz.com/be/management/delete_project_config/' method='post' enctype='application/x-www-form-urlencoded' >\
+                            <input type='hidden' name='project_id' value='"+project_id+"'>\
+                            <div class='col-md-2'>\
+                            <label >"+project_phase+"</label>\
+                            <input type='hidden' name='project_phase' value='"+project_phase+"'>\
+                            </div>\
+                            <div class='col-md-1'>\
+                            <label >"+config+"</label>\
+                            <input type='hidden' name='project_config' value='"+config+"'>\
+                            </div>\
+                            <div class='col-md-3'>\
+                            <label >"+price_range+"</label>\
+                            </div>\
+                            <div class='col-md-2'>\
+                            <label >"+possesion_date+"</label>\
+                            </div>\
+                            <div class='col-md-2'>\
+                            <label >"+construction_status+"</label>\
+                            </div>\
+                            <div class='col-md-2'>\
+                            <input type='submit' class='btn btn-danger' value='Remove'>\
+                            </div>\
+                            </form>\
+                        </div>";
+            $('#pro_config').prepend( list );
+        }
+    }});
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $("#add_amenity_btn").click(function(){
+    //alert("The paragraph was clicked.");
+    $("#add_amenity_btn").hide();
+    $("#amenities_form").show();
+  });
+
+  $('#add_project_config_btn').click(function(){
+    $("#add_project_config_btn").hide();
+    $("#project_config_form").show();
+  })
+});
+</script>
+
+
+<body>
+
+<div class="main">
+    <div class="container-fluid">
+                <div class="page-header">
+                    <center style="font-family: 'Berkshire Swash';font-size: 22px;" ><h3><u>Basic Information.</u></h3></center>   
+                    <div id="pro_info"></div>
+                    
+                    <center style="font-family: 'Berkshire Swash';font-size: 22px;"><h3><u>Project Amenities.</u></h3></center>
+                    <div id="pro_amenities">
+                    <center>
+                    <button class='btn btn-success' id="add_amenity_btn" style='margin-top: 10px;'>Add Amenities</button>
+                    </center>
+                       <!--***************************************-->
+                       <div class='col-md-12' style='padding: 20px;border-bottom: 1px dotted #ccc;'>
+                       <form action="https://www.propviewz.com/be/management/update_amenities" method="post" id="amenities_form" style="display:none;padding-bottom: 30px;">
+                        <label style="color:orangered"> *NOTE: If Amenity Already Present Don't Mark It Again. </label>
+                        <input type="hidden" name="project_id" id="project_id_fr_amenities">
+                        <div class="form-group">
+                        <label> Add Amenities:</label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Gym">Gym
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Swimming pool">Swiming Pool
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Kids Play Area">Kids Play Area
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Garden">Garden
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Indoor Games">Indoor Games
+                        </label>
+                        <label class="checkbox-inline">
+                        <input type="checkbox" name="Amenities[]" value="Outdoor Games">Outdoor Games
+                        </label>
+                        </div>
+                        <input type="submit" class='btn btn-success' style='margin-top: 0px;' value='Update Amenities'>
+                        </form>
+                        </div>
+                        <!--***************************************-->
+                    
+                    </div>
+
+                    <center style="font-family: 'Berkshire Swash';font-size: 22px;"><h3><u>Project Configuration.</u></h3></center>
+                    <div class='col-md-2' style="padding-bottom: 10px; font-size: 15px; color: blueviolet;">
+                    <label ><u>project_phase</u></label>
+                    </div>
+                    <div class='col-md-1' style="padding-bottom: 10px; font-size: 15px; color: blueviolet;">
+                    <label ><u>config</u></label>
+                    </div>
+                    <div class='col-md-3' style="padding-bottom: 10px; font-size: 15px; color: blueviolet;">
+                    <label ><u>price_range</u></label>
+                    </div>
+                    <div class='col-md-2' style="padding-bottom: 10px; font-size: 15px; color: blueviolet;">
+                    <label ><u>possesion_date</u></label>
+                    </div>
+                    <div class='col-md-2' style="padding-bottom: 10px; font-size: 15px; color: blueviolet;">
+                    <label ><u>construction_status</u></label>
+                    </div>
+                    <div id="pro_config">
+                        <center>
+                        <button class='btn btn-success' id='add_project_config_btn' style='margin-top: 10px;margin-buttom: 10px;'>Add Project Configuration.</button>
+                        <!--**********************************-->
+                        <form action='https://www.propviewz.com/be/management/update_project_config' method='post' id='project_config_form' style='display:none;'> 
+                            <input type="hidden" name="project_id" id="project_id_fr_config">
+                            <div class="project_phase" id="project_phase">  
+                            <div class="col-md-12"> 
+                            <div class="col-md-12" style="margin-bottom: 10px; margin-top: 10px;">
+                            <div class="col-md-3"><label>Phase:</label></div>
+                            <div class="col-md-8">
+                            <input type="text" class="form-control" name="pro_phase" placeholder="Eg: Phase 1">
+                            </div>
+                            </div>  
+                            <div class="col-md-3">  
+                            <label class="checkbox-inline"> 
+                            <input type="checkbox" name="pro_config[]" value="1 BHK">1 BHK  
+                            </label>  
+                            </div>    
+                            <div class="col-md-3">
+                            <input type="number" class="form-control" min="100000"  placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                            </div> 
+                            <div class="col-md-3">  
+                            <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> 
+                            </div>  
+                            </div>  
+                            <div class="col-md-12" style="padding-top:7px;">  
+                            <div class="col-md-3">  
+                            <label class="checkbox-inline"> 
+                            <input type="checkbox" name="pro_config[]" value="1.5 BHK">1.5 BHK  
+                            </label>  
+                            </div>  
+                            <div class="col-md-3">
+                            <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                            </div> 
+                            <div class="col-md-3">  
+                            <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> 
+                            </div>  
+                            </div>  
+                            <div class="col-md-12" style="padding-top:7px;">  
+                            <div class="col-md-3">  
+                            <label class="checkbox-inline"> 
+                            <input type="checkbox" name="pro_config[]" value="2 BHK">2 BHK  
+                            </label>    
+                            </div>    
+                            <div class="col-md-3">
+                            <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                            </div> 
+                            <div class="col-md-3">  
+                            <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> 
+                            </div>  
+                            </div>  
+                            <div class="col-md-12" style="padding-top:7px;">  
+                            <div class="col-md-3">  
+                            <label class="checkbox-inline"> 
+                            <input type="checkbox" name="pro_config[]" value="3 BHK">3 BHK  
+                            </label>    
+                            </div>    
+                            <div class="col-md-3">
+                            <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                            </div> 
+                            <div class="col-md-3">  
+                            <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> 
+                            </div>  
+                            </div>  
+                            <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;"> 
+                            <div class="col-md-3">  
+                            <label class="checkbox-inline"> 
+                            <input type="checkbox" name="pro_config[]" value="4 BHK">4 BHK  
+                            </label>  
+                            </div>  
+                            <div class="col-md-3">
+                            <input type="number" class="form-control" min="100000" placeholder="Starting Price (In Lakhs)" name="pro_price_start">
+                            </div> 
+                            <div class="col-md-3">  
+                            <input type="number" class="form-control" min="100000" placeholder="Maximum Price (In Lakhs)" name="pro_price_end"> 
+                            </div>  
+                            </div>
+                            <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;">
+                            <div class="col-md-3">
+                            <label>Construction Status</label>  
+                            </div>  
+                            <div class="col-md-6">
+                            <select class="form-control" name="construction_status">
+                            <option value="Ready Possession">Ready Possession</option>
+                            <option value="Under construction">Under construction</option>
+                            </select>
+                            </div> 
+                            </div>  
+                            <div class="col-md-12" style="padding-top:7px; padding-bottom:10px;"> 
+                            <div class="col-md-3">  
+                            <label>Possession Date</label>  
+                            </div>   
+                            <div class="col-md-6">  
+                            <input type="date" class="form-control" placeholder="Enter Possession Date" name="posession_date">  
+                            </div>  
+                            <div class="col-md-12" style="margin-top:15px; margin-buttom: 25px;">  
+                            <input type="Submit" class="btn btn-success" value="Add Configuration.">  
+                            </div>  
+                            </div>
+                        </form>
+                        <!--***********************************-->
+                        </center>
+                    </div>
+
+                    <div class="col-md-12" style="padding-top: 35px; padding-bottom: 30px;">
+                    <center>
+                        <div class="col-md-6">
+                            <form action="https://www.propviewz.com/be/management/edit_project_transaction" method='post'>
+                            <input type="hidden" name="project_id" id="project_id_fr_transaction">
+                            <input type="submit" class='btn btn-primary' value="Edit Project Transaction">
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="https://www.propviewz.com/be/management/edit_project_media" method='post'>
+                            <input type="hidden" name="project_id" id="project_id_fr_media">
+                            <input type="submit" class='btn btn-primary' value="Edit Project Media">
+                            </form>
+                        </div>
+                    </center>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

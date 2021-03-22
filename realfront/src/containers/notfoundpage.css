@@ -1,0 +1,22 @@
+/* 
+notfoundpage CSS 
+*/
+.textread404{
+  position: absolute;
+  font-weight: bold;
+  top: 393px;
+  left: 41px;
+  color: darkgrey;
+  font-family: Catamaran;
+  }
+  .background2{
+    width: 100%;
+    height: auto;
+  }
+  .imagecycle2{
+  width: 480px;
+  height: 404px;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  }

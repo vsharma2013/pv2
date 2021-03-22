@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+  <title>Propviewz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+</head>
+
+<link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+<!--
+<script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+-->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+
+
+<script>
+var backend_url = '';
+$(function() {
+   $.getJSON('https://www.propviewz.com/be/Config_var/', function(data) {
+     backend_url = data.backend;
+     if(backend_url == "undefined"){
+       backend_url = "";
+     }
+   });
+   backend_url = 'https://www.propviewz.com/be';
+
+   console.log("BackendURL:",backend_url);
+   document.getElementById('id_logo').src = backend_url+"/images/propadvisor.png";
+
+   document.getElementById("bulk_upload").setAttribute("href",backend_url+"/management/bulk_upload_section");
+   /*document.getElementById("most_trending").setAttribute("href",backend_url+"/management/upload_most_trending");*/
+
+   document.getElementById("create_project").setAttribute("href",backend_url+"/management/create_project");
+   document.getElementById("edit_project").setAttribute("href",backend_url+"/management/edit_project");
+   document.getElementById("edit_location").setAttribute("href",backend_url+"/management/edit_project_location");
+   document.getElementById("Add_location").setAttribute("href",backend_url+"/post_location_pictures");
+
+   document.getElementById("approve_project").setAttribute("href",backend_url+"/management/approve_project");
+   document.getElementById("approve_review").setAttribute("href",backend_url+"/management/approve_review");
+   document.getElementById("approve_review_comment").setAttribute("href",backend_url+"/management/approve_review_comment");
+   document.getElementById("approve_user_photos").setAttribute("href",backend_url+"/management/approve_user_photo");
+   document.getElementById("approve_location_photos").setAttribute("href",backend_url+"/management/approve_user_location_photo");
+   document.getElementById("approve_location_review").setAttribute("href",backend_url+"/management/approve_location_review");
+   document.getElementById("approve_location_review_comment").setAttribute("href",backend_url+"/management/approve_location_review_comment");
+
+   document.getElementById("scrap1").setAttribute("href",backend_url+"/run_python/google_review/");
+   document.getElementById("scrap2").setAttribute("href",backend_url+"/run_python/project_transaction/");
+   document.getElementById("Management_role").setAttribute("href",backend_url+"/management/create_role");
+   document.getElementById("Reported_review").setAttribute("href",backend_url+"/management/fetch_reported_review");
+   document.getElementById("location_Reported_review").setAttribute("href",backend_url+"/management/fetch_location_reported_review");
+   document.getElementById('newsletter').setAttribute("href",backend_url+"/management/fetch_newsletter");
+
+   document.getElementById("logout").setAttribute("href",backend_url+"/admin/logout");
+
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/count_unapproved_project/", success: function(result){
+        console.log("Unapproved Count",result[0].count) ; 
+        $('#badge').html(result[0].count);
+    }});
+});
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/count_reported_review/", success: function(result){
+        console.log("Unapproved Count",result[0].count) ; 
+        $('#badge_reported').html(result[0].count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url: backend_url+"/management/count_unapproved_review/", success: function(result){
+        console.log("Unapproved Review Count",result[0].count) ; 
+        $('#badge_review').html(result[0].count);
+    }});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url: backend_url+"/management/count_unapproved_location_review/", success: function(result){
+        console.log("Unapproved Count",result[0].count) ; 
+        $('#badge_loc_review').html(result[0].count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_newsletter_count", success: function(result){
+        console.log("Newsletter Count",result.Count) ; 
+        $('#badge_newsletter').html(result.Count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_unapproved_comments", success: function(result){
+        console.log("Unapproved Comment Count:",result[0].count) ; 
+        $('#badge_commment_count').html(result[0].count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_unsolved_location_report", success: function(result){
+        console.log("Unapproved Comment Count:",result[0].count) ; 
+        $('#badge_location_review_reported').html(result[0].count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_unapproved_project_user_photos", success: function(result){
+        console.log("fetch_unapproved_project_user_photos:",result[0].count) ; 
+        $('#badge_project_user_photos').html(result[0].count);
+    }});
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_unapproved_location_user_photos", success: function(result){
+        console.log("fetch_unapproved_location_user_photos:",result[0].count) ; 
+        $('#badge_location_user_photos').html(result[0].count);
+    }});
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url:backend_url+"/management/fetch_unapproved_location_review_comment", success: function(result){
+        console.log("fetch_unapproved_location_review_comment:",result[0].count) ; 
+        $('#badge_location_review_comment').html(result[0].count);
+    }});
+});
+</script>
+
+<div class="col-md-12">
+    <div class="sidenav">
+    <div class="sidebar-heading"><img src="" width="125px" id="id_logo"></div>
+
+    <a><u>CSV Upload</u></a>
+    <a href="" id="bulk_upload">Bulk Project Upload</a> 
+    <!--<a href="" id="most_trending" >Upload Most Trending Projects</a>-->
+
+
+    <br>    
+    <a><u>Create Section</u></a>
+        <a href="" id="create_project">Create New Project</a>
+        <a href="" id="edit_project">Edit Project Details</a>
+        <a href="" id="edit_location">Edit Location Details</a>
+        <a href="" id="Add_location" >Upload Location Management Photos</a>
+        
+
+        <br>
+        <a><u>Approval Section</u></a>
+        <a href="" id="approve_project">
+        <span>Approve Project</span>
+        <span id="badge">0</span>
+        </a>
+        <a href="" id="approve_review">
+         <span>Approve Project Review</span>
+        <span id="badge_review">0</span>
+        </a>
+        <a href="" id="approve_review_comment">
+         <span>Approve Project Review Comment</span>
+         <span id="badge_commment_count">0</span>
+        </a>
+        <a href="" id="approve_user_photos">
+         <span>Approve Project User Photos</span>
+         <span id="badge_project_user_photos">0</span>
+        </a>
+        <a href="" id="approve_location_photos">
+         <span>Approve Location User Photos</span>
+         <span id="badge_location_user_photos">0</span>
+        </a>
+        <a href="" id="approve_location_review" >
+         <span>Approve Location Reviews</span>
+         <span id="badge_loc_review">0</span>
+        </a>
+        <a href="" id="approve_location_review_comment">
+         <span>Approve Location Review Comment</span>
+         <span id="badge_location_review_comment">0</span>
+        </a>
+        
+        <br>
+        <a><u>Web Scraping</u></a>
+        <a href="" id="scrap1" >Scrap Google Reviews</a>
+        <a href="" id="scrap2" >Scrap Project Transaction</a>
+
+        <br>
+        <a><u>Management</u></a>
+        <a href="" id="Management_role" >Manage Management Roles</a>
+        
+        <a href="" id="Reported_review" >Project Reported Reviews <span id="badge_reported">0</span></a>
+        <a href="" id="location_Reported_review" >Location Reported Reviews <span id="badge_location_review_reported">0</span> </a>
+        
+
+        <a href="" id="newsletter">newsletter subscriber <span id="badge_newsletter">0</span></a>
+        
+        <br>
+        <a href="" id="logout">
+        <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+
+</div>
+
+<style>
+
+#badge_loc_review, #badge_reported, #badge_newsletter, #badge_commment_count, #badge_location_review_reported,
+#badge_location_review_comment, #badge_location_user_photos, #badge_project_user_photos {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+  $("#scrap1").click(function(){
+    alert("The Scraping Script To Fetch Google Review Is Running In Background.... Kindly Check The Frontend After 30 min. ");
+  });
+
+  $("#scrap2").click(function(){
+    alert("The Scraping Script To Fetch Project Transaction Is Running In Background.... Kindly Check The Frontend After 30 min. ");
+  });
+
+});
+</script>

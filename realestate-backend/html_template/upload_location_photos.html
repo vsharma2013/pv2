@@ -1,0 +1,258 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("/be/management/header");
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+label {
+    padding: 10px;
+    background: #528ab9;
+    display: table;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#gallery img {
+    border: 2px solid brown;
+    width: 304px;
+    height: 222px;
+    margin: 4px;
+    padding: 7px;
+}
+.cover_pic_area img{
+    width: 304px;
+    display: block;
+    height: 222px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+}
+
+input[type="file"] {
+    display: none !important;
+}
+
+img.img_x {
+    padding: 4px;
+    border: 2px solid brown;
+    margin-bottom: 5px;
+    height: 185px;
+}
+
+div#pre_uploaded {
+    background-color: wheat;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+</style>
+
+<script>
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+
+if(getUrlParameter('status')==1){
+alert("Location Photos Are Uploaded Successfully...");
+}
+
+if(getUrlParameter('status')==2){
+alert("Media File Deleted Successfully...");
+}
+
+$(function() {
+    var locationid = getUrlParameter('locationid'); 
+    console.log("Location Id:",locationid);
+    $('#loc_id').val(locationid);
+    // Multiple images preview in browser
+    var imagesPreview = function(input, placeToInsertImagePreview) {
+
+        if (input.files) {
+            var filesAmount = input.files.length;
+
+            for (i = 0; i < filesAmount; i++) {
+                var reader = new FileReader();
+
+                reader.onload = function(event) {
+                    $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                    var input_field = "<input type='text' style='width: 504px;' class='form-control' name='location_gallery_text' placeholder='Provide Title Here...' value=''><br>";
+                    $(input_field).appendTo(placeToInsertImagePreview);
+                }
+
+                reader.readAsDataURL(input.files[i]);
+            }
+        }
+
+    };
+
+    $('#gallery-photo-add').on('change', function() {
+        imagesPreview(this, 'div#gallery');
+    });
+});
+</script>
+
+<script>
+var location_id = getUrlParameter('locationid'); 
+$.post( "https://www.propviewz.com/be/post_location_pictures/fetch_location_management_media/", { 'location_id': location_id })
+  .done(function( data ) {
+      console.log("-----------",data );
+      if(data.length==0){
+        var block = "<center><b style='color: #e05147;'>Current We Don't Have Any Image For This Location</b></center>" ;
+        $('#pre_uploaded').append(block);
+      }
+      else{
+        for(i=0;i<data.length;i++)
+        {
+          var img = data[i].media_link;
+          var block = "<div class='col-md-3'>\
+          <form action='https://www.propviewz.com/be/post_location_pictures/delete_location_photo_by_management' method='post'>\
+          <input type='hidden' name='location_id' value='"+location_id+"'>\
+          <input type='hidden' name='media_link' value='"+img+"'>\
+          <input type='hidden' name='Uploaded_by' value='Management'>\
+          <img class='img_x' src='"+img+"' width='250'>\
+          <center><input type='submit' class='btn btn-danger' value='Remove'></center>\
+          </form>\
+          </div>";
+          $('#pre_uploaded').append(block);
+        }
+      }
+      
+  });
+</script>
+
+<script>
+function ValidateSize(file) 
+{
+    var length_of_files = file.files.length;
+    console.log("Total files:",length_of_files);
+    if(length_of_files > 5 ){
+        alert('Sorry! Only five files can be uploaded at a time.');
+        $(file).val(''); //for clearing with Jquery
+    }
+    else{
+        var flag = 0;
+        for(i=0; i<length_of_files; i++)
+        {
+            var FileSize = file.files[i].size / 1024 / 1024; // in MB
+            console.log("Total FileSize:",FileSize);
+            if (FileSize > 1) 
+            {
+                flag = 1;
+            }
+        }
+        if(flag == 1){
+            alert('Invalid Input! Any of the images have size more than 1 Mb. Only Images less than 1 Mb are allowed.');
+            $(file).val(''); //for clearing with Jquery
+        }
+    }
+    
+}
+</script>
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+                <!--******************-->
+                    <div class="page-header">
+                    <center style="font-family: 'Berkshire Swash';font-size: 22px;">
+                    <h2>Upload Location Photos.</h2>
+                    <p>Use this form to store location management images to the database....</p>
+                    </center>   
+                    </div>
+                    <form action="https://www.propviewz.com/be/post_location_pictures/location_gallery_upload" method="post" enctype="multipart/form-data">
+                    <div class="col-md-12">
+                        <center>
+                        <label>Select Location Images 
+                        <input type="hidden" id="loc_id" name="location_id" value="">
+                        <input type="file" onchange="ValidateSize(this)" multiple name="blogimage" id="gallery-photo-add" accept="image/x-png,image/jpg,image/jpeg" required>
+                        </label>
+                        <p>* Upload minimum 2 & maximum 5 images for gallery of size less than 1 MB per image .</p>
+                        <div class="col-md-12" id="gallery"></div>
+                        </center>
+                    </div>
+                    <center>
+                    <button type="submit" style="margin-top: 10px;" class="btn btn-success">Upload Location Photos</button>
+                    </center>
+                    </form>   
+                <!--******************-->
+                <div class='btn btn-info' style="width: 100%; margin-top: 55px;">Already Upload Images</div>
+                <div class="col-md-12" id="pre_uploaded">
+                
+                </div>
+    </div>
+</div>
+   
+</body>
+</html> 

@@ -1,0 +1,758 @@
+/* Fonts  */
+
+/* Catamaran-Regular */
+
+@font-face {
+  font-family: 'Catamaran';
+  src: 
+       url('../../assets/fonts/Catamaran-Regular.ttf') format('truetype');
+}
+/*  */
+
+
+/* Catamaran-semibold */
+
+@font-face {
+  font-family: 'Catamaran-Semibold';
+  src: 
+       url('../../assets/fonts/Catamaran-SemiBold.ttf') format('truetype');
+}
+/*  */
+
+/* Catamaran-bold */
+
+@font-face {
+  font-family: 'Catamaran-Bold';
+  src: 
+       url('../../assets/fonts/Catamaran-Bold.ttf') format('truetype');
+}
+/*  */
+
+/* Catamaran-Extrabold */
+
+@font-face {
+  font-family: 'Catamaran-Extrabold';
+  src: 
+       url('../../assets/fonts/Catamaran-ExtraBold.ttf') format('truetype');
+}
+/*  */
+
+/* Catamaran-Medium */
+
+@font-face {
+  font-family: 'Catamaran-Medium';
+  src: 
+       url('../../assets/fonts/Catamaran-Medium.ttf') format('truetype');
+}
+/*  */
+
+/* Catamaran-Black */
+
+@font-face {
+  font-family: 'Catamaran-Black';
+  src: 
+       url('../../assets/fonts/Catamaran-Black.ttf') format('truetype');
+}
+/*  */
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* .body {font-family: 'Catamaran' !important; } */
+
+
+/* Fonts End */
+
+
+.headertxt{
+  font-family: Catamaran-Bold;
+  font-size: 17px;
+  color: #404041;
+  justify-content: center;
+}
+.Pcontainer {
+    font-family: Catamaran;
+    font-size: 17px;
+    padding: 8px;
+    color: #404041;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  /* .column{
+    float: center;
+    width: 25%;
+    padding: 0 10px;
+  } */
+
+  /* h1{
+    font-family: Catamaran-Semibold;
+    font-size: 25px;
+    margin-top: 25px;
+  } */
+
+  h1.paymentheading1{
+    font-family: Catamaran-Semibold;
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  
+  .paymentrow {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .Pcontainer {
+    background-color: #ffffff;
+    padding: 5px 20px 15px 20px;
+    border: 2px solid #828282;
+    border-radius: 5px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: -webkit-left;
+    height: 100%;
+    margin-top: 15px;
+  }
+
+  input.transaction[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.unit[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.floor[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.area[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  /* .date{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  } */
+  
+  input.cname[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.ccnum[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.expdate[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  input.cvv[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  /* h5{
+    font-family: Catamaran;
+    margin-top: 5px;
+    font-size: 20px;
+  } */
+  
+  h5.paymentheading5{
+    font-family: Catamaran;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+/* 
+  label {
+    margin-bottom: 10px;
+    display: block;
+  } */
+  
+  /* .fname{
+    text-align: left;
+  } */
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    justify-content: center;
+    margin-left: 250px;
+  }
+  
+  .Paymentbtn {
+    background-color: rgb(53, 52, 52);
+    color: white;
+    padding: 12px;
+    margin: 10px 155px;
+    border: none;
+    width: 40%;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: Catamaran-Bold;
+  }
+
+  .btntxt{
+    font-size: 25px;
+    font-family: Catamaran-Bold;
+    color: rgb(224, 218, 218);
+  }
+
+  /* .master{
+    size: 25px;
+  }
+
+  .visa{
+    size: 25px;
+  } */
+  
+  .Paymentbtn:hover {
+    background-color: rgb(238, 65, 61);
+  }
+/*     
+  a {
+    color: #2196F3;
+  } */
+  
+  /* hr {
+    border: 1px solid lightgrey;
+  } */
+
+  .pytclosebtn{
+      position: absolute;
+      z-index: 9;
+      width: 3vw;
+      left: 82%;
+      top: 4%;
+      cursor: pointer;
+  }
+/* 
+  .divpyt{
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      margin-left: 35%;
+      margin-top: 4%;
+      border-radius: 1vw;
+      height: 148%;
+      border: gray .15vw solid;
+      z-index: 12 !important;
+  } */
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    /* .row {
+      flex-direction: column;
+    } */
+    .col-25 {
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+/* Mobile view css starts here */
+
+  @media (max-width: 992px)
+{
+  /* Hidden Css of webview below */
+.pytclosebtn{
+display: none;
+}
+
+.Pcontainer{
+display: none;
+}
+
+
+
+
+
+
+  /* HW ends here************************************************* */
+
+  /* New mobile Css starts here */
+
+.Mobilepytclosebtn{
+position: absolute;
+z-index: 9;
+width: 6vw;
+left: 84%;
+top: 2%;
+cursor: pointer;
+/* position: fixed; */
+
+}
+
+.PMobilecontainer {
+background-color: #ffffff;
+padding: 5px 20px 15px 20px;
+border: 2px solid #828282;
+border-radius: 5px;
+width: 100%;
+margin-left: 0%;
+text-align: -webkit-left;
+height: 100%;
+margin-top: 5px;
+}
+
+.paymentrowmobile{
+display: -ms-flexbox; /* IE10 */
+display: flex;
+-ms-flex-wrap: wrap; /* IE10 */
+flex-wrap: wrap;
+margin: -12px -7px;
+}
+
+.paymentrowcol{
+display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+/* h4{
+font-family: Catamaran-Semibold;
+font-size: 14px;
+margin-top: 25px;
+} */
+
+h4.paymentheading4{
+font-family: Catamaran-Semibold;
+font-size: 18px;
+margin-top: 25px;
+}
+/* 
+h6{
+font-family: Catamaran;
+margin-top: 5px;
+font-size: 12px;
+} */
+
+h6.paymentheading6{
+font-family: Catamaran;
+margin-top: 5px;
+font-size: 14px;
+}
+
+
+.Mobileicon-container{
+margin-bottom: 20px;
+padding: 7px 0;
+font-size: 24px;
+justify-content: center;
+margin-left: 100px;
+}
+
+input.Mobiletransaction[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+
+input.Mobileunit[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+
+input.Mobilefloor[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+
+input.Mobilearea[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+.Ltransaction{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lunit{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lfloor{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Larea{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lamount{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lcname{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lccnum{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lexpdate{
+margin-bottom: 2px;
+display: block;
+font-size: 15px;
+}
+
+.Lcvv{
+margin-bottom: 2px;
+display: block;
+font-size: 15px; 
+}
+
+input.Mobilecname[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+input.Mobileccnum[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+input.Mobileexpdate[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+input.Mobilecvv[type=text] {
+width: 100%;
+margin-bottom: 10px;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+.Mobilebtn{
+background-color: rgb(53, 52, 52);
+color: white;
+padding: 12px;
+margin: 5px 10px;
+border: none;
+width: 53%;
+border-radius: 7px;
+cursor: pointer;
+font-size: 17px;
+font-family: Catamaran-Bold;
+margin-left: 85px;
+}
+
+.Mobilebtntxt{
+font-size: 25px;
+font-family: Catamaran-Bold;
+color: rgb(224, 218, 218);
+}
+
+.Mobilebtn:hover {
+background-color: rgb(238, 65, 61);
+}
+
+/* a {
+color: #2196F3;
+} */
+
+/* hr {
+border: 1px solid lightgrey;
+} */
+
+/* .mobdiv{
+margin-left: 20px;
+} */
+
+
+/* .Mobilelabelcontainer{
+
+} */
+
+
+  /* NM ends here ***************************************************/
+
+}
+
+/* Responsive layout  */
+
+@media only screen and (max-width: 450px) {
+.PMobilecontainer{
+background-color: #ffffff;
+padding: 5px 20px 15px 20px;
+border: 2px solid #828282;
+border-radius: 5px;
+margin-left: 0%;
+text-align: -webkit-left;
+height: 100%;
+margin-top: 5px;
+ width: 100%;
+ margin-left: 2px;
+}
+.Mobilebtn{
+ width: 164px;
+ height: 50px;
+ margin-left:64px; 
+}
+
+.Mobilepytclosebtn {
+  position: absolute;
+  z-index: 9;
+  width: 8vw;
+  left: 84%;
+  top: 1%;
+  cursor: pointer;
+}
+}
+
+@media only screen and (max-width: 400px){
+.Mobilepytclosebtn {
+  position: absolute;
+  z-index: 9;
+  width: 8vw;
+  left: 82%;
+  top: 3%;
+  cursor: pointer;
+}
+
+.PMobilecontainer{
+  width: 100%;
+  margin-left: -1%;
+}
+h4.paymentheading4{
+  font-family: Catamaran-Semibold;
+  font-size: 12px;
+  margin-top: 25px;
+}
+/* 
+h6{
+  font-family: Catamaran;
+  margin-top: 5px;
+  font-size: 12px;
+} */
+
+h6.paymentheading6{
+  font-family: Catamaran;
+  margin-top: 5px;
+  font-size: 14px;
+}
+}
+
+@media only screen and (max-width: 300px) {
+.PMobilecontainer{
+background-color: #ffffff;
+padding: 5px 20px 15px 20px;
+border: 2px solid #828282;
+border-radius: 5px;
+text-align: -webkit-left;
+height: 100%;
+margin-top: 5px;
+width: 100%;
+margin-left: -13px;
+}
+
+.Mobilepytclosebtn {
+  position: absolute;
+  z-index: 9;
+  width: 8vw;
+  left: 80%;
+  top: 2%;
+  cursor: pointer;
+}
+}
+
+/* @media only screen and (min-width: 800px) {
+.Mobileicon-container{
+margin-left: 110px;
+}
+
+} */
+/* 
+@media only screen and (min-width: 500px){
+.PMobilecontainer{
+  width: 80%;
+  margin-left: -13px;
+}
+
+.Mobilepytclosebtn {
+  position: absolute;
+  z-index: 9;
+  width: 8vw;
+  left: 85%;
+  top: 3%;
+  cursor: pointer;
+}
+} */
+
+@media (min-width: 992px)
+{
+  /* Hidden CSS of New Mobile Classes below */
+
+  /* HN Ends here********************************************************** */
+.Mobilepytclosebtn{
+display: none;
+}
+
+.PMobilecontainer{
+display: none;
+}  
+
+.Mobileicon-container{
+display: none;
+}
+
+.Mobilecname{
+display: none;
+}
+
+.Mobilebtn{
+display: none;
+}
+
+.Mobilebtntxt{
+display: none;
+}
+
+.Mobilebtn:hover{
+display: none;
+}
+
+.Mobiletransaction{
+display: none;
+}
+
+.Mobileunit{
+display: none;
+}
+
+.Mobilefloor{
+display: none;
+}
+
+.Mobilearea{
+display: none;
+}
+
+
+
+  /* Show CSS classes of web view starts here */
+
+.pytclosebtn{
+  display: block;
+}
+
+.Pcontainer{
+  display: block;
+}
+
+.icon-container{
+  display:block;
+}
+
+
+
+
+}
+
+/* Mobile view css ends here */

@@ -1,0 +1,133 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src ="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<script>
+       
+         $(function() {
+            $( "#automplete" ).autocomplete({
+                minLength:2,   
+                delay:500,
+                source: function( request, response ) {
+                    $.ajax({
+                        url: "https://www.propviewz.com/be/fetch_project_name_and_location/",
+                        type: 'get',
+                        data: {
+                            val: request.term
+                        },
+                        success: function( result ) {
+                            var list_of_drop_down = ""; 
+                            for(item in result){
+                                if(list_of_drop_down == "")
+                                {
+                                    list_of_drop_down = ""+result[item].project_name+" - City: "+result[item].city+"";
+                                }    
+                                else
+                                {
+                                    list_of_drop_down = list_of_drop_down +","+ result[item].project_name+" - City: "+result[item].city+"";
+                                }
+                            } 
+                            var result_arry = list_of_drop_down.split(",");
+                            console.log("TTTT: ",result_arry);
+                            response( result_arry );
+                        }
+                    });
+                },
+            });
+        });          
+         
+</script>
+
+<body>
+
+
+<div class="col-md-12">
+    <div class="main">
+    <div class="container-fluid">
+                <div class="page-header">
+                <center style="font-family: 'Berkshire Swash';font-size: 22px;">
+                <h2>Edit Project Form</h2>
+                <p>Use this form to edit project information to the database....</p>  
+                </center>   
+                </div>
+                
+                <form action="https://www.propviewz.com/be/management/edit_project" method="post" id="formx">
+                <div class="form-group">
+                <label>Project Name:</label>
+                <input type="text" class="form-control" id="automplete" placeholder="Enter Project Name" name="pro_name" required>
+                </div>
+                <center><button type="submit" class="btn btn-success">Edit Project</button></center>
+                </form>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

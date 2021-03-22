@@ -1,0 +1,1197 @@
+.nextlinestyle{
+   display: flex;
+}
+.custom-left-spacing{
+   padding-left: 20px;
+}
+
+.custom-margintop-regpage{
+   margin-top: 25px;
+}
+
+
+@media screen and (max-width: 601px) {
+   .nextlinestyle{
+      display: unset;
+   }
+   .custom-left-spacing{
+      padding-left: 0px;
+   }
+   .custom-margintop-regpage{
+      margin-top: 0px;
+   }
+}
+
+@media screen and (min-width: 601px) {
+
+   .divh3{
+       width: 100%;
+       background-color: white;
+       position: absolute;
+       height: auto;
+       z-index: 10;
+       background-color: white;
+       background: none;
+    }
+   
+    .container1{
+        max-width: 100%;
+        background-color: white;
+        max-height: 100%;
+        z-index: 10;
+    }
+   
+    .footer1 {
+       margin-top: 60rem;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       /* margin-top: 26%; */
+    }
+   
+    .headlogo1{
+        position: absolute;
+        font-size: 2.2vw;
+        font-weight: bold;
+        color: rgb(99, 96, 96);
+        top: 1%;
+        left: 6.4%; 
+    }
+   
+    .para1{
+       position: absolute;
+        font-size: medium;
+        color: rgb(78, 76, 76);
+        top: 9%;
+        left: 6.4%;
+    }
+   
+    .para2{
+       position: absolute;
+        font-size: medium;
+        color: rgb(78, 76, 76);
+        top: 12%;
+        left: 6.4%;
+    }
+   
+    .name{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 18%;
+       left: 6.4%;
+       border-radius: 0.5vw;
+    }
+   
+    .ename{
+       position: absolute;
+       top: 16.5%;
+       left: 7.2%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .date10{
+      position: absolute;
+      border: 0.09vw solid #EF403C;
+      width:  30%;;
+      height: 6%;
+      top: 18%;
+      left: 63.2%;
+      border-radius: 0.5vw;
+      text-transform: uppercase;
+    }
+   
+    .edate{
+       position: absolute;
+       top: 16.5%;
+       left: 64%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .pass1{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 30%;
+       left: 6.4%;
+       border-radius: 0.5vw;
+    }
+    .pass1view{
+      position: absolute;
+      top: 32%;
+      left: 32%;
+   }
+   
+    .epass1{
+       position: absolute;
+       top: 28.5%;
+       left: 7.2%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .cpass{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 30%;
+       left: 63.2%;
+       border-radius: 0.5vw;
+    }
+   
+    .ecpass{
+       position: absolute;
+       top: 28.5%;
+       left: 64%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .gender{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 42%;
+       left: 6.4%;
+       border-radius: 0.5vw;
+    }
+   
+    .egender{
+       position: absolute;
+       top: 40.5%;
+       left: 7.2%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .marital{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 42%;
+       left: 63.2%;
+       border-radius: 0.5vw;
+    }
+   
+    .emarital{
+       position: absolute;
+       top: 40.5%;
+       left: 64%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .mob1{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 54%;
+       left: 6.4%;
+       border-radius: 0.5vw;
+    }
+   
+    .emob1{
+       position: absolute;
+       top: 52.5%;
+       left: 7.2%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .email3{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 54%;
+       left: 63.2%;
+       border-radius: 0.5vw;
+    }
+   
+    .eemail3{
+       position: absolute;
+       top: 52.5%;
+       left: 64%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .city{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 66%;
+       left: 6.4%;
+       border-radius: 0.5vw;
+    }
+   
+    .ecity{
+       position: absolute;
+       top: 64.5%;
+       left: 7.2%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .state{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       width:  30%;;
+       height: 6%;
+       top: 66%;
+       left: 63.2%;
+       border-radius: 0.5vw;
+    }
+   
+    .estate{
+       position: absolute;
+       top: 64.5%;
+       left: 64%;
+       font-size: 1vw;
+       background-color: white;
+       color: #484848;
+    }
+   
+    .terms{
+       position: absolute;
+        font-size: x-large;
+        color: rgb(78, 76, 76);
+        top: 75%;
+        left: 5.9%;
+        font-weight: bold;
+    }
+   
+    .term1{
+        position: absolute;
+        border: 0.09vw solid #EF403C;
+        top: 80%;
+        left: 6.4%;
+    }
+    .term2{
+       position: absolute;
+       border: 0.09vw solid #EF403C;
+       top: 84%;
+       left: 6.4%;
+   }
+   
+   .eterm1{
+       position: absolute;
+        font-size: medium;
+        color: rgb(78, 76, 76);
+        top: 79.5%;
+        left: 7.5%;
+    }
+   
+    .eterm2{
+       position: absolute;
+        font-size: medium;
+        color: rgb(78, 76, 76);
+        top: 83.5%;
+        left: 7.5%;
+    }
+   
+    .rsubmit1 {
+       position: absolute;
+       background-color: #484848; 
+       top: 91%;
+       left:46%;
+       border: none;
+       color: white;
+       padding: 0.5vw 2vw 0.5vw 2vw;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 1.2vw;
+       cursor: pointer;
+       border-radius: 0.2vw; 
+     }
+   
+   }
+   
+   
+   @media screen and (max-width: 505px) { 
+   
+      .divh3{
+         width: 100%;
+         background-color: white;
+         position: absolute;
+         height: auto;
+         z-index: 10;
+         background-color: white;
+         background: none;
+      }
+     
+      .container1{
+          max-width: 100%;
+          background-color: white;
+          max-height: 100%;
+          z-index: 10;
+      }
+     
+      .footer1 {
+         margin-top: 250%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+     
+      .headlogo1{
+          position: absolute;
+          font-size: 4.2vw;
+          font-weight: bold;
+          color: rgb(99, 96, 96);
+          top: 3%;
+          left: 3%; 
+      }
+     
+      .para1{
+         position: absolute;
+          font-size: 3.5vw;
+          color: rgb(78, 76, 76);
+          top: 9.5%;
+          left: 19.5%;
+          text-align: center;
+          font-weight: bold;
+      }
+     
+      .para2{
+         position: absolute;
+          font-size: 3vw;
+          color: rgb(78, 76, 76);
+          top: 12%;
+          left: 3%;
+      }
+     
+      .name{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 17%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .ename{
+         position: absolute;
+         top: 15.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+       
+      .pass1{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width: 94%;
+         height: 5%;
+         top: 81%;
+         left: 3%;
+         border-radius: 1.5vw;
+         display: block;
+      }
+      .pass1view{
+         position: absolute;
+         top: 82%;
+         left: 84%;
+      }
+     
+      .epass1{
+         position: absolute;
+         top: 79.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+         display: block;
+      }
+     
+      .cpass{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width: 94%;
+         height: 5%;
+         top: 89%;
+         left: 3%;
+         border-radius: 1.5vw;
+         display: block;
+      }
+     
+      .ecpass{
+         position: absolute;
+         top: 87.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+         display: block;
+      }
+     
+      .gender{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 25%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .egender{
+         position: absolute;
+         top: 23.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+   
+      .date10{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 33%;
+         left: 3%;
+         border-radius: 1.5vw;
+         text-transform: uppercase;
+       }
+      
+       .edate{
+          position: absolute;
+          top: 31.5%;
+          left: 5.2%;
+          font-size: 3.2vw;
+          background-color: white;
+          color: #484848;
+
+       }
+     
+      .marital{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 41%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .emarital{
+         position: absolute;
+         top: 39.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .mob1{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 49%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .emob1{
+         position: absolute;
+         top: 47.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .email3{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 57%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .eemail3{
+         position: absolute;
+         top: 55.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .city{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 65%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .ecity{
+         position: absolute;
+         top: 63.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .state{
+         position: absolute;
+         border: 0.36vw solid #EF403C;
+         width:  94%;;
+         height: 5%;
+         top: 73%;
+         left: 3%;
+         border-radius: 1.5vw;
+      }
+     
+      .estate{
+         position: absolute;
+         top: 71.5%;
+         left: 5.2%;
+         font-size: 3.2vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .terms{
+         position: absolute;
+         font-size: 4.2vw;
+         color: rgb(78, 76, 76);
+         top: 97%;
+         left: 1.5%;
+         font-weight: bold;
+      }
+     
+      .term1{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         top: 101%;
+         left: 3%;
+      }
+      .term2{
+         position: absolute;
+    border: 0.09vw solid #EF403C;
+    top: 104%;
+    left: 3%;
+     }
+     
+     .eterm1{
+      position: absolute;
+      font-size: 3.5vw;
+      color: rgb(78, 76, 76);
+      top: 100.5%;
+      left: 7.5%;
+      }
+     
+      .eterm2{
+         position: absolute;
+    font-size: 3.5vw;
+    color: rgb(78, 76, 76);
+    top: 103.5%;
+    left: 7.5%;
+      }
+     
+      .rsubmit1 {
+         position: absolute;
+         background-color: #484848; 
+         top: 108%;
+         left: 38%;
+         border: none;
+         color: white;
+         padding: 1.5vw 5vw 1.5vw 5vw;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 4.2vw;
+         cursor: pointer;
+         border-radius: 1.2vw;
+       }
+   
+   }
+   
+   
+   @media screen and (min-width: 2500px) and (max-width: 2570px){
+   
+      .footer1 {
+         margin-top: 50%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+      .para1{
+         position: absolute;
+          font-size: 1vw;
+          color: rgb(78, 76, 76);
+          top: 7%;
+          left: 6.4%;
+      }
+     
+      .para2{
+         position: absolute;
+          font-size: 1vw;
+          color: rgb(78, 76, 76);
+          top: 10%;
+          left: 6.4%;
+      }
+   
+      .terms{
+         position: absolute;
+          font-size: 1.2vw;
+          color: rgb(78, 76, 76);
+          top: 75%;
+          left: 5.9%;
+          font-weight: bold;
+      }
+     
+      .term1{
+          position: absolute;
+          border: 0.09vw solid #EF403C;
+          top: 80.5%;
+          left: 6.4%;
+      }
+      .term2{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         top: 84.5%;
+         left: 6.4%;
+     }
+     
+     .eterm1{
+         position: absolute;
+          font-size: 1vw;
+          color: rgb(78, 76, 76);
+          top: 79.5%;
+          left: 7.5%;
+      }
+     
+      .eterm2{
+         position: absolute;
+          font-size: 1vw;
+          color: rgb(78, 76, 76);
+          top: 83.5%;
+          left: 7.5%;
+      }
+   
+   
+   }
+   
+   
+   @media screen and (min-width: 1430px) and (max-width: 1450px){
+   
+      .footer1 {
+         margin-top: 60%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+   }
+   
+   @media screen and (min-width: 370px) and (max-width: 380px){
+   
+      .footer1 {
+         margin-top: 218%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+   }
+   
+   
+   @media screen and (min-width: 420px) and (max-width: 430px){
+   
+      .footer1 {
+         margin-top: 200%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+   }
+   
+   
+   @media screen and (min-width: 1020px) and (max-width: 1030px){
+   
+      .name{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 18%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .ename{
+         position: absolute;
+         top: 16.5%;
+         left: 7.2%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .date10{
+        position: absolute;
+        border: 0.09vw solid #EF403C;
+        width:  30%;;
+        height: 5%;
+        top: 18%;
+        left: 63.2%;
+        border-radius: 0.5vw;
+        text-transform: uppercase;
+      }
+     
+      .edate{
+         position: absolute;
+         top: 16.5%;
+         left: 64%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .pass1{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 30%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+      .pass1view{
+         position: absolute;
+         top: 32%;
+         left: 32%;
+      }
+     
+      .epass1{
+         position: absolute;
+         top: 28.5%;
+         left: 7.2%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .cpass{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 30%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .ecpass{
+         position: absolute;
+         top: 28.5%;
+         left: 64%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .gender{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 42%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .egender{
+         position: absolute;
+         top: 40.5%;
+         left: 7.2%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .marital{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 42%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .emarital{
+         position: absolute;
+         top: 40.5%;
+         left: 64%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .mob1{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 54%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .emob1{
+         position: absolute;
+         top: 52.5%;
+         left: 7.2%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .email3{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 54%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .eemail3{
+         position: absolute;
+         top: 52.5%;
+         left: 64%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .city{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 66%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .ecity{
+         position: absolute;
+         top: 64.5%;
+         left: 7.2%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .state{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 66%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .estate{
+         position: absolute;
+         top: 64.5%;
+         left: 64%;
+         font-size: 1.5vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .rsubmit1 {
+         position: absolute;
+         background-color: #484848; 
+         top: 91%;
+         left:46%;
+         border: none;
+         color: white;
+         padding: 0.5vw 2vw 0.5vw 2vw;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 1.8vw;
+         cursor: pointer;
+         border-radius: 0.2vw; 
+       }
+   
+       .footer1 {
+         margin-top: 84%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+   
+   }
+   
+   
+   @media screen and (min-width: 760px) and (max-width: 770px){
+   
+      .name{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 18%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .ename{
+         position: absolute;
+         top: 16.7%;
+         left: 7.2%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .date10{
+        position: absolute;
+        border: 0.09vw solid #EF403C;
+        width:  30%;;
+        height: 5%;
+        top: 18%;
+        left: 63.2%;
+        border-radius: 0.5vw;
+        text-transform: uppercase;
+      }
+     
+      .edate{
+         position: absolute;
+         top: 16.7%;
+         left: 64%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .pass1{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 30%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+      .pass1view{
+         position: absolute;
+         top: 32%;
+         left: 32%;
+      }
+     
+      .epass1{
+         position: absolute;
+         top: 28.7%;
+         left: 7.2%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .cpass{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 30%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .ecpass{
+         position: absolute;
+         top: 28.7%;
+         left: 64%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .gender{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 42%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .egender{
+         position: absolute;
+         top: 40.7%;
+         left: 7.2%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .marital{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 42%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .emarital{
+         position: absolute;
+         top: 40.7%;
+         left: 64%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .mob1{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 54%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .emob1{
+         position: absolute;
+         top: 52.7%;
+         left: 7.2%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .email3{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 54%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .eemail3{
+         position: absolute;
+         top: 52.7%;
+         left: 64%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .city{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 66%;
+         left: 6.4%;
+         border-radius: 0.5vw;
+      }
+     
+      .ecity{
+         position: absolute;
+         top: 64.7%;
+         left: 7.2%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .state{
+         position: absolute;
+         border: 0.09vw solid #EF403C;
+         width:  30%;;
+         height: 5%;
+         top: 66%;
+         left: 63.2%;
+         border-radius: 0.5vw;
+      }
+     
+      .estate{
+         position: absolute;
+         top: 64.7%;
+         left: 64%;
+         font-size: 1.8vw;
+         background-color: white;
+         color: #484848;
+      }
+     
+      .rsubmit1 {
+         position: absolute;
+         background-color: #484848; 
+         top: 91%;
+         left:46%;
+         border: none;
+         color: white;
+         padding: 0.5vw 2vw 0.5vw 2vw;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 2.5vw;
+         cursor: pointer;
+         border-radius: 0.2vw; 
+       }
+   
+       .footer1 {
+         margin-top: 108%;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         /* margin-top: 26%; */
+      }
+   
+   
+   }

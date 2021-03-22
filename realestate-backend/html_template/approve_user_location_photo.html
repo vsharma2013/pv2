@@ -1,0 +1,168 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+label {
+    padding: 10px;
+    background: #528ab9;
+    display: table;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-group-justified {
+    display: table;
+    padding-top: 20px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+div#pro_info {
+    color: blueviolet;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 8px;
+}
+div#pro_amenities {
+    color: blueviolet;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+div#pro_config {
+    color: blueviolet;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+}
+h4 {
+    font-size: 18px;
+    color: darkcyan;
+}
+.box_info {
+    width: 98%;
+    background: #03a9f430;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+</style>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $.post({url: "https://www.propviewz.com/be/management/fetch_unapproved_user_location_photos/", success: function(result){
+
+            console.log("RESULT", result);
+               
+            for(item in result)
+            {
+                var title = "N/A"
+                if(result[item].post_title != null){
+                    title = result[item].post_title;
+                }
+                var list = "<div class='box_info'>\
+                <div class='form-group'></div>\
+                <p><b>Name: "+result[item].name+"</b></p>\
+                <p><b>Email: "+result[item].email+"</b></p>\
+                <p><b>Location Name: "+result[item].location_name+"</b></p>\
+                <p><b>Upload Time: "+result[item].post_time.split('T')[0].split("-").reverse().join("-")+"</b></p>\
+                <p><b>Post Title: "+title+"</b></p>\
+                <img src='"+result[item].post_media+"' width='280' style='border-radius:5px;'>\
+                <form action='https://www.propviewz.com/be/management/approve_user_location_photos' method='post' style='padding-top: 10px;'>\
+                <input type='hidden' name='userid' value='"+result[item].userid+"'>\
+                <input type='hidden' name='location_id' value='"+result[item].location_id+"'>\
+                <input type='hidden' name='post' value='"+result[item].post_id+"'>\
+                <input type='submit' class='btn btn-success' value='Approve Post'>\
+                </form>\
+                <form action='https://www.propviewz.com/be/management/delete_user_location_photos' method='post'>\
+                <input type='hidden' name='userid' value='"+result[item].userid+"'>\
+                <input type='hidden' name='location_id' value='"+result[item].location_id+"'>\
+                <input type='hidden' name='post' value='"+result[item].post_id+"'>\
+                <input type='submit' class='btn btn-danger' value='Reject Post'>\
+                </form>\
+                </div>";
+                $('#list_unapproved').append( $(list) );
+            } 
+    }});
+});
+</script>
+<body>
+    <div class="main">
+    <div class="container-fluid">
+        <div class="page-header">
+            <center  style="font-family: 'Berkshire Swash';font-size: 22px;">
+            <h2>You Can approve the Location User Photos from here ....</h2>
+            <p>Only for the management purpose...</p>
+            </center>   
+
+            <div id="list_unapproved">
+            <center><label>Unapproved Location User Photos</label></center>
+            </div>
+        </div>        
+    </div>
+    </div>
+</div>
+   
+</body>
+</html> 

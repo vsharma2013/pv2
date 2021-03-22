@@ -1,0 +1,5357 @@
+#dragbox {
+    overflow: auto;
+  }
+  #dragbox ul {
+    margin-top: auto;
+    padding: 15px 0;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+  }
+  #dragbox ul li {
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  #dragbox ul li .remove-btn {
+    cursor: pointer;
+  }
+  #dragbox ul li:hover img {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.2);
+  }
+  #dragbox ul li:hover .remove-btn {
+    display: flex;
+  }
+  #dragbox ul li .remove-btn {
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: #0000009e;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #dragbox ul li .remove-btn span {
+    word-break: break-all;
+    margin: 2px 0;
+  }
+  .cover {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  #addreviewform > div > div > input.project_searchinput {
+    border-width: 0.1vw !important;
+  }
+  
+  @media screen and (min-width: 992px) {
+    #mobileuploadbuttons {
+      display: none !important;
+    }
+  }
+  #mobileuploadbuttons {
+    display: none;
+    margin-top: 141%;
+    position: absolute;
+    left: 29%;
+    font-size: small;
+  }
+  
+  @media screen and (min-width: 601px) {
+    /* .review_search{
+          position: absolute;
+      } */
+    .closebtn {
+      position: absolute;
+      cursor: pointer;
+      top: -1vw;
+      left: 93%;
+      width: 2vw;
+    }
+    .div1 {
+      position: absolute;
+      width: 29%;
+      border: 2px solid grey;
+      height: 90%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 6%;
+      max-height: 100vh;
+      max-width: 200vw;
+    }
+  
+    .add {
+      position: static;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      text-align: center;
+    }
+    .rev {
+      top: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      position: absolute;
+      left: 42.5%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 5%;
+      left: 60%;
+      width: 7.5vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 5%;
+      left: 9%;
+      width: 7.5vw;
+    }
+    .pText {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 3.5vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .pField {
+      border: 0.1vw solid #ef403c;
+      width: 22.7vw;
+      height: 3vw;
+      margin-top: 8%;
+      left: 9%;
+      position: absolute;
+      margin-top: 17%;
+    }
+    .pText2 {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 8.5vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+  
+    .plan input {
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    /* .label{
+      position: relative;
+      color: black;
+      background-color: black;
+  
+      text-align: center;
+      
+      display: inline-flex;
+      cursor: pointer;
+      border: 3px solid #EF403C;
+      font-family: Catamaran;
+      
+  } */
+    .plan input:checked + label {
+      border: 0.01vw solid #ef403c;
+      background-color: #ef403c;
+      color: white;
+      box-shadow: none;
+      text-align: center;
+    }
+    .col {
+      display: inline-flex;
+      border: 0.1vw solid #ef403c;
+      margin: 3% 0% 0% 0%;
+      padding-left: 3%;
+      height: 2.3vw;
+      width: 4vw;
+      /* left: 24%; */
+      font-size: 0.75vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+      /* top: 8.5%;
+      /* top: 8.5%;  */
+    }
+    .plan {
+      display: inline-flex;
+      text-align: center;
+      padding: 1%;
+      font-family: Catamaran;
+    }
+    /* .dropzone{
+  
+      width: 30%;
+      height: 30%;
+      border: 2px solid #EF403C;
+    } */
+    #vis {
+      left: 100%;
+    }
+  
+    .aa {
+      left: 9%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .bb {
+      left: 27%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .cc {
+      left: 45%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .dd {
+      left: 63%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .OverRating {
+      position: static;
+      margin-top: 13px;
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+    .dr1 {
+      position: static !important;
+    }
+    .drop-zone-show .dr2 {
+      position: static !important;
+    }
+    .drop-zone-show {
+      position: static;
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .star {
+      left: 9%;
+      top: 14.7vw;
+      position: absolute;
+    }
+  
+    .starcss {
+      font-size: 1.9vw;
+      letter-spacing: 0.3vw;
+    }
+    .pro {
+      top: 17.75vw;
+      font-weight: bold;
+      left: 9%;
+      position: absolute;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 19.25vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 20.75vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 22.25vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 23.75vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 25.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .star1 {
+      position: absolute;
+      top: 18.6vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+  
+    .star2 {
+      position: absolute;
+      top: 20vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 21.5vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 23.1vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 24.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .starSmall {
+      font-size: 1.6vw;
+    }
+    .revText {
+      position: absolute;
+      top: 27.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .revField {
+      position: absolute;
+      top: 29vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 80%;
+      height: 3vw;
+      font-size: 0.6vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 32.8vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 34.2vw;
+      left: 9%;
+      border: 3px #ef403c solid;
+      width: 80%;
+      height: 8vw;
+      border-radius: 0.5vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 42.8vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    /* .img{
+      position: absolute;
+      top: 57%;
+      left: 17%;
+      border: .1vw #EF403C solid;
+      width: 67%;
+      height: 13%;
+      border-radius: .6vw;
+      font-size: 77%;
+      padding: 2%;
+      
+  } */
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 3px solid #ef403c !important;
+      width: 80%;
+      height: 7vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 44.5vw;
+      margin-left: 9%;
+      /* right: 0; */
+      /* bottom: 0; */
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1vw;
+      color: black;
+      letter-spacing: 0.05vw;
+      font-family: "Catamaran";
+      border-radius: 0.5vw;
+      color: grey;
+    }
+  
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 15px;
+    }
+    .dr2 {
+      position: absolute;
+      font-family: "Catamaran";
+      top: 65%;
+    }
+    #file {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      /* margin-bottom: 0.5rem; */
+      outline: none;
+      padding: 0.4rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+  
+      text-align: center;
+      top: 51vw;
+      left: 9%;
+      width: 80%;
+      font-weight: bold;
+      height: 2.5vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .sign {
+      top: 55.3vw;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: 1vw;
+      font-family: Catamaran;
+      font-weight: bold;
+      text-align: center;
+    }
+    .hr3 {
+      position: absolute;
+      /* border: .05vw solid black; */
+      top: 55vw;
+      left: 58%;
+      width: 8vw;
+      background-color: black;
+    }
+  
+    .hr4 {
+      position: absolute;
+      top: 55vw;
+      left: 9%;
+      width: 8vw;
+      background-color: black;
+    }
+    .fbb {
+      position: absolute;
+      top: 57vw;
+      left: 33%;
+      cursor: pointer;
+      height: 2.2vw;
+    }
+    .googleplus {
+      position: absolute;
+      top: 28.4vw;
+      left: 44%;
+      cursor: pointer;
+      height: 2.5vw;
+    }
+    .linkedin {
+      position: absolute;
+      top: 56.85vw;
+      left: 55.4%;
+      cursor: pointer;
+      height: 2.5vw;
+    }
+    .kep-login-facebook {
+      font-family: Helvetica, sans-serif;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: calc(0.27548vw + 12.71074px);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s, border-color 0.3s;
+      background-color: #4c69ba;
+      border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+      padding: calc(0.34435vw + 13.38843px) calc(0.34435vw + 18.38843px);
+    }
+    .kep-login-facebook.metro {
+      border-radius: 0;
+      width: 2.2vw;
+      height: 2.2vw;
+    }
+  
+    .oroption {
+      top: 59.7vw;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.4vw;
+      left: 9%;
+      width: 8vw;
+      /* background-color: grey; */
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.4vw;
+      left: 58%;
+      width: 8vw;
+      /* background-color: black; */
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 61.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emIdName {
+      position: absolute;
+      top: 66.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emField {
+      position: absolute;
+      top: 63vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 80%;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .emFieldName {
+      position: absolute;
+      top: 68vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 80%;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont {
+      position: absolute;
+      top: 67vw;
+      font-family: Catamaran;
+      width: 80%;
+      left: 9%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .contnamesubmit {
+      position: absolute;
+      top: 73vw;
+      font-family: Catamaran;
+      width: 18.3vw;
+      left: 17%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .already {
+      position: absolute;
+      top: 71vw;
+      left: 10%;
+      font-size: 0.7vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 70.9vw;
+      left: 48%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 0.8vw;
+      cursor: pointer;
+    }
+    .sub {
+      position: absolute;
+      top: 55vw;
+      width: 11vw;
+      left: 28%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      font-size: 1vw;
+      margin-bottom: 3vw;
+    }
+    .chg {
+      background-color: #ef403c;
+      color: white;
+      border: #ef403c;
+    }
+  
+    .take {
+      display: none;
+    }
+  }
+  
+  /* mobile view */
+  @media screen and (max-width: 600px) {
+    .kep-login-facebook {
+      font-family: Helvetica, sans-serif;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: calc(0.27548vw + 12.71074px);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s, border-color 0.3s;
+      background-color: #4c69ba;
+      border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+      padding: calc(0.34435vw + 13.38843px) calc(0.34435vw + 18.38843px);
+      height: 8vw;
+      width: 7vw;
+    }
+    .star1 {
+      position: absolute;
+      position: absolute;
+      top: 25%;
+      left: 45%;
+      letter-spacing: 0.9vw;
+    }
+  
+    .star2 {
+      position: absolute;
+      top: 27.5%;
+      left: 45%;
+      letter-spacing: 0.9vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 30%;
+      left: 45%;
+      letter-spacing: 0.9vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 32.5%;
+      left: 45%;
+      letter-spacing: 0.9vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 35%;
+      left: 45%;
+      letter-spacing: 0.9vw;
+    }
+    .closebtn {
+      position: absolute;
+      z-index: 12;
+      width: 8vw;
+      left: 88%;
+      top: 6vw;
+    }
+  
+    .containeraddreview {
+      max-width: 100%;
+      background-color: white;
+      /* max-height: 100%; */
+    }
+  
+    /* .div1{
+      display: none;
+      position: absolute;
+      width: 94%;
+      border: 2px solid grey;
+      height: 90%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 3.1%;
+      margin-top: 5%;
+      max-height: 100vh;
+      max-width: 100%;
+  } */
+    .div1 {
+      width: 100%;
+    }
+  
+    .div_mobile {
+      width: 91%;
+      background-color: white;
+      position: absolute;
+      margin-top: 5%;
+      border-radius: 1vw;
+      border-radius: 0px;
+      border: gray 2px solid;
+      height: 254vw;
+      z-index: 11;
+      left: 4.2%;
+    }
+  
+    .add {
+      position: absolute;
+      margin-top: 3%;
+      margin-left: 46%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 3.8vw;
+    }
+    .rev {
+      margin-top: 7%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 3.8vw;
+      position: absolute;
+      left: 43.5%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6.1%;
+      left: 4%;
+      width: 31vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 6.1%;
+      left: 61%;
+      width: 31vw;
+    }
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 4.4%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+    .pField {
+      border: 0.4vw solid #ef403c;
+      width: 74vw;
+      height: 12.5vw;
+      /* margin-left: -35%; */
+      position: absolute;
+      left: 7.5%;
+      top: 6.5%;
+    }
+    .pText2 {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 12%;
+      font-size: 3.3vw;
+      font-family: Catamaran;
+    }
+  
+    .plan input {
+      display: none;
+      font-family: Catamaran;
+    }
+    /* .label{
+          position: relative;
+          color: black;
+          background-color: black;
+      
+          text-align: center;
+          
+          display: inline-flex;
+          cursor: pointer;
+          border: 3px solid #EF403C;
+          font-family: Catamaran;
+          
+      } */
+    .plan input:checked + label {
+      border: 0.01vw solid #ef403c;
+      background-color: #ef403c;
+      color: white;
+      box-shadow: none;
+      text-align: center;
+    }
+    .col {
+      display: inline-flex;
+      border: 0.4vw solid #ef403c;
+      margin: 1% 7% 1% 1%;
+      padding-left: 2.2%;
+      height: 9.7vw;
+      width: 16vw;
+      /* margin-left: 8%; */
+      font-size: 3.8vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+    }
+  
+    .plan {
+      display: inline-flex;
+      text-align: center;
+      padding: 1%;
+      font-family: Catamaran;
+    }
+    /* .dropzone{
+      
+          width: 30%;
+          height: 30%;
+          border: 2px solid #EF403C;
+        } */
+    #vis {
+      left: 100%;
+    }
+  
+    .aa {
+      left: 7%;
+      top: 13.7%;
+      /* box-shadow: 0vw 0.1vw 0.2vw 0vw #EF403C; */
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .bb {
+      left: 29%;
+      top: 13.7%;
+      /* box-shadow: 0vw 0.1vw 0.2vw 0vw #EF403C; */
+      font-family: Catamaran;
+      box-shadow: 0 2px 5px -2px #ef403c;
+    }
+  
+    .cc {
+      left: 51%;
+      top: 13.7%;
+      /* box-shadow: 0vw 0.1vw 0.2vw 0vw #EF403C; */
+      font-family: Catamaran;
+      box-shadow: 0 2px 5px -2px #ef403c;
+    }
+    .dd {
+      left: 72%;
+      top: 13.7%;
+      /* box-shadow: 0vw 0.1vw 0.2vw 0vw #EF403C; */
+      font-family: Catamaran;
+      box-shadow: 0 2px 5px -2px #ef403c;
+    }
+  
+    .OverRating {
+      position: absolute;
+      left: 8%;
+      top: 18.5%;
+      font-size: 3.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .star {
+      position: absolute;
+      /* top: 27%; */
+      /* left: 37%; */
+      left: 8%;
+      top: 19.5%;
+    }
+  
+    .starcss {
+      font-size: 7.2vw;
+      word-spacing: 14%;
+      letter-spacing: 0.7vw;
+    }
+    .pro {
+      top: 23.5%;
+      font-weight: bold;
+      left: 9%;
+      position: absolute;
+      font-size: 3.6vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 26%;
+      position: absolute;
+      left: 9%;
+      font-size: 3.2vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 28.5%;
+      position: absolute;
+      left: 9%;
+      font-size: 3.2vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 31%;
+      position: absolute;
+      left: 9%;
+      font-size: 3.2vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 33.5%;
+      position: absolute;
+      left: 9%;
+      font-size: 3.2vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 36%;
+      position: absolute;
+      left: 9%;
+      font-size: 3.2vw;
+      font-family: Catamaran;
+    }
+    .star1 {
+      position: absolute;
+      position: absolute;
+      top: 25%;
+      left: 37%;
+      letter-spacing: 0.9vw;
+    }
+  
+    .star2 {
+      position: absolute;
+      top: 27.5%;
+      left: 37%;
+      letter-spacing: 0.9vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 30%;
+      left: 37%;
+      letter-spacing: 0.9vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 32.5%;
+      left: 37%;
+      letter-spacing: 0.9vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 35%;
+      left: 37%;
+      letter-spacing: 0.9vw;
+    }
+    .starSmall {
+      font-size: 6.8vw;
+    }
+    .revText {
+      position: absolute;
+      top: 38.9%;
+      left: 7.5%;
+      font-size: 3.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .revField {
+      position: absolute;
+      top: 41%;
+      left: 7.5%;
+      border: 3px #ef403c solid;
+      width: 74vw;
+      height: 12vw;
+      font-size: 3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 47%;
+      left: 7.5%;
+      font-size: 3.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 49%;
+      left: 7.5%;
+      border: 0.4vw #ef403c solid;
+      width: 74vw;
+      height: 32vw;
+      border-radius: 0.6vw;
+      font-size: 3.4vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 63%;
+      left: 7.5%;
+      font-size: 3.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    /* .img{
+          position: absolute;
+          top: 57%;
+          left: 17%;
+          border: .1vw #EF403C solid;
+          width: 67%;
+          height: 13%;
+          border-radius: .6vw;
+          font-size: 77%;
+          padding: 2%;
+          
+      } */
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 0.1vw solid #ef403c;
+      width: 66.2%;
+      height: 11vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 62.5%;
+      left: 0.1%;
+      right: 0;
+      bottom: 0;
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* font-size: 10%; */
+      color: black;
+      letter-spacing: 0.1vw;
+      margin: auto;
+      font-family: "Catamaran";
+      /* z-index: 4px; */
+      border-radius: 0.6vw;
+      display: none;
+    }
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      /* display: none; */
+      color: grey;
+      top: 66%;
+      left: 8%;
+      font-size: 11px;
+      /* width: 100%; */
+    }
+    .dr2 {
+      position: absolute;
+      font-family: "Catamaran";
+      margin-top: 10%;
+      display: none;
+    }
+    #file {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      margin-top: 161%;
+      left: 52.5%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .take {
+      background: #ef403c;
+      border: none;
+      border-radius: 0.3vw;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      margin-top: 161%;
+      left: 15%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      border-radius: 9px;
+    }
+    .sign {
+      top: 71%;
+      position: absolute;
+      left: 42.5%;
+      color: black;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+      text-align: center;
+    }
+    .hr3 {
+      position: absolute;
+      border: 0.05vw solid black;
+      top: 70.25%;
+      left: 59%;
+      width: 29vw;
+      background-color: black;
+    }
+  
+    .hr4 {
+      position: absolute;
+      border: 0.05vw solid black;
+      top: 70.25%;
+      left: 11%;
+      width: 24vw;
+      background-color: black;
+    }
+    .fbb {
+      position: absolute;
+      top: 73.8%;
+      left: 30%;
+      cursor: pointer;
+      height: 9.2vw;
+    }
+    .googleplus {
+      position: absolute;
+      top: 70.8%;
+      left: 43%;
+      cursor: pointer;
+      height: 9.6vw;
+    }
+    .linkedin {
+      position: absolute;
+      top: 73.5%;
+      left: 56%;
+      cursor: pointer;
+      height: 9.6vw;
+    }
+    .oroption {
+      top: 78%;
+      position: absolute;
+      left: 47%;
+      color: black;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      border: 0.01vw solid black;
+      top: 77.3%;
+      left: 59%;
+      width: 29vw;
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      border: 0.01vw solid black;
+      top: 77.3%;
+      left: 11%;
+      width: 24vw;
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 80.5%;
+      left: 7.5%;
+      font-size: 3.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emIdName {
+      position: absolute;
+      top: 88%;
+      left: 7.5%;
+      font-size: 3.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emField {
+      position: absolute;
+      top: 82.4%;
+      left: 7.5%;
+      border: 0.3px #ef403c solid;
+      width: 74vw;
+      height: 12vw;
+      font-size: 3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .emFieldName {
+      position: absolute;
+      top: 82.4%;
+      left: 7.5%;
+      border: 3px #ef403c solid;
+      width: 74vw;
+      height: 12vw;
+      font-size: 3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont {
+      position: absolute;
+      top: 87.5%;
+      font-family: Catamaran;
+      left: 7.5%;
+      padding: 2%;
+      font-size: 100%;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      width: 74vw;
+      border-radius: 1.8vw;
+    }
+  
+    .contnamesubmit {
+      position: absolute;
+      top: 95%;
+      font-family: Catamaran;
+      width: 74vw;
+      left: 11%;
+      padding: 2%;
+      font-size: 154%;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 1.8vw;
+    }
+    .already {
+      position: absolute;
+      top: 93.5%;
+      left: 11%;
+      font-size: 3.3vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 93.4%;
+      left: 64%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      cursor: pointer;
+    }
+    .sub {
+      position: absolute;
+      top: 68%;
+      width: 40vw;
+      left: 27%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      border-radius: 1.4vw;
+    }
+  }
+  @media screen and (min-width: 583px) and (max-width: 600px) {
+    .take {
+      background: #ef403c;
+      border: none;
+      border-radius: 0.3vw;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 30vw;
+      left: 15%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      border-radius: 9px;
+    }
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 30vw;
+      left: 52.5%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 582px) {
+    .take {
+      background: #ef403c;
+      border: none;
+      border-radius: 0.3vw;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 28vw;
+      left: 15%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      border-radius: 9px;
+    }
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 28vw;
+      left: 52.5%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  }
+  
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .div_mobile {
+      width: 91%;
+      background-color: white;
+      position: absolute;
+      margin-top: 5%;
+      border-radius: 1vw;
+      border-radius: 0px;
+      border: gray 2px solid;
+      height: 262vw;
+      z-index: 11;
+      left: 4.2%;
+    }
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 5.8%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+    .take {
+      background: #ef403c;
+      border: none;
+      border-radius: 0.3vw;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      margin-top: 166%;
+      left: 15%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      border-radius: 9px;
+    }
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      margin-top: 166%;
+      left: 52.5%;
+      width: 29vw;
+      font-weight: bold;
+      height: 11vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+    .hr3 {
+      position: absolute;
+      border: 0.05vw solid black;
+      top: 69.5%;
+      left: 59%;
+      width: 29vw;
+      background-color: black;
+    }
+    .hr4 {
+      position: absolute;
+      border: 0.05vw solid black;
+      top: 69.5%;
+      left: 11%;
+      width: 24vw;
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      border: 0.01vw solid black;
+      top: 76.5%;
+      left: 11%;
+      width: 24vw;
+      background-color: black;
+    }
+    .hr5 {
+      position: absolute;
+      border: 0.01vw solid black;
+      top: 76.5%;
+      left: 59%;
+      width: 29vw;
+      background-color: black;
+    }
+    .cont {
+      position: absolute;
+      top: 87.5%;
+      font-family: Catamaran;
+      left: 7.5%;
+      padding: 2%;
+      font-size: 98%;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      width: 74vw;
+      border-radius: 1.8vw;
+    }
+    .login {
+      position: absolute;
+      top: 93.1%;
+      left: 64%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .sub {
+      position: absolute;
+      top: 95.5%;
+      width: 40vw;
+      left: 27%;
+      padding: 0.2%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      border-radius: 1.4vw;
+    }
+    .add {
+      position: absolute;
+      margin-top: 6%;
+      margin-left: 46%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 3.8vw;
+    }
+    .rev {
+      margin-top: 10%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 3.8vw;
+      position: absolute;
+      left: 43.5%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 9.1%;
+      left: 4%;
+      width: 31vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 9.1%;
+      left: 61%;
+      width: 28vw;
+    }
+    .closebtn {
+      position: absolute;
+      z-index: 12;
+      width: 8vw;
+      left: 86%;
+      top: 5.2vw;
+    }
+  }
+  
+  @media screen and (min-width: 310px) and (max-width: 335px) {
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 5.5%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+  }
+  @media screen and (min-width: 336px) and (max-width: 400px) {
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 4.9%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+  }
+  @media screen and (min-width: 461px) and (max-width: 500px) {
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 4.2%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 575px) {
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 3.9%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 600px) {
+    .div_mobile {
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      margin-top: 5%;
+      border-radius: 1vw;
+      border-radius: 0px;
+      border: gray 2px solid;
+      height: 254vw;
+      z-index: 11;
+      left: 0%;
+    }
+    .pText {
+      position: absolute;
+      left: 7.5%;
+      font-weight: bold;
+      top: 3.4%;
+      font-size: 3.5vw;
+      font-family: Catamaran;
+    }
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1000px) {
+    .closebtn {
+      position: absolute;
+      cursor: pointer;
+      top: -3.5vw;
+      left: 91%;
+      width: 3vw;
+    }
+  
+    .div1 {
+      position: absolute;
+      width: 43%;
+      border: 2px solid grey;
+      height: 80%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 28%;
+      margin-top: 6%;
+      max-height: 100vh;
+    }
+    .add {
+      position: absolute;
+      top: -3vw;
+      left: 44.4%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 2.1vw;
+    }
+    .rev {
+      top: -1.1vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 2.1vw;
+      position: absolute;
+      left: 41%;
+    }
+    .h2 {
+      position: absolute;
+      border: 0vw solid #ef403c;
+      top: -3.5vw;
+      margin-left: 0%;
+      width: 10vw;
+    }
+    .h1 {
+      position: absolute;
+      border: 0vw solid #ef403c;
+      top: -3.5vw;
+      margin-left: 4%;
+      width: 10vw;
+    }
+    .pText {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 2vw;
+      font-size: 1.45vw;
+      font-family: Catamaran;
+    }
+  
+    .pText2 {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 9.5vw;
+      font-size: 1.4vw;
+      font-family: Catamaran;
+    }
+    .col {
+      display: inline-flex;
+      border: 0.1vw solid #ef403c;
+      margin: 4% 0% 0% 0%;
+      padding-left: 3%;
+      height: 2.7vw;
+      width: 6.2vw;
+      /* left: 24%; */
+      font-size: 0.75vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+    }
+  
+    .aa {
+      left: 9%;
+      top: 10.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+      font-size: 8.9px;
+      padding: 1% 1% 1% 2.5%;
+    }
+  
+    .bb {
+      left: 27%;
+      top: 10.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+      font-size: 8.9px;
+      padding: 1% 1% 1% 2.5%;
+    }
+  
+    .cc {
+      left: 45%;
+      top: 10.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+      font-size: 8.9px;
+      padding: 1% 1% 1% 2.5%;
+    }
+  
+    .dd {
+      left: 63%;
+      top: 10.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+      font-size: 8.9px;
+      padding: 1% 1% 1% 2.5%;
+    }
+  
+    .OverRating {
+      position: absolute;
+      left: 9%;
+      top: 16vw;
+      font-size: 1.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .star {
+      left: 9%;
+      top: 18vw;
+      position: absolute;
+    }
+    .starcss {
+      font-size: 2.4vw;
+      letter-spacing: 0.3vw;
+    }
+    .pro {
+      top: 21vw;
+      font-weight: bold;
+      left: 9%;
+      position: absolute;
+      font-size: 1.4vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 23.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 25.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 27.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 29.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 31.3vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .star1 {
+      position: absolute;
+      top: 22.8vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star2 {
+      position: absolute;
+      top: 24.8vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 26.8vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 28.8vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 30.8vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .starSmall {
+      font-size: 2.1vw;
+    }
+    .revText {
+      position: absolute;
+      top: 34vw;
+      left: 9%;
+      font-size: 1.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .revField {
+      position: absolute;
+      top: 36.5vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 34.6vw;
+      height: 3.5vw;
+      font-size: 1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 41vw;
+      left: 9%;
+      font-size: 1.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 43.5vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 34.6vw;
+      height: 8vw;
+      border-radius: 0.5vw;
+      font-size: 1.3vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 52.5vw;
+      left: 9%;
+      font-size: 1.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 2px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      /* margin-bottom: 0.5rem; */
+      outline: none;
+      padding: 0.2rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 62.5vw;
+      left: 9%;
+      width: 34.6vw;
+      font-weight: bold;
+      height: 2.5vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 0.1vw solid #ef403c;
+      width: 34.6vw;
+      height: 9vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 55vw;
+      margin-left: 9%;
+      /* right: 0; */
+      /* bottom: 0; */
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1vw;
+      color: black;
+      letter-spacing: 0.05vw;
+      font-family: "Catamaran";
+      border-radius: 0.5vw;
+      color: grey;
+    }
+  
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 6.5px;
+    }
+  
+    .sign {
+      top: 66.5vw;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+      text-align: center;
+    }
+  
+    .hr3 {
+      position: absolute;
+      /* border: .05vw solid black; */
+      top: 65.5vw;
+      left: 59%;
+      width: 13vw;
+      background-color: black;
+    }
+    .hr4 {
+      position: absolute;
+      top: 65.5vw;
+      left: 9%;
+      width: 13vw;
+      background-color: black;
+    }
+  
+    .fbb {
+      position: absolute;
+      top: 69.7vw;
+      left: 33%;
+      cursor: pointer;
+      height: 2.2vw;
+    }
+    .kep-login-facebook {
+      font-family: Helvetica, sans-serif;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: calc(0.27548vw + 12.71074px);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s, border-color 0.3s;
+      background-color: #4c69ba;
+      border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+      padding: calc(0.34435vw + 13.38843px) calc(0.34435vw + 18.38843px);
+      height: 3vw;
+      width: 3vw;
+    }
+    .kep-login-facebook.metro {
+      border-radius: 0;
+      width: 3vw;
+      height: 3vw;
+    }
+    .kep-login-facebook.metro {
+      border-radius: 0;
+      width: 3vw;
+      height: 3vw;
+    }
+  
+    .googleplus {
+      position: absolute;
+      top: 34.7vw;
+      left: 45%;
+      cursor: pointer;
+      height: 27px;
+    }
+    .linkedin {
+      position: absolute;
+      top: 69.5vw;
+      left: 55.4%;
+      cursor: pointer;
+      height: 27px;
+    }
+  
+    .oroption {
+      top: 73.5vw;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: 1.5vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 72.4vw;
+  
+      left: 9%;
+      width: 13vw;
+      /* background-color: grey; */
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 72.4vw;
+      left: 59%;
+      width: 13vw;
+      /* background-color: black; */
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 77vw;
+      left: 10%;
+      font-size: 1.4vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .emField {
+      position: absolute;
+      top: 79.5vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 34.6vw;
+      height: 3.5vw;
+      font-size: 1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .cont {
+      position: absolute;
+      top: 84vw;
+      font-family: Catamaran;
+      width: 34.6vw;
+      left: 9%;
+      padding: 2%;
+      font-size: 1.4vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .already {
+      position: absolute;
+      top: 90vw;
+      left: 10%;
+      font-size: 1.2vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 89.7vw;
+      left: 50%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      cursor: pointer;
+    }
+  
+    .sub {
+      position: absolute;
+      top: 68vw;
+      width: 14vw;
+      left: 33%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      font-size: 1.5vw;
+      margin-bottom: 3vw;
+    }
+    .pField {
+      border: 0.1vw solid #ef403c;
+      width: 34.6vw;
+      height: 3vw;
+      margin-top: 8%;
+      left: 9%;
+      position: absolute;
+      margin-top: 9.5%;
+    }
+  }
+  
+  @media screen and (min-width: 1001px) and (max-width: 1250px) {
+    .closebtn {
+      position: absolute;
+      cursor: pointer;
+      top: -2vw;
+      left: 91%;
+      width: 3vw;
+    }
+    .div1 {
+      position: absolute;
+      width: 35%;
+      border: 2px solid grey;
+      height: 90%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 6%;
+      max-height: 100vh;
+      max-width: 200vw;
+    }
+  
+    .add {
+      position: absolute;
+      margin-top: -1%;
+      left: 45%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.8vw;
+    }
+    .rev {
+      top: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.8vw;
+      position: absolute;
+      left: 40.5%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 4%;
+      left: 66%;
+      width: 7.5vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 4%;
+      left: 9%;
+      width: 7.5vw;
+    }
+    .pText {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 4vw;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .pField {
+      border: 0.1vw solid #ef403c;
+      width: 28.3vw;
+      height: 3vw;
+      margin-top: 17.5%;
+      left: 9%;
+      position: absolute;
+    }
+    .pText2 {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 10.5vw;
+      font-size: 1.2vw;
+      font-family: Catamaran;
+    }
+  
+    .plan input {
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    /* .label{
+      position: relative;
+      color: black;
+      background-color: black;
+  
+      text-align: center;
+      
+      display: inline-flex;
+      cursor: pointer;
+      border: 3px solid #EF403C;
+      font-family: Catamaran;
+      
+  } */
+    .plan input:checked + label {
+      border: 0.01vw solid #ef403c;
+      background-color: #ef403c;
+      color: white;
+      box-shadow: none;
+      text-align: center;
+    }
+    .col {
+      display: inline-flex;
+      border: 0.1vw solid #ef403c;
+      margin: 9% 0% 0% 0%;
+      padding-left: 3%;
+      height: 2.5vw;
+      width: 5vw;
+      /* left: 24%; */
+      font-size: 1.2vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+      padding-left: 2%;
+      padding-top: 1%;
+      /* top: 8.5%;
+      /* top: 8.5%;  */
+    }
+    .plan {
+      display: inline-flex;
+      text-align: center;
+      padding: 1%;
+      font-family: Catamaran;
+    }
+    /* .dropzone{
+  
+      width: 30%;
+      height: 30%;
+      border: 2px solid #EF403C;
+    } */
+    #vis {
+      left: 100%;
+    }
+  
+    .aa {
+      left: 9%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .bb {
+      left: 27%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .cc {
+      left: 45%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .dd {
+      left: 63%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .OverRating {
+      position: absolute;
+      left: 9%;
+      top: 16vw;
+      font-size: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .star {
+      left: 9%;
+      top: 17vw;
+      position: absolute;
+    }
+  
+    .starcss {
+      font-size: 2.6vw;
+      letter-spacing: 0.3vw;
+    }
+    .pro {
+      top: 20.5vw;
+      font-weight: bold;
+      left: 9%;
+      position: absolute;
+      font-size: 1.25vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 22.5vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 24.5vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 26.5vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 28.5vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 30.5vw;
+      position: absolute;
+      left: 9%;
+      font-size: 1.1vw;
+      font-family: Catamaran;
+    }
+    .star1 {
+      position: absolute;
+      top: 21.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+  
+    .star2 {
+      position: absolute;
+      top: 23.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 25.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 27.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 29.7vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .starSmall {
+      font-size: 2.2vw;
+    }
+    .revText {
+      position: absolute;
+      top: 32.8vw;
+      left: 9%;
+      font-size: 1.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .revField {
+      position: absolute;
+      top: 35vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 27.6vw;
+      height: 3.4vw;
+      font-size: 0.9vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 39.5vw;
+      left: 9%;
+      font-size: 1.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 42vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 27.6vw;
+      height: 8.5vw;
+      border-radius: 0.5vw;
+      font-size: 1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 51.8vw;
+      left: 9%;
+      font-size: 1.1vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    /* .img{
+      position: absolute;
+      top: 57%;
+      left: 17%;
+      border: .1vw #EF403C solid;
+      width: 67%;
+      height: 13%;
+      border-radius: .6vw;
+      font-size: 77%;
+      padding: 2%;
+      
+  } */
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 0.1vw solid #ef403c;
+      width: 27.6vw;
+      height: 9vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 54.5vw;
+      margin-left: 9%;
+      /* right: 0; */
+      /* bottom: 0; */
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1vw;
+      color: black;
+      letter-spacing: 0.05vw;
+      font-family: "Catamaran";
+      border-radius: 0.5vw;
+      color: grey;
+    }
+  
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 11px;
+    }
+    .dr2 {
+      position: absolute;
+      font-family: "Catamaran";
+      top: 65%;
+    }
+    #file {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1.5vw;
+      font-weight: 500;
+      /* margin-bottom: 0.5rem; */
+      outline: none;
+      padding: 0.4rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 63vw;
+      left: 9%;
+      width: 27.6vw;
+      font-weight: bold;
+      height: 3.5vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .sign {
+      top: 69.3vw;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+      text-align: center;
+    }
+    .hr3 {
+      position: absolute;
+      /* border: .05vw solid black; */
+      top: 68.5vw;
+      left: 63%;
+      width: 9vw;
+      background-color: black;
+    }
+  
+    .hr4 {
+      position: absolute;
+      top: 68.5vw;
+      left: 9%;
+      width: 9vw;
+      background-color: black;
+    }
+    .fbb {
+      position: absolute;
+      top: 72.1vw;
+      left: 28%;
+      cursor: pointer;
+      height: 2.2vw;
+    }
+    .kep-login-facebook {
+      font-family: Helvetica, sans-serif;
+      font-weight: 700;
+      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: calc(0.27548vw + 12.71074px);
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color 0.3s, border-color 0.3s;
+      background-color: #4c69ba;
+      border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+      padding: calc(0.34435vw + 13.38843px) calc(0.34435vw + 18.38843px);
+      height: 3.5vw;
+      width: 3.5vw;
+    }
+    .kep-login-facebook.metro {
+      border-radius: 0;
+      width: 3.5vw;
+      height: 3.5vw;
+    }
+    .googleplus {
+      position: absolute;
+      top: 36vw;
+      left: 44%;
+      cursor: pointer;
+      height: 4vw;
+    }
+    .linkedin {
+      position: absolute;
+      top: 72vw;
+      left: 60.4%;
+      cursor: pointer;
+      height: 42px;
+    }
+  
+    .oroption {
+      top: 77vw;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: 1.3vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 76.1vw;
+      left: 9%;
+      width: 9vw;
+      /* background-color: grey; */
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 76.1vw;
+      left: 63%;
+      width: 9vw;
+      /* background-color: black; */
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 80.5vw;
+      left: 9%;
+      font-size: 1.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emIdName {
+      position: absolute;
+      top: 87.5vw;
+      left: 9%;
+      font-size: 1.3vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emField {
+      position: absolute;
+      top: 83vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 27.6vw;
+      height: 3.5vw;
+      font-size: 1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .emFieldName {
+      position: absolute;
+      top: 89vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 27.6vw;
+      height: 3.5vw;
+      font-size: 1vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont {
+      position: absolute;
+      top: 88vw;
+      font-family: Catamaran;
+      width: 27.6vw;
+      left: 9%;
+      padding: 2%;
+      font-size: 1.4vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .contnamesubmit {
+      position: absolute;
+      top: 97vw;
+      font-family: Catamaran;
+      width: 22vw;
+      left: 17%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .already {
+      position: absolute;
+      top: 94vw;
+      left: 10%;
+      font-size: 1.2vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 93.9vw;
+      left: 60%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.3vw;
+      cursor: pointer;
+    }
+    .sub {
+      position: absolute;
+      top: 69vw;
+      width: 15vw;
+      left: 28%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      font-size: 1.4vw;
+      margin-bottom: 3vw;
+    }
+    .chg {
+      background-color: #ef403c;
+      color: white;
+      border: #ef403c;
+    }
+  
+    .take {
+      display: none;
+    }
+  }
+  @media (min-width: 2100px) {
+    .div1 {
+      position: absolute;
+      width: 27%;
+      border: 2px solid grey;
+      height: 98%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 1%;
+      max-height: 100vh;
+      max-width: 200vw;
+    }
+  
+    .pField {
+      border: 0.1vw solid #ef403c;
+      width: 20.3vw;
+      height: 3vw;
+      margin-top: 8%;
+      left: -3%;
+      position: absolute;
+      margin-top: 22%;
+    }
+    .closebtn {
+      position: absolute;
+      cursor: pointer;
+      top: -1vw;
+      left: 107%;
+      width: 2vw;
+    }
+    .rev {
+      top: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      position: absolute;
+      left: 40.5%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 5%;
+      left: 63%;
+      width: 7.5vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      margin-top: 5%;
+      left: -3%;
+      width: 7.5vw;
+    }
+    .pText {
+      position: absolute;
+      left: -3%;
+      font-weight: bold;
+      top: 3vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .pText2 {
+      position: absolute;
+      left: -3%;
+      font-weight: bold;
+      top: 8.5vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+  
+    .col {
+      display: inline-flex;
+      border: 0.1vw solid #ef403c;
+      margin: 3% 0% 0% 0%;
+      padding-left: 4%;
+      height: 2.3vw;
+      width: 4vw;
+      /* left: 24%; */
+      font-size: 0.75vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+      /* top: 8.5%;
+          /* top: 8.5%;  */
+    }
+    .aa {
+      left: -3%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .bb {
+      left: 22%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .cc {
+      left: 47%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .dd {
+      left: 72%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .OverRating {
+      position: absolute;
+      left: -3%;
+      top: 13.5vw;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .star {
+      left: -3%;
+      top: 14.7vw;
+      position: absolute;
+    }
+    .pro {
+      top: 17.75vw;
+      font-weight: bold;
+      left: -3%;
+      position: absolute;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 19.25vw;
+      position: absolute;
+      left: -3%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 20.75vw;
+      position: absolute;
+      left: -3%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 22.25vw;
+      position: absolute;
+      left: -3%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 23.75vw;
+      position: absolute;
+      left: -3%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 25.3vw;
+      position: absolute;
+      left: -3%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .revText {
+      position: absolute;
+      top: 27.5vw;
+      left: -3%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .revField {
+      position: absolute;
+      top: 29vw;
+      left: -3%;
+      border: 0.1vw #ef403c solid;
+      width: 104%;
+      height: 3vw;
+      font-size: 0.6vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 32.8vw;
+      left: -3%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 34.2vw;
+      left: -3%;
+      border: 0.1vw #ef403c solid;
+      width: 104%;
+      height: 8vw;
+      border-radius: 0.5vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 42.8vw;
+      left: -3%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    /* .img{
+          position: absolute;
+          top: 57%;
+          left: 17%;
+          border: .1vw #EF403C solid;
+          width: 67%;
+          height: 13%;
+          border-radius: .6vw;
+          font-size: 77%;
+          padding: 2%;
+          
+      } */
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 0.1vw solid #ef403c;
+      width: 104%;
+      height: 7vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 44.5vw;
+      margin-left: -3%;
+      /* right: 0; */
+      /* bottom: 0; */
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1vw;
+      color: black;
+      letter-spacing: 0.05vw;
+      font-family: "Catamaran";
+      border-radius: 0.5vw;
+      color: grey;
+    }
+  
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 15px;
+    }
+    .dr2 {
+      position: absolute;
+      font-family: "Catamaran";
+      top: 65%;
+    }
+    #file {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      /* margin-bottom: 0.5rem; */
+      outline: none;
+      padding: 0.4rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 104%;
+      text-align: center;
+      top: 51vw;
+      left: -3%;
+      font-weight: bold;
+      height: 2.5vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .sign {
+      top: 55.3vw;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+      text-align: center;
+    }
+    .hr3 {
+      position: absolute;
+      /* border: .05vw solid black; */
+      top: 55vw;
+      left: 61%;
+      width: 6vw;
+      background-color: black;
+    }
+  
+    .hr4 {
+      position: absolute;
+      top: 55vw;
+      left: 9%;
+      width: 6vw;
+      background-color: black;
+    }
+    .fbb {
+      position: absolute;
+      top: 57vw;
+      left: 29%;
+      cursor: pointer;
+      height: 2.2vw;
+    }
+    .googleplus {
+      position: absolute;
+      top: 28.4vw;
+      left: 44%;
+      cursor: pointer;
+      height: 2.5vw;
+    }
+    .linkedin {
+      position: absolute;
+      top: 56.8vw;
+      left: 60.4%;
+      cursor: pointer;
+      height: 62px;
+    }
+  
+    .oroption {
+      top: 59.7vw;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.5vw;
+      left: 10%;
+      width: 6vw;
+      /* background-color: grey; */
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.5vw;
+      left: 59%;
+      width: 6vw;
+      /* background-color: black; */
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 61.5vw;
+      left: -3%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emIdName {
+      position: absolute;
+      top: 86%;
+      left: 17%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emField {
+      position: absolute;
+      top: 63vw;
+      left: -3%;
+      border: 0.1vw #ef403c solid;
+      width: 104%;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .emFieldName {
+      position: absolute;
+      top: 88%;
+      left: -3%;
+      border: 0.1vw #ef403c solid;
+      width: 104%;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont {
+      position: absolute;
+      top: 67vw;
+      font-family: Catamaran;
+      width: 104%;
+      left: -3%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .contnamesubmit {
+      position: absolute;
+      top: 94%;
+      font-family: Catamaran;
+      width: 18.3vw;
+      left: 17%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .already {
+      position: absolute;
+      top: 71vw;
+      left: -3%;
+      font-size: 0.7vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 70.9vw;
+      left: 48%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 0.8vw;
+      cursor: pointer;
+    }
+    .sub {
+      position: absolute;
+      top: 73vw;
+      width: 11vw;
+      left: 22%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      font-size: 1vw;
+      margin-bottom: 3vw;
+    }
+  }
+  
+  @media screen and (min-width: 2000px) and (max-width: 2000px) {
+    .closebtn {
+      position: absolute;
+      cursor: pointer;
+      top: -1vw;
+      left: 96%;
+      width: 2vw;
+    }
+    .div1 {
+      position: absolute;
+      width: 29%;
+      border: 2px solid grey;
+      height: 90%;
+      background-color: white;
+      border-radius: 1vw;
+      left: 37%;
+      margin-top: 6%;
+      max-height: 100vh;
+      max-width: 200vw;
+    }
+  
+    .add {
+      position: absolute;
+      top: 2%;
+      left: 45%;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+    }
+    .rev {
+      top: 1.2vw;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 1.1vw;
+      position: absolute;
+      left: 42.2%;
+    }
+    .h1 {
+      position: absolute;
+      border: solid #ef403c;
+      top: -0.2vw;
+      left: 62%;
+      width: 6vw;
+    }
+    .h2 {
+      position: absolute;
+      border: solid #ef403c;
+      top: -0.2vw;
+      left: 13%;
+      width: 6vw;
+    }
+    .pText {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 3.5vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .pField {
+      border: 0.1vw solid #ef403c;
+      width: 20.9vw;
+      height: 3vw;
+      top: 8%;
+      left: 9%;
+      position: absolute;
+    }
+    .pText2 {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 8.5vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+  
+    .plan input {
+      display: none;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    /* .label{
+  position: relative;
+  color: black;
+  background-color: black;
+  
+  text-align: center;
+  
+  display: inline-flex;
+  cursor: pointer;
+  border: 3px solid #EF403C;
+  font-family: Catamaran;
+  
+  } */
+    .plan input:checked + label {
+      border: 0.01vw solid #ef403c;
+      background-color: #ef403c;
+      color: white;
+      box-shadow: none;
+      text-align: center;
+    }
+    .col {
+      display: inline-flex;
+      border: 0.1vw solid #ef403c;
+      margin: 3% 0% 0% 0%;
+      padding-left: 3%;
+      height: 2.3vw;
+      width: 4vw;
+      /* left: 24%; */
+      font-size: 0.75vw;
+      text-align: center;
+      padding-top: 2%;
+      position: absolute;
+      /* top: 8.5%;
+  /* top: 8.5%;  */
+    }
+    .plan {
+      display: inline-flex;
+      text-align: center;
+      padding: 1%;
+      font-family: Catamaran;
+    }
+    /* .dropzone{
+  
+  width: 30%;
+  height: 30%;
+  border: 2px solid #EF403C;
+  } */
+    #vis {
+      left: 100%;
+    }
+  
+    .aa {
+      left: 9%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .bb {
+      left: 27%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .cc {
+      left: 45%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+    .dd {
+      left: 63%;
+      top: 9.5vw;
+      box-shadow: 0 2px 5px -2px #ef403c;
+      font-family: Catamaran;
+      position: absolute;
+    }
+  
+    .OverRating {
+      position: absolute;
+      left: 9%;
+      top: 13.5vw;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .star {
+      left: 9%;
+      top: 15vw;
+      position: absolute;
+    }
+  
+    .starcss {
+      font-size: 1.6vw;
+      letter-spacing: 0.3vw;
+    }
+    .pro {
+      top: 17.75vw;
+      font-weight: bold;
+      left: 9%;
+      position: absolute;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .loc {
+      top: 19.25vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .ame {
+      top: 20.75vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .uni {
+      top: 22.25vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .cus {
+      top: 23.75vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .val {
+      top: 25.25vw;
+      position: absolute;
+      left: 9%;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .star1 {
+      position: absolute;
+      top: 19vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+  
+    .star2 {
+      position: absolute;
+      top: 20.5vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star3 {
+      position: absolute;
+      top: 22vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star4 {
+      position: absolute;
+      top: 23.5vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .star5 {
+      position: absolute;
+      top: 25vw;
+      left: 43%;
+      letter-spacing: 0.3vw;
+    }
+    .starSmall {
+      font-size: 1.3vw;
+    }
+    .revText {
+      position: absolute;
+      top: 28.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .revField {
+      position: absolute;
+      top: 30vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 81.6%;
+      height: 3vw;
+      font-size: 0.6vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .your {
+      position: absolute;
+      top: 34.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    .shareEx {
+      position: absolute;
+      top: 36vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 81.6%;
+      height: 7vw;
+      border-radius: 0.5vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .share {
+      position: absolute;
+      top: 44.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+    /* .img{
+  position: absolute;
+  top: 57%;
+  left: 17%;
+  border: .1vw #EF403C solid;
+  width: 67%;
+  height: 13%;
+  border-radius: .6vw;
+  font-size: 77%;
+  padding: 2%;
+  
+  } */
+    .drop-zone-show {
+      position: absolute;
+      display: flex;
+      background: white;
+      border: 0.1vw solid #ef403c;
+      width: 81.6%;
+      height: 7vw;
+      -ms-content-zoom-snap-points: 2000;
+      top: 46vw;
+      margin-left: 9%;
+      /* right: 0; */
+      /* bottom: 0; */
+      flex: 1 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1vw;
+      color: black;
+      letter-spacing: 0.05vw;
+      font-family: "Catamaran";
+      border-radius: 0.5vw;
+      color: grey;
+    }
+  
+    .dr1 {
+      position: absolute;
+      font-family: "Catamaran";
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 15px;
+    }
+    .dr2 {
+      position: absolute;
+      font-family: "Catamaran";
+      top: 65%;
+    }
+    #file {
+      height: 0;
+      overflow: hidden;
+      display: none;
+      width: 0;
+    }
+  
+    .file1 {
+      background: #ef403c;
+      border: none;
+      text-align: center;
+      border-radius: 9px;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      /* margin-bottom: 0.5rem; */
+      outline: none;
+      padding: 0.4rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 52vw;
+      left: 9%;
+      width: 81.6%;
+      font-weight: bold;
+      height: 2.5vw;
+      font-family: Catamaran;
+      z-index: 1;
+    }
+  
+    .sign {
+      top: 55.3vw;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+      text-align: center;
+    }
+    .hr3 {
+      position: absolute;
+      /* border: .05vw solid black; */
+      top: 55vw;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+    }
+  
+    .hr4 {
+      position: absolute;
+      top: 55vw;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+    }
+    .fbb {
+      position: absolute;
+      top: 57vw;
+      left: 33%;
+      cursor: pointer;
+      height: 2.2vw;
+    }
+    .googleplus {
+      position: absolute;
+      top: 57vw;
+      left: 44%;
+      cursor: pointer;
+      height: 2.5vw;
+    }
+    .linkedin {
+      position: absolute;
+      top: 57vw;
+      left: 55.4%;
+      cursor: pointer;
+      height: 44px;
+    }
+  
+    .oroption {
+      top: 59.7vw;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+    }
+    .hr5 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.4vw;
+      left: 18%;
+      width: 6vw;
+      /* background-color: grey; */
+      background-color: black;
+    }
+    .hr6 {
+      position: absolute;
+      /* border: .05vw solid grey; */
+      top: 59.4vw;
+      left: 59%;
+      width: 6vw;
+      /* background-color: black; */
+      background-color: black;
+    }
+    .emId {
+      position: absolute;
+      top: 61.5vw;
+      left: 9%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emIdName {
+      position: absolute;
+      top: 86%;
+      left: 17%;
+      font-size: 0.8vw;
+      font-weight: bold;
+      font-family: Catamaran;
+    }
+  
+    .emField {
+      position: absolute;
+      top: 63vw;
+      left: 9%;
+      border: 0.1vw #ef403c solid;
+      width: 21.6vw;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+  
+    .emFieldName {
+      position: absolute;
+      top: 88%;
+      left: 17%;
+      border: 0.1vw #ef403c solid;
+      width: 18.3vw;
+      height: 3vw;
+      font-size: 0.7vw;
+      padding: 2%;
+      font-family: Catamaran;
+    }
+    .cont {
+      position: absolute;
+      top: 67vw;
+      font-family: Catamaran;
+      width: 21.6vw;
+      left: 9%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .contnamesubmit {
+      position: absolute;
+      top: 94%;
+      font-family: Catamaran;
+      width: 18.3vw;
+      left: 17%;
+      padding: 2%;
+      font-size: 1vw;
+      color: white;
+      background-color: #404041;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      letter-spacing: 0.08vw;
+    }
+    .already {
+      position: absolute;
+      top: 71vw;
+      left: 10%;
+      font-size: 0.7vw;
+      font-family: Catamaran;
+    }
+    .login {
+      position: absolute;
+      top: 70.9vw;
+      left: 48%;
+      color: #ef403c;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: 0.8vw;
+      cursor: pointer;
+    }
+    .sub {
+      position: absolute;
+      top: 73vw;
+      width: 11vw;
+      left: 30%;
+      padding: 1.5%;
+      background: #404041;
+      color: white;
+      font-weight: bold;
+      border-radius: 0.4vw;
+      font-family: Catamaran;
+      font-size: 1vw;
+      margin-bottom: 3vw;
+    }
+    .chg {
+      background-color: #ef403c;
+      color: white;
+      border: #ef403c;
+    }
+  
+    .take {
+      display: none;
+    }
+  }
+  /* @media screen and (min-width: 666px) and (max-width:710px) {
+  
+      .div1 {
+          position: absolute;
+          width: 43%;
+          border: 2px solid grey;
+          height: 85%;
+          background-color: white;
+          border-radius: 1vw;
+          left: 28%;
+          margin-top: 6%;
+          max-height: 100vh;
+      }
+  
+  } */
+  /* 
+  @media screen and (min-width: 711px) and (max-width:750px) {
+  
+      .div1 {
+          position: absolute;
+          width: 43%;
+          border: 2px solid grey;
+          height: 90%;
+          background-color: white;
+          border-radius: 1vw;
+          left: 28%;
+          margin-top: 6%;
+          max-height: 100vh;
+      }
+  
+  } */
+  /* @media screen and (min-width: 751px) and (max-width:1000px) {
+  
+      .div1 {
+          position: absolute;
+          width: 43%;
+          border: 2px solid grey;
+          height: 95%;
+          background-color: white;
+          border-radius: 1vw;
+          left: 28%;
+          margin-top: 6%;
+          max-height: 100vh;
+      }
+      .aa {
+          left: 9%;
+          top: 10.5vw;
+          box-shadow: 0 2px 5px -2px #EF403C;
+          font-family: Catamaran;
+          position: absolute;
+          font-size: 8.5px;
+          padding: 1% 1% 1% 1%;
+      }
+      .bb {
+          left: 27%;
+          top: 10.5vw;
+          box-shadow: 0 2px 5px -2px #EF403C;
+          font-family: Catamaran;
+          position: absolute;
+          font-size: 6.5px;
+          padding: 1% 1% 1% 0.5%;
+      }
+      
+      .cc {
+          left: 45%;
+          top: 10.5vw;
+          box-shadow: 0 2px 5px -2px #EF403C;
+          font-family: Catamaran;
+          position: absolute;
+          font-size: 8.5px;
+          padding: 1% 1% 1% 1%;
+      }
+      
+      .dd {
+          left: 63%;
+          top: 10.5vw;
+          box-shadow: 0 2px 5px -2px #EF403C;
+          font-family: Catamaran;
+          position: absolute;
+          font-size: 8.5px;
+          padding: 1% 1% 1% 1%;
+      }
+      .h2 {
+          position: absolute;
+          border: 0.vw solid #EF403C;
+          top: -3.5vw;
+          margin-left: -6%;
+          width: 10vw;
+      }
+      .h1 {
+          position: absolute;
+          border: 0.vw solid #EF403C;
+          top: -3.5vw;
+          margin-left: 4%;
+          width: 9vw;
+      }
+      .sign {
+          top: 63.5vw;
+          position: absolute;
+          left: 40%;
+          color: black;
+          font-size: 1.5vw;
+          font-family: Catamaran;
+          text-align: center;
+      }
+      .oroption {
+          top: 71.5vw;
+          position: absolute;
+          left: 44.5%;
+          color: black;
+          font-size: 1.5vw;
+          font-family: Catamaran;
+      }
+  
+  } */
+  /* 
+  @media screen and (min-width: 1001px) and (max-width:1400px) {
+      .div1 {
+          position: absolute;
+          width: 35%;
+          border: 2px solid grey;
+          height: 95%;
+          background-color: white;
+          border-radius: 1vw;
+          left: 37%;
+          margin-top: 6%;
+          max-height: 100vh;
+      }
+  
+      .h2 {
+          position: absolute;
+          border: solid #EF403C;
+          top: -0.5vw;
+          left: 17%;
+          width: 6vw;
+      }
+      .h1 {
+          position: absolute;
+          border: solid #EF403C;
+          top: -0.5vw;
+          left: 60%;
+          width: 6vw;
+      }
+      .file1 {
+          background: #EF403C;
+          border: none;
+          text-align: center;
+          border-radius: 3px;
+          color: #fff;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 1vw;
+          font-weight: 500;
+         
+          outline: none;
+          padding: 0.4rem;
+          position: absolute;
+          transition: all 0.3s;
+          vertical-align: middle;
+          width: 33%;
+          text-align: center;
+          top: 52vw;
+          left: 9%;
+          width: 21.6vw;
+          font-weight: bold;
+          height: 2.5vw;
+          font-family: Catamaran;
+          z-index: 1;
+      }
+      .sign {
+          top: 56vw;
+          position: absolute;
+          left: 43%;
+          color: black;
+          font-size: .8vw;
+          font-family: Catamaran;
+          text-align: center;
+      }
+      .oroption {
+          top: 60.5vw;
+          position: absolute;
+          left: 46.5%;
+          color: black;
+          font-size: .8vw;
+          font-family: Catamaran;
+      }
+      .closebtn {
+          position: absolute;
+          cursor: pointer;
+          top: -2vw;
+          left: 91%;
+          width: 2vw;
+      }
+  
+  }
+  
+     */
+  
+  /* @media screen and (min-width: 1400px) and (max-width:2000px){
+      .closebtn {
+          position: absolute;
+          cursor: pointer;
+          top: -1vw;
+          left: 90%;
+          width: 2vw;
+      } */
+  /* .div1 {
+          position: absolute;
+          width: 26.5%;
+          border: 2px solid grey;
+          height: 94%;
+          background-color: white;
+          border-radius: 1vw;
+          left: 37%;
+          margin-top: 3%;
+          max-height: 100vh;
+          max-width: 200vw;
+      } */
+  /* .h2 {
+          position: absolute;
+          border: solid #EF403C;
+          top: -0.3vw;
+          left: 17%;
+          width: 6vw;
+      }
+      .h1 {
+          position: absolute;
+          border: solid #EF403C;
+          top: -0.3vw;
+          left: 60%;
+          width: 6vw;
+      } */
+  
+  /* @media screen and (min-width: 1501px) and (max-width:1700px){
+  .pText {
+      position: absolute;
+      left: 9%;
+      font-weight: bold;
+      top: 4vw;
+      font-size: 0.8vw;
+      font-family: Catamaran;
+  }
+  } */
+  /* 
+  @media screen and (min-width: 1701px) and (max-width:2000px){
+      .h2 {
+          position: absolute;
+          border: solid #EF403C;
+          top: 0vw;
+          left: 17%;
+          width: 6vw;
+      }
+      .h1 {
+          position: absolute;
+          border: solid #EF403C;
+          top: 0vw;
+          left: 60%;
+          width: 6vw;
+      }
+  } */
+  
+  /* @media screen and (min-width: 1430px) and (max-width:1450px) {
+  
+      .div1{
+          width: 28%;
+          background-color: white;
+          position: absolute;
+          margin-left: 35%;
+          margin-top: 4%;
+          border-radius: 1vw;
+          height: 147%;
+          border: gray .15vw solid;
+          z-index: 12 !important;
+  }
+  
+  .h2 {
+      position: absolute;
+      border: solid #EF403C;
+      top: 1.7%;
+      left: 17%;
+      width: 6vw;
+  }
+  
+  .h1 {
+      position: absolute;
+      border: solid #EF403C;
+      top: 1.7%;
+      left: 60%;
+      width: 6vw;
+  }
+  
+  .hr4 {
+      position: absolute;
+      top: 70%;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .sign {
+      top: 70.8%;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: .8vw;
+      font-family: Catamaran;
+      text-align: center;
+  }
+  
+  .hr3 {
+      position: absolute;
+      top: 70%;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  } */
+  
+  /* @media screen and (min-width: 1000px) and (max-width:1030px) {
+  
+      .div1{
+          width: 28%;
+          background-color: white;
+          position: absolute;
+          margin-left: 35%;
+          margin-top: 4%;
+          border-radius: 1vw;
+          height: 105%;
+          border: gray .15vw solid;
+          z-index: 12 !important;
+  }
+  
+  .h2 {
+      position: absolute;
+      border: 0.19vw solid #EF403C;
+      top: 1.2%;
+      left: 17%;
+      width: 6vw;
+  }
+  
+  .h1 {
+      position: absolute;
+      border: 0.19vw solid #EF403C;
+      top: 1.2%;
+      left: 60%;
+      width: 6vw;
+  }
+  
+  .dr1 {
+      position: absolute;
+      font-family: 'Catamaran';
+      color: grey;
+      max-width: 100%;
+      top: 30%;
+      font-size: 1.2vw;
+  }
+  
+  .dr2 {
+      position: absolute;
+      font-family: 'Catamaran';
+      top: 65%;
+      font-size: 1.2vw;
+  }
+  
+  .file1 {
+      background: #EF403C;
+      border: none;
+      text-align: center;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.2vw;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 66.1%;
+      left: 17.1%;
+      width: 18.3vw;
+      font-weight: bold;
+      height: 2vw;
+      font-family: Catamaran;
+  }
+  
+  .hr3 {
+      position: absolute;
+      top: 69.3%;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .hr4 {
+      position: absolute;
+      top: 69.3%;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .sign {
+      top: 70.7%;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: .8vw;
+      font-family: Catamaran;
+      text-align: center;
+  }
+  
+  .oroption {
+      top: 77.2%;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: .8vw;
+      font-family: Catamaran;
+  }
+  
+  .hr5 {
+      position: absolute;
+      top: 76%;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .hr6 {
+      position: absolute;
+      top: 76%;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .login {
+      position: absolute;
+      top: 91.8%;
+      left: 53%;
+      color: #EF403C;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: .8vw;
+      cursor: pointer;
+  }
+  
+  } */
+  
+  /* @media screen and (min-width: 760px) and (max-width: 770px) {
+  
+      .div1{
+          width: 28%;
+          background-color: white;
+          position: absolute;
+          margin-left: 35%;
+          margin-top: 4%;
+          border-radius: 1vw;
+          height: 82%;
+          border: gray .15vw solid;
+          z-index: 12 !important;
+  }
+  
+  
+  .h1 {
+      position: absolute;
+      border: 0.2vw solid #EF403C;
+      top: 0.4%;
+      left: 60%;
+      width: 6vw;
+  }
+  
+  .h2 {
+      position: absolute;
+      border: 0.2vw solid #EF403C;
+      top: 0.4%;
+      left: 17%;
+      width: 6vw;
+  }
+  
+  .file1 {
+      background: #EF403C;
+      border: none;
+      text-align: center;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      outline: none;
+      padding: 0.2vw;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 65.8%;
+      left: 17.1%;
+      width: 18.3vw;
+      font-weight: bold;
+      height: 2vw;
+      font-family: Catamaran;
+  }
+  
+  .hr3 {
+      position: absolute;
+      top: 68.5%;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .hr4 {
+      position: absolute;
+      top: 68.5%;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .sign {
+      top: 70.5%;
+      position: absolute;
+      left: 43%;
+      color: black;
+      font-size: .8vw;
+      font-family: Catamaran;
+      text-align: center;
+  }
+  
+  .oroption {
+      top: 77.2%;
+      position: absolute;
+      left: 46.5%;
+      color: black;
+      font-size: .8vw;
+      font-family: Catamaran;
+  }
+  
+  .hr5 {
+      position: absolute;
+      top: 75.1%;
+      left: 18%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .hr6 {
+      position: absolute;
+      top: 75.1%;
+      left: 59%;
+      width: 6vw;
+      background-color: black;
+  }
+  
+  .dr1 {
+      position: absolute;
+      font-family: 'Catamaran';
+      color: grey;
+      max-width: 100%;
+      top: 34%;
+      font-size: 1.2vw;
+  }
+  
+  .dr2 {
+      position: absolute;
+      font-family: 'Catamaran';
+      top: 65%;
+      font-size: 1.2vw;
+  }
+  
+  .login {
+      position: absolute;
+      top: 91.8%;
+      left: 53%;
+      color: #EF403C;
+      font-weight: bold;
+      font-family: Catamaran;
+      font-size: .8vw;
+      cursor: pointer;
+  }
+  
+  } */
+  
+  /* @media screen and (min-width: 2550px) and (max-width: 2570px) {
+  .file1 {
+      background: #EF403C;
+      border: none;
+      text-align: center;
+      border-radius: 0;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1vw;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      outline: none;
+      padding: 0.7rem;
+      position: absolute;
+      transition: all 0.3s;
+      vertical-align: middle;
+      width: 33%;
+      text-align: center;
+      top: 66.1%;
+      left: 17.1%;
+      width: 18.3vw;
+      font-weight: bold;
+      height: 2vw;
+      font-family: Catamaran;
+  }
+  
+  .h2 {
+      position: absolute;
+      border: 0.2vw solid #EF403C;
+      top: 2.4%;
+      left: 17%;
+      width: 6vw;
+  }
+  
+  .h1 {
+      position: absolute;
+      border: 0.2vw solid #EF403C;
+      top: 2.4%;
+      left: 60%;
+      width: 6vw;
+  }
+  .dr1 {
+      position: absolute;
+      font-family: 'Catamaran';
+      color: grey;
+      max-width: 100%;
+      top: 40%;
+      font-size: 1vw;
+  }
+  
+  .dr2 {
+      position: absolute;
+      font-family: 'Catamaran';
+      top: 65%;
+      font-size: 1vw;
+  }
+  
+  } */
+  
+  /* @media screen and (min-width: 310px) and (max-width: 330px) {
+  .h2 {
+      position: absolute;
+      border: .7vw solid #EF403C;
+      top: 1.8%;
+      left: 7%;
+      width: 29vw;
+  }
+  
+  .h1 {
+      position: absolute;
+      border: .7vw solid #EF403C;
+      top: 1.8%;
+      left: 58%;
+      width: 33vw;
+  }
+  
+  } */
+  
+  /*************/
+  .add {
+    position: static;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.1vw;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .rev {
+    position: static;
+    text-align: center;
+    margin: 0;
+  }
+  .pText {
+    position: static;
+  }
+  .pText2 {
+    position: static;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  .plan {
+    display: flex;
+    position: relative;
+    padding: 0;
+  }
+  .aa,
+  .bb,
+  .cc,
+  .dd {
+    left: 0;
+    top: 0;
+    box-shadow: 0 2px 5px -2px #ef403c;
+    font-family: Catamaran;
+    position: static;
+    margin-top: 0;
+    display: inline-block;
+    border: 2px solid #ef403c;
+    color: #000;
+  }
+  .OverRating {
+    position: static;
+    left: 0;
+    top: 0;
+  }
+  .star {
+    position: static;
+  }
+  .ame,
+  .pro,
+  .uni,
+  .cus,
+  .val {
+    position: static;
+    margin-bottom: 0;
+  }
+  .loc {
+    position: static;
+    margin-bottom: 0;
+  }
+  .star1,
+  .star2,
+  .star3,
+  .star4,
+  .star5 {
+    position: static;
+  }
+  .rating-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rating-wrap label {
+    line-height: 1;
+    margin: 0;
+  }
+  .revText {
+    position: static;
+  }
+  .revField {
+    position: static;
+    width: 100%;
+  }
+  .your {
+    position: static;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .shareEx {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+  }
+  .share {
+    position: static;
+  }
+  
+  .file1 {
+    position: static;
+    border-radius: 0;
+  }
+  .sign {
+    position: static;
+    margin-top: 20px;
+  }
+  .fbb {
+    position: static;
+  }
+  .googleplus {
+    position: static;
+  }
+  .linkedin {
+    position: static;
+  }
+  .emField {
+    position: static;
+    width: 100%;
+  }
+  .emId {
+    position: static;
+  }
+  .cont {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .login {
+    position: static;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .already {
+    position: static;
+    margin-right: 7px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .oroption {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .dv-star-rating.starcss {
+    line-height: 1;
+  }
+  label.dv-star-rating-star {
+    margin-bottom: 0;
+  }
+  .upload-file {
+    position: relative !important;
+  }
+  .file1 {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    top: auto;
+    left: 0;
+  }
+  .drop-zone-show {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    height: 10vw;
+    border-radius: 0;
+  }
+  
+  .pText,
+  .pText2 {
+    position: static;
+    font-size: 0.9vw !important;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .ame,
+  .pro,
+  .uni,
+  .cus,
+  .val {
+    position: static;
+    margin-bottom: 0;
+    font-size: 0.9vw !important;
+  }
+  .revText,
+  .your,
+  .share,
+  .emId {
+    font-size: 0.9vw !important;
+  }
+  .shareEx {
+    margin-bottom: 10px;
+  }
+  .sign {
+    position: relative;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+  }
+  .sign:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: 0;
+    top: 8px;
+  }
+  .sign:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: auto;
+    top: 8px;
+    right: 0;
+  }
+  .oroption {
+    position: relative;
+    margin-top: 20px;
+    top: 0;
+    left: 0;
+    font-family: Catamaran;
+    font-weight: bold;
+    text-align: center;
+  }
+  .oroption:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: 0;
+    top: 8px;
+  }
+  .oroption:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 35%;
+    background: #000;
+    left: auto;
+    top: 8px;
+    right: 0;
+  }
+  img.closebtn1 {
+    width: 43px;
+  }
+  .cover {
+    position: static;
+    background: transparent;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .closebtn {
+    position: static;
+    width: 2.7vw;
+  }
+  .revField {
+    border: 3px #ef403c solid;
+  }
+  body #addreviewform > div > div > input.project_searchinput {
+    border-width: 3px !important;
+  }
+  .emField {
+    border: 3px #ef403c solid;
+  }
+  .drop-zone-show1 {
+    border-radius: 0;
+  }
+  .downshift-project-dropdown {
+    margin-left: 0;
+  }
+  .upload-file {
+    position: relative !important;
+    padding-bottom: 30px;
+  }
+  .drop-zone-show {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+    height: auto !important;
+    border-radius: 0;
+    padding-top: 0;
+    min-height: 10vw;
+  }
+  .drop-zone-show ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-start !important;
+  }
+  .drop-zone-show ul img {
+    object-fit: cover;
+    width: 100%;
+  }
+  #dragbox ul li {
+    margin: 5px;
+    width: calc(100% / 3 - 10px);
+    margin-bottom: 18px;
+  }
+  
+  .div1 {
+    margin-top: 0 !important;
+    height: 100vh !important;
+  }
+  .search-wrapper-review {
+    border: 3px solid #ef403c;
+  }
+  .search-wrapper-review label {
+    margin: 0 !important;
+  }
+  .add {
+    position: static;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.8vw;
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .popup-title:before {
+    width: 120px;
+  }
+  .popup-title:after {
+    width: 120px;
+  }
+  .pText,
+  .pText2 {
+    font-size: 16px !important;
+    margin-bottom: 5px;
+  }
+  .project_searchinput {
+    font-size: 16px !important;
+  }
+  
+  .loc {
+    font-size: 16px;
+  }
+  .revText,
+  .your,
+  .share,
+  .emId {
+    font-size: 16px !important;
+  }
+  
+  .dr1 {
+    font-size: 15px;
+  }
+  .shareEx {
+    position: static;
+    top: 42vw;
+    left: 9%;
+    border: 0.1vw #ef403c solid;
+    width: 100%;
+    height: 10vw;
+    border-radius: 0.5vw;
+    font-size: 1.5vw;
+  }
+  .drop-zone-show .dr2 {
+    position: static !important;
+    font-size: 16px;
+  }
+  .social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .fbb {
+    position: static;
+    height: auto;
+  }
+  .linkedin {
+    position: static;
+    height: auto;
+  }
+  .googleplus {
+    position: static;
+    height: auto;
+  }
+  .already {
+    font-size: 1.3vw;
+  }
+  .OverRating {
+    font-size: 16px !important;
+  }
+  .project_searchinput {
+    font-size: 16px !important;
+    border: none;
+  }
+  .ame,
+  .pro,
+  .uni,
+  .cus,
+  .val {
+    position: static;
+    margin-bottom: 0;
+    font-size: 16px !important;
+  }
+  .col {
+    font-size: 15px;
+  }
+  .revField {
+    font-size: 16px;
+  }
+  .shareEx {
+    font-size: 16px;
+  }
+  .oroption {
+    font-size: 16px;
+  }
+  .add {
+    font-size: 18px;
+    max-width: 87px;
+  }
+  .already {
+    font-size: 16px;
+  }
+  .login {
+    font-size: 16px;
+  }
+  .social-wrapper div {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+  .social-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  .kep-login-facebook.metro {
+    border-radius: 0;
+    width: 35px;
+    height: 35px;
+    margin-top: 2px;
+    margin-left: 1px;
+  }
+  @media (max-width: 1024px) {
+    .pText,
+    .pText2 {
+      font-size: 16px !important;
+    }
+    .ame,
+    .pro,
+    .uni,
+    .cus,
+    .val {
+      font-size: 16px !important;
+    }
+    .revText,
+    .your,
+    .share,
+    .emId {
+      font-size: 16px !important;
+    }
+    .file1 {
+      position: static;
+      width: 100%;
+      bottom: 0;
+      top: auto;
+      left: 0;
+    }
+    .sign {
+      position: relative;
+      margin-top: 0;
+      top: 0;
+      left: 0;
+    }
+    .file1 {
+      position: static;
+      width: 100%;
+      bottom: 0;
+      top: auto;
+      left: 0;
+      height: auto;
+      font-size: 16px;
+    }
+    .emField {
+      height: auto;
+      font-size: 16px;
+    }
+    .cont {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 991px) {
+    .add {
+      margin: 0 auto !important;
+      max-width: 70px;
+    }
+    .pText,
+    .pText2 {
+      font-size: 16px !important;
+    }
+    .OverRating {
+      font-size: 16px !important;
+    }
+    .loc {
+      font-size: 16px !important;
+    }
+    .ame,
+    .pro,
+    .uni,
+    .cus,
+    .val {
+      font-size: 16px !important;
+    }
+    .revText,
+    .your,
+    .share,
+    .emId {
+      font-size: 16px !important;
+    }
+    .closebtn {
+      position: static;
+      width: 39px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .div1 {
+      width: 60%;
+      height: 80%;
+      left: 0;
+      margin-top: 6%;
+      right: 0;
+      margin: auto;
+    }
+    .pText,
+    .pText2 {
+      font-size: 14px !important;
+    }
+    .ame,
+    .pro,
+    .uni,
+    .cus,
+    .val {
+      font-size: 14px !important;
+    }
+    .revText,
+    .your,
+    .share,
+    .emId {
+      font-size: 14px !important;
+      margin-bottom: 7px;
+    }
+    .revField {
+      height: auto;
+    }
+    .shareEx {
+      height: 13vw;
+      font-size: 14px !important;
+    }
+    .emField {
+      height: auto;
+      font-size: 1.5vw;
+    }
+    .already {
+      font-size: 2vw;
+    }
+    .login {
+      font-size: 2vw;
+    }
+    .sign {
+      font-size: 2.3vw;
+    }
+    .oroption {
+      font-size: 2.3vw;
+    }
+    .drop-zone-show {
+      min-height: 20vw;
+    }
+    .add {
+      font-size: 2.5vw !important;
+    }
+    .file1 {
+      font-size: 2vw;
+      height: auto;
+    }
+    .popup-title:after {
+      width: 120px;
+    }
+    .popup-title:before {
+      width: 120px;
+    }
+    .loc {
+      font-size: 14px !important;
+    }
+    .OverRating {
+      font-size: 14px !important;
+    }
+    label.dv-star-rating-star {
+      margin-bottom: 0;
+      font-size: 20px;
+    }
+    .col {
+      font-size: 14px !important;
+    }
+    .cont {
+      position: static;
+      width: 100%;
+      margin-top: 10px;
+      height: auto;
+      font-size: 14px;
+    }
+    .emField {
+      height: auto;
+      font-size: 14px;
+    }
+    .revField {
+      height: auto;
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .div1 {
+      width: 90%;
+    }
+    .div_mobile {
+      width: 100%;
+      background-color: white;
+      position: static;
+      margin-top: 0;
+      border-radius: 0;
+      border-radius: 0px;
+      border: none;
+      height: auto;
+      z-index: 11;
+      left: 0;
+    }
+    .add {
+      margin: 0 auto !important;
+      max-width: 60px;
+      font-size: 18px !important;
+    }
+    .popup-title:before {
+      width: 150px;
+    }
+    .popup-title:after {
+      width: 150px;
+    }
+    .h2,
+    .h1 {
+      display: none;
+    }
+    .pText,
+    .pText2 {
+      font-size: 16px !important;
+    }
+    .OverRating {
+      font-size: 16px !important;
+    }
+    .ame,
+    .pro,
+    .uni,
+    .cus,
+    .val {
+      font-size: 16px !important;
+    }
+    .loc {
+      font-size: 16px !important;
+    }
+    .revText,
+    .your,
+    .share,
+    .emId {
+      font-size: 16px !important;
+      margin-bottom: 7px;
+    }
+    .file1 {
+      font-size: 16px;
+      height: auto;
+      margin-top: 0;
+    }
+    .sign,
+    .oroption {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .hr5,
+    .hr6,
+    .hr3,
+    .hr4 {
+      display: none;
+    }
+    .already {
+      font-size: 16px;
+    }
+    .login {
+      font-size: 16px;
+    }
+    .div_mobile {
+      padding-bottom: 15px;
+    }
+    .cont {
+      font-size: 16px;
+    }
+    .take {
+      position: static;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 38px;
+      font-weight: 500;
+    }
+    .upload-file {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .upload-file .file1 {
+      width: auto;
+      padding: 15px 30px;
+      border-radius: 9px;
+      height: 57px;
+      margin-bottom: 0;
+    }
+    .upload-file {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+    .take-container {
+      margin-right: 15px;
+    }
+    .upload-file .file1 {
+      width: auto;
+      padding: 15px 30px;
+      border-radius: 9px;
+      height: 57px;
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: 2;
+    }
+    .col {
+      margin: 1% 1% 1% 1%;
+    }
+    .OverRating {
+      font-size: 16px !important;
+      margin-top: 13px;
+    }
+    .popup-title:after,
+    .popup-title:before {
+      width: 35% !important;
+    }
+    .project_search_icon {
+      width: 7% !important;
+    }
+    .upload-file .file1 {
+      line-height: 1;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    .popup-title:before {
+      width: 100px;
+    }
+    .popup-title:after {
+      width: 100px;
+    }
+    .col {
+      font-size: 14px !important;
+      margin-right: 0;
+    }
+    .OverRating {
+      font-size: 16px !important;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    .take {
+      position: static;
+      height: 58px;
+      font-size: 16px;
+    }
+    .popup-title:after,
+    .popup-title:before {
+      width: 30% !important;
+    }
+    .social-media .goog {
+      margin: 0 8px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .popup-title:before {
+      width: 80px;
+    }
+    .popup-title:after {
+      width: 80px;
+    }
+    .pText,
+    .pText2 {
+      font-size: 14px !important;
+    }
+    .ame,
+    .pro,
+    .uni,
+    .cus,
+    .val {
+      font-size: 14px !important;
+    }
+    .loc {
+      font-size: 14px !important;
+    }
+    .already {
+      font-size: 14px;
+    }
+    .login {
+      font-size: 14px;
+    }
+  }
+  
+  
+  
+  .pField {
+      border: 0.1vw solid #ef403c;
+      width: 100%;
+      height: 3vw;
+      margin-top: 0;
+      left: 0;
+      position: relative;
+      /* margin-top: 17%; */
+  }
+  
+  
+  .sub {
+    position: relative;
+    top: 2vw !important;
+  }
+  
+  @media(max-width: 420px) {
+    .drop-zone-show ul img {
+      width: 100% !important;
+  }
+  }
+  
+  .shareEx {
+    border: 3px #ef403c solid;
+  }

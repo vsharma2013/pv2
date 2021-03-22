@@ -1,0 +1,1894 @@
+@media (min-width: 1301px) and (max-width: 1900px) {
+  .closebtn_det_post {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -6%;
+    left: 93%;
+    width: 2vw;
+  }
+  .modal_review_post {
+    position: absolute;
+    width: 29%;
+    border: 2px solid grey;
+    height: 58vw;
+    background-color: white;
+    border-radius: 1vw;
+    left: 37%;
+    margin-top: 0%;
+    max-height: 100vh;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll; */
+  }
+  .po_det {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 1.1vw;
+    font-family: Catamaran;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+  }
+  .api_det {
+    margin-top: 2.5%;
+    /* font-size: 92%; */
+    color: gray;
+    position: absolute;
+    left: 48.5%;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 1.1vw;
+    text-align: center;
+  }
+  .pic_det {
+    margin-top: 5.6%;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.1vw;
+    text-align: center;
+    position: absolute;
+    left: 42.5%;
+  }
+  .hr1_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 10%;
+    width: 7vw;
+  }
+
+  .hr2_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 62.5%;
+    width: 7vw;
+  }
+  .pText1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 13%;
+    font-size: 0.8vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .pField_det_post {
+    border: 0.1vw solid #ef403c;
+    width: 79.3%;
+    height: 3vw;
+    margin-top: 18%;
+    left: 9.5%;
+    position: absolute;
+  }
+
+  /* .pField1_det{
+   
+    border: 2px solid #EF403C;
+    width: 19.6vw;
+    height: 5.5vh;
+    margin-top: 9%;
+    position: absolute;
+    left: 14%;
+    font-size: 1vw;
+   
+    
+  } */
+
+  .share1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 31%;
+    font-size: 0.8vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .sign1_det {
+    margin-top: 83.5%;
+    position: absolute;
+    left: 43%;
+    color: black;
+    font-size: 1vw;
+    font-family: Catamaran;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hr_1_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 61%;
+    width: 7.7vw;
+  }
+
+  .hr_2_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 10%;
+    width: 7.5vw;
+  }
+
+  .facebook_det {
+    position: absolute;
+    margin-top: 91.2%;
+    cursor: pointer;
+    width: 2vw;
+    left: 36%;
+  }
+  .goog_det {
+    position: absolute;
+    width: 2.2vw;
+    margin-top: 90.5%;
+    left: 46%;
+    cursor: pointer;
+  }
+  .linkedin1_det {
+    position: absolute;
+    margin-top: 90.5%;
+    left: 56%;
+    cursor: pointer;
+    width: 2.4vw;
+  }
+  .signor_det {
+    margin-top: 101.4%;
+    position: absolute;
+    left: 48%;
+    color: black;
+    font-size: 1vw;
+    font-family: Catamaran;
+    font-weight: bold;
+  }
+  .hr_3_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 103.4%;
+    left: 61%;
+    width: 7.7vw;
+  }
+  .hr_4_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 103.4%;
+    left: 10%;
+    width: 7.5vw;
+  }
+
+  .emText_det {
+    position: absolute;
+    margin-top: 109.3%;
+    left: 10%;
+    font-size: 0.9vw;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .emailField_det {
+    position: absolute;
+    margin-top: 115%;
+    left: 10.2%;
+    border: #ef403c solid;
+    width: 80%;
+    height: 3vw;
+    font-size: 0.9vw;
+    padding: 2%;
+    font-family: Catamaran;
+  }
+  .cont1_det {
+    position: absolute;
+    margin-top: 128.5%;
+    font-family: Catamaran;
+    width: 80%;
+    left: 10.3%;
+    padding: 1.5%;
+    font-size: 1vw;
+    color: white;
+    background-color: #404041;
+    font-weight: bold;
+    border-radius: 0.3vw;
+  }
+
+  .alr_det {
+    position: absolute;
+    margin-top: 142%;
+    left: 11%;
+    font-size: 0.7vw;
+    font-family: Catamaran;
+  }
+  .login1_det {
+    position: absolute;
+    margin-top: 141.5%;
+    left: 49%;
+    color: #ef403c;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 0.9vw;
+  }
+  .sub1_det {
+    position: absolute;
+    margin-top: 84%;
+    width: 39%;
+    left: 31%;
+    padding: 1.5%;
+    background: #404041;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Catamaran;
+    font-size: 1.2vw;
+    margin-bottom: 3vw;
+  }
+
+  /* file drag n drop and select */
+  #file_post {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    width: 0;
+  }
+  .file_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    outline: none;
+    padding: 2%;
+    position: absolute;
+    /* transition: all 0.3s; */
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-top: 65.4%;
+    left: 9.5%;
+    width: 79.2%;
+    font-weight: bold;
+    height: 2.6vw;
+    z-index: 11;
+  }
+
+  .dragn_det {
+    position: absolute;
+    font-family: "Catamaran";
+    color: grey;
+    max-width: 100%;
+    margin-top: -8%;
+    font-size: 15px;
+  }
+  .orr_det {
+    position: absolute;
+    font-family: "Catamaran";
+    margin-top: 7%;
+    color: grey;
+  }
+  .drop-zone-show1_det {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: solid #ef403c;
+    width: 79%;
+    height: 9vw;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 35.4%;
+    left: 9.5%;
+    right: 0;
+    /* bottom: 0; */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 0.05vw;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 0.4vw;
+    color: grey;
+  }
+  .take_post_det {
+    display: none;
+  }
+  .modal_review_post {
+    padding: 30px 0px;
+}
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .closebtn_det_post {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -5%;
+    left: 94%;
+    width: 2vw;
+  }
+  .modal_review_post {
+    position: absolute;
+    width: 35%;
+    border: 2px solid grey;
+    height: 56vw;
+    background-color: white;
+    border-radius: 1vw;
+    left: 32%;
+    margin-top: 0%;
+    max-height: 100vh;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll; */
+  }
+  .po_det {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 1.5vw;
+    font-family: Catamaran;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+  }
+  .api_det {
+    margin-top: 2.5%;
+    /* font-size: 92%; */
+    color: gray;
+    position: absolute;
+    left: 48.5%;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 1.5vw;
+    text-align: center;
+  }
+  .pic_det {
+    margin-top: 5.6%;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.5vw;
+    text-align: center;
+    position: absolute;
+    left: 42.5%;
+  }
+  .hr1_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 10%;
+    width: 9vw;
+  }
+
+  .hr2_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 62.5%;
+    width: 9vw;
+  }
+  .pText1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 13%;
+    font-size: 1.2vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .pField_det_post {
+    border: 0.1vw solid #ef403c;
+    width: 27.8vw;
+    height: 3.5vw;
+    margin-top: 18.5%;
+    left: 9.6%;
+    position: absolute;
+  }
+
+  /* .pField1_det{
+   
+    border: 2px solid #EF403C;
+    width: 19.6vw;
+    height: 5.5vh;
+    margin-top: 9%;
+    position: absolute;
+    left: 14%;
+    font-size: 1vw;
+   
+    
+  } */
+
+  .share1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 31%;
+    font-size: 1.2vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .sign1_det {
+    margin-top: 83.5%;
+    position: absolute;
+    left: 43%;
+    color: black;
+    font-size: 1.4vw;
+    font-family: Catamaran;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hr_1_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 63%;
+    width: 9vw;
+  }
+
+  .hr_2_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 10%;
+    width: 9vw;
+  }
+
+  .facebook_det {
+    position: absolute;
+    margin-top: 91%;
+    cursor: pointer;
+    width: 2.7vw;
+    left: 36%;
+  }
+  .goog_det {
+    position: absolute;
+    width: 2.8vw;
+    margin-top: 90.5%;
+    left: 46%;
+    cursor: pointer;
+  }
+  .linkedin1_det {
+    position: absolute;
+    margin-top: 90.2%;
+    left: 56%;
+    cursor: pointer;
+    width: 3.2vw;
+  }
+  .signor_det {
+    margin-top: 101.4%;
+    position: absolute;
+    left: 47%;
+    color: black;
+    font-size: 1.5vw;
+    font-family: Catamaran;
+    font-weight: bold;
+  }
+  .hr_3_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 104%;
+    left: 63%;
+    width: 9vw;
+  }
+  .hr_4_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 104%;
+    left: 10%;
+    width: 9vw;
+  }
+
+  .emText_det {
+    position: absolute;
+    margin-top: 110.3%;
+    left: 10%;
+    font-size: 1.2vw;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .emailField_det {
+    position: absolute;
+    margin-top: 116%;
+    left: 10.2%;
+    border: #ef403c solid;
+    width: 80%;
+    height: 3.8vw;
+    font-size: 1.1vw;
+    padding: 2%;
+    font-family: Catamaran;
+  }
+  .cont1_det {
+    position: absolute;
+    margin-top: 129.5%;
+    font-family: Catamaran;
+    width: 80%;
+    left: 10.3%;
+    padding: 1.5%;
+    font-size: 1.6vw;
+    color: white;
+    background-color: #404041;
+    font-weight: bold;
+    border-radius: 0.3vw;
+  }
+
+  .alr_det {
+    position: absolute;
+    margin-top: 144%;
+    left: 11%;
+    font-size: 1vw;
+    font-family: Catamaran;
+  }
+  .login1_det {
+    position: absolute;
+    margin-top: 144%;
+    left: 52%;
+    color: #ef403c;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.2vw;
+  }
+  .sub1_det {
+    position: absolute;
+    margin-top: 90%;
+    width: 39%;
+    left: 31%;
+    padding: 1.5%;
+    background: #404041;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Catamaran;
+    font-size: 1.5vw;
+    margin-bottom: 3vw;
+  }
+
+  /* file drag n drop and select */
+  #file_post {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    width: 0;
+  }
+  .file_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    outline: none;
+    padding: 2%;
+    position: absolute;
+    /* transition: all 0.3s; */
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-top: 69.4%;
+    left: 9.5%;
+    width: 80.2%;
+    font-weight: bold;
+    height: 3vw;
+    z-index: 11;
+  }
+
+  .dragn_det {
+    position: absolute;
+    font-family: "Catamaran";
+    color: grey;
+    max-width: 100%;
+    margin-top: -8%;
+    font-size: 15px;
+  }
+  .orr_det {
+    position: absolute;
+    font-family: "Catamaran";
+    margin-top: 7%;
+    color: grey;
+  }
+  .drop-zone-show1_det {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: solid #ef403c;
+    width: 80%;
+    height: 12vw;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 37%;
+    left: 9.5%;
+    right: 0;
+    /* bottom: 0; */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 0.05vw;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 0.4vw;
+    color: grey;
+  }
+  .take_post_det {
+    display: none;
+  }
+  .modal_review_post {
+    padding: 30px 0px;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .closebtn_det_post {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -2.5vw;
+    margin-left: 47vw;
+    width: 3.3vw;
+  }
+  .modal_review_post {
+    position: absolute;
+    width: 55%;
+    border: 2px solid grey;
+    height: 77vw;
+    background-color: white;
+    border-radius: 1vw;
+    left: 23%;
+    margin-top: 7%;
+    max-height: 91vh;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll;*/
+  }
+  .po_det {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 2vw;
+    font-family: Catamaran;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+  }
+  .api_det {
+    margin-top: 2.5%;
+    /* font-size: 92%; */
+    color: gray;
+    position: absolute;
+    left: 48.5%;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .pic_det {
+    margin-top: 5.6%;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    left: 42.5%;
+  }
+  .hr1_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 10%;
+    width: 14vw;
+  }
+
+  .hr2_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 62.5%;
+    width: 14vw;
+  }
+  .pText1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 13%;
+    font-size: 2vw;
+    font-family: Catamaran;
+    left: 10%;
+  }
+  .pField_det_post {
+    border: 0.1vw solid #ef403c;
+    width: 43.5vw;
+    height: 5vw;
+    margin-top: 19%;
+    left: 10%;
+    position: absolute;
+  }
+
+  /* .pField1_det{
+   
+    border: 2px solid #EF403C;
+    width: 19.6vw;
+    height: 5.5vh;
+    margin-top: 9%;
+    position: absolute;
+    left: 14%;
+    font-size: 1vw;
+   
+    
+  } */
+
+  .share1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 33%;
+    font-size: 2vw;
+    font-family: Catamaran;
+    left: 10%;
+  }
+  .sign1_det {
+    margin-top: 83.5%;
+    position: absolute;
+    left: 44%;
+    color: black;
+    font-size: 2vw;
+    font-family: Catamaran;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hr_1_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.2%;
+    left: 62.5%;
+    width: 14.7vw;
+  }
+
+  .hr_2_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.2%;
+    left: 10%;
+    width: 14.7vw;
+  }
+
+  .facebook_det {
+    position: absolute;
+    margin-top: 90.7%;
+    cursor: pointer;
+    width: 3.8vw;
+    left: 36%;
+  }
+  .goog_det {
+    position: absolute;
+    width: 4vw;
+    margin-top: 90.2%;
+    left: 46%;
+    cursor: pointer;
+  }
+  .linkedin1_det {
+    position: absolute;
+    margin-top: 90.3%;
+    left: 56%;
+    cursor: pointer;
+    width: 4.4vw;
+  }
+  .signor_det {
+    margin-top: 100.4%;
+    position: absolute;
+    left: 47%;
+    color: black;
+    font-size: 2vw;
+    font-family: Catamaran;
+    font-weight: bold;
+  }
+  .hr_3_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 102.4%;
+    left: 62.5%;
+    width: 14.7vw;
+  }
+  .hr_4_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 102.4%;
+    left: 10%;
+    width: 14.7vw;
+  }
+
+  .emText_det {
+    position: absolute;
+    margin-top: 109.3%;
+    left: 10%;
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .emailField_det {
+    position: absolute;
+    margin-top: 115%;
+    left: 10.2%;
+    border: #ef403c solid;
+    width: 80%;
+    height: 5.5vw;
+    font-size: 1.5vw;
+    padding: 2%;
+    font-family: Catamaran;
+  }
+  .cont1_det {
+    position: absolute;
+    margin-top: 128.5%;
+    font-family: Catamaran;
+    width: 80%;
+    left: 10.3%;
+    padding: 1.5%;
+    font-size: 2.2vw;
+    color: white;
+    background-color: #404041;
+    font-weight: bold;
+    border-radius: 0.3vw;
+  }
+
+  .alr_det {
+    position: absolute;
+    margin-top: 142%;
+    left: 11%;
+    font-size: 1.6vw;
+    font-family: Catamaran;
+  }
+  .login1_det {
+    position: absolute;
+    margin-top: 141.5%;
+    left: 53%;
+    color: #ef403c;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.9vw;
+  }
+  .sub1_det {
+    position: absolute;
+    margin-top: 90%;
+    width: 39%;
+    left: 31%;
+    padding: 1.5%;
+    background: #404041;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Catamaran;
+    font-size: 2vw;
+    margin-bottom: 3vw;
+  }
+
+  /* file drag n drop and select */
+  #file_post {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    width: 0;
+  }
+  .file_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2.5vw;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    outline: none;
+    padding: 1%;
+    position: absolute;
+    /* transition: all 0.3s; */
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-top: 68.4%;
+    left: 10%;
+    width: 80.2%;
+    font-weight: bold;
+    height: 5vw;
+    z-index: 11;
+  }
+
+  .dragn_det {
+    position: absolute;
+    font-family: "Catamaran";
+    color: grey;
+    max-width: 100%;
+    margin-top: -8%;
+    font-size: 2vw;
+  }
+  .orr_det {
+    position: absolute;
+    font-family: "Catamaran";
+    margin-top: 7%;
+    color: grey;
+    font-size: 2vw;
+  }
+  .drop-zone-show1_det {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: solid #ef403c;
+    width: 80%;
+    height: 17vw;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 39.4%;
+    left: 10%;
+    right: 0;
+    /* bottom: 0; */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 0.05vw;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 0.4vw;
+    color: grey;
+  }
+  .take_post_det {
+    display: none;
+  }
+  .modal_review_post {
+    padding: 30px 0px;
+}
+}
+
+
+
+
+ #dragbox123 {
+  overflow: auto;
+  display: none !important;
+}
+ #dragbox123 ul {
+  margin-top: auto;
+  padding: 15px 0;
+  flex-wrap: wrap !important;
+  justify-content: space-around;
+}
+ #dragbox123 ul li {
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+ #dragbox123 ul li .remove-btn{
+  cursor: pointer;
+}
+  #dragbox123 ul li:hover img {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+  #dragbox123 ul li:hover .remove-btn {
+  display: flex;
+}
+ #dragbox123 ul li .remove-btn {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  background: #0000009e;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+ #dragbox123 ul li .remove-btn span{
+  word-break: break-all;
+  margin: 2px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .closebtn_det_post {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -1%;
+    left: 92%;
+    width: 6vw;
+  }
+  .modal_review_post {
+    position: absolute;
+    width: 96%;
+    border: 2px solid grey;
+    height: 135vw;
+    background-color: white;
+    border-radius: 1vw;
+    left: 2%;
+    margin-top: 10%;
+    max-height: 100vh;
+    /* overflow-y: scroll; */
+  }
+  .po_det {
+    margin-top: 4%;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: Catamaran;
+    text-align: center;
+    position: absolute;
+    left: 42%;
+  }
+  .api_det {
+    margin-top: 4%;
+    position: absolute;
+    left: 53%;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .pic_det {
+    margin-top: 8%;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 4vw;
+    text-align: center;
+    position: absolute;
+    left: 41%;
+  }
+  .hr1_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 8%;
+    left: 60%;
+    width: 27.5vw;
+  }
+
+  .hr2_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 8%;
+    left: 7%;
+    width: 27.5vw;
+  }
+  .pText1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 17%;
+    font-size: 3.5vw;
+    font-family: Catamaran;
+    left: 7%;
+  }
+  .pField_det_post {
+    border: 0.1vw solid #ef403c;
+    width: 78.2vw;
+    height: 11vw;
+    margin-top: 23%;
+    left: 6.5%;
+    position: absolute;
+  }
+
+  /* .pField1{
+     
+      border: 2px solid #EF403C;
+      width: 71vw;
+      height: 5.5vh;
+      top: 9%;
+      position: absolute;
+      left: 14%;
+      font-size: 3vw;
+      
+  } */
+
+  .share1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 40%;
+    font-size: 3.6vw;
+    font-family: Catamaran;
+    left: 7%;
+  }
+  .sign1_det {
+    margin-top: 72%;
+    position: absolute;
+    left: 42.5%;
+    color: black;
+    font-size: 4vw;
+    font-family: Catamaran;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hr_1_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 74.2%;
+    left: 63.6%;
+    width: 25vw;
+  }
+  .hr_2_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 74.2%;
+    left: 8%;
+    width: 26vw;
+  }
+
+  .facebook_det {
+    position: absolute;
+    margin-top: 81.1%;
+    cursor: pointer;
+    width: 7.4vw;
+    left: 35%;
+  }
+  .goog_det {
+    position: absolute;
+    width: 8.5vw;
+    margin-top: 80.1%;
+    left: 46%;
+    cursor: pointer;
+  }
+  .linkedin1_det {
+    margin-top: 80.2%;
+    left: 57.4%;
+    cursor: pointer;
+    width: 9.2vw;
+    position: absolute;
+  }
+  .signor_det {
+    position: absolute;
+    margin-top: 93%;
+    left: 47.5%;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+  .hr_3_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 95%;
+    left: 63.6%;
+    width: 25vw;
+  }
+
+  .hr_4_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 95.5%;
+    left: 8%;
+    width: 26vw;
+  }
+
+  .emText_det {
+    position: absolute;
+    margin-top: 103%;
+    left: 7%;
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .emailField_det {
+    position: absolute;
+    margin-top: 111%;
+    left: 7.5%;
+    border: 2px #ef403c solid;
+    width: 77vw;
+    height: 11.5vw;
+    font-size: 3vw;
+    padding: 2%;
+    font-family: Catamaran;
+  }
+  .cont1_det {
+    position: absolute;
+    margin-top: 127%;
+    font-family: Catamaran;
+    width: 78vw;
+    left: 7%;
+    padding: 2%;
+    font-size: 3.9vw;
+    color: white;
+    background-color: #404041;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  .alr_det {
+    position: absolute;
+    margin-top: 143%;
+    left: 8%;
+    font-size: 3.1vw;
+    font-family: Catamaran;
+  }
+  .login1_det {
+    position: absolute;
+    margin-top: 142.7%;
+    left: 57%;
+    color: #ef403c;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 3.7vw;
+  }
+  .sub1_det {
+    position: absolute;
+    margin-top: 77%;
+    width: 42vw;
+    left: 28%;
+    padding: 1.5%;
+    background: #404041;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Catamaran;
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+
+  /* file drag n drop and select */
+  #file_post {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    width: 0;
+  }
+  .file_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3.8vw;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    outline: none;
+    padding: 3%;
+    position: absolute;
+    transition: all 0.3s;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 51%;
+    left: 53.5%;
+    width: 29vw;
+    font-weight: bold;
+    height: 11.2vw;
+    font-family: Catamaran;
+  }
+
+  .take_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 3.8vw;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 3%;
+    position: absolute;
+    transition: all 0.3s;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 51%;
+    left: 16.5%;
+    width: 29vw;
+    font-weight: bold;
+    height: 11.2vw;
+    font-family: Catamaran;
+  }
+
+  .dragn_det {
+    position: absolute;
+    font-family: "Catamaran";
+    color: grey;
+    margin-top: 200%;
+    left: 6%;
+    font-size: 11px;
+    width: 100%;
+  }
+  .orr_det {
+    position: absolute;
+    font-family: "Catamaran";
+    margin-top: 150%;
+    color: grey;
+  }
+  .drop-zone-show1_det {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: 2px solid #ef403c;
+    width: 70vw;
+    height: 13vh;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 153%;
+    left: 0.1%;
+    right: 0;
+    /* bottom: 0; */
+    /* flex: 1 1; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vw;
+    color: black;
+    letter-spacing: 1px;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 7px;
+    display: none;
+  }
+}
+
+@media (min-width: 1900px) {
+  .closebtn_det_post {
+    position: absolute;
+    cursor: pointer;
+    margin-top: -6%;
+    left: 22vw;
+    width: 2vw;
+  }
+  .modal_review_post {
+    position: absolute;
+    width: 29%;
+    border: 2px solid grey;
+    height: 37vw;
+    background-color: white;
+    border-radius: 1vw;
+    left: 37%;
+    margin-top: 0%;
+    max-height: 100vh;
+    /* overflow-y: auto; */
+    /* overflow-y: scroll; */
+  }
+  .po_det {
+    margin-top: 0%;
+    font-weight: bold;
+    font-size: 1.1vw;
+    font-family: Catamaran;
+    text-align: center;
+    position: absolute;
+    left: 45%;
+  }
+  .api_det {
+    margin-top: 2.5%;
+    /* font-size: 92%; */
+    color: gray;
+    position: absolute;
+    left: 48.5%;
+    font-weight: bolder;
+    font-family: Catamaran;
+    font-size: 1.1vw;
+    text-align: center;
+  }
+  .pic_det {
+    margin-top: 5.6%;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 1.1vw;
+    text-align: center;
+    position: absolute;
+    left: 42.5%;
+  }
+  .hr1_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 9%;
+    width: 7vw;
+  }
+
+  .hr2_det {
+    position: absolute;
+    border: solid #ef403c;
+    margin-top: 4.6%;
+    left: 62%;
+    width: 6.5vw;
+  }
+  .pText1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 13%;
+    font-size: 0.8vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .pField_det_post {
+    border: 0.1vw solid #ef403c;
+    width: 79.3%;
+    height: 3vw;
+    margin-top: 18%;
+    left: 9.5%;
+    position: absolute;
+    font-size: 0.9vw;
+  }
+
+  /* .pField1_det{
+   
+    border: 2px solid #EF403C;
+    width: 19.6vw;
+    height: 5.5vh;
+    margin-top: 9%;
+    position: absolute;
+    left: 14%;
+    font-size: 1vw;
+   
+    
+  } */
+
+  .share1_det {
+    position: absolute;
+    font-weight: bold;
+    margin-top: 31%;
+    font-size: 0.8vw;
+    font-family: Catamaran;
+    left: 9.4%;
+  }
+  .sign1_det {
+    margin-top: 83.5%;
+    position: absolute;
+    left: 42%;
+    color: black;
+    font-size: 1vw;
+    font-family: Catamaran;
+    text-align: center;
+    font-weight: bold;
+  }
+  .hr_1_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 61%;
+    width: 6.7vw;
+  }
+
+  .hr_2_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 85.8%;
+    left: 10%;
+    width: 6.5vw;
+  }
+
+  .facebook_det {
+    position: absolute;
+    margin-top: 91.2%;
+    cursor: pointer;
+    width: 2vw;
+    left: 36%;
+  }
+  .goog_det {
+    position: absolute;
+    width: 2.2vw;
+    margin-top: 90.5%;
+    left: 46%;
+    cursor: pointer;
+  }
+  .linkedin1_det {
+    position: absolute;
+    margin-top: 90.5%;
+    left: 56%;
+    cursor: pointer;
+    width: 2.4vw;
+  }
+  .signor_det {
+    margin-top: 101.4%;
+    position: absolute;
+    left: 47%;
+    color: black;
+    font-size: 1vw;
+    font-family: Catamaran;
+    font-weight: bold;
+  }
+  .hr_3_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 103.4%;
+    left: 61%;
+    width: 6.7vw;
+  }
+  .hr_4_det {
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 103.4%;
+    left: 10%;
+    width: 6.5vw;
+  }
+
+  .emText_det {
+    position: absolute;
+    margin-top: 109.3%;
+    left: 10%;
+    font-size: 0.9vw;
+    font-weight: bold;
+    font-family: Catamaran;
+  }
+  .emailField_det {
+    position: absolute;
+    margin-top: 115%;
+    left: 10.2%;
+    border: #ef403c solid;
+    width: 80%;
+    height: 3vw;
+    font-size: 0.9vw;
+    padding: 2%;
+    font-family: Catamaran;
+  }
+  .cont1_det {
+    position: absolute;
+    margin-top: 128.5%;
+    font-family: Catamaran;
+    width: 80%;
+    left: 10.3%;
+    padding: 1.5%;
+    font-size: 1vw;
+    color: white;
+    background-color: #404041;
+    font-weight: bold;
+    border-radius: 0.3vw;
+  }
+
+  .alr_det {
+    position: absolute;
+    margin-top: 142%;
+    left: 11%;
+    font-size: 0.7vw;
+    font-family: Catamaran;
+  }
+  .login1_det {
+    position: absolute;
+    margin-top: 141.5%;
+    left: 49%;
+    color: #ef403c;
+    font-weight: bold;
+    font-family: Catamaran;
+    font-size: 0.9vw;
+  }
+  .sub1_det {
+    position: absolute;
+    margin-top: 90%;
+    width: 39%;
+    left: 31%;
+    padding: 1.5%;
+    background: #404041;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: Catamaran;
+    font-size: 1.2vw;
+    margin-bottom: 3vw;
+  }
+
+  /* file drag n drop and select */
+  #file_post {
+    height: 0;
+    overflow: hidden;
+    display: none;
+    width: 0;
+  }
+  .file_post_det {
+    background: #ef403c;
+    border: none;
+    border-radius: 0.3vw;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    outline: none;
+    padding: 2%;
+    position: absolute;
+    /* transition: all 0.3s; */
+    /* vertical-align: middle; */
+    text-align: center;
+    margin-top: 65.4%;
+    left: 9.5%;
+    width: 79.2%;
+    font-weight: bold;
+    height: 2.6vw;
+    z-index: 11;
+  }
+
+  .dragn_det {
+    position: absolute;
+    font-family: "Catamaran";
+    color: grey;
+    max-width: 100%;
+    margin-top: -8%;
+    font-size: 15px;
+  }
+  .orr_det {
+    position: absolute;
+    font-family: "Catamaran";
+    margin-top: 7%;
+    color: grey;
+  }
+  .drop-zone-show1_det {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: solid #ef403c;
+    width: 79%;
+    height: 9vw;
+    -ms-content-zoom-snap-points: 2000;
+    margin-top: 35.4%;
+    left: 9.5%;
+    right: 0;
+    /* bottom: 0; */
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1vw;
+    color: black;
+    letter-spacing: 0.05vw;
+    /* margin: auto; */
+    font-family: "Catamaran";
+    z-index: 4px;
+    border-radius: 0.4vw;
+    color: grey;
+  }
+  .take_post_det {
+    display: none;
+  }
+}
+
+@media (min-width: 2000px) {
+  .modal-content-post {
+    border: none;
+    position: inherit;
+
+    padding-left: 25vw;
+    margin-left: -2.5vw;
+  }
+}
+
+
+
+.hr1_det {
+    display: block;
+}
+.hr2_det {
+    display: block;
+}
+
+.hr_1_det {
+display: block;
+}
+.hr_2_det {
+display: block;
+}
+.hr_3_det {
+display: block;
+}
+.hr_4_det {
+display: block;
+}
+
+.sub1_det {
+    margin-top: 100%;
+}
+@media(max-width: 1200px)
+{
+  .addimg-title {
+    width: 60% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8px;
+}
+}
+@media(max-width: 600px)
+{
+  div#dragbox123 {
+    display: none !important;
+  }
+
+}
+
+#dragbox123 {
+  display: none !important;
+}
+
+@media(max-width: 600px)
+{
+  .modal-open .modal {
+    padding: 20px 0px;
+}
+div#dragbox123 {
+  margin-top: 30px;
+  position: static !important;
+  padding-bottom: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  border: 3px solid #ef403c !important;
+  width: 100%;
+  left: 0;
+  margin-top: 30px !important;
+  margin-bottom: 25px;
+}
+.addimg-title {
+  width: 50%;
+  margin-right: 19px;
+}
+
+ #dragbox123 ul li {
+  width: 200px;
+}
+}
+
+
+@media(max-width: 600px)
+{
+  .po_det {
+    position: static;
+    margin-bottom: 0;;
+}
+.api_det {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  left: 0;
+}
+.pic_det {
+  margin-top: 0;
+  position: static;
+  
+}
+.hr1_det,.hr2_det
+{
+  display: none;
+}
+.api_det:before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 34%;
+  left: 30px;
+  background: red;
+  top: 12px;
+}
+.api_det:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 34%;
+  right: 30px;
+  background: red;
+  top: 12px;
+}
+.pText1_det {
+  position: static;
+  margin-top: 0;
+  padding-left: 30px;
+}
+.pField_det_post {
+  width: 88%;
+  position: static;
+  margin-left: 30px;
+  margin-top: 0;
+}
+.share1_det {
+  position: static;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.file_post_det,.take_post_det {
+  position: static;
+    margin-top: 0;
+    width: auto;
+    margin: 0 0 0 30px;
+}
+.sub1_det {
+  position: static;
+  width: 200px;
+  margin: 30px auto 0 !important;
+}
+div#dragbox123 {
+  
+  position: static !important;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+.postimg-container img,.reviewimg-container img{
+  object-fit: cover;
+}
+.add_det {
+  position: static;
+  margin-top: 2%;
+  margin-left: 0;
+}
+.grand-submit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+}
+
+
+
+/*------- static position style for post form ------------*/
+
+@media (min-width: 600px){
+  .modal-content-post form{
+    position: relative;
+    padding: 30px;
+  }
+  .pText1_det{
+    position: static;
+    margin: 45px auto 0;
+  }
+  .pField_det_post{
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .share1_det{
+    position: static;
+    margin: 45px auto 0;
+  }
+  .testt1{
+    position: relative;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+  }
+  .file_post_det{
+    position: static;
+    margin:  -10px auto 0;
+    width: 100%;
+    
+  }
+  .postimg-container img {
+    object-fit: cover;
+}
+  .drop-zone-show1_det{
+      position: static !important;
+      margin: 30px auto 0;
+      min-height: 9vw !important;
+      height: auto !important;
+      width: 100%;
+  }
+  .sub1_det {
+    margin-top: 40px;
+  }
+  .change {
+    width: 100%;
+    display: flex;
+  }
+}
+
+
+.pField_det_post {
+  border: 3px solid #ef403c !important;
+}
+
+
+
+@media(max-width: 600px){
+ #dragbox123 ul li .remove-btn{
+    display: flex;
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 420px) {
+  .drop-zone-show1_det ul img {
+    width: 100% !important;
+}
+}

@@ -1,0 +1,125 @@
+.bloghead{
+    /* margin-top: 2vw;
+    margin-left: 6%;
+    font-size: 1.2vw;
+    color: white;
+    font-family: Catamaran-bold;
+    text-align: center; */
+    /* padding: 12px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+    margin-right: 0rem; */
+    font-size: 2rem ! important;
+    font-family: Catamaran-Semibold;
+    /* color: white; */
+    text-align: center;
+  }
+
+  .blog_con{
+      margin-top: 6%;
+      margin-bottom: 50%;
+      margin-left: 0%;
+  }
+
+  .blog_image { 
+    margin-top: 3%;
+    position: relative; 
+    width: 47vw;
+ }
+
+ .decpblg{
+  width: 100%;
+  margin-left: 8%
+ }
+
+ .blogrow{
+  display: flex;
+  margin-top: 5%;
+ }
+
+ .blogprofile{
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  margin-right: 0%;
+ }
+
+ .blopprocontainer{
+  padding: 5px 20px !important;
+  text-align: left;
+  font-family: Catamaran-Medium;
+ }
+
+ .bloggernam{
+  margin-bottom: 0px;
+  color: #404041;
+  text-transform: capitalize;
+  font-family: Catamaran-Semibold;
+ }
+
+ .bloggerdat{
+  font-family: Catamaran;
+  font-size: 1rem;
+  color: #404041;
+ }
+
+ .blogdescription{
+  font-size: 1.2rem !important;
+  line-height: 1.5;
+  margin-top: 1.1rem;
+  /* text-align: left !important; */
+  font-family: Catamaran-Medium;
+  color: #404041;
+  text-align: justify;
+ }
+
+ @media screen and (max-width: 767px) {
+
+  .blog_con {
+    margin-top: 26%;
+    margin-bottom: 50%;
+    margin-left: 0%;
+}
+.blog_image {
+  margin-top: 3%;
+  position: relative;
+  width: 95%;
+}
+.decpblg {
+  width: 125%;
+  margin-left: 0; 
+}
+.blogdescription {
+  font-size: 1.2rem !important;
+  line-height: 1.5;
+  margin-top: 1.1rem;
+  text-align: justify !important;
+  font-family: Catamaran-Medium;
+  color: #404041;
+}
+ }
+
+ @media screen and (min-width: 1024px) and (max-width: 1075px) {
+ .blog_con {
+  margin-top: 8%;
+  margin-bottom: 50%;
+  margin-left: 0%;
+}
+
+ }
+
+ @media(min-width: 991px) {
+  .bloghead {
+    margin-top: 100px;
+ }
+}
+
+@media(min-width: 991px) and (max-width: 1150px) {
+  .username_project_new {
+    width: fit-content;
+  }
+
+
+}

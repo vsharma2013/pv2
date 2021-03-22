@@ -1,0 +1,1 @@
+run main.py by type "python scraper.py" in cmd/terminal.

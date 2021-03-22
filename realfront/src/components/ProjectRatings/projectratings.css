@@ -1,0 +1,60 @@
+/* Catamaran-Medium */
+
+@font-face {
+  font-family: 'Catamaran-Medium';
+  src: 
+       url('../../assets/fonts/Catamaran-Medium.ttf') format('truetype');
+}
+/*  */
+
+
+.circularratingrow{
+    width: 100%;
+      /* margin-top: 5%; */
+      display: flex;
+  }
+
+  .circularratings{
+    padding: 3% 3% 0% 3%;
+    text-align: -webkit-center !important;
+    text-align: -moz-center;
+  }
+
+  .circularratingcaption, .circularratingvalue{
+    justify-content: center;
+    font-size: 1rem !important;
+    color: #404041;
+  }
+
+  .CircularProgressbar .CircularProgressbar-text{
+    fill:#404041 !important;
+    font-size: 1.5rem !important;
+    font-family: Catamaran-Medium;
+  }
+
+  .CircularProgressbar {
+    width: 60% !important;
+    vertical-align: middle;
+  }
+
+  @media (max-width: 992px) 
+  {
+  .CircularProgressbar {
+    width: 50% !important;
+    vertical-align: middle;
+  }
+  .circularratingcaption, .circularratingvalue {
+    justify-content: center;
+    font-size: 1rem !important;
+    color: #404041;
+}
+
+}
+
+@media (max-width: 512px){
+  .circularratings{
+    padding: unset !important;
+    text-align: -webkit-center !important;
+    text-align: -moz-center;
+  }
+}

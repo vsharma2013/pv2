@@ -1,0 +1,299 @@
+/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans"); */
+
+body {
+  font-family: Catamaran;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input {
+  /* margin: 1rem; */
+  width: -webkit-fill-available;
+  padding: 1rem 0.5rem;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+.downmenu {
+  width: 100%;
+}
+@media screen and (min-width: 601px) {
+  .search_icon {
+    position: absolute;
+    width: 3%;
+    top: 15%;
+    left: 82%;
+  }
+  .downshift-dropdown {
+    margin: 0 auto;
+    width: 42.5%;
+    float: left;
+    padding-left: 1%;
+    padding-top: 2%;
+    color: darkgrey;
+    font-family: Catamaran;
+    font-size: 1vw;
+    background-color: white;
+    text-align: left;
+    /* border: 1px solid whitesmoke; */
+    border-bottom: none;
+    z-index: 5;
+  }
+
+  .dropdown-item {
+    padding: 4%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 0.8vw;
+    font-family: Catamaran;
+    background-color: white;
+    text-align: left;
+    z-index: 5;
+  }
+
+  .downshift-dropdown1 {
+    margin: 0 auto;
+    width: 42.5%;
+    /* border: 1px solid whitesmoke; */
+    float: left;
+    padding-left: 1%;
+    padding-top: 2%;
+    color: darkgrey;
+    font-family: Catamaran;
+    font-size: 1vw;
+    background-color: white;
+    text-align: left;
+    /* border: 1px solid whitesmoke; */
+    border-bottom: none;
+    z-index: 5;
+  }
+
+  .dropdown-item1 {
+    padding: 4%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 0.8vw;
+    background-color: white;
+    font-family: Catamaran;
+    color: #404041;
+    text-align: left;
+    z-index: 5;
+  }
+  .dropdown-item1:hover {
+    padding: 4%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 0.8vw;
+    background-color: #ef403c;
+    font-family: Catamaran;
+    color: white;
+    text-align: left;
+    z-index: 5;
+  }
+  .dropdown-item:hover {
+    padding: 4%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 0.8vw;
+    background-color: #404041;
+    font-family: Catamaran;
+    color: white;
+    text-align: left;
+    z-index: 5;
+  }
+
+  .dropdown-button {
+    padding: 0.6rem;
+    border-radius: 3px;
+    background: white;
+    cursor: pointer;
+  }
+
+  .popper-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+
+  .popper-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid whitesmoke;
+  }
+  .searchinput {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    font-size: 109%;
+    width: 85%;
+    float: left;
+    /* margin-top: 10%; */
+    border: solid;
+    border-color: #ef403c;
+    font-family: Catamaran;
+  }
+}
+@media screen and (max-width: 505px) {
+  .search_icon {
+    position: absolute;
+    width: 5%;
+    top: 78%;
+    left: 82%;
+  }
+  .searchinput {
+    padding-left: 2%;
+    /* padding-right: 2%; */
+    padding-top: 2.1%;
+    padding-bottom: 2.1%;
+    font-size: 4vw;
+    width: 82vw;
+    position: absolute;
+    top: 53%;
+    left: 4.5%;
+    /* float: left; */
+    /* margin-top: 10%; */
+    border: solid;
+    border-color: #ef403c;
+    font-family: Catamaran;
+  }
+  .downshift-dropdown {
+    /* margin: 0 auto;  */
+    position: absolute;
+    margin-top: 8%;
+    left: 4.4%;
+    width: 40.5vw;
+    float: left;
+    padding-left: 1%;
+    /* padding-top: 2%; */
+    color: darkgrey;
+    font-family: Catamaran;
+    font-size: 5vw;
+    margin-left: 0.5%;
+    background-color: white;
+    text-align: left;
+    /* border: 1px solid whitesmoke; */
+    border-bottom: none;
+    z-index: 5;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+  }
+
+  .dropdown-item {
+    padding: 6%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 3vw;
+    font-family: Catamaran;
+    background-color: white;
+    position: relative;
+    text-align: left;
+    color: #404041;
+    z-index: 5;
+  }
+  .dropdown-item:hover {
+    background-color: #404041;
+    color: white;
+    padding: 6%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 2.5vw;
+    font-family: Catamaran;
+    position: relative;
+    text-align: left;
+    z-index: 5;
+  }
+  .downshift-dropdown1 {
+    margin-top: 8%;
+    position: absolute;
+    left: 45.5%;
+    width: 41.5vw;
+    float: left;
+    padding-left: 1%;
+    color: darkgrey;
+    font-family: Catamaran;
+    font-size: 5vw;
+    margin-left: 0.5%;
+    background-color: white;
+    text-align: left;
+    /* border: 1px solid whitesmoke; */
+    border-bottom: none;
+    z-index: 5;
+    /* box-shadow: 0 2px 5px -2px #EF403C; */
+  }
+
+  .dropdown-item1 {
+    padding: 6%;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 3vw;
+    font-family: Catamaran;
+    background-color: white;
+    position: relative;
+    color: #404041;
+    text-align: left;
+    z-index: 5;
+  }
+  .dropdown-item1:hover {
+    background-color: #ef403c;
+    padding: 6%;
+    color: white;
+    cursor: pointer;
+    /* border-bottom: 1px solid whitesmoke; */
+    font-size: 2.5vw;
+    font-family: Catamaran;
+    position: relative;
+    text-align: left;
+    z-index: 5;
+  }
+}
+
+.search-result-wrapper {
+  display: flex;
+  width: 100%;
+}
+.usericon_det {
+    position: static !important;
+}
+
+
+@media(max-width: 991px)
+{
+  .menu-wrapper {
+    justify-content:space-around !important;
+}
+}

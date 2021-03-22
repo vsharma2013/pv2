@@ -1,0 +1,172 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 3px 1px 3px 7px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+a.btn.btn-info {
+    width: 70%;
+    margin-top: 10px;
+}
+
+div#show_location {
+    padding-top: 23px;
+}
+
+
+
+</style>
+
+<script>
+function ValidateSize(file) {
+    var FileSize = file.files[0].size / 1024 / 1024; // in MB
+    if (FileSize > 1) {
+        alert('Cover Image size should be less than 1 MB.');
+        $(file).val(''); //for clearing with Jquery
+    } else {
+
+    }
+}
+</script>
+
+
+<script>
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+var location_id = getUrlParameter('locationid');
+$(document).ready(function(){
+
+if(getUrlParameter('status'))
+{
+    alert("Information Updated Succesfully..");
+}
+
+$.post( "https://www.propviewz.com/be/management/fetch_location_info/", { 'location_id': location_id })
+  .done(function( data ) {
+      console.log("-----------",data[0]);
+      var area = data[0].area;
+      var location_id = data[0].location_id;
+      var img = "";
+      var disc = "";
+      
+      if(data[0].cover_img!=null){img = "<img src='"+data[0].cover_img+"' width='300px'>";}
+      else{ img= "This Location Don't Have Any Cover Image....<br><br><h3>Note: Make Sure Image Should Be Of Resolution 1968 W x 180 H Pixels.</h3>";}
+      if(data[0].location_disc!=null){disc = data[0].location_disc}
+      else{ disc='';}
+      var item_box = "<div class='col-md-12'>\
+        <br><center><u><h4>Location Name: "+area+"</h4></u></center><br>\
+        <div class='col-md-6' style='background-color: aliceblue; height: 320px;padding-top:20px;'>\
+            <form action='https://www.propviewz.com/be/management/update_location_cover_image/' method='post' enctype='multipart/form-data'>\
+            <input type='hidden' name='locationid' value='"+location_id+"'>\
+            <div style='height: 250px;'>"+img+"</div>\
+            <input type='file' onchange='ValidateSize(this)' name='cover_pic' id='cover-photo-add' accept='image/x-png,image/jpg,image/jpeg'>\
+            <div><input type='submit' class='btn btn-success' value='Upload New Cover Image'></div>\
+            </form>\
+        </div>\
+        <div class='col-md-6' style='background-color: aliceblue; height: 320px;padding-top:20px;'>\
+            <form action='https://www.propviewz.com/be/management/update_location_disc/' method='post'>\
+            <input type='hidden' name='locationid' value='"+location_id+"'>\
+            <div style='height: 250px;'>\
+            <textarea name='new_disc' class='form-control' placeholder='Please Prodide The Location Discription Here...'rows='8'>"+disc+"</textarea>\
+            </div>\
+            <div><input type='submit' class='btn btn-success' value='Update New Description'></div>\
+            </form>\
+        </div>\
+      </div>";
+      $('#show_location').append(item_box);
+  });
+
+});
+</script>
+
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+                <div class="page-header" style="padding-top: 20px;">
+                <center>
+                <h2 style="font-family: 'Berkshire Swash';font-size: 22px;">Edit Project Location From Here....</h2>
+                <div id="show_location" class="col-md-12"></div>
+                </center>  
+                <!--************************************************-->
+
+                <!--*******************************************--> 
+                </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 

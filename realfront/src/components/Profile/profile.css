@@ -1,0 +1,1560 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+@media screen and (min-width: 1200px ){
+
+  .profile_mobile{
+    display: none;
+      }
+
+  .profile_row_collection {
+    margin-top: 12%;
+}
+
+.formtextname{
+
+    margin-top: 0%;
+    font-size: inherit;
+    color: #404041;
+    /* padding: 4px;
+    padding-right: 5px; */
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 11.5vw;
+    background-color: white;
+    z-index: 1;   
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+.formtextpwd{
+
+  margin-top: 0%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 0.5%;
+    padding-left: 0.5%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextdob{
+  margin-top: 0%;
+  font-size: inherit;
+    color: #404041;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 11.5vw;
+    background-color: white;
+    z-index: 1;
+}
+
+.formtextmobile{
+  margin-top: 0%;
+    font-size: inherit;
+  color: #404041;
+  padding-right: 0.5%;
+    padding-left: 0.5%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextcity{
+  margin-top: 0%;
+    font-size: inherit;
+    color: #404041;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 11.5vw;
+    background-color: white;
+    z-index: 1;
+}
+
+.formtextrightgender{
+
+  margin-top: 0%;
+    font-size: inherit;
+    color: #404041;
+    /* text-align: left; */
+    left: 62%;
+    /* margin-bottom: 0.3%; */
+    font-family: Catamaran-bold;
+    /* backface-visibility: hidden; */
+    background-color: white;
+    /* margin-right: 62%; */
+    position: absolute;
+    
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+.formtextrightconfirmpwd{
+
+  margin-top: 0%;
+  font-size: inherit;
+  color: #404041;
+  /* text-align: left; */
+  left: 62%;
+  /* margin-bottom: 0.3%; */
+  font-family: Catamaran-bold;
+  background-color: white;
+  /* margin-right: 62%; */
+  position: absolute;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+}
+
+.formtextrightmarital{
+  font-size: inherit;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    background-color: white;
+    position: absolute;
+    left: 62%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0%;
+}
+
+.formtextrightemail{
+  font-size:inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  background-color: white;
+  position: absolute;
+  left: 62%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0%;
+}
+
+.formtextrightstate{
+  font-size: inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  /* margin-left: 29%; */
+  /* margin-bottom: -2%; */
+  background-color: white;
+  /* margin-right: 64%; */
+  position: absolute;
+  left: 62%;
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 0%;
+}
+.input_text{
+  width: 30vw;
+  margin-top: 2%;
+  padding: 1rem 2rem;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.input[type=text]:disabled {
+  background: white;
+}
+
+.input_date{
+  margin-top: 2%;
+    width: 30vw;
+    padding: 1rem 2rem;
+    border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+.rightsection{
+  text-align: right;
+}
+
+.selectcity {
+  /* font-family: Catamaran-bold;
+    color: #404041;
+    width: 30vw;
+    padding: 1.4rem 1.2rem;
+    height: -1%;
+    margin-top: 2%; */
+    padding: 2% 6.5%;
+  width: 30vw;
+  text-align: end;
+  margin-top: 2%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+ 
+
+ .selectgender {
+  padding: 2% 6.5%;
+  width: 30vw;
+  text-align: end;
+  margin-top: 2%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstatus {
+  padding: 2% 6.5%;
+  width: 30vw;
+  text-align: end;
+  margin-top: 2%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstate {
+  padding: 2% 6.5%;
+  width: 30vw;
+  text-align: end;
+  margin-top: 2%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .message_update{
+  font-size: 1.2vw;
+    position: absolute;
+    top: -3%;
+    color: orangered;
+    left: 6%;
+ }
+
+.text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 0.8vw;
+}
+.right_text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 0.8vw;
+    left: 60%;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    /* padding: 10px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .updatebtn{
+      background-color: #404041;
+      color: white;
+      margin-left: 43%;
+      padding: 16px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      width: 15%;
+      font-family: Catamaran-bold;
+      font-size: 20px;
+      border: 1px solid #404041;
+      border-radius: 15px;
+  }
+
+  .select option {
+    color: black; 
+  }
+}
+
+/*********************************************    1024px    **********************************************************/
+@media (min-width: 1024px) and (max-width: 1199px){
+
+  .profile_mobile{
+    display: none;
+      }
+
+  .profile_row_collection {
+    margin-top: 16%;
+}
+
+  .formtextname{
+
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      /* padding: 4px;
+      padding-right: 5px; */
+      position: absolute;
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      background-color: white;
+      z-index: 1;   
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0%;
+      padding-top: 0%;
+  }
+  
+  .formtextpwd{
+  
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 12.3vw;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .formtextdob{
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      position: absolute;
+      /* margin-bottom: 0.3%; */
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      /* margin-bottom: 0%; */
+      background-color: white;
+      z-index: 1;
+  }
+  
+  .formtextmobile{
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    padding-right: 0.5%;
+      padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 12.3vw;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .formtextcity{
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0%;
+      padding-top: 0%;
+      position: absolute;
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      background-color: white;
+      z-index: 1;
+  }
+  
+  .formtextrightgender{
+  
+    margin-top: 0%;
+      font-size: 1.6vw;
+      color: #404041;
+      /* text-align: left; */
+      left: 62.8%;
+      /* margin-bottom: 0.3%; */
+      font-family: Catamaran-bold;
+      /* backface-visibility: hidden; */
+      background-color: white;
+      /* margin-right: 62%; */
+      position: absolute;
+      
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+  
+  }
+  
+  .formtextrightconfirmpwd{
+  
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    /* text-align: left; */
+    left: 62.8%;
+    /* margin-bottom: 0.3%; */
+    font-family: Catamaran-bold;
+    background-color: white;
+    /* margin-right: 62%; */
+    position: absolute;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  
+  }
+  
+  .formtextrightmarital{
+    font-size: 1.6vw;
+      color: #404041;
+      text-align: left;
+      font-family: Catamaran-bold;
+      background-color: white;
+      position: absolute;
+      left: 62.8%;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+  }
+  
+  .formtextrightemail{
+    font-size: 1.6vw;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    background-color: white;
+    position: absolute;
+    left: 62.8%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0%;
+  }
+  
+  .formtextrightstate{
+    font-size: 1.6vw;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    /* margin-left: 29%; */
+    /* margin-bottom: -2%; */
+    background-color: white;
+    /* margin-right: 64%; */
+    position: absolute;
+    left: 62.8%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0%;
+  }
+  .input_text {
+    width: 30vw;
+    margin-top: 2%;
+    padding: 1rem 2rem;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+  }
+  input[type=text]:disabled {
+    background: white;
+  }
+
+  .input_right_text{
+    width: 30vw;
+    margin-top: 2%;
+    padding: 1rem 2rem;
+    border: 1px solid #404041;
+      border-radius: 15px;
+  }
+
+  .input_date{
+    margin-top: 2%;
+      width: 30vw;
+      padding: 1rem 2rem;
+      border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+    }
+  
+  .rightsection{
+    text-align: right;
+  }
+  
+  .selectcity {
+    /* font-family: Catamaran-bold;
+      color: #404041;
+      width: 30vw;
+      padding: 1.4rem 1.2rem;
+      height: -1%;
+      margin-top: 2%; */
+      padding: 3% 6.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+   
+  
+   .selectgender {
+    padding: 3% 6.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .selectstatus {
+    padding: 3% 6.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .selectstate {
+    padding: 3% 6.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .message_update{
+    font-size: 1.2vw;
+      position: absolute;
+      top: -3%;
+      color: orangered;
+      left: 6%;
+   }
+  
+  .text-danger{
+    color: #dc3545!important;
+      position: absolute;
+      font-size: 0.8vw;
+  }
+  .right_text-danger{
+    color: #dc3545!important;
+      position: absolute;
+      font-size: 0.8vw;
+      left: 60%;
+  }
+  
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 50%;
+      margin-top: 25px;
+      /* padding: 10px; */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    .updatebtn{
+        background-color: #404041;
+        color: white;
+        margin-left: 43%;
+        padding: 16px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 15%;
+        font-family: Catamaran-bold;
+        font-size: inherit;
+        border: 1px solid #404041;
+        border-radius: 15px;
+    }
+  
+    .select option {
+      color: black; 
+    }
+
+}
+
+/*********************************************    768px    **********************************************************/
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+  
+  .profile_mobile{
+    display: none;
+      }
+
+  /* .profile_row_collection {
+    margin-top: 20%;
+} */
+
+  .formtextname{
+
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      /* padding: 4px;
+      padding-right: 5px; */
+      position: absolute;
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      background-color: white;
+      z-index: 1;   
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0%;
+      padding-top: 0%;
+  }
+  
+  .formtextpwd{
+  
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    padding-right: 0.5%;
+      padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 12.3vw;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .formtextdob{
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      position: absolute;
+      /* margin-bottom: 0.3%; */
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      background-color: white;
+      z-index: 1;
+  }
+  
+  .formtextmobile{
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    padding-right: 0.5%;
+      padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    position: absolute;
+    font-family: Catamaran-bold;
+    left: 12.3vw;
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .formtextcity{
+    margin-top: 0%;
+    font-size: 1.6vw;
+      color: #404041;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0%;
+      padding-top: 0%;
+      position: absolute;
+      font-family: Catamaran-bold;
+      left: 12.3vw;
+      background-color: white;
+      z-index: 1;
+  }
+  
+  .formtextrightgender{
+  
+    margin-top: 0%;
+      font-size: 1.6vw;
+      color: #404041;
+      /* text-align: left; */
+      left: 63%;
+      /* margin-bottom: 0.3%; */
+      font-family: Catamaran-bold;
+      /* backface-visibility: hidden; */
+      background-color: white;
+      /* margin-right: 62%; */
+      position: absolute;
+      
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+  
+  }
+  
+  .formtextrightconfirmpwd{
+  
+    margin-top: 0%;
+    font-size: 1.6vw;
+    color: #404041;
+    /* text-align: left; */
+    left: 63%;
+    /* margin-bottom: 0.3%; */
+    font-family: Catamaran-bold;
+    background-color: white;
+    /* margin-right: 62%; */
+    position: absolute;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  
+  }
+  
+  .formtextrightmarital{
+    font-size: 1.6vw;
+      color: #404041;
+      text-align: left;
+      font-family: Catamaran-bold;
+      background-color: white;
+      position: absolute;
+      left: 63%;
+      padding-right: 0.5%;
+      padding-left: 0.5%;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      margin-top: 0%;
+  }
+  
+  .formtextrightemail{
+    font-size: 1.6vw;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    background-color: white;
+    position: absolute;
+    left: 63%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0%;
+  }
+  
+  .formtextrightstate{
+    font-size: 1.6vw;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    /* margin-left: 29%; */
+    /* margin-bottom: -2%; */
+    background-color: white;
+    /* margin-right: 64%; */
+    position: absolute;
+    left: 63%;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0%;
+  }
+  .input_text{
+    width: 30vw;
+    margin-top: 2%;
+    padding: 1rem 2rem;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+  }
+
+  .input[type=text]:disabled {
+    background: white;
+  }
+
+  .input_right_text{
+    width: 30vw;
+    margin-top: 2%;
+    padding: 1rem 2rem;
+    border: 1px solid #404041;
+      border-radius: 15px;
+  }
+
+  .input_date{
+    margin-top: 2%;
+      width: 30vw;
+      padding: 1rem 2rem;
+      border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+    }
+  
+  .rightsection{
+    text-align: right;
+  }
+  
+  .selectcity {
+    /* font-family: Catamaran-bold;
+      color: #404041;
+      width: 30vw;
+      padding: 1.4rem 1.2rem;
+      height: -1%;
+      margin-top: 2%; */
+      padding: 3% 8.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+   
+  
+   .selectgender {
+    padding: 3% 8.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .selectstatus {
+    padding: 3% 8.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .selectstate {
+    padding: 3% 8.5%;
+    width: 30vw;
+    text-align: end;
+    margin-top: 2%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+   }
+  
+   .message_update{
+    font-size: 1.2vw;
+      position: absolute;
+      top: -3%;
+      color: orangered;
+      left: 6%;
+   }
+  
+  .text-danger{
+    color: #dc3545!important;
+      position: absolute;
+      font-size: 1.5vw;
+  }
+  .right_text-danger{
+    color: #dc3545!important;
+      position: absolute;
+      font-size: 1.5vw;
+      left: 61%;
+  }
+  
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 50%;
+      margin-top: 25px;
+      /* padding: 10px; */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    .updatebtn{
+        background-color: #404041;
+        color: white;
+        margin-left: 43%;
+        padding: 12px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 15%;
+        font-family: Catamaran-bold;
+        font-size: 20px;
+        border: 1px solid #404041;
+        border-radius: 15px;
+    }
+  
+    .select option {
+      color: black; 
+    }
+
+}
+
+
+@media screen and (min-width: 340px ) and (max-width: 767px){
+
+  .profile_web{
+display: none;
+  }
+
+  .profile_row_collection {
+    margin-top: 45%;
+}
+
+.formtextname{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.formtextpwd{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextdob{
+  margin-top: 4%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextmobile{
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextcity{
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextrightgender{
+
+  margin-top: 2%;
+  font-size: inherit;
+  color: #404041;
+  /* text-align: left; */
+  /* left: 11%; */
+  /* margin-bottom: 0.3%; */
+  font-family: Catamaran-bold;
+  /* backface-visibility: hidden; */
+  background-color: white;
+  /* margin-right: 62%; */
+  position: absolute;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  left: 11.5vw;
+
+}
+
+.formtextrightconfirmpwd{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  /* text-align: left; */
+  left: 11.5vw;
+  /* margin-bottom: 0.3%; */
+  font-family: Catamaran-bold;
+  background-color: white;
+  /* margin-right: 62%; */
+  position: absolute;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+}
+
+.formtextrightmarital{
+  font-size: inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  background-color: white;
+  position: absolute;
+  left: 11.5vw;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 3%;
+}
+
+.formtextrightemail{
+  font-size: inherit;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    background-color: white;
+    position: absolute;
+    left: 11.5vw;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 3%;
+}
+
+.formtextrightstate{
+  font-size: inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  /* margin-left: 29%; */
+  /* margin-bottom: -2%; */
+  background-color: white;
+  /* margin-right: 64%; */
+  position: absolute;
+  left: 11.5vw;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 3%;
+}
+
+
+.input_text{
+  width: 93vw;
+  margin-top: 6%;
+  padding: 1rem 2.5rem;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.input[type=text]:disabled {
+  background: white;
+}
+
+.input_date{
+  margin-top: 7%;
+  width: 93vw;
+  padding: 1rem 2.3rem;
+  border: 1px solid #404041;
+  border-radius: 15px;
+  background-color: white;
+  }
+
+.rightsection{
+  text-align: right;
+}
+
+.selectcity {
+  /* font-family: Catamaran-bold;
+    color: #404041;
+    width: 30vw;
+    padding: 1.4rem 1.2rem;
+    height: -1%;
+    margin-top: 2%; */
+    padding: 3.5% 9%;
+    width: 93vw;
+    text-align: end;
+    margin-top: 5%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+ }
+ 
+
+ .selectgender {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstatus {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstate {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .message_update{
+  font-size: 1.2vw;
+    position: absolute;
+    top: -3%;
+    color: orangered;
+    left: 6%;
+ }
+
+.text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 3vw;
+    right: 4%;
+}
+.right_text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 3vw;
+    right: 4%;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    /* padding: 10px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .updatebtn{
+    background-color: #404041;
+    color: white;
+    margin-left: 31%;
+    padding: 16px;
+    margin-top: 11%;
+    margin-bottom: 5%;
+    width: 38%;
+    font-family: Catamaran-bold;
+    font-size: inherit;
+    border: 1px solid #404041;
+    border-radius: 15px;
+  }
+
+  .select option {
+    color: black; 
+  }
+}
+
+
+@media screen and (max-width: 392px){
+
+  .profile_web{
+display: none;
+  }
+
+  .profile_row_collection {
+    margin-top: 48%;
+}
+
+.formtextname{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.formtextpwd{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextdob{
+  margin-top: 4%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextmobile{
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextcity{
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+  position: absolute;
+  font-family: Catamaran-bold;
+  left: 11.5vw;
+  background-color: white;
+  z-index: 1;
+}
+
+.formtextrightgender{
+
+  margin-top: 2%;
+  font-size: inherit;
+  color: #404041;
+  /* text-align: left; */
+  /* left: 11%; */
+  /* margin-bottom: 0.3%; */
+  font-family: Catamaran-bold;
+  /* backface-visibility: hidden; */
+  background-color: white;
+  /* margin-right: 62%; */
+  position: absolute;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  left: 11.5vw;
+
+}
+
+.formtextrightconfirmpwd{
+
+  margin-top: 3%;
+  font-size: inherit;
+  color: #404041;
+  /* text-align: left; */
+  left: 11.5vw;
+  /* margin-bottom: 0.3%; */
+  font-family: Catamaran-bold;
+  background-color: white;
+  /* margin-right: 62%; */
+  position: absolute;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+
+}
+
+.formtextrightmarital{
+  font-size: inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  background-color: white;
+  position: absolute;
+  left: 11.5vw;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 3%;
+}
+
+.formtextrightemail{
+  font-size: inherit;
+    color: #404041;
+    text-align: left;
+    font-family: Catamaran-bold;
+    background-color: white;
+    position: absolute;
+    left: 11.5vw;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 3%;
+}
+
+.formtextrightstate{
+  font-size: inherit;
+  color: #404041;
+  text-align: left;
+  font-family: Catamaran-bold;
+  /* margin-left: 29%; */
+  /* margin-bottom: -2%; */
+  background-color: white;
+  /* margin-right: 64%; */
+  position: absolute;
+  left: 11.5vw;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-top: 3%;
+}
+
+
+.input_text{
+  width: 93vw;
+  margin-top: 6%;
+  padding: 1rem 2.5rem;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.input[type=text]:disabled {
+  background: white;
+}
+
+.input_date{
+  margin-top: 7%;
+  width: 93vw;
+  padding: 1rem 2.3rem;
+  border: 1px solid #404041;
+  border-radius: 15px;
+  background-color: white;
+  }
+
+.rightsection{
+  text-align: right;
+}
+
+.selectcity {
+  /* font-family: Catamaran-bold;
+    color: #404041;
+    width: 30vw;
+    padding: 1.4rem 1.2rem;
+    height: -1%;
+    margin-top: 2%; */
+    padding: 3.5% 9%;
+    width: 93vw;
+    text-align: end;
+    margin-top: 5%;
+    border: 1px solid #404041;
+      border-radius: 15px;
+      background-color: white;
+    
+ }
+ 
+
+ .selectgender {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstatus {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .selectstate {
+  padding: 3.5% 9%;
+  width: 93vw;
+  text-align: end;
+  margin-top: 5%;
+  border: 1px solid #404041;
+    border-radius: 15px;
+    background-color: white;
+ }
+
+ .message_update{
+  font-size: 1.2vw;
+    position: absolute;
+    top: -3%;
+    color: orangered;
+    left: 6%;
+ }
+
+.text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 3vw;
+    right: 4%;
+}
+.right_text-danger{
+  color: #dc3545!important;
+    position: absolute;
+    font-size: 3vw;
+    right: 4%;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+    /* padding: 10px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .updatebtn{
+    background-color: #404041;
+    color: white;
+    margin-left: 31%;
+    padding: 16px;
+    margin-top: 11%;
+    margin-bottom: 5%;
+    width: 38%;
+    font-family: Catamaran-bold;
+    font-size: inherit;
+    border: 1px solid #404041;
+    border-radius: 15px;
+  }
+
+  .select option {
+    color: black; 
+  }
+}
+
+@media screen and (min-width: 2000px)
+{
+.profile_row_collection {
+    margin-top: 8%;
+}
+}
+

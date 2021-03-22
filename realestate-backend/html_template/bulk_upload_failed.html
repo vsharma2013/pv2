@@ -1,0 +1,114 @@
+<link rel="icon" type="image/ico" href="../images/propadvisor.ico"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+    $(function(){
+      $("#header").load("header"); 
+    });
+</script>
+
+<div id="header"></div>
+<!--******************************************************-->
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 3px 1px 3px 7px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+    margin-left: 215px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-heading {
+    color: snow;
+    font-style: italic;
+    font-size: large;
+    padding-left: 12px;
+    padding-bottom: 30px;
+}
+#badge, #badge_review {
+  top: 9px;
+  right: 3px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+#log_box
+{
+width: 90%;
+height: 200px;
+overflow: auto;
+padding: 10px;
+margin-top: 12px;
+border-radius: 7px;
+background-color: antiquewhite;
+white-space: pre-line
+}
+
+</style>
+
+<script> 
+$.get('../bulk_upload_log.txt', function(data) {
+   //data = data.replace(/\n/g, "<br />");
+    console.log(data);
+   $("#log_box").text(data);
+}, 'text');
+</script> 
+
+<body>
+    <div class="main">
+    <div class="container-fluid">
+                <div class="page-header" style="padding-top: 10px;">
+                <center>
+                <h2 style="font-family: 'Berkshire Swash';font-size: 22px; color: orangered;">Your Bulk Upload Process Got Failed....</h2>
+                <br><br>
+                <lable style="font-family: 'Berkshire Swash';font-size: 18px; color: #d42020;">Reason 1: Either Your Project Name And FolderId Are Not Same.</lable>
+                <br><br>
+                <lable style="font-family: 'Berkshire Swash';font-size: 20px; color: #d42020;">OR</lable>
+                <br><br>
+                <lable style="font-family: 'Berkshire Swash';font-size: 18px; color: #d42020;">Reason 1: Either Your Project Name And FolderId Are Not Same.</lable>
+                <br><br><br>
+                <a href="https://www.propviewz.com/be/management/create_project" >
+                <button style="margin-top: 10px;" class="btn btn-info">Back</button>
+                </a>
+                <br><br><br><br>
+                <lable style="font-family: 'Berkshire Swash';font-size: 23px; color: #d42020;">Log Error</lable>
+                <div id="log_box"></div>
+                </center>   
+                </div>
+        </div>
+    </div>
+</div>
+   
+</body>
+</html> 
